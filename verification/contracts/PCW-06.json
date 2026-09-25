@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "id": "PCW-06",
+  "title": "PCW-06 — Recreate the UW Quad",
+  "intent": "Preserve the brick path geometry and blossom framing from the photos.",
+  "kind": "model",
+  "stage": "production",
+  "target": "roblox",
+  "status": "draft",
+  "approved_by": null,
+  "max_iterations": 3,
+  "sources": [
+    "docs/tickets/PCW-06.md",
+    "docs/tickets/README.md",
+    "docs/design/map-proposal-v0.2.md",
+    "docs/design/visual-direction-v0.1.md"
+  ],
+  "inputs": [
+    "deliverables/PCW-06"
+  ],
+  "artifacts": [
+    {
+      "id": "deliverable",
+      "path": "deliverables/PCW-06/model.rbxm",
+      "check": "exists"
+    },
+    {
+      "id": "studio-colors",
+      "path": "deliverables/PCW-06/studio-colors.json",
+      "check": "studio_palette",
+      "allowed_tokens": [
+        "blossom",
+        "brick",
+        "cream",
+        "forest",
+        "golden",
+        "ink",
+        "sage",
+        "wood"
+      ],
+      "required_tokens": [],
+      "texture_sources": {}
+    }
+  ],
+  "commands": [],
+  "criteria": []
+}

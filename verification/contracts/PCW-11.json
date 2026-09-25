@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "id": "PCW-11",
+  "title": "PCW-11 — Q05 — Little Treasures",
+  "intent": "Reward exploration and organizing her favorite figures.",
+  "kind": "game",
+  "stage": "production",
+  "target": "roblox",
+  "status": "draft",
+  "approved_by": null,
+  "max_iterations": 3,
+  "sources": [
+    "docs/tickets/PCW-11.md",
+    "docs/tickets/README.md",
+    "docs/design/map-proposal-v0.2.md",
+    "docs/design/visual-direction-v0.1.md"
+  ],
+  "inputs": [
+    "deliverables/PCW-11"
+  ],
+  "artifacts": [
+    {
+      "id": "deliverable",
+      "path": "deliverables/PCW-11/game.rbxl",
+      "check": "exists"
+    },
+    {
+      "id": "studio-colors",
+      "path": "deliverables/PCW-11/studio-colors.json",
+      "check": "studio_palette",
+      "allowed_tokens": [
+        "blossom",
+        "brick",
+        "cream",
+        "forest",
+        "golden",
+        "ink",
+        "sage",
+        "wood"
+      ],
+      "required_tokens": [],
+      "texture_sources": {}
+    }
+  ],
+  "commands": [],
+  "criteria": []
+}

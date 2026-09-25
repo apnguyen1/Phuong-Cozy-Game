@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "PCW-02",
+  "title": "PCW-02 — Mobile and desktop interface design",
+  "intent": "Keep touch play comfortable without covering the room or friends.",
+  "kind": "image",
+  "stage": "concept",
+  "target": "roblox",
+  "status": "draft",
+  "approved_by": null,
+  "max_iterations": 3,
+  "sources": [
+    "docs/tickets/PCW-02.md",
+    "docs/tickets/README.md",
+    "docs/design/map-proposal-v0.2.md",
+    "docs/design/visual-direction-v0.1.md"
+  ],
+  "inputs": [
+    "deliverables/PCW-02"
+  ],
+  "artifacts": [
+    {
+      "id": "deliverable",
+      "path": "deliverables/PCW-02/image.png",
+      "check": "exists"
+    },
+    {
+      "id": "source-colors",
+      "path": "deliverables/PCW-02/source-colors.png",
+      "check": "raster_palette",
+      "allowed_tokens": [
+        "blossom",
+        "brick",
+        "cream",
+        "forest",
+        "golden",
+        "ink",
+        "sage",
+        "wood"
+      ],
+      "required_tokens": []
+    }
+  ],
+  "commands": [],
+  "criteria": []
+}

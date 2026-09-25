@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "PCW-15",
+  "title": "PCW-15 — Personal asset and content checklist",
+  "intent": "Collect only missing details that materially improve recognition.",
+  "kind": "document",
+  "stage": "concept",
+  "target": "roblox",
+  "status": "draft",
+  "approved_by": null,
+  "max_iterations": 3,
+  "sources": [
+    "docs/tickets/PCW-15.md",
+    "docs/tickets/README.md",
+    "docs/design/map-proposal-v0.2.md",
+    "docs/design/visual-direction-v0.1.md"
+  ],
+  "inputs": [
+    "deliverables/PCW-15"
+  ],
+  "artifacts": [
+    {
+      "id": "deliverable",
+      "path": "deliverables/PCW-15/deliverable.md",
+      "check": "exists"
+    }
+  ],
+  "commands": [],
+  "criteria": []
+}

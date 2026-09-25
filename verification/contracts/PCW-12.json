@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "id": "PCW-12",
+  "title": "PCW-12 — Q06 — Something Delicious",
+  "intent": "Give multiple friends useful cooking and decoration roles.",
+  "kind": "game",
+  "stage": "production",
+  "target": "roblox",
+  "status": "draft",
+  "approved_by": null,
+  "max_iterations": 3,
+  "sources": [
+    "docs/tickets/PCW-12.md",
+    "docs/tickets/README.md",
+    "docs/design/map-proposal-v0.2.md",
+    "docs/design/visual-direction-v0.1.md"
+  ],
+  "inputs": [
+    "deliverables/PCW-12"
+  ],
+  "artifacts": [
+    {
+      "id": "deliverable",
+      "path": "deliverables/PCW-12/game.rbxl",
+      "check": "exists"
+    },
+    {
+      "id": "studio-colors",
+      "path": "deliverables/PCW-12/studio-colors.json",
+      "check": "studio_palette",
+      "allowed_tokens": [
+        "blossom",
+        "brick",
+        "cream",
+        "forest",
+        "golden",
+        "ink",
+        "sage",
+        "wood"
+      ],
+      "required_tokens": [],
+      "texture_sources": {}
+    }
+  ],
+  "commands": [],
+  "criteria": []
+}

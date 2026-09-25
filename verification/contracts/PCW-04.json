@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "id": "PCW-04",
+  "title": "PCW-04 — Recreate Phuong's bedroom",
+  "intent": "Make the one interior immediately recognizable as her room.",
+  "kind": "model",
+  "stage": "production",
+  "target": "roblox",
+  "status": "draft",
+  "approved_by": null,
+  "max_iterations": 3,
+  "sources": [
+    "docs/tickets/PCW-04.md",
+    "docs/tickets/README.md",
+    "docs/design/map-proposal-v0.2.md",
+    "docs/design/visual-direction-v0.1.md"
+  ],
+  "inputs": [
+    "deliverables/PCW-04"
+  ],
+  "artifacts": [
+    {
+      "id": "deliverable",
+      "path": "deliverables/PCW-04/model.rbxm",
+      "check": "exists"
+    },
+    {
+      "id": "studio-colors",
+      "path": "deliverables/PCW-04/studio-colors.json",
+      "check": "studio_palette",
+      "allowed_tokens": [
+        "blossom",
+        "brick",
+        "cream",
+        "forest",
+        "golden",
+        "ink",
+        "sage",
+        "wood"
+      ],
+      "required_tokens": [],
+      "texture_sources": {}
+    }
+  ],
+  "commands": [],
+  "criteria": []
+}
