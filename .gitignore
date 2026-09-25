@@ -1,0 +1,5 @@
+# Local verification environment and generated evidence
+.venv-verification/
+__pycache__/
+verification/runs/
+

@@ -4,6 +4,8 @@ The user approved map v0.2 and requested tickets and rendered UI/color concepts,
 
 Implementation tickets remain unstarted. Art concepts are for review; rendering an image does not complete UI implementation or validate mobile performance.
 
+**September 24 update:** The user requested a reusable [verification system](../../verification/README.md) and supplied the exact palette. The harness and verifier are now implementation work in this checkout; the original no-code execution boundaries below describe the earlier design task. Game/model production and publishing remain separate. Each ticket has a draft contract in [verification/contracts](../../verification/contracts/), with acceptance criteria read directly from its source ticket on every run.
+
 | Ticket | Focus | Status | Dependencies |
 |---|---|---|---|
 | [PCW-01](PCW-01.md) | Art direction and color system | Concept review | None |

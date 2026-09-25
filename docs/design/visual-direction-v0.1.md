@@ -1,6 +1,6 @@
 # Phuong’s Cozy World — visual direction and UI concepts
 
-**Status:** Proposed visual treatment of the approved map v0.2. The user approved the plan and requested tickets and rendered concepts with no code. Palette, exact UI composition and styling below are new proposals. No working UI or Roblox implementation is included.
+**Status:** Proposed visual treatment of the approved map v0.2. The user approved the plan and requested tickets and rendered concepts with no code. The exact palette was subsequently supplied by the user on September 24; UI composition and styling remain proposals. No working UI or Roblox implementation is included.
 
 ## Rendered concepts
 
@@ -16,9 +16,9 @@ The palette labels and the exploration/placement actions are readable, and the r
 
 The room rendering combines reference features artistically; its additional closet-like opening and furniture orientation are not approved alterations to the photo-based plan. Keep one closet recess beside the headboard and the desk/shelf wall opposite the bed wall. Final UI work must also check the flower's exact six-petal construction and reserved touch-control spacing rather than copying raster artwork as a finished interface.
 
-## Proposed palette
+## Assigned palette — September 24 update
 
-Hex values here are the source of truth; lighting and image generation may shift displayed swatches.
+The user supplied the exact values on September 24. [The verification palette](../../verification/palette.json) is the machine-readable source of truth. Lighting and image generation may shift displayed swatches. The latest Brick value is #B66C68, replacing the earlier #B77C68; existing concept renders are historical references. Gold uses the canonical token `golden` in verification files.
 
 | Name | Hex | Use |
 |---|---|---|
@@ -27,7 +27,7 @@ Hex values here are the source of truth; lighting and image generation may shift
 | Cream | #F5F0E4 | Room walls, white-painted furniture warmth, opaque interface panels, text on forest |
 | Wood | #95674B | Warm bedroom flooring, craft and table surfaces |
 | Blossom | #E8B7C6 | Cherry blossoms and small celebratory accents |
-| Brick | #B77C68 | Quad paths, masonry storefront accents |
+| Brick | #B66C68 | Quad paths, masonry storefront accents |
 | Gold | #E8C779 | Curtain-light warmth, small completion details |
 | Ink | #26382E | Primary text and clear dark outlines on pale surfaces |
 

@@ -14,7 +14,7 @@ A personal Roblox birthday game dedicated to my Pookie. Friends explore, decorat
 - **Interior:** Only Phuong’s bedroom is detailed, based on the supplied photos. The earlier four-room house is superseded.
 - **Celebration:** Six activities build toward cake and birthday wishes from the actual participants. The boyfriend writes the personal note himself; its content remains empty until supplied.
 
-One Roblox place is the current planning baseline. Dimensions, camera tuning, shared-progress permissions, and device performance targets still need later validation. The warm miniature art treatment and exact colors are visual proposals.
+One Roblox place is the current planning baseline. Dimensions, camera tuning, shared-progress permissions, and device performance targets still need later validation. The warm miniature art treatment remains a visual proposal; the user supplied the exact palette on September 24 in [verification/palette.json](verification/palette.json).
 
 ## Six favorite activities
 
@@ -47,7 +47,11 @@ These are rendered design concepts, not screenshots of a working Roblox game. Th
 
 [The ticket board](docs/tickets/README.md) contains 16 local project tickets with scope, dependencies, acceptance criteria, and validation steps. They cover art and UI, world/camera layout, the bedroom, UDistrict, the Quad, all six activities, shared progress, celebration, personal content, and mixed-device rehearsal.
 
-Future implementation begins with the room/camera and touch interaction prototype, then connected reference geometry, shared activities, personal detail, and a group rehearsal. Ticket creation does not start that implementation. The current delivery remains documentation and images only.
+Future game implementation begins with the room/camera and touch interaction prototype, then connected reference geometry, shared activities, personal detail, and a group rehearsal. Ticket creation does not start that implementation.
+
+## Verification workflow
+
+The [verification system](verification/README.md) adds a reusable verifier agent, exact palette checks, ticket acceptance gates, Roblox evidence capture, and a build–review–revise loop. All 16 ticket contracts begin as drafts until their actual deliverables and test commands are assigned. Automatic checks are followed by independent review and human playtesting/final acceptance. No gameplay implementation or publishing is included.
 
 ## Earlier planning references
 

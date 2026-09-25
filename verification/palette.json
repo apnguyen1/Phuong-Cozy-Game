@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "status": "approved",
+  "approved_by": "User, September 24, 2026",
+  "note": "Exact values supplied in this task. The golden token is the user's Gold swatch. Latest Brick #B66C68 supersedes #B77C68 in the earlier concept brief; concept images are historical references.",
+  "colors": {
+    "forest": "#365744",
+    "sage": "#A8B995",
+    "cream": "#F5F0E4",
+    "wood": "#95674B",
+    "blossom": "#E8B7C6",
+    "brick": "#B66C68",
+    "golden": "#E8C779",
+    "ink": "#26382E"
+  }
+}
