@@ -24,10 +24,12 @@ One Roblox place is the current planning baseline. Dimensions, camera tuning, sh
 | Jasper’s Favorite Things | Yard, rabbit toy, fetch, and Greenie |
 | A Tiny World of Her Own | Bedroom desk, with an optional shared fair craft booth |
 | One More Chapter | Kindle at home or a Quad bench |
-| Little Treasures | Neighborhood discoveries and bedroom collection shelf |
+| A Labubu Wish | Street-fair vending machine, with an optional bedroom collection display |
 | Something Delicious | Patio KBBQ, seafood boil, and table setting |
 
-All activities must support touch as well as desktop input. Decoration uses proposed curated choices and generous placement slots. The group can contribute in parallel; optional discoveries and reading time should not hold everyone up.
+All activities must support touch as well as desktop input. Decoration uses proposed curated choices and generous placement slots. The group can contribute in parallel, and readers work at their own pace.
+
+The [Mini Game Idea Plan](docs/design/mini-game-idea-plan.md) records the deeper gameplay for all six activities. Q05 now uses personal coins earned through the other five activities to roll for Big into Energy Labubu figures, with gifting and a fifth-roll guarantee for the selected wanted figure. This plan supersedes the earlier treasure-hunt design; detailed ticket and verifier alignment remains the next implementation step.
 
 ## Map and visual concepts
 
