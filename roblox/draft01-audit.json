@@ -1,0 +1,46 @@
+{
+  "incomingScripts": [
+    {
+      "enabled": false,
+      "path": "ServerStorage.CozyDraftAssets.Incoming.BlossomSource.Cherry Blossom Tree.Tree.Animator"
+    },
+    {
+      "enabled": false,
+      "path": "ServerStorage.CozyDraftAssets.Incoming.BlossomSource.Cherry Blossom Tree.Tree.Animation"
+    }
+  ],
+  "activeScripts": [
+    {
+      "enabled": true,
+      "path": "StarterPlayer.StarterPlayerScripts.CozyDraftCamera"
+    },
+    {
+      "enabled": true,
+      "path": "ServerScriptService.CozyDraftDoor"
+    }
+  ],
+  "date": "2026-09-26",
+  "placeId": 0,
+  "decorativeScripts": 0,
+  "unanchored": 0,
+  "groups": [
+    "Landscape",
+    "Paths",
+    "Home",
+    "Arrival",
+    "QuadPlanting",
+    "SurroundingContext",
+    "ConnectionMarkers"
+  ],
+  "seats": 16,
+  "draft": "01",
+  "parts": 1276,
+  "localPlaceSave": "Verified phuong-cozy-game.rbxl and matching Phuong-Cozy-World-Draft01.rbxl checkpoint; 630601 bytes each; Roblox binary header and SHA-256 match",
+  "validation": {
+    "singleClientWalk": "Passed arrival to porch and house entry/exit at normal speed",
+    "door": "Open/close via E passed; server state checked",
+    "consoleErrors": "None observed during playtest",
+    "eightPlayers": "Not tested",
+    "seating": "Touch enabled; seating behavior not verified"
+  }
+}
