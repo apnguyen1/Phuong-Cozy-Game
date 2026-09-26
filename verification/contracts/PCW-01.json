@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "PCW-01",
+  "title": "PCW-01 — Art direction and color system",
+  "intent": "Turn the approved map into a consistent warm miniature aesthetic.",
+  "kind": "image",
+  "stage": "concept",
+  "target": "roblox",
+  "status": "draft",
+  "approved_by": null,
+  "max_iterations": 3,
+  "sources": [
+    "docs/tickets/PCW-01.md",
+    "docs/tickets/README.md",
+    "docs/design/map-proposal-v0.2.md",
+    "docs/design/visual-direction-v0.1.md"
+  ],
+  "inputs": [
+    "deliverables/PCW-01"
+  ],
+  "artifacts": [
+    {
+      "id": "deliverable",
+      "path": "deliverables/PCW-01/image.png",
+      "check": "exists"
+    },
+    {
+      "id": "source-colors",
+      "path": "deliverables/PCW-01/source-colors.png",
+      "check": "raster_palette",
+      "allowed_tokens": [
+        "blossom",
+        "brick",
+        "cream",
+        "forest",
+        "golden",
+        "ink",
+        "sage",
+        "wood"
+      ],
+      "required_tokens": []
+    }
+  ],
+  "commands": [],
+  "criteria": []
+}

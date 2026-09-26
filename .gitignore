@@ -1,3 +1,9 @@
 # Temporary Roblox Studio file locks
 *.rbxl.lock
 *.rbxlx.lock
+
+# Local verification environment and generated evidence
+.venv-verification/
+__pycache__/
+verification/runs/
+
