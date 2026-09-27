@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "mode": "Validate existing real engine evidence; does not rerun Roblox",
+  "complete_run": "05",
+  "camera_run": "03",
+  "party": {
+    "credited_completed_scenarios": 9,
+    "engine_overall_passed": true,
+    "retained_abort": null,
+    "early_entry_seconds_before_deadline": 53.855,
+    "deadline_prompt_delta_seconds": -0.0735,
+    "max_waiting_camera_look_delta": 0,
+    "walking": {
+      "actual_walking_guests": 6,
+      "maximum_waypoint_floor_error": 0.2241377830505371
+    },
+    "retained_party_orbit_observations": [
+      {
+        "observation": "orbitA",
+        "supported": false,
+        "error": "VirtualInput::SendMouseDelta: cursor is not locked."
+      },
+      {
+        "observation": "orbitB",
+        "supported": false,
+        "error": "VirtualInput::SendMouseDelta: cursor is not locked."
+      }
+    ],
+    "separate_desktop_lobby_orbit": [
+      {
+        "user_id": -2,
+        "look_vector_change": 1.1754972719850407
+      },
+      {
+        "user_id": -1,
+        "look_vector_change": 1.1755025737498637
+      }
+    ],
+    "camera_limit": "Separate desktop lobby input only; the party run's post-seating mouse observations remain unsupported. No physical touch or human comfort claim."
+  }
+}

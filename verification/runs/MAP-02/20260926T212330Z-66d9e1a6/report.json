@@ -1,0 +1,577 @@
+{
+  "schema_version": 1,
+  "type": "run",
+  "ticket_id": "MAP-02",
+  "ticket_path": "verification/contracts/MAP-02-draft02.json",
+  "run_id": "20260926T212330Z-66d9e1a6",
+  "stage": "production",
+  "iteration": 3,
+  "builder": "draft02-build-team",
+  "previous": {
+    "path": "verification/runs/MAP-02/20260926T203452Z-08e2c6d1/report.json",
+    "sha256": "d7be0fce4f2219b1a51a70f0e221838019517e8a75f18c4f0220048a75a3fd74"
+  },
+  "changes": "docs/draft02-revision03.md",
+  "snapshot": {
+    "verification/contracts/MAP-02-draft02.json": "861f224c493df43161b53304d066987d3b028bab5a62e9f730e9058a6ca6e093",
+    "verification/palette.json": "559fd5251e386a7b83a9abb0031fd3d8b40b16026b8c86dd4951208ff6c5aea8",
+    "verification/verify.py": "ba1b6db1af8df7d0b22dc319a15ffb87728651da93d5181d5785f053cdba5992",
+    "verification/requirements.txt": "31864229d2dd8a2c4feddb7cc04e989ea6643d88158090384a80f69f951052a8",
+    "verification/roblox/capture.luau": "f7cb97324c9270237721e767ee2819ee97ea1b745aed1f7abb09112b8236058a",
+    "docs/tickets/MAP-02.md": "0d89bf56d238ffae5e3ebbd2b6f292ab929e1161924827de43c202c0839659c9",
+    "docs/tickets/PCW-04.md": "88c1af32b3c0db03e8c6e77bc5184ee49fa9469371360ae1d41b310fc8d14d8f",
+    "docs/tickets/PCW-05.md": "a261ee61ff721118f18c1b06f271e5b103bae678b3f12d47f91726d46e84edaa",
+    "docs/tickets/PCW-06.md": "0e16512a4bc800dbda8ec012dce99ff1d30db69bc2b5a71b7dc6c17e7fad25c3",
+    "docs/tickets/PCW-17.md": "c83975a781994284b5d554640ff8cc807510e67fd34f43509b5b809ea3659602",
+    "docs/bedroom02-notes.md": "ff43b6dfdf677a8ecfb337cec647baca921bda38391e12c0c21dfcc1028dea35",
+    "docs/neighborhood02-notes.md": "25d22c40b96561cbb3f9a34888c820f17534e2fe5e1f76db66847e1f0ff8f513",
+    "docs/lobby02-notes.md": "5d46ae80c5211b6c3b50124ea5775ddf9dd35755db266287f00cc3ab24f4ccbe",
+    "docs/roblox-asset-register.md": "e18e41813e73d7b3251e55ed3b71bebde6f8651f316579631eaa930b68ab0523",
+    "roblox/build-draft01.luau": "6b87be891225c4b10c0a43d3e917388b9986ded89d20a56c1925c2f915f478d6",
+    "roblox/prepare-assets.luau": "e828fdb226851e2a7e60097c2f4ed230ada7ea5e729f5d8c5fc364fb796ee1b1",
+    "roblox/build-bedroom02.luau": "1db32436599597fb82c326eb0e51c441fcdb13e37ae2aea0ca331b1435459122",
+    "roblox/build-lobby02.luau": "01da26ecbef41907c013f66fd5f47b36639751addb6a351dd5336196db0b5e4d",
+    "roblox/build-neighborhood02.luau": "aaa6612b2de34095e8f97fd0d8ac498afd2f35ad6c7838eeea181f2907d52925",
+    "roblox/build-quad02.luau": "ac55360c676c1d2478d136cc11ac873e9348f8623b1ed69e3128fbd16859e40b",
+    "roblox/finalize-draft02.luau": "615fa4428fa0fb4abc8cc4abe0b86a89c7be198c55b7470226c764090e8d73ea",
+    "roblox/birthday-lobby.server.luau": "ad7be3c845b18bf4f19b733b2b85d17a9947f0b016c811b1e645452060764579",
+    "roblox/birthday-lobby.client.luau": "c1aba60de3edecc2b34e766c257674914028ab91f6f2590d54ddd579d73c8bae",
+    "roblox/draft-door.server.luau": "7984d1be093d7ff16182f62ed47d70226fdc081ecbc4b735258e40c4d7d4db7a",
+    "roblox/draft-camera.client.luau": "9795fd345226b702f9fa06808afd4dd1daf2c1ef7ddd868c15a648c9fb31e2bf",
+    "art/references/map/draft02-reference-quad.png": "e2642fb800155b35c541ce144f7d767d4e524c53e7ce1f5bc5c3525d2fc0b468",
+    "art/references/map/draft02-reference-bedroom-a.jpg": "f1d154895ab5c4002ee4548ae04837c973e7292cb1aa842592824e29cd20d391",
+    "art/references/map/draft02-reference-bedroom-b.jpg": "d08bcac36f58e0428f64ccde85a2c4dcc3ad068a485126a6dd4e97364b2ea93b",
+    "roblox/evidence/draft02/save-audit.json": "e4e1eb8796a374582ff31f6881ef10cff8a3a83717c443a192694e190ca7141b",
+    "roblox/evidence/draft02/live-source-check.json": "d062474dba0c7884096e4a2aa895f744ed4d0a3b220d55aa2c2d2dc712403aa0",
+    "roblox/evidence/draft02/navigation-results.json": "13225c3b8f18cf5e43a164ba24c321f1316b0c6c5bddbf0a6d17839c4c2c291b",
+    "roblox/evidence/draft02/lobby-play.png": "d321a59f90795162f7dfaefa2106278d5b9c00f9373ccd216350dc6a2cbba3bc",
+    "roblox/evidence/draft02/bedroom-bed.png": "228f99215adcf2e14ba3d70cd97f7f003cdb7286f32a956f9aa65ad35c12ac76",
+    "roblox/evidence/draft02/bedroom-desk.png": "05fdfa37016dbbed0df3edd9deef8b35ad5f135fc727b4e863afaeb5d3a118b7",
+    "roblox/evidence/draft02/bedroom-bed-final.png": "1e88cbd74ddd0042e48f60d4ee73fdd5b499f108db4b3f04c261fe4fb5408f17",
+    "roblox/evidence/draft02/bedroom-desk-final.png": "a018515913b8cfddcdd6ba40c68a81fc68c029dc6d2aaaafd32e32de088494cf",
+    "roblox/evidence/draft02/bedroom-tv-print-final.png": "0a33e6ce9c7046af09f1c6c92b86daa3930f53b34ec547d2ed8abd7590dfacfb",
+    "roblox/evidence/draft02/quad-overview-final.png": "297d59329dc4f1fb1dbf917cca0feabd1edba9aef1766a7ca2ba0b5eb8687f9b",
+    "roblox/evidence/draft02/stores-overview.png": "9dbc03eca9f32124e1f5230f84a19d34541e8791e3f85788706ae614c4c72402",
+    "roblox/evidence/draft02/fob-front.png": "032270f31460982cd45c4d9366fa6ce6832f5af0a957922e60ae4dc625808f21",
+    "roblox/evidence/draft02/heytea-front.png": "b5281b6d3f42f9047a8ed84c659d04d57dfb0e22db6c320ab42e7eb581074085",
+    "roblox/evidence/draft02/aladdins-play.png": "2a37d9df722a7b03368bf16955aa2ab3df63df832a908c562d2391ab9724c3ef",
+    "roblox/evidence/draft02/courtyard.png": "7c72a5a431144dc601fd63aa87ab33bfc481a01619a68a8e952eddf944bea41d",
+    "roblox/evidence/draft02/bedroom-window-camera.png": "b803a3ce1ac3ca355ff4632fd42e52053fe8b33f5cff516c0a3468ff6f3ea2fe",
+    "roblox/evidence/draft02/fob-board-close.png": "433c4e79ab76f7cc87a96b543c2dc9e7107b397cbc7b1d556449299b32b0beb9",
+    "roblox/evidence/draft02/heytea-board-close.png": "06b0d793d18ae6fee74295741163bffff9c4c93322ea2a03b06e6d8b5df87829",
+    "roblox/evidence/draft02/aladdins-board-close.png": "ecebbdd7fc5d6dc28724756cff4949b5bfbfe0ea3c9020d7c531477faeac2989",
+    "verification/check_party_runtime.py": "c3d546add6932d7d829780636b86f284b6ac6aed0f4b61c8061b57f27dd76a4e",
+    "roblox/tests/party-runtime.server.luau": "6cedf59a01820a15e74ff3ba1d8832115b872c10262c8c2eb9fee6c8fc480f52",
+    "roblox/tests/party-runtime.client.luau": "d20f845283fe0edd22cc6c69135fab5054926bd25d9441b8bd8319893152e75b",
+    "roblox/evidence/draft02/party-runtime05-raw.json": "09fb6af48c7eee2117fa40f9709ea48f23ad63261cf975d62e855e925815e72f",
+    "roblox/evidence/draft02/party-source-bindings05.json": "df4caa404198ff679c7a72e425c9106953ef837127dc27995ea322505e415aed",
+    "roblox/evidence/draft02/party-harness05-sources.json": "bb00b2653c9e554674b89dd64ca03360ef6356b24aaf4ca86c578669c54e133e",
+    "roblox/evidence/draft02/device-preview-results.json": "86bb7c9a904d098f4e1a9503b8172c8b6c66576551ab52215aa97ab98a74494e",
+    "roblox/evidence/draft02/phone-lobby-before-layout.png": "bf9e5d1b7c491a6329c5f2728686d64a4d826b881a65153387db9192459ced73",
+    "roblox/evidence/draft02/phone-lobby-responsive.png": "f7983b2c971df61dac79522b7a682e6aeec3c3d3ac943c1d9036936db3b720fc",
+    "roblox/evidence/draft02/tablet-lobby-responsive.png": "eed63bf32a2fdeb9984b147809b05bb31d823d513bc3785d85c7939fe3fc3f35",
+    "roblox/evidence/draft02/runtime-iteration03-raw.json": "44816fbfb6d5c94c37b867fdbe8a9d50150062f146514ed2ada87e1aaff05cc1",
+    "roblox/evidence/draft02/bedroom-low-graphics.png": "52730898a33293dcd89bc17389aebd148960aa5276445ff9ee6f2f7e3c8cdb9e",
+    "roblox/evidence/draft02/quad-low-graphics-ground.png": "23fbee89994ecfc01cf8c64bf4d54f58cc129d45171fe09a783ced50f50c8869",
+    "roblox/evidence/draft02/quad-low-graphics-aerial.png": "e7de8f88980bab148fc4e04491a0311691fc20bfb777b3d22cae0cd133f70936",
+    "roblox/tests/camera-runtime.server.luau": "0b8429dcbc1617ee3b42008b894f2fa79c00952090b87799f10d05eb62669bd5",
+    "roblox/evidence/draft02/camera-runtime03-raw.json": "c396b3b69c3d19e27131b0ca43ec9c5fb07cb1376976122dc42cfe02334db931",
+    "roblox/evidence/draft02/camera-source-bindings03.json": "d334f584157ddb20d43c2f9f82f04edd2712d25aa917ecb171f7ac2a9d5ad14e",
+    "roblox/evidence/draft02/camera-harness03-sources.json": "92569e37c5fb4a3983f71cc68e7eaa5c0c76439d45de743a5ace734058b71b6c",
+    "roblox/evidence/draft02/independent-live-inventory03.json": "2895ea663ea7f1c567aeaee2cc85feefa9489a639b4648ee733b1518a3775ec3",
+    "roblox/Phuong-Cozy-World-Draft02.rbxl": "c0d957546b23a58aa99337492edfe08fb383501f3e6d8d58ddab1b8063d3a418",
+    "roblox/evidence/draft02/map-studio-colors.json": "864c4610534756f74a56f531f9548d5f30133571caf2348577630e5096d8a57a",
+    "roblox/evidence/draft02/console.txt": "0c9765a9aaad295768d720a986a9ff7c229806daa0627911a4602f936278d448",
+    "roblox/evidence/draft02/visual-evidence.json": "b37ec443667ba672568b4fb3add00a72e9aaf4f56132a2fd2cc42e1a4d6e5034",
+    "docs/draft02-revision03.md": "23bbd7d106dad5a888511463456447f81ce9cf7284908fa2486e4493dacf9664",
+    "@runtime": {
+      "python": "3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)]",
+      "Pillow": "12.3.0"
+    }
+  },
+  "fingerprint": "405dd772f2194bfc6450228fdd9f32e290338dfead8b8e74bbf8ec86b013d197",
+  "checks": [
+    {
+      "id": "ticket-approved",
+      "status": "PASS",
+      "detail": "Approved ticket required; a draft is not an assignment"
+    },
+    {
+      "id": "palette",
+      "status": "PASS",
+      "detail": {
+        "forest": "#365744",
+        "sage": "#A8B995",
+        "cream": "#F5F0E4",
+        "wood": "#95674B",
+        "blossom": "#E8B7C6",
+        "brick": "#B66C68",
+        "golden": "#E8C779",
+        "ink": "#26382E"
+      }
+    },
+    {
+      "id": "input:docs/tickets/MAP-02.md",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:docs/tickets/PCW-04.md",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:docs/tickets/PCW-05.md",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:docs/tickets/PCW-06.md",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:docs/tickets/PCW-17.md",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:docs/bedroom02-notes.md",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:docs/neighborhood02-notes.md",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:docs/lobby02-notes.md",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:docs/roblox-asset-register.md",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/build-draft01.luau",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/prepare-assets.luau",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/build-bedroom02.luau",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/build-lobby02.luau",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/build-neighborhood02.luau",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/build-quad02.luau",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/finalize-draft02.luau",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/birthday-lobby.server.luau",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/birthday-lobby.client.luau",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/draft-door.server.luau",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/draft-camera.client.luau",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:art/references/map/draft02-reference-quad.png",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:art/references/map/draft02-reference-bedroom-a.jpg",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:art/references/map/draft02-reference-bedroom-b.jpg",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/evidence/draft02/save-audit.json",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/evidence/draft02/live-source-check.json",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/evidence/draft02/navigation-results.json",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/evidence/draft02/lobby-play.png",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/evidence/draft02/bedroom-bed.png",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/evidence/draft02/bedroom-desk.png",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/evidence/draft02/bedroom-bed-final.png",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/evidence/draft02/bedroom-desk-final.png",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/evidence/draft02/bedroom-tv-print-final.png",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/evidence/draft02/quad-overview-final.png",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/evidence/draft02/stores-overview.png",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/evidence/draft02/fob-front.png",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/evidence/draft02/heytea-front.png",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/evidence/draft02/aladdins-play.png",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/evidence/draft02/courtyard.png",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/evidence/draft02/bedroom-window-camera.png",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/evidence/draft02/fob-board-close.png",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/evidence/draft02/heytea-board-close.png",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/evidence/draft02/aladdins-board-close.png",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:verification/check_party_runtime.py",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/tests/party-runtime.server.luau",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/tests/party-runtime.client.luau",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/evidence/draft02/party-runtime05-raw.json",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/evidence/draft02/party-source-bindings05.json",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/evidence/draft02/party-harness05-sources.json",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/evidence/draft02/device-preview-results.json",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/evidence/draft02/phone-lobby-before-layout.png",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/evidence/draft02/phone-lobby-responsive.png",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/evidence/draft02/tablet-lobby-responsive.png",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/evidence/draft02/runtime-iteration03-raw.json",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/evidence/draft02/bedroom-low-graphics.png",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/evidence/draft02/quad-low-graphics-ground.png",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/evidence/draft02/quad-low-graphics-aerial.png",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/tests/camera-runtime.server.luau",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/evidence/draft02/camera-runtime03-raw.json",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/evidence/draft02/camera-source-bindings03.json",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/evidence/draft02/camera-harness03-sources.json",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/evidence/draft02/independent-live-inventory03.json",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "artifact:place",
+      "status": "PASS",
+      "detail": "File present; format/import correctness is an independent review gate"
+    },
+    {
+      "id": "artifact:studio-colors",
+      "status": "PASS",
+      "detail": {
+        "parts": 4667,
+        "tokens": [
+          "blossom",
+          "brick",
+          "cream",
+          "forest",
+          "golden",
+          "ink",
+          "sage",
+          "wood"
+        ],
+        "approved_texture_exceptions": [
+          {
+            "content_id": "rbxassetid://740989141",
+            "property": "TextureID",
+            "path_prefix": "Workspace.CozyWorld_Draft01.QuadPlanting",
+            "approved_by": "User, September 26, 2026: Keep the detailed community trees as a palette exception",
+            "reason": "Explicit user choice to retain the detailed community blossom trees, including their brown trunk texture beyond the exact eight colors. Applies only to this exact content ID/property under QuadPlanting; native part colors and all other textures remain checked.",
+            "matched_references": 21
+          },
+          {
+            "content_id": "rbxassetid://4668043207",
+            "property": "ColorMap",
+            "path_prefix": "Workspace.CozyWorld_Draft01.QuadPlanting",
+            "approved_by": "User, September 26, 2026: Keep the detailed community trees as a palette exception",
+            "reason": "Explicit user choice to retain the detailed community blossom trees, including their pink foliage color map beyond the exact eight colors. Applies only to this exact content ID/property under QuadPlanting; native part colors and all other textures remain checked.",
+            "matched_references": 21
+          }
+        ],
+        "note": "All authored BasePart colors checked. Explicit approved texture exceptions are reported separately; other color textures still require verified sources. Capture provenance, GUI, materials and actual import require independent review."
+      }
+    },
+    {
+      "id": "artifact:navigation",
+      "status": "PASS",
+      "detail": "File present; format/import correctness is an independent review gate"
+    },
+    {
+      "id": "artifact:console",
+      "status": "PASS",
+      "detail": "File present; format/import correctness is an independent review gate"
+    },
+    {
+      "id": "artifact:views",
+      "status": "PASS",
+      "detail": "File present; format/import correctness is an independent review gate"
+    },
+    {
+      "id": "test:captured-party-behavior",
+      "status": "PASS",
+      "detail": {
+        "exit_code": 0,
+        "log": "verification/runs/MAP-02/20260926T212330Z-66d9e1a6/captured-party-behavior.log",
+        "sha256": "ec923e7db2522fef779ca7b1c23e7768312c67586395de4b84152c32f9aa58a1"
+      }
+    }
+  ],
+  "gates": [
+    {
+      "id": "ticket-match",
+      "reviewer": "independent",
+      "prompt": "All ticket requirements and submitted source files are covered; the assigned object/activity was built, with no substituted scope."
+    },
+    {
+      "id": "shared-scope",
+      "reviewer": "independent",
+      "prompt": "Preserve touch/desktop access, independent third-person cameras, real group participation, one detailed bedroom, six quests and the empty user-authored note. No invented rooms, economy, forced cinematic or guest messages. Verify dependency interfaces and that automated tests exercise the actual ticket behavior."
+    },
+    {
+      "id": "visual-identity",
+      "reviewer": "independent",
+      "prompt": "Compare reference and actual result. Required silhouette, proportions, named features and color placement survive simplification; readability is clear at play scale."
+    },
+    {
+      "id": "roblox-import",
+      "reviewer": "independent",
+      "prompt": "Import this exact revision in Roblox Studio. Record place/model identity, scale, pivot, orientation, materials/textures, collision and console results; test it in context."
+    },
+    {
+      "id": "final-acceptance",
+      "reviewer": "human",
+      "prompt": "The user has reviewed this exact revision and explicitly accepted it as finished. Preserve their actual decision and comments."
+    },
+    {
+      "id": "MAP-02-AC01",
+      "reviewer": "independent",
+      "prompt": "The live model replaces the Draft 01 bare store masses, empty bedroom and birthday/park/perimeter reservations with recognizable decorative compositions and surface detail."
+    },
+    {
+      "id": "MAP-02-AC02",
+      "reviewer": "independent",
+      "prompt": "The Quad preserves the reference's main cross and paired diagonal panels over continuous landscape, with usable arrival/cottage/street/park/courtyard links."
+    },
+    {
+      "id": "MAP-02-AC03",
+      "reviewer": "independent",
+      "prompt": "Exactly one cottage room reflects both bedroom photos, including opposed bed/light and desk/shelf walls and recognizable key personal objects."
+    },
+    {
+      "id": "MAP-02-AC04",
+      "reviewer": "independent",
+      "prompt": "The bedroom retains entry/station clearances, a working front door, low-graphics readability and usable circulation for 4–6 visitors."
+    },
+    {
+      "id": "MAP-02-AC05",
+      "reviewer": "independent",
+      "prompt": "Three stores read FOB, HeyTea and Aladdins north to south; FOB is clearly FOB Poke Bar, and Aladdins refers to the UDistrict Ave restaurant."
+    },
+    {
+      "id": "MAP-02-AC06",
+      "reviewer": "independent",
+      "prompt": "All three shops, sidewalks and crossings are traversable; decorated store identities read from player height."
+    },
+    {
+      "id": "MAP-02-AC07",
+      "reviewer": "independent",
+      "prompt": "The birthday courtyard has finished furniture, decorations, eight usable seats, table settings and cake; both dog-park gates remain clear around new furnishings."
+    },
+    {
+      "id": "MAP-02-AC08",
+      "reviewer": "independent",
+      "prompt": "Initial arrivals use an enclosed decorated lobby with the exact greeting Happy 24th Birthday, Phuong and recognizable favorite-things displays; PCW-17 supplies its runtime evidence."
+    },
+    {
+      "id": "MAP-02-AC09",
+      "reviewer": "independent",
+      "prompt": "Planting, materials, furnishings and decorations create a soft warm stylized world, without prominent unfinished temporary masses, floating objects or intersecting decorations."
+    },
+    {
+      "id": "MAP-02-AC10",
+      "reviewer": "independent",
+      "prompt": "Each authored BasePart has the correct exact palette token/color; imported color textures have actual verified source mappings except the two explicitly approved community-tree textures scoped below; lighting, GUI and material response receive visual review."
+    },
+    {
+      "id": "MAP-02-AC11",
+      "reviewer": "independent",
+      "prompt": "The user's existing whole-world placement is preserved; sources reproduce the new work and the saved Draft 02 place matches the reviewed live revision."
+    },
+    {
+      "id": "MAP-02-AC12",
+      "reviewer": "independent",
+      "prompt": "Independent review uses current Studio evidence, relevant checks, specific defects and verified revisions; actual user fun/visual/final acceptance is preserved as pending until received."
+    },
+    {
+      "id": "MAP-02-scope",
+      "reviewer": "independent",
+      "prompt": "Deliverable: An editable local Draft 02 Roblox place, matching persisted builder/runtime sources, real Studio screenshots/palette capture, console/navigation evidence and independent review. Scope includes arrival/cottage exterior, one bedroom, continuous blossom Quad, FOB Poke Bar, HeyTea, Aladdins, dog park, birthday courtyard and birthday lobby. PCW-17 separately gates lobby runtime behavior.\nLimits/open decisions: This environment and lobby request does not implement the future six quests, shop economy, NPC staff, animated Jasper, cake ceremony or personal birthday note. PCW-04/05/06 explicitly amend historical fair-block/fixed-footprint plans. No external publishing is requested. Exact photographic measurement and branded artwork are unnecessary; recognizable features, coherent finish and playable circulation remain required. An automated check cannot supply human acceptance.\nValidation: ### Approved community-tree texture exception — September 26, 2026\n\nThe user explicitly chose **“Keep the detailed community trees as a palette exception”** when asked about retaining their pink/brown texture colors outside the exact eight-color palette. This is a scoped art decision, not final acceptance of Draft 02.\n\nOnly `rbxassetid://740989141` on `TextureID` and `rbxassetid://4668043207` on `ColorMap`, beneath `Workspace.CozyWorld_Draft01.QuadPlanting`, are exempt from the source-raster exact-color requirement. Captures retain all 42 references and the verifier reports the exception scope and counts. Every native BasePart color, all other imported color textures, GUI/material visual review, device/navigation checks and human fun/final acceptance remain required. The approved palette itself is unchanged.\n\nUse build → check → independent review → user playtest → revise. Bind the three supplied references, relevant builder/runtime sources, independent live Edit-model palette capture, saved place, overview/ground/interior views and console/navigation logs. Review every destination and world continuity, including low settings and inherited visitor-clearance/group-view checks. PCW-17 covers timed entry, early pad, reset/rejoin, touch/desktop and concurrent players. Finalize only when all gates and genuine user acceptance exist."
+    }
+  ],
+  "status": "READY_FOR_REVIEW"
+}

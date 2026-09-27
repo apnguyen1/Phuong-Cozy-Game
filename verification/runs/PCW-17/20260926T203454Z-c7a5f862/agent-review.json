@@ -1,0 +1,221 @@
+{
+  "schema_version": 1,
+  "run_id": "20260926T203454Z-c7a5f862",
+  "report_sha256": "c662b5008818f7edd165e8971a8eea358364683b22166e8b4fe896f4f557708f",
+  "reviewer": "independent-verifier",
+  "reviewer_type": "agent",
+  "decisions": [
+    {
+      "criterion": "ticket-match",
+      "verdict": "pass",
+      "notes": "The assigned decorated welcome room, exact greeting, sixty-second personal countdown, early pad and same-place outdoor entry are implemented; each acceptance item is mapped here. Outstanding rehearsals remain explicit.",
+      "evidence": [
+        "docs/tickets/PCW-17.md",
+        "docs/draft02-independent-review.md"
+      ]
+    },
+    {
+      "criterion": "shared-scope",
+      "verdict": "pending",
+      "notes": "One shared world and per-player server-owned entry preserve the intended scope. No invented note, economy or forced outdoor camera loop. Actual touch controls and two-client manual camera independence remain pending.",
+      "evidence": [
+        "roblox/evidence/draft02/navigation-results.json",
+        "roblox/evidence/draft02/runtime-results.json"
+      ]
+    },
+    {
+      "criterion": "visual-identity",
+      "verdict": "pass",
+      "notes": "Actual Play view clearly shows the exact greeting, countdown, birthday decorations and favorite-things displays. Indoor lighting is coherent, and no personal birthday note has been generated.",
+      "evidence": [
+        "roblox/evidence/draft02/lobby-play.png",
+        "roblox/evidence/draft02/visual-evidence.json"
+      ]
+    },
+    {
+      "criterion": "roblox-import",
+      "verdict": "pass",
+      "notes": "Actual installed lobby sources were parsed and compared; independent final Edit capture has 597 exact-color parts. Real multiplayer timer/state tests and separate early-E Play check ran in this place. Saved checkpoint matches final live revision provenance.",
+      "evidence": [
+        "roblox/evidence/draft02/lobby-studio-colors.json",
+        "roblox/evidence/draft02/runtime-results.json",
+        "roblox/evidence/draft02/navigation-results.json",
+        "roblox/evidence/draft02/save-audit.json",
+        "roblox/evidence/draft02/live-source-check.json",
+        "roblox/evidence/draft02/console.txt"
+      ]
+    },
+    {
+      "criterion": "playability",
+      "verdict": "pending",
+      "notes": "Desktop early E, visible HUD, automatic expiry, physical routes and seat exit pass. The full flow on touch controls remains untested; do not generalize desktop evidence to all target controls.",
+      "evidence": [
+        "roblox/evidence/draft02/navigation-results.json",
+        "roblox/evidence/draft02/runtime-results.json",
+        "roblox/evidence/draft02/lobby-play.png"
+      ]
+    },
+    {
+      "criterion": "replay",
+      "verdict": "pending",
+      "notes": "Actual pre-entry reset, three world resets, late join and disconnected-slot replacement pass. Replacement by a fresh guest is not an observed same-user reconnect; a same-user reconnect demonstration remains pending.",
+      "evidence": [
+        "roblox/evidence/draft02/runtime-results.json"
+      ]
+    },
+    {
+      "criterion": "mixed-device",
+      "verdict": "pending",
+      "notes": "No named phone/tablet device or touch emulation completion evidence exists. Desktop HUD and E input were observed.",
+      "evidence": [
+        "roblox/evidence/draft02/navigation-results.json",
+        "roblox/evidence/draft02/lobby-play.png"
+      ]
+    },
+    {
+      "criterion": "shared-session",
+      "verdict": "pending",
+      "notes": "Three concurrent actual clients demonstrate independent automatic deadlines, late join, distinct slots, disconnect release and fresh replacement. Manual early entry while another client waits, independent orbit and same-user reconnect are not all demonstrated.",
+      "evidence": [
+        "roblox/evidence/draft02/runtime-results.json",
+        "roblox/evidence/draft02/navigation-results.json"
+      ]
+    },
+    {
+      "criterion": "PCW-17-AC01",
+      "verdict": "pass",
+      "notes": "Fresh actual players are placed safely in Lobby before the deadline begins. Actual Play image shows the full readable Happy 24th Birthday, Phuong greeting.",
+      "evidence": [
+        "roblox/evidence/draft02/runtime-results.json",
+        "roblox/evidence/draft02/lobby-play.png"
+      ]
+    },
+    {
+      "criterion": "PCW-17-AC02",
+      "verdict": "pending",
+      "notes": "Decorations/displays and eight native seats exist with a clear central route; a real player sat in one lobby seat and detached at expiry. All eight occupied seats/central circulation have not been rehearsed.",
+      "evidence": [
+        "roblox/evidence/draft02/lobby-play.png",
+        "roblox/evidence/draft02/lobby-studio-colors.json",
+        "roblox/evidence/draft02/runtime-results.json"
+      ]
+    },
+    {
+      "criterion": "PCW-17-AC03",
+      "verdict": "pass",
+      "notes": "Server deadline event is 60 seconds after start; actual initial remaining time is within 55–60. Play HUD shows 40s and source recomputes ceil(deadline-server time). Full measured deadline-event-to-entry duration 60.064 seconds.",
+      "evidence": [
+        "roblox/evidence/draft02/runtime-results.json",
+        "roblox/evidence/draft02/lobby-play.png",
+        "roblox/birthday-lobby.client.luau"
+      ]
+    },
+    {
+      "criterion": "PCW-17-AC04",
+      "verdict": "pass",
+      "notes": "Actual timer expiry places only the expired player at outdoor arrival with no countdown state. Separate manual entry hides HUD and leaves movable Custom-camera character; normal-speed destination walking passes.",
+      "evidence": [
+        "roblox/evidence/draft02/runtime-results.json",
+        "roblox/evidence/draft02/navigation-results.json"
+      ]
+    },
+    {
+      "criterion": "PCW-17-AC05",
+      "verdict": "pass",
+      "notes": "Actual E at the pad enters early and hides HUD. Independent source review confirms server-side alive-character, lobby-region and prompt-distance checks before transition, with no client-supplied destination. Negative spoof/distance inputs were reviewed statically rather than exercised in this engine run.",
+      "evidence": [
+        "roblox/evidence/draft02/navigation-results.json",
+        "roblox/birthday-lobby.server.luau"
+      ]
+    },
+    {
+      "criterion": "PCW-17-AC06",
+      "verdict": "pending",
+      "notes": "Per-player server state and independent automatic expiry are proven; reset/late join leave the waiting deadline unchanged. Early pad was exercised separately on one client, so simultaneous early-entry effect on another actual camera/deadline remains unobserved.",
+      "evidence": [
+        "roblox/evidence/draft02/runtime-results.json",
+        "roblox/evidence/draft02/navigation-results.json"
+      ]
+    },
+    {
+      "criterion": "PCW-17-AC07",
+      "verdict": "pass",
+      "notes": "Corrected per-character readiness starts a new deadline only for the reset lobby player. Actual reset-before-entry scenario and full replacement countdown pass; generation/source guards discard stale character work and the client reuses one named HUD.",
+      "evidence": [
+        "roblox/evidence/draft02/runtime-results.json",
+        "roblox/evidence/draft02/live-source-check.json",
+        "roblox/birthday-lobby.server.luau",
+        "roblox/birthday-lobby.client.luau"
+      ]
+    },
+    {
+      "criterion": "PCW-17-AC08",
+      "verdict": "pass",
+      "notes": "Three actual world resets stay physically near outdoor arrival without a new lobby deadline. Late guest has a separate countdown, disconnected slot is released and a fresh guest reuses it without moving existing world players.",
+      "evidence": [
+        "roblox/evidence/draft02/runtime-results.json"
+      ]
+    },
+    {
+      "criterion": "PCW-17-AC09",
+      "verdict": "pending",
+      "notes": "Actual seated expiry detaches the character and leaves furniture. Idempotent transition guards were reviewed in source, but a simultaneous prompt/expiry race was not deliberately exercised in this engine run.",
+      "evidence": [
+        "roblox/evidence/draft02/runtime-results.json",
+        "roblox/birthday-lobby.server.luau"
+      ]
+    },
+    {
+      "criterion": "PCW-17-AC10",
+      "verdict": "pending",
+      "notes": "Three actual clients plus replacement guest demonstrate presence, late join and distinct slots; allocator handles up to eight available slots by source review. Separate manual cameras, concurrent early entry, same-user reconnect and eight-person placement rehearsal remain pending.",
+      "evidence": [
+        "roblox/evidence/draft02/runtime-results.json",
+        "roblox/evidence/draft02/navigation-results.json",
+        "roblox/birthday-lobby.server.luau"
+      ]
+    },
+    {
+      "criterion": "PCW-17-AC11",
+      "verdict": "pending",
+      "notes": "Desktop countdown and E prompt are observed. Touch readability/input and manual orbit on both control types have not been demonstrated.",
+      "evidence": [
+        "roblox/evidence/draft02/navigation-results.json",
+        "roblox/evidence/draft02/lobby-play.png"
+      ]
+    },
+    {
+      "criterion": "PCW-17-AC12",
+      "verdict": "pass",
+      "notes": "Installed scripts independently parse, match the tested source apart from a trailing insertion CRLF, and keep destination/deadline server-owned. All 15 actual engine scenario checks pass with exact tested file SHA bindings. Single-client changed-flow console query returned no messages; unobserved multiplayer-client logs are not claimed clean.",
+      "evidence": [
+        "roblox/evidence/draft02/runtime-results.json",
+        "roblox/evidence/draft02/live-source-check.json",
+        "roblox/evidence/draft02/console.txt",
+        "verification/check_lobby_runtime.py"
+      ]
+    },
+    {
+      "criterion": "PCW-17-AC13",
+      "verdict": "pass",
+      "notes": "All 597 lobby native token/color pairs pass with zero color textures. UI palette assignments and actual Play appearance were reviewed. Final saved working file/checkpoint hashes match the reviewed place provenance.",
+      "evidence": [
+        "roblox/evidence/draft02/lobby-studio-colors.json",
+        "roblox/evidence/draft02/lobby-play.png",
+        "roblox/evidence/draft02/save-audit.json",
+        "roblox/birthday-lobby.client.luau"
+      ]
+    },
+    {
+      "criterion": "PCW-17-scope",
+      "verdict": "pending",
+      "notes": "Local room-to-world flow and editable saved place meet implementation scope without publishing or invented content. Complete device/group/race/reconnect rehearsals and genuine human clarity/fun/final acceptance remain pending.",
+      "evidence": [
+        "roblox/evidence/draft02/save-audit.json",
+        "roblox/evidence/draft02/navigation-results.json",
+        "roblox/evidence/draft02/runtime-results.json",
+        "docs/draft02-independent-review.md"
+      ]
+    }
+  ]
+}

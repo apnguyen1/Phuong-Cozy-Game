@@ -1,0 +1,195 @@
+{
+  "schema_version": 1,
+  "run_id": "20260926T212330Z-66d9e1a6",
+  "report_sha256": "0c56a5dff3281b2a9b8563712d7a7bf04773f4d64be806785eb18d2370403e5b",
+  "reviewer": "independent-verifier",
+  "reviewer_type": "agent",
+  "decisions": [
+    {
+      "criterion": "ticket-match",
+      "verdict": "pass",
+      "notes": "Current Draft 02 environment and responsive welcome flow match the assigned request, with each acceptance item mapped. Actual eight-player seats, deadlines and six-person routes now have current-source evidence; physical touch, same-user reconnect, hardware experience and genuine user approval remain explicit gaps. Historical fair-block scope is superseded.",
+      "evidence": [
+        "docs/tickets/MAP-02.md",
+        "docs/draft02-independent-review.md",
+        "docs/draft02-revision03.md"
+      ]
+    },
+    {
+      "criterion": "shared-scope",
+      "verdict": "pending",
+      "notes": "One bedroom, server-owned entry and no invented note/economy are preserved. Two current desktop clients rotate independently and eight-player behavior is exercised. Physical touch completion/orbit and human device comfort remain unverified.",
+      "evidence": [
+        "roblox/evidence/draft02/party-runtime05-raw.json",
+        "roblox/evidence/draft02/camera-runtime03-raw.json",
+        "roblox/evidence/draft02/device-preview-results.json"
+      ]
+    },
+    {
+      "criterion": "visual-identity",
+      "verdict": "pass",
+      "notes": "Direct comparison with all three supplied references and actual views confirms paired crossed Quad panels, continuous lawn, opposed bedroom walls and personal features, named furnished stores and birthday decoration. TV/frame intersection is corrected. Exact tree exception is an actual scoped user choice, not final visual acceptance.",
+      "evidence": [
+        "roblox/evidence/draft02/visual-evidence.json",
+        "roblox/evidence/draft02/bedroom-tv-print-final.png",
+        "roblox/evidence/draft02/quad-overview-final.png",
+        "roblox/evidence/draft02/fob-board-close.png",
+        "roblox/evidence/draft02/heytea-board-close.png",
+        "roblox/evidence/draft02/aladdins-board-close.png"
+      ]
+    },
+    {
+      "criterion": "roblox-import",
+      "verdict": "pass",
+      "notes": "Fresh independent Edit capture and full script inventory confirm 4667 authored parts, unchanged world placement and no temporary test helpers/remotes. Active client matches current tested bytes; server/door differ only by trailing CRLF. Both saved copies match current SHA c0d95754...; this provenance check does not parse the binary.",
+      "evidence": [
+        "roblox/evidence/draft02/map-studio-colors.json",
+        "roblox/evidence/draft02/independent-live-inventory03.json",
+        "roblox/evidence/draft02/save-audit.json",
+        "roblox/evidence/draft02/navigation-results.json"
+      ]
+    },
+    {
+      "criterion": "MAP-02-AC01",
+      "verdict": "pass",
+      "notes": "Actual views and source show decorated shops, one furnished bedroom, party courtyard, dog-park amenities and layered perimeter trees replacing bare reservations.",
+      "evidence": [
+        "roblox/evidence/draft02/visual-evidence.json",
+        "roblox/evidence/draft02/quad-overview-final.png",
+        "roblox/evidence/draft02/bedroom-bed-final.png",
+        "roblox/evidence/draft02/bedroom-desk-final.png",
+        "roblox/evidence/draft02/courtyard.png"
+      ]
+    },
+    {
+      "criterion": "MAP-02-AC02",
+      "verdict": "pass",
+      "notes": "Final overhead view matches main cross and two crossed-diagonal panels on continuous lawn. Normal-speed humanoid routes reached cottage, street, courtyard and both dog-park gates.",
+      "evidence": [
+        "roblox/evidence/draft02/quad-overview-final.png",
+        "roblox/evidence/draft02/navigation-results.json"
+      ]
+    },
+    {
+      "criterion": "MAP-02-AC03",
+      "verdict": "pass",
+      "notes": "Exactly one furnished cottage room has opposed bed/light and desk/shelf walls, sage bedding, plushies, ivy lights, closet, TV, print, mirror, cart and Jasper bed. Final TV and print no longer intersect.",
+      "evidence": [
+        "roblox/evidence/draft02/bedroom-bed-final.png",
+        "roblox/evidence/draft02/bedroom-desk-final.png",
+        "roblox/evidence/draft02/bedroom-tv-print-final.png",
+        "roblox/evidence/draft02/bedroom-window-camera.png"
+      ]
+    },
+    {
+      "criterion": "MAP-02-AC04",
+      "verdict": "pass",
+      "notes": "Working front door and single-player route pass. Current party 05 exercises six actual avatars through the doorway/interior and back out at normal speed, with grounded waypoints and health 100; maximum floor-height error 0.224 studs. Independently viewed Level01 bedroom image remains recognizable. This does not claim hardware framerate.",
+      "evidence": [
+        "roblox/evidence/draft02/party-runtime05-raw.json",
+        "roblox/evidence/draft02/bedroom-low-graphics.png",
+        "roblox/evidence/draft02/device-preview-results.json",
+        "roblox/evidence/draft02/navigation-results.json"
+      ]
+    },
+    {
+      "criterion": "MAP-02-AC05",
+      "verdict": "pass",
+      "notes": "North-to-south layout and readable signs identify FOB, HeyTea and Aladdins; FOB includes POKE BAR and bowl details, Aladdins includes gyros/falafel/fries. Store captions render in current close views.",
+      "evidence": [
+        "roblox/evidence/draft02/stores-overview.png",
+        "roblox/evidence/draft02/fob-front.png",
+        "roblox/evidence/draft02/heytea-front.png",
+        "roblox/evidence/draft02/fob-board-close.png",
+        "roblox/evidence/draft02/aladdins-board-close.png"
+      ]
+    },
+    {
+      "criterion": "MAP-02-AC06",
+      "verdict": "pass",
+      "notes": "Real normal-speed avatar routes enter and exit all three shops, sidewalks and connections; store identities are readable in player-height/close captures. HeyTea seating required normal Space exit and then walking resumed.",
+      "evidence": [
+        "roblox/evidence/draft02/navigation-results.json",
+        "roblox/evidence/draft02/fob-front.png",
+        "roblox/evidence/draft02/heytea-front.png",
+        "roblox/evidence/draft02/aladdins-play.png"
+      ]
+    },
+    {
+      "criterion": "MAP-02-AC07",
+      "verdict": "pass",
+      "notes": "Furnished courtyard and eight settings/cake are visible. Current party 05 records eight distinct actual players simultaneously occupying eight distinct courtyard seats. Separate physical routes pass both dog-park gates.",
+      "evidence": [
+        "roblox/evidence/draft02/party-runtime05-raw.json",
+        "roblox/evidence/draft02/courtyard.png",
+        "roblox/evidence/draft02/navigation-results.json"
+      ]
+    },
+    {
+      "criterion": "MAP-02-AC08",
+      "verdict": "pass",
+      "notes": "Current lifecycle run places fresh clients safely in the separate decorated lobby. Exact greeting, favorite-things displays and countdown are readable, including responsive phone/tablet emulation. PCW-17 retains touch-input and reconnect limits.",
+      "evidence": [
+        "roblox/evidence/draft02/runtime-results.json",
+        "roblox/evidence/draft02/phone-lobby-responsive.png",
+        "roblox/evidence/draft02/tablet-lobby-responsive.png"
+      ]
+    },
+    {
+      "criterion": "MAP-02-AC09",
+      "verdict": "pass",
+      "notes": "Warm stylized materials and furnished compositions are evident. Initial pillow/floor issues and TV/frame intersection were corrected and recaptured; store caption rendering confirmed. No prominent temporary masses or intersections remain in reviewed views.",
+      "evidence": [
+        "roblox/evidence/draft02/visual-evidence.json",
+        "roblox/evidence/draft02/bedroom-tv-print-final.png",
+        "roblox/evidence/draft02/courtyard.png",
+        "roblox/evidence/draft02/quad-overview-final.png"
+      ]
+    },
+    {
+      "criterion": "MAP-02-AC10",
+      "verdict": "pass",
+      "notes": "Fresh final capture checks every one of 4,667 native part colors with zero duplicate paths. Only two exact content-ID/property/QuadPlanting scopes carry actual user-approved texture exceptions,21 references each. Lobby 597 parts have no color textures; responsive UI remains palette-based and visually reviewed.",
+      "evidence": [
+        "roblox/evidence/draft02/map-studio-colors.json",
+        "roblox/evidence/draft02/lobby-studio-colors.json",
+        "verification/contracts/MAP-02-draft02.json",
+        "roblox/evidence/draft02/phone-lobby-responsive.png"
+      ]
+    },
+    {
+      "criterion": "MAP-02-AC11",
+      "verdict": "pass",
+      "notes": "Original cottage-floor anchor remains(-9,0.0200004578,-148), preserving user world translation. Current source and independent live script inventory agree, with only documented trailing CRLF on server/door. Both saved copies match 1,624,669 bytes/SHA c0d95754..., saved production-only before temporary tests.",
+      "evidence": [
+        "roblox/evidence/draft02/independent-live-inventory03.json",
+        "roblox/evidence/draft02/save-audit.json",
+        "roblox/evidence/draft02/live-source-check.json"
+      ]
+    },
+    {
+      "criterion": "MAP-02-AC12",
+      "verdict": "pass",
+      "notes": "Independent review preserves failed/partial raw runs, identifies real visual/runtime/HUD defects and verifies corrections. Third run links prior reports without resetting budget, checks exact current sources and recaptures live palette. User tree choice remains separate from human fun/visual/final acceptance.",
+      "evidence": [
+        "docs/draft02-independent-review.md",
+        "docs/draft02-revision03.md",
+        "roblox/evidence/draft02/runtime-results.json",
+        "roblox/evidence/draft02/party-runtime05-raw.json",
+        "roblox/evidence/draft02/camera-runtime03-raw.json"
+      ]
+    },
+    {
+      "criterion": "MAP-02-scope",
+      "verdict": "pending",
+      "notes": "Editable decorated environment and current runtime are saved, with no excluded quests/economy/personal note. Group seats/circulation and emulated UI/Level01 readability now have evidence. Physical touch, actual low-end hardware experience, same-user reconnect and human fun/visual/final acceptance remain pending.",
+      "evidence": [
+        "roblox/evidence/draft02/save-audit.json",
+        "roblox/evidence/draft02/party-runtime05-raw.json",
+        "roblox/evidence/draft02/camera-runtime03-raw.json",
+        "roblox/evidence/draft02/device-preview-results.json",
+        "docs/draft02-independent-review.md"
+      ]
+    }
+  ]
+}

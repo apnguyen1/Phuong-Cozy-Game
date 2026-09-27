@@ -1,0 +1,241 @@
+{
+  "schema_version": 1,
+  "run_id": "20260926T212331Z-c844bf5e",
+  "report_sha256": "edb28add919c32033c9e00716ae3da29daa3ab7eec00c72f5e7dd004cbe87c8e",
+  "reviewer": "independent-verifier",
+  "reviewer_type": "agent",
+  "decisions": [
+    {
+      "criterion": "ticket-match",
+      "verdict": "pass",
+      "notes": "Current decorated welcome room, exact greeting, personal 60-second countdown, early pad and same-place world entry match the assigned request. All acceptance criteria are mapped to current evidence; physical touch and same-user reconnect remain unverified.",
+      "evidence": [
+        "docs/tickets/PCW-17.md",
+        "docs/draft02-independent-review.md",
+        "docs/draft02-revision03.md"
+      ]
+    },
+    {
+      "criterion": "shared-scope",
+      "verdict": "pending",
+      "notes": "Current server-owned personal entry and shared world preserve scope. Two desktop clients independently rotate in bound camera 03. Physical touch activation/movement/orbit remains unproven; emulated readability alone does not complete control validation.",
+      "evidence": [
+        "roblox/evidence/draft02/party-runtime05-raw.json",
+        "roblox/evidence/draft02/camera-runtime03-raw.json",
+        "roblox/evidence/draft02/device-preview-results.json"
+      ]
+    },
+    {
+      "criterion": "visual-identity",
+      "verdict": "pass",
+      "notes": "Exact greeting, favorite-things displays and decorations are readable in actual Play. Phone landscape HUD overlap was reproduced and corrected; current phone/tablet screenshots show separate countdown/greeting/control regions. No personal note was generated.",
+      "evidence": [
+        "roblox/evidence/draft02/lobby-play.png",
+        "roblox/evidence/draft02/phone-lobby-responsive.png",
+        "roblox/evidence/draft02/tablet-lobby-responsive.png"
+      ]
+    },
+    {
+      "criterion": "roblox-import",
+      "verdict": "pass",
+      "notes": "Fresh independent capture verifies 597 exact-color parts and no color textures. Active client matches tested source exactly; server differs only by trailing CRLF. Current actual 15 lifecycle and 9 party checks pass, with separate desktop camera evidence. Helpers/remotes absent and both saved copies match c0d95754... provenance.",
+      "evidence": [
+        "roblox/evidence/draft02/lobby-studio-colors.json",
+        "roblox/evidence/draft02/independent-live-inventory03.json",
+        "roblox/evidence/draft02/save-audit.json",
+        "roblox/evidence/draft02/runtime-results.json",
+        "roblox/evidence/draft02/party-runtime05-raw.json",
+        "roblox/evidence/draft02/camera-runtime03-raw.json"
+      ]
+    },
+    {
+      "criterion": "playability",
+      "verdict": "pending",
+      "notes": "Desktop E, visible countdown, unshortened expiry, eight seats and six-person physical circulation pass. Current engine prompt API tests are explicitly programmatic. Emulated touch prompt is visible but attempted tap/hold did not demonstrate entry; full physical touch flow remains unverified.",
+      "evidence": [
+        "roblox/evidence/draft02/navigation-results.json",
+        "roblox/evidence/draft02/runtime-results.json",
+        "roblox/evidence/draft02/party-runtime05-raw.json",
+        "roblox/evidence/draft02/device-preview-results.json"
+      ]
+    },
+    {
+      "criterion": "replay",
+      "verdict": "pending",
+      "notes": "Current-source actual tests pass pre-entry reset, three world resets, late join, disconnected-slot release and replacement guest. Same-user reconnect is not supported by this new-ID test setup and remains unobserved; fresh replacement is not mislabeled reconnect.",
+      "evidence": [
+        "roblox/evidence/draft02/runtime-results.json"
+      ]
+    },
+    {
+      "criterion": "mixed-device",
+      "verdict": "pending",
+      "notes": "Named iPhone 7 landscape 666\u00d7374 and iPad 10th-generation 1179\u00d7819 previews confirm responsive bounds and readable text clear of controls. Actual touch completion/movement/orbit and physical-device performance remain pending.",
+      "evidence": [
+        "roblox/evidence/draft02/device-preview-results.json",
+        "roblox/evidence/draft02/phone-lobby-responsive.png",
+        "roblox/evidence/draft02/tablet-lobby-responsive.png"
+      ]
+    },
+    {
+      "criterion": "shared-session",
+      "verdict": "pending",
+      "notes": "Eight actual clients use distinct slots/seats; early entry leaves seven deadlines/HUD/Custom own-camera views unchanged. Current deadline race enters once. Separately bound two-client desktop orbit passes; same-user reconnect and physical mixed-device session remain pending.",
+      "evidence": [
+        "roblox/evidence/draft02/runtime-results.json",
+        "roblox/evidence/draft02/party-runtime05-raw.json",
+        "roblox/evidence/draft02/camera-runtime03-raw.json",
+        "roblox/evidence/draft02/device-preview-results.json"
+      ]
+    },
+    {
+      "criterion": "PCW-17-AC01",
+      "verdict": "pass",
+      "notes": "Current actual clients spawn safely inside Lobby before their personal deadline starts. Exact Happy 24th Birthday, Phuong wording is readable in desktop and revised emulated phone/tablet views.",
+      "evidence": [
+        "roblox/evidence/draft02/runtime-results.json",
+        "roblox/evidence/draft02/lobby-play.png",
+        "roblox/evidence/draft02/phone-lobby-responsive.png",
+        "roblox/evidence/draft02/tablet-lobby-responsive.png"
+      ]
+    },
+    {
+      "criterion": "PCW-17-AC02",
+      "verdict": "pass",
+      "notes": "Room is decorated with recognizable favorite-things displays and a clear central route. Current party 05 records eight distinct actual Seat occupants simultaneously; early portal approach/entry and earlier real walking establish usable central access.",
+      "evidence": [
+        "roblox/evidence/draft02/party-runtime05-raw.json",
+        "roblox/evidence/draft02/lobby-play.png",
+        "roblox/evidence/draft02/navigation-results.json"
+      ]
+    },
+    {
+      "criterion": "PCW-17-AC03",
+      "verdict": "pass",
+      "notes": "Current server deadline interval remains 60 seconds. Full measured deadline-publication-to-World interval 60.167 seconds; actual HUD shows decreasing seconds, and responsive changes only alter layout. Initial remaining time is within 55\u201360 seconds.",
+      "evidence": [
+        "roblox/evidence/draft02/runtime-results.json",
+        "roblox/evidence/draft02/phone-lobby-responsive.png",
+        "roblox/birthday-lobby.client.luau"
+      ]
+    },
+    {
+      "criterion": "PCW-17-AC04",
+      "verdict": "pass",
+      "notes": "Current actual expiry relocates only the expired client, removes deadline/HUD state and leaves a usable outdoor character. Current party snapshots and six-person normal-speed walking additionally confirm world movement.",
+      "evidence": [
+        "roblox/evidence/draft02/runtime-results.json",
+        "roblox/evidence/draft02/party-runtime05-raw.json",
+        "roblox/evidence/draft02/navigation-results.json"
+      ]
+    },
+    {
+      "criterion": "PCW-17-AC05",
+      "verdict": "pass",
+      "notes": "Actual desktop E and current engine prompt API both enter early and hide HUD. Current party 05 verifies observed prompt/World events 53.855 seconds before deadline. Server source validates live character, room region and distance; invalid spoof/distance guards were statically reviewed, not dynamically exercised.",
+      "evidence": [
+        "roblox/evidence/draft02/party-runtime05-raw.json",
+        "roblox/evidence/draft02/navigation-results.json",
+        "roblox/birthday-lobby.server.luau"
+      ]
+    },
+    {
+      "criterion": "PCW-17-AC06",
+      "verdict": "pass",
+      "notes": "Current eight-client party 05 observes one accepted early prompt and World transition while the other seven retain exactly their deadlines, visible HUD, own Custom-camera subjects and unchanged view vectors. Separate current camera 03 demonstrates actual desktop rotation with B unchanged until its own input.",
+      "evidence": [
+        "roblox/evidence/draft02/party-runtime05-raw.json",
+        "roblox/evidence/draft02/camera-runtime03-raw.json"
+      ]
+    },
+    {
+      "criterion": "PCW-17-AC07",
+      "verdict": "pass",
+      "notes": "Corrected per-character readiness starts a new deadline only for the reset lobby player. Actual reset-before-entry scenario and full replacement countdown pass; generation/source guards discard stale character work and the client reuses one named HUD.",
+      "evidence": [
+        "roblox/evidence/draft02/runtime-results.json",
+        "roblox/evidence/draft02/live-source-check.json",
+        "roblox/birthday-lobby.server.luau",
+        "roblox/birthday-lobby.client.luau"
+      ]
+    },
+    {
+      "criterion": "PCW-17-AC08",
+      "verdict": "pass",
+      "notes": "Three actual world resets stay physically near outdoor arrival without a new lobby deadline. Late guest has a separate countdown, disconnected slot is released and a fresh guest reuses it without moving existing world players.",
+      "evidence": [
+        "roblox/evidence/draft02/runtime-results.json"
+      ]
+    },
+    {
+      "criterion": "PCW-17-AC09",
+      "verdict": "pass",
+      "notes": "Current lifecycle run verifies seated expiry releases the character and leaves furniture. Party05 deliberately begins an engine prompt hold before the actual 60-second deadline, records accepted prompt 0.0735 seconds before expiry, repeats holds across it and observes exactly one World transition.",
+      "evidence": [
+        "roblox/evidence/draft02/runtime-results.json",
+        "roblox/evidence/draft02/party-runtime05-raw.json"
+      ]
+    },
+    {
+      "criterion": "PCW-17-AC10",
+      "verdict": "pending",
+      "notes": "Current actual eight-player slots/seats, separate deadline/early behavior, late join, fresh replacement and separate two-client desktop rotation pass. Same-account reconnect remains unobserved; Studio AddPlayers creates fresh IDs. No claim that party 05 unsupported post-seating orbit passed.",
+      "evidence": [
+        "roblox/evidence/draft02/runtime-results.json",
+        "roblox/evidence/draft02/party-runtime05-raw.json",
+        "roblox/evidence/draft02/camera-runtime03-raw.json"
+      ]
+    },
+    {
+      "criterion": "PCW-17-AC11",
+      "verdict": "pending",
+      "notes": "Desktop input and separately observed current desktop orbit pass. Phone/tablet emulation verifies responsive countdown and visible touch prompt with no visible control overlap. Successful touch pad activation/movement/orbit and physical control comfort remain pending.",
+      "evidence": [
+        "roblox/evidence/draft02/navigation-results.json",
+        "roblox/evidence/draft02/camera-runtime03-raw.json",
+        "roblox/evidence/draft02/device-preview-results.json",
+        "roblox/evidence/draft02/phone-lobby-responsive.png",
+        "roblox/evidence/draft02/tablet-lobby-responsive.png"
+      ]
+    },
+    {
+      "criterion": "PCW-17-AC12",
+      "verdict": "pass",
+      "notes": "Installed current client matches tested bytes exactly; server only has documented trailing CRLF. Current actual 15 lifecycle scenarios and 9 named group scenarios validate server-owned behavior. No production exceptions appear in those packets; helper input-mode failures are preserved separately and resolved only for focused desktop camera 03. Earlier single-client console query was empty; all multiplayer logs are not claimed inspected.",
+      "evidence": [
+        "roblox/evidence/draft02/runtime-results.json",
+        "roblox/evidence/draft02/party-runtime05-raw.json",
+        "roblox/evidence/draft02/camera-runtime03-raw.json",
+        "roblox/evidence/draft02/independent-live-inventory03.json",
+        "roblox/evidence/draft02/console.txt",
+        "verification/check_lobby_runtime.py",
+        "verification/check_party_runtime.py"
+      ]
+    },
+    {
+      "criterion": "PCW-17-AC13",
+      "verdict": "pass",
+      "notes": "Fresh live 597-part lobby palette capture has no exceptions/textures. Existing client responsive layout retains approved palette assignments and reviewed readable output. Production-only checkpoint and working place independently match c0d95754... current source/save provenance.",
+      "evidence": [
+        "roblox/evidence/draft02/lobby-studio-colors.json",
+        "roblox/evidence/draft02/phone-lobby-responsive.png",
+        "roblox/evidence/draft02/save-audit.json",
+        "roblox/evidence/draft02/independent-live-inventory03.json",
+        "roblox/birthday-lobby.client.luau"
+      ]
+    },
+    {
+      "criterion": "PCW-17-scope",
+      "verdict": "pending",
+      "notes": "Local editable room-to-world flow is saved. Eight-person behavior, grounded six-person circulation, desktop camera and emulated layout checks now exist. Physical touch completion, same-user reconnect, real hardware experience and actual human clarity/fun/exact-revision acceptance remain pending.",
+      "evidence": [
+        "roblox/evidence/draft02/save-audit.json",
+        "roblox/evidence/draft02/runtime-results.json",
+        "roblox/evidence/draft02/party-runtime05-raw.json",
+        "roblox/evidence/draft02/camera-runtime03-raw.json",
+        "roblox/evidence/draft02/device-preview-results.json",
+        "docs/draft02-independent-review.md"
+      ]
+    }
+  ]
+}

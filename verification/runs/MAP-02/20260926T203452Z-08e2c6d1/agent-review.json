@@ -1,0 +1,188 @@
+{
+  "schema_version": 1,
+  "run_id": "20260926T203452Z-08e2c6d1",
+  "report_sha256": "d7be0fce4f2219b1a51a70f0e221838019517e8a75f18c4f0220048a75a3fd74",
+  "reviewer": "independent-verifier",
+  "reviewer_type": "agent",
+  "decisions": [
+    {
+      "criterion": "ticket-match",
+      "verdict": "pass",
+      "notes": "Requested environment and lobby are built; all twelve acceptance items are mapped in this review. Historical fair-block scope is explicitly superseded; incomplete device/group validation remains pending in its own gates.",
+      "evidence": [
+        "docs/tickets/MAP-02.md",
+        "docs/draft02-independent-review.md",
+        "docs/draft02-revision02.md"
+      ]
+    },
+    {
+      "criterion": "shared-scope",
+      "verdict": "pending",
+      "notes": "One bedroom, no invented note/economy, and server-owned per-player entry are preserved. Touch access and independent manual cameras still need actual device/two-client evidence.",
+      "evidence": [
+        "roblox/evidence/draft02/navigation-results.json",
+        "roblox/evidence/draft02/runtime-results.json"
+      ]
+    },
+    {
+      "criterion": "visual-identity",
+      "verdict": "pass",
+      "notes": "Direct comparison with all three supplied references and actual views confirms paired crossed Quad panels, continuous lawn, opposed bedroom walls and personal features, named furnished stores and birthday decoration. TV/frame intersection is corrected. Exact tree exception is an actual scoped user choice, not final visual acceptance.",
+      "evidence": [
+        "roblox/evidence/draft02/visual-evidence.json",
+        "roblox/evidence/draft02/bedroom-tv-print-final.png",
+        "roblox/evidence/draft02/quad-overview-final.png",
+        "roblox/evidence/draft02/fob-board-close.png",
+        "roblox/evidence/draft02/heytea-board-close.png",
+        "roblox/evidence/draft02/aladdins-board-close.png"
+      ]
+    },
+    {
+      "criterion": "roblox-import",
+      "verdict": "pass",
+      "notes": "Independent final Edit capture confirms live authored map identity/materials/collisions; real Play routes and console query cover the changed environment in context. Working place and checkpoint match SHA17f3dc3c..., with saved runtime content matching tested source except one trailing CRLF. Device/performance rehearsals remain separate.",
+      "evidence": [
+        "roblox/evidence/draft02/map-studio-colors.json",
+        "roblox/evidence/draft02/navigation-results.json",
+        "roblox/evidence/draft02/console.txt",
+        "roblox/evidence/draft02/save-audit.json",
+        "roblox/evidence/draft02/live-source-check.json"
+      ]
+    },
+    {
+      "criterion": "MAP-02-AC01",
+      "verdict": "pass",
+      "notes": "Actual views and source show decorated shops, one furnished bedroom, party courtyard, dog-park amenities and layered perimeter trees replacing bare reservations.",
+      "evidence": [
+        "roblox/evidence/draft02/visual-evidence.json",
+        "roblox/evidence/draft02/quad-overview-final.png",
+        "roblox/evidence/draft02/bedroom-bed-final.png",
+        "roblox/evidence/draft02/bedroom-desk-final.png",
+        "roblox/evidence/draft02/courtyard.png"
+      ]
+    },
+    {
+      "criterion": "MAP-02-AC02",
+      "verdict": "pass",
+      "notes": "Final overhead view matches main cross and two crossed-diagonal panels on continuous lawn. Normal-speed humanoid routes reached cottage, street, courtyard and both dog-park gates.",
+      "evidence": [
+        "roblox/evidence/draft02/quad-overview-final.png",
+        "roblox/evidence/draft02/navigation-results.json"
+      ]
+    },
+    {
+      "criterion": "MAP-02-AC03",
+      "verdict": "pass",
+      "notes": "Exactly one furnished cottage room has opposed bed/light and desk/shelf walls, sage bedding, plushies, ivy lights, closet, TV, print, mirror, cart and Jasper bed. Final TV and print no longer intersect.",
+      "evidence": [
+        "roblox/evidence/draft02/bedroom-bed-final.png",
+        "roblox/evidence/draft02/bedroom-desk-final.png",
+        "roblox/evidence/draft02/bedroom-tv-print-final.png",
+        "roblox/evidence/draft02/bedroom-window-camera.png"
+      ]
+    },
+    {
+      "criterion": "MAP-02-AC04",
+      "verdict": "pending",
+      "notes": "Front door E and single-player bedroom entry/east loop pass. Low-graphics readability and circulation with four to six actual visitors have not been demonstrated.",
+      "evidence": [
+        "roblox/evidence/draft02/navigation-results.json"
+      ]
+    },
+    {
+      "criterion": "MAP-02-AC05",
+      "verdict": "pass",
+      "notes": "North-to-south layout and readable signs identify FOB, HeyTea and Aladdins; FOB includes POKE BAR and bowl details, Aladdins includes gyros/falafel/fries. Store captions render in current close views.",
+      "evidence": [
+        "roblox/evidence/draft02/stores-overview.png",
+        "roblox/evidence/draft02/fob-front.png",
+        "roblox/evidence/draft02/heytea-front.png",
+        "roblox/evidence/draft02/fob-board-close.png",
+        "roblox/evidence/draft02/aladdins-board-close.png"
+      ]
+    },
+    {
+      "criterion": "MAP-02-AC06",
+      "verdict": "pass",
+      "notes": "Real normal-speed avatar routes enter and exit all three shops, sidewalks and connections; store identities are readable in player-height/close captures. HeyTea seating required normal Space exit and then walking resumed.",
+      "evidence": [
+        "roblox/evidence/draft02/navigation-results.json",
+        "roblox/evidence/draft02/fob-front.png",
+        "roblox/evidence/draft02/heytea-front.png",
+        "roblox/evidence/draft02/aladdins-play.png"
+      ]
+    },
+    {
+      "criterion": "MAP-02-AC07",
+      "verdict": "pending",
+      "notes": "Courtyard furnishings, eight chairs/settings and cake are visible; one actual chair and both park gates passed. Simultaneous usability of all eight courtyard seats is untested.",
+      "evidence": [
+        "roblox/evidence/draft02/courtyard.png",
+        "roblox/evidence/draft02/navigation-results.json"
+      ]
+    },
+    {
+      "criterion": "MAP-02-AC08",
+      "verdict": "pass",
+      "notes": "Fresh actual clients first appear in the separate enclosed birthday lobby. The exact greeting, favorite-things displays and visible countdown are readable in Play; PCW-17 records behavioral and remaining validation gates.",
+      "evidence": [
+        "roblox/evidence/draft02/lobby-play.png",
+        "roblox/evidence/draft02/runtime-results.json"
+      ]
+    },
+    {
+      "criterion": "MAP-02-AC09",
+      "verdict": "pass",
+      "notes": "Warm stylized materials and furnished compositions are evident. Initial pillow/floor issues and TV/frame intersection were corrected and recaptured; store caption rendering confirmed. No prominent temporary masses or intersections remain in reviewed views.",
+      "evidence": [
+        "roblox/evidence/draft02/visual-evidence.json",
+        "roblox/evidence/draft02/bedroom-tv-print-final.png",
+        "roblox/evidence/draft02/courtyard.png",
+        "roblox/evidence/draft02/quad-overview-final.png"
+      ]
+    },
+    {
+      "criterion": "MAP-02-AC10",
+      "verdict": "pass",
+      "notes": "Independent final capture verifies all 4,667 native colors with zero duplicate paths. Only two exact content-ID/property/path scopes are user-approved texture exceptions, 21 occurrences each. GUI colors, material response and lighting received source/visual review; no broad exemption was introduced.",
+      "evidence": [
+        "roblox/evidence/draft02/map-studio-colors.json",
+        "roblox/evidence/draft02/lobby-studio-colors.json",
+        "roblox/evidence/draft02/lobby-play.png",
+        "verification/contracts/MAP-02-draft02.json",
+        "docs/tickets/MAP-02.md"
+      ]
+    },
+    {
+      "criterion": "MAP-02-AC11",
+      "verdict": "pass",
+      "notes": "Existing whole-world translation is retained by the original floor anchor. Current production inputs preserve source reproduction, installed runtime content is bound, and both saved copies independently match the final checkpoint hash.",
+      "evidence": [
+        "roblox/evidence/draft02/live-source-check.json",
+        "roblox/evidence/draft02/save-audit.json",
+        "roblox/evidence/draft02/visual-evidence.json"
+      ]
+    },
+    {
+      "criterion": "MAP-02-AC12",
+      "verdict": "pass",
+      "notes": "Independent review preserved the failed first run, identified concrete visual/runtime defects, rechecked corrections, captured live colors and linked iteration02. Human fun, visual and final acceptance remain pending; user tree choice is not acceptance.",
+      "evidence": [
+        "docs/draft02-independent-review.md",
+        "docs/draft02-revision02.md",
+        "verification/runs/MAP-02/20260926T200503Z-1f754b59/report.json",
+        "verification/runs/PCW-17/20260926T200504Z-eab81a56/report.json"
+      ]
+    },
+    {
+      "criterion": "MAP-02-scope",
+      "verdict": "pending",
+      "notes": "The requested editable environment is saved and no excluded quests/economy/personal note were invented. Full validation still requires device, group-clearance and actual user playtest/acceptance evidence.",
+      "evidence": [
+        "roblox/evidence/draft02/save-audit.json",
+        "roblox/evidence/draft02/navigation-results.json",
+        "docs/draft02-independent-review.md"
+      ]
+    }
+  ]
+}

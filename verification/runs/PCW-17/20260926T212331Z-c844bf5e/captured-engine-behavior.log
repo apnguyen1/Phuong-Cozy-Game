@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "mode": "Validate existing real engine evidence; does not rerun Roblox",
+  "evidence": "roblox/evidence/draft02/runtime-results.json",
+  "checked_scenarios": 15,
+  "peak_actual_players": 3,
+  "initial_snapshot_to_expiry_seconds": 59.83,
+  "full_timer_event_duration_seconds": 60.167,
+  "expiry_delta_from_initial_deadline": 0.2,
+  "source_bindings_verified": [
+    "roblox/birthday-lobby.server.luau",
+    "roblox/birthday-lobby.client.luau",
+    "roblox/tests/lobby-runtime-check.luau"
+  ]
+}
