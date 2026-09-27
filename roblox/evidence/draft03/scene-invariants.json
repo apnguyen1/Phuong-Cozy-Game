@@ -1,0 +1,109 @@
+{
+  "method": "Independent final Edit capture after Play; exact captured original-object/source comparison and recomputed conservative XZ radius clearance from live CFrames/sizes/route metadata. No gameplay rerun.",
+  "captured_original_objects": 7124,
+  "captured_runtime_sources": 8,
+  "original_scene_equal": true,
+  "runtime_sources_equal": true,
+  "new_parts": 618,
+  "new_non_part_instances": 602,
+  "new_textures": 0,
+  "temporary_helpers_or_remotes": false,
+  "home_offset": [
+    19,
+    -0.09999954223632812,
+    -40
+  ],
+  "route_count_with_arrival_continuation": 21,
+  "minimum_route_border_gap": 0.8187272450772127,
+  "minimum_gap_part": "Workspace.CozyWorld_Draft01.VisualPolish03.QuadSittingGardens.ReadingIsland2.Mulch",
+  "minimum_gap_route": "NorthDiagonalA",
+  "required_route_border_gap": 0.55,
+  "route_violations": [],
+  "capture_bindings": {
+    "scene-baseline.json": "370de9d7543f57f46d1472b5c7c1dab5383cfa9d1fc4eaabc9ec54717f621ddd",
+    "scene-current-independent.json": "bd714cdbe7a5f9a2ffa1f12ccf415be6221197b7ca445c6b355cce5cca3d4cb1",
+    "runtime-baseline.json": "5113c4bacf852a2da1cb410deeb1f79d1c0cc298c459aae32a0e986769864c53",
+    "runtime-current-independent.json": "9decf6a776388ef3e661382a2cb880515f410cd44ec7466046ffebb737b12abe",
+    "polish-studio-colors.json": "f66e80815b973632e60d885ff2ab1ec174f1164cba15281684827f9a5d5f93a8"
+  },
+  "protected_zones": [
+    {
+      "name": "CottageDoorApproach",
+      "x": [
+        -7,
+        5
+      ],
+      "z": [
+        -126,
+        -106
+      ]
+    },
+    {
+      "name": "ParkUpperGate",
+      "x": [
+        87,
+        108
+      ],
+      "z": [
+        -137,
+        -127
+      ]
+    },
+    {
+      "name": "ParkLowerGate",
+      "x": [
+        87,
+        108
+      ],
+      "z": [
+        -97,
+        -87
+      ]
+    },
+    {
+      "name": "ParkFetchCenter",
+      "x": [
+        108,
+        164
+      ],
+      "z": [
+        -161,
+        -102
+      ]
+    },
+    {
+      "name": "FOBDoorApproach",
+      "x": [
+        -135.14999389648438,
+        -115
+      ],
+      "z": [
+        -123.5,
+        -114.5
+      ]
+    },
+    {
+      "name": "HeyTeaDoorApproach",
+      "x": [
+        -135.14999389648438,
+        -115
+      ],
+      "z": [
+        -27.5,
+        -18.5
+      ]
+    },
+    {
+      "name": "AladdinsDoorApproach",
+      "x": [
+        -135.14999389648438,
+        -115
+      ],
+      "z": [
+        68.5,
+        77.5
+      ]
+    }
+  ],
+  "protected_zone_violations": []
+}

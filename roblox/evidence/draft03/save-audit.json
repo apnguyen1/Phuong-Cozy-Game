@@ -1,0 +1,16 @@
+{
+  "saved_at": "2026-09-27T18:00:27.942132+00:00",
+  "method": "Roblox Studio Edit local Ctrl+S via Computer Use, then byte-for-byte copy to numbered Draft03 checkpoint",
+  "working": "roblox/phuong-cozy-game.rbxl",
+  "checkpoint": "roblox/Phuong-Cozy-World-Draft03.rbxl",
+  "bytes": 1648676,
+  "sha256": "3e6d5fdbe8e0026a7c9367ebddbb6bf828b36cbce0770c9a2820e5644a541d66",
+  "working_equals_checkpoint": true,
+  "builder_sha256": "26d7943b4a44196ad76bd6ce371c5a2d6003cfa5af8e27f5a654a654736edef3",
+  "draft_version": "03",
+  "new_native_parts": 618,
+  "prior_main_commit": "f0fc758",
+  "draft02_sha256": "c0d957546b23a58aa99337492edfe08fb383501f3e6d8d58ddab1b8063d3a418",
+  "publishing": "Not published to Roblox",
+  "limits": "Saved binary binding does not certify physical-device performance or user acceptance."
+}

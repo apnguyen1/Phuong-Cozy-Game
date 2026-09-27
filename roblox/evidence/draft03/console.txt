@@ -1,0 +1,2 @@
+Studio get_console_output after five Draft03 walk routes returned an empty log (no reported messages).
+

@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "id": "MAP-03",
+  "title": "MAP-03 — Draft 03 garden detail and environment polish",
+  "intent": "Make the approved neighborhood feel more finished through restrained native garden and facade detail while preserving its layout and interactions.",
+  "kind": "model",
+  "stage": "production",
+  "target": "roblox",
+  "status": "approved",
+  "approved_by": "User, September 27, 2026: continue with the 3rd revision; selected More environment detail and visual polish. This authorizes work, not acceptance of the new revision.",
+  "max_iterations": 3,
+  "sources": [
+    "docs/tickets/MAP-03.md",
+    "docs/draft02-user-handoff.md"
+  ],
+  "inputs": [
+    "roblox/build-polish03.luau",
+    "roblox/build-draft01.luau",
+    "roblox/build-bedroom02.luau",
+    "roblox/build-quad02.luau",
+    "roblox/build-neighborhood02.luau",
+    "roblox/build-lobby02.luau",
+    "roblox/finalize-draft02.luau",
+    "roblox/birthday-lobby.server.luau",
+    "roblox/birthday-lobby.client.luau",
+    "roblox/draft-door.server.luau",
+    "roblox/evidence/draft03/save-audit.json",
+    "roblox/evidence/draft03/scene-invariants.json",
+    "verification/check_polish03.py",
+    "roblox/Phuong-Cozy-World-Draft02.rbxl",
+    "roblox/phuong-cozy-game.rbxl",
+    "verification/roblox/capture-polish03.luau",
+    "verification/roblox/capture-preserved03.luau",
+    "roblox/evidence/draft03/scene-baseline.json",
+    "roblox/evidence/draft03/runtime-baseline.json",
+    "roblox/evidence/draft03/scene-current-independent.json",
+    "roblox/evidence/draft03/runtime-current-independent.json",
+    "roblox/tests/polish03-walk-client.luau",
+    "roblox/capture-invariants03.luau",
+    "roblox/evidence/draft03/arrival-before.png",
+    "roblox/evidence/draft03/arrival-after.png",
+    "roblox/evidence/draft03/house-before.png",
+    "roblox/evidence/draft03/house-after.png",
+    "roblox/evidence/draft03/park-before.png",
+    "roblox/evidence/draft03/park-after.png",
+    "roblox/evidence/draft03/street-before.png",
+    "roblox/evidence/draft03/street-after.png",
+    "roblox/evidence/draft03/window-detail.png",
+    "roblox/evidence/draft03/park-detail.png",
+    "roblox/evidence/draft03/shop-detail.png",
+    "roblox/evidence/draft03/arrival-player.png",
+    "roblox/evidence/draft03/low-graphics-park.png",
+    "roblox/evidence/draft03/runtime-porch.png"
+  ],
+  "artifacts": [
+    {
+      "id": "place",
+      "path": "roblox/Phuong-Cozy-World-Draft03.rbxl",
+      "check": "exists"
+    },
+    {
+      "id": "polish-colors",
+      "path": "roblox/evidence/draft03/polish-studio-colors.json",
+      "check": "studio_palette",
+      "allowed_tokens": [
+        "blossom",
+        "brick",
+        "cream",
+        "forest",
+        "golden",
+        "ink",
+        "sage",
+        "wood"
+      ],
+      "required_tokens": [],
+      "texture_sources": {}
+    },
+    {
+      "id": "navigation",
+      "path": "roblox/evidence/draft03/navigation-results.json",
+      "check": "exists"
+    },
+    {
+      "id": "views",
+      "path": "roblox/evidence/draft03/visual-evidence.json",
+      "check": "exists"
+    },
+    {
+      "id": "console",
+      "path": "roblox/evidence/draft03/console.txt",
+      "check": "exists"
+    }
+  ],
+  "commands": [
+    {
+      "id": "captured-static-decor",
+      "argv": [
+        "{python}",
+        "verification/check_polish03.py"
+      ],
+      "cwd": ".",
+      "timeout_seconds": 30
+    }
+  ],
+  "criteria": []
+}

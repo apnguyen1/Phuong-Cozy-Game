@@ -1,0 +1,179 @@
+{
+  "schema_version": 1,
+  "run_id": "20260927T180310Z-799b211b",
+  "report_sha256": "2aac2cab64dcecbbeb90ca06a86c742da506f18ce789f0057ad530ad07878554",
+  "reviewer": "independent-verifier",
+  "reviewer_type": "agent",
+  "decisions": [
+    {
+      "criterion": "ticket-match",
+      "verdict": "pass",
+      "notes": "This is the explicitly requested new visual revision: arrival/porch/window planting, four Quad sitting gardens, three existing storefronts and Jasper rest-corner decoration. All ten acceptance criteria are mapped; no new gameplay or old-ticket budget reset is implied.",
+      "evidence": [
+        "docs/tickets/MAP-03.md",
+        "docs/draft02-user-handoff.md",
+        "docs/draft03-independent-review.md"
+      ]
+    },
+    {
+      "criterion": "shared-scope",
+      "verdict": "pending",
+      "notes": "Static additions preserve existing objects and eight runtime sources exactly, add no interactions, and leave the personal note untouched. Existing physical touch completion, same-account reconnect and hardware experience remain unverified. Prior Draft 02 feedback does not certify those facts or this new revision.",
+      "evidence": [
+        "roblox/evidence/draft03/scene-invariants.json",
+        "roblox/evidence/draft03/runtime-current-independent.json",
+        "docs/draft02-user-handoff.md"
+      ]
+    },
+    {
+      "criterion": "visual-identity",
+      "verdict": "pass",
+      "notes": "Matched before/after views and player-height details show restrained low flowers/leaves, supported window boxes, modest shop accents and readable paw motifs. Broad lawn, cross/diagonal paths, cottage, blossoms and named shop layout remain recognizable. Window mounting and sill clearance were refined and rechecked.",
+      "evidence": [
+        "roblox/evidence/draft03/visual-evidence.json",
+        "roblox/evidence/draft03/arrival-player.png",
+        "roblox/evidence/draft03/window-detail.png",
+        "roblox/evidence/draft03/shop-detail.png",
+        "roblox/evidence/draft03/park-detail.png"
+      ]
+    },
+    {
+      "criterion": "roblox-import",
+      "verdict": "pass",
+      "notes": "Actual Edit capture verifies the installed owned folder, native materials/geometry, exact palette and noninteractive flags. Actual Play routes, original-scene/source comparison and local save provenance bind the revision. No temporary runtime helpers/remotes remain; the post-route console query was empty.",
+      "evidence": [
+        "roblox/evidence/draft03/polish-studio-colors.json",
+        "roblox/evidence/draft03/scene-invariants.json",
+        "roblox/evidence/draft03/navigation-results.json",
+        "roblox/evidence/draft03/console.txt",
+        "roblox/evidence/draft03/save-audit.json"
+      ]
+    },
+    {
+      "criterion": "MAP-03-AC01",
+      "verdict": "pass",
+      "notes": "Four low arrival/porch beds and two window boxes use layered native leaves, five-petal flowers, small golden centers and defined palette roles. Final boxes sit near the wall with attached brackets; stems are placed in front of the original projecting sill.",
+      "evidence": [
+        "roblox/evidence/draft03/arrival-before.png",
+        "roblox/evidence/draft03/arrival-after.png",
+        "roblox/evidence/draft03/house-before.png",
+        "roblox/evidence/draft03/house-after.png",
+        "roblox/evidence/draft03/window-detail.png",
+        "roblox/evidence/draft03/polish-studio-colors.json"
+      ]
+    },
+    {
+      "criterion": "MAP-03-AC02",
+      "verdict": "pass",
+      "notes": "Four sitting-area islands blend lawn edges without narrowing the original cross/diagonal network. Final original-object comparison preserves the continuous ground, path meshes and all detailed community trees. Independent bound checks find no route encroachment, and actual Quad walks pass.",
+      "evidence": [
+        "roblox/evidence/draft03/arrival-after.png",
+        "roblox/evidence/draft03/scene-invariants.json",
+        "roblox/evidence/draft03/scene-current-independent.json",
+        "roblox/evidence/draft03/navigation-results.json"
+      ]
+    },
+    {
+      "criterion": "MAP-03-AC03",
+      "verdict": "pass",
+      "notes": "FOB Poke Bar, HeyTea and Aladdins retain their existing geometry/order/text; new decoration adds six small pots and facade accents beside their entrances. Close street view remains readable, and actual routes enter and exit all three inherited openings.",
+      "evidence": [
+        "roblox/evidence/draft03/street-before.png",
+        "roblox/evidence/draft03/street-after.png",
+        "roblox/evidence/draft03/shop-detail.png",
+        "roblox/evidence/draft03/scene-invariants.json",
+        "roblox/evidence/draft03/navigation-results.json"
+      ]
+    },
+    {
+      "criterion": "MAP-03-AC04",
+      "verdict": "pass",
+      "notes": "Park rest corner has a pale inset, two low beds and four paw motifs while retaining original benches and open fetch lawn. New-part bounds avoid the protected fetch/gate zones. Actual walking passes both gates and the rest approach.",
+      "evidence": [
+        "roblox/evidence/draft03/park-before.png",
+        "roblox/evidence/draft03/park-after.png",
+        "roblox/evidence/draft03/park-detail.png",
+        "roblox/evidence/draft03/scene-invariants.json",
+        "roblox/evidence/draft03/navigation-results.json"
+      ]
+    },
+    {
+      "criterion": "MAP-03-AC05",
+      "verdict": "pass",
+      "notes": "Final post-Play independent capture exactly matches all 7124 original objects for captured transforms/materials/colors/meshes/collision/text/prompt fields and all eight script sources/classes/disabled flags. The home-derived translation remains (19, approximately -0.1, -40); only owned static decoration and revision metadata are added.",
+      "evidence": [
+        "roblox/evidence/draft03/scene-baseline.json",
+        "roblox/evidence/draft03/scene-current-independent.json",
+        "roblox/evidence/draft03/runtime-baseline.json",
+        "roblox/evidence/draft03/runtime-current-independent.json",
+        "roblox/evidence/draft03/scene-invariants.json"
+      ]
+    },
+    {
+      "criterion": "MAP-03-AC06",
+      "verdict": "pass",
+      "notes": "Independent final capture counts 618 BaseParts under one owned folder, below 750, with unique paths and exact native palette colors. All are anchored and have collision/touch/query disabled. Remaining 602 instances are only native sphere meshes/models/folder; no external color textures, runtime scripts, interactions, lights or particles are introduced.",
+      "evidence": [
+        "roblox/evidence/draft03/polish-studio-colors.json",
+        "verification/check_polish03.py",
+        "roblox/build-polish03.luau"
+      ]
+    },
+    {
+      "criterion": "MAP-03-AC07",
+      "verdict": "pass",
+      "notes": "Measured new-part bounds preserve 12-stud cottage, 10-stud park and 9-stud exterior shop approaches plus the 10-stud arrival continuation. Minimum conservative route-border gap is 0.818727 studs, above 0.55. All 46 real grounded waypoints pass at WalkSpeed 16 with health 100; actual E opens the inherited door and the player camera remains Custom. Existing 7.6-stud shop openings are preserved, not widened.",
+      "evidence": [
+        "roblox/evidence/draft03/scene-invariants.json",
+        "roblox/evidence/draft03/navigation-results.json",
+        "roblox/evidence/draft03/runtime-porch.png"
+      ]
+    },
+    {
+      "criterion": "MAP-03-AC08",
+      "verdict": "pass",
+      "notes": "Matched wide views and close/player-height studies show coherent low decoration without prominent new floating objects, sign obstruction or crowded lanes. Window mounting/sill refinements are verified. Corrected EditQualityLevel Level01 with EnableFRM=false keeps nearby garden/paw silhouettes readable; distant culling is visible and no hardware-performance claim is made.",
+      "evidence": [
+        "roblox/evidence/draft03/visual-evidence.json",
+        "roblox/evidence/draft03/window-detail.png",
+        "roblox/evidence/draft03/park-detail.png",
+        "roblox/evidence/draft03/arrival-player.png",
+        "roblox/evidence/draft03/shop-detail.png",
+        "roblox/evidence/draft03/low-graphics-park.png"
+      ]
+    },
+    {
+      "criterion": "MAP-03-AC09",
+      "verdict": "pass",
+      "notes": "Working place and numbered Draft 03 checkpoint independently match 1,648,676 bytes and SHA256 3e6d5fdb.... Save audit binds the current builder SHA 26d7943b..., and the original reviewed Draft 02 checkpoint remains c0d95754.... Source/live/save provenance and actual views are bound in this report; binary internals were not separately parsed.",
+      "evidence": [
+        "roblox/evidence/draft03/save-audit.json",
+        "roblox/Phuong-Cozy-World-Draft03.rbxl",
+        "roblox/Phuong-Cozy-World-Draft02.rbxl",
+        "roblox/evidence/draft03/scene-invariants.json"
+      ]
+    },
+    {
+      "criterion": "MAP-03-AC10",
+      "verdict": "pass",
+      "notes": "Independent review compared original and new scene data, inspected actual before/after views, recomputed walking endpoints/clearances, documented two specific refinements/evidence corrections and verified their resolution. The new MAP-03 chain preserves old review history and leaves Draft 03 human acceptance pending.",
+      "evidence": [
+        "docs/draft03-independent-review.md",
+        "docs/draft02-user-handoff.md",
+        "roblox/evidence/draft03/scene-invariants.json",
+        "roblox/evidence/draft03/navigation-results.json"
+      ]
+    },
+    {
+      "criterion": "MAP-03-scope",
+      "verdict": "pending",
+      "notes": "Editable static visual revision is built, saved and independently checked within scope, without publishing or new game systems. Human playtest/acceptance of this revision remains pending; unresolved physical-touch, same-account reconnect and hardware facts are carried forward explicitly rather than certified by this static pass.",
+      "evidence": [
+        "docs/tickets/MAP-03.md",
+        "docs/draft03-independent-review.md",
+        "roblox/evidence/draft03/save-audit.json",
+        "roblox/evidence/draft03/navigation-results.json"
+      ]
+    }
+  ]
+}
