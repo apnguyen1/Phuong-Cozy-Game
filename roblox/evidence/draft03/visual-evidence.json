@@ -1,0 +1,206 @@
+{
+  "method": "Raw actual Studio screen_capture images; saved without image edits. Matched before/after camera positions. Detail views are Edit camera studies, not proof of gameplay.",
+  "views": [
+    {
+      "file": "roblox/evidence/draft03/arrival-before.png",
+      "camera_position": [
+        54,
+        25,
+        126
+      ],
+      "look_at_position": [
+        24,
+        3,
+        95
+      ],
+      "state": "Before"
+    },
+    {
+      "file": "roblox/evidence/draft03/arrival-after.png",
+      "camera_position": [
+        54,
+        25,
+        126
+      ],
+      "look_at_position": [
+        24,
+        3,
+        95
+      ],
+      "state": "After"
+    },
+    {
+      "file": "roblox/evidence/draft03/house-before.png",
+      "camera_position": [
+        33,
+        15,
+        -90
+      ],
+      "look_at_position": [
+        -9,
+        5,
+        -134
+      ],
+      "state": "Before"
+    },
+    {
+      "file": "roblox/evidence/draft03/house-after.png",
+      "camera_position": [
+        33,
+        15,
+        -90
+      ],
+      "look_at_position": [
+        -9,
+        5,
+        -134
+      ],
+      "state": "After"
+    },
+    {
+      "file": "roblox/evidence/draft03/park-before.png",
+      "camera_position": [
+        84,
+        33,
+        -77
+      ],
+      "look_at_position": [
+        138,
+        0,
+        -138
+      ],
+      "state": "Before"
+    },
+    {
+      "file": "roblox/evidence/draft03/park-after.png",
+      "camera_position": [
+        84,
+        33,
+        -77
+      ],
+      "look_at_position": [
+        138,
+        0,
+        -138
+      ],
+      "state": "After"
+    },
+    {
+      "file": "roblox/evidence/draft03/street-before.png",
+      "camera_position": [
+        -76,
+        21,
+        44
+      ],
+      "look_at_position": [
+        -132,
+        5,
+        -36
+      ],
+      "state": "Before"
+    },
+    {
+      "file": "roblox/evidence/draft03/street-after.png",
+      "camera_position": [
+        -76,
+        21,
+        44
+      ],
+      "look_at_position": [
+        -132,
+        5,
+        -36
+      ],
+      "state": "After"
+    },
+    {
+      "file": "roblox/evidence/draft03/window-detail.png",
+      "camera_position": [
+        22,
+        6,
+        -110
+      ],
+      "look_at_position": [
+        14,
+        3.3,
+        -123
+      ],
+      "state": "After"
+    },
+    {
+      "file": "roblox/evidence/draft03/park-detail.png",
+      "camera_position": [
+        143,
+        8,
+        -157
+      ],
+      "look_at_position": [
+        128,
+        1,
+        -174
+      ],
+      "state": "After"
+    },
+    {
+      "file": "roblox/evidence/draft03/shop-detail.png",
+      "camera_position": [
+        -109,
+        6,
+        -16
+      ],
+      "look_at_position": [
+        -126,
+        3,
+        -33
+      ],
+      "state": "After"
+    },
+    {
+      "file": "roblox/evidence/draft03/arrival-player.png",
+      "camera_position": [
+        26,
+        6,
+        133
+      ],
+      "look_at_position": [
+        2,
+        3,
+        100
+      ],
+      "state": "After"
+    },
+    {
+      "file": "roblox/evidence/draft03/low-graphics-park.png",
+      "camera_position": [
+        143,
+        8,
+        -157
+      ],
+      "look_at_position": [
+        128,
+        1,
+        -174
+      ],
+      "state": "After/EditQualityLevel Level01; EnableFRM=false"
+    }
+  ],
+  "low_graphics": {
+    "setting": "settings().Rendering.EditQualityLevel=Level01; EnableFRM=false",
+    "requested_and_readback": "Enum.QualityLevel.Level01; false",
+    "settle_seconds": 1,
+    "limits": "Actual Studio Edit silhouette inspection only; no physical-device/FPS claim. QualityLevel-only preliminary image replaced with this proper Edit renderer capture.",
+    "restored": {
+      "EditQualityLevel": "Enum.QualityLevel.Automatic",
+      "EnableFRM": false,
+      "QualityLevel": "Enum.QualityLevel.Automatic"
+    }
+  },
+  "corrections": [
+    "Supported window boxes moved 0.6 studs toward existing wall for visual integration.",
+    "Window flower origins moved 0.48 studs toward front of box to clear existing projecting wood sill."
+  ],
+  "runtime_view": {
+    "file": "roblox/evidence/draft03/runtime-porch.png",
+    "method": "Actual Play client default Custom camera during door entry, no camera override."
+  }
+}

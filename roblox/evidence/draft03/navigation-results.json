@@ -1,0 +1,998 @@
+{
+  "routes": [
+    {
+      "name": "arrival-quad-house",
+      "waypoints": [
+        {
+          "seated": false,
+          "seconds": 1.432380500002182,
+          "height_error": 0.003326892852783203,
+          "distance": 1.2514322996139526,
+          "passed": true,
+          "health": 100,
+          "target": [
+            4,
+            4,
+            94
+          ],
+          "floor_material": "Brick",
+          "grounded": true,
+          "actual": [
+            4.70011043548584,
+            3.996673107147217,
+            95.03726959228516
+          ]
+        },
+        {
+          "seated": false,
+          "seconds": 2.7328919999999925,
+          "height_error": 0.003326892852783203,
+          "distance": 1.3137401342391968,
+          "passed": true,
+          "health": 100,
+          "target": [
+            4,
+            4,
+            50
+          ],
+          "floor_material": "Brick",
+          "grounded": true,
+          "actual": [
+            4.020050048828125,
+            3.996673107147217,
+            51.3135871887207
+          ]
+        },
+        {
+          "seated": false,
+          "seconds": 3.0999319000111427,
+          "height_error": 0.003326892852783203,
+          "distance": 1.713363528251648,
+          "passed": true,
+          "health": 100,
+          "target": [
+            4,
+            4,
+            0
+          ],
+          "floor_material": "Brick",
+          "grounded": true,
+          "actual": [
+            4.0006585121154785,
+            3.996673107147217,
+            1.7133634090423584
+          ]
+        },
+        {
+          "seated": false,
+          "seconds": 3.2159499999979744,
+          "height_error": 0.003326892852783203,
+          "distance": 0.5978355407714844,
+          "passed": true,
+          "health": 100,
+          "target": [
+            4,
+            4,
+            -50
+          ],
+          "floor_material": "Brick",
+          "grounded": true,
+          "actual": [
+            4.000007629394531,
+            3.996673107147217,
+            -49.402164459228516
+          ]
+        },
+        {
+          "seated": false,
+          "seconds": 3.116646700000274,
+          "height_error": 0.003326892852783203,
+          "distance": 0.77935791015625,
+          "passed": true,
+          "health": 100,
+          "target": [
+            4,
+            4,
+            -100
+          ],
+          "floor_material": "Brick",
+          "grounded": true,
+          "actual": [
+            4.000001430511475,
+            3.996673107147217,
+            -99.22064208984375
+          ]
+        },
+        {
+          "seated": false,
+          "seconds": 1.0835321999911685,
+          "height_error": 0.026673316955566406,
+          "distance": 0.17593269050121307,
+          "passed": true,
+          "health": 100,
+          "target": [
+            -1,
+            4,
+            -116
+          ],
+          "floor_material": "WoodPlanks",
+          "grounded": true,
+          "actual": [
+            -0.9496926665306091,
+            4.026673316955566,
+            -115.83141326904297
+          ]
+        }
+      ],
+      "start": [
+        17.5,
+        3.936673164367676,
+        114
+      ],
+      "passed": true,
+      "walk_speed": 16
+    },
+    {
+      "name": "house-entry-and-exit",
+      "waypoints": [
+        {
+          "seated": false,
+          "seconds": 0.8813260000024457,
+          "height_error": 0.02667379379272461,
+          "distance": 1.0377528667449951,
+          "passed": true,
+          "health": 100,
+          "target": [
+            -1,
+            4,
+            -131
+          ],
+          "floor_material": "WoodPlanks",
+          "grounded": true,
+          "actual": [
+            -0.9976228475570679,
+            4.026673793792725,
+            -129.96224975585938
+          ]
+        },
+        {
+          "seated": false,
+          "seconds": 0.5496839999977965,
+          "height_error": 0.02667379379272461,
+          "distance": 1.3712158203125,
+          "passed": true,
+          "health": 100,
+          "target": [
+            -1,
+            4,
+            -140
+          ],
+          "floor_material": "WoodPlanks",
+          "grounded": true,
+          "actual": [
+            -0.9996812343597412,
+            4.026673793792725,
+            -138.6287841796875
+          ]
+        },
+        {
+          "seated": false,
+          "seconds": 0.41710089999833144,
+          "height_error": 0.026673316955566406,
+          "distance": 1.1898958683013916,
+          "passed": true,
+          "health": 100,
+          "target": [
+            -1,
+            4,
+            -131
+          ],
+          "floor_material": "WoodPlanks",
+          "grounded": true,
+          "actual": [
+            -0.9991655349731445,
+            4.026673316955566,
+            -132.1898956298828
+          ]
+        },
+        {
+          "seated": false,
+          "seconds": 0.9663583999936236,
+          "height_error": 0.026673316955566406,
+          "distance": 0.8567962646484375,
+          "passed": true,
+          "health": 100,
+          "target": [
+            -1,
+            4,
+            -116
+          ],
+          "floor_material": "WoodPlanks",
+          "grounded": true,
+          "actual": [
+            -0.999945342540741,
+            4.026673316955566,
+            -116.85679626464844
+          ]
+        }
+      ],
+      "start": [
+        -0.9655017256736755,
+        4.026673316955566,
+        -115.88439178466797
+      ],
+      "passed": true,
+      "walk_speed": 16
+    },
+    {
+      "name": "west-quad-and-FOB",
+      "waypoints": [
+        {
+          "seated": false,
+          "seconds": 0.8333656000031624,
+          "height_error": 0.0033311843872070312,
+          "distance": 1.7150577306747437,
+          "passed": true,
+          "health": 100,
+          "target": [
+            4,
+            4,
+            -102
+          ],
+          "floor_material": "Brick",
+          "grounded": true,
+          "actual": [
+            3.428060531616211,
+            3.996668815612793,
+            -103.61688232421875
+          ]
+        },
+        {
+          "seated": false,
+          "seconds": 2.98291700000118,
+          "height_error": 0.003326892852783203,
+          "distance": 0.8539747595787048,
+          "passed": true,
+          "health": 100,
+          "target": [
+            -45,
+            4,
+            -102
+          ],
+          "floor_material": "Brick",
+          "grounded": true,
+          "actual": [
+            -44.146446228027344,
+            3.996673107147217,
+            -102.02680969238281
+          ]
+        },
+        {
+          "seated": false,
+          "seconds": 2.4837657999887597,
+          "height_error": 0.003326892852783203,
+          "distance": 1.1202852725982666,
+          "passed": true,
+          "health": 100,
+          "target": [
+            -85,
+            4,
+            -102
+          ],
+          "floor_material": "Brick",
+          "grounded": true,
+          "actual": [
+            -83.87971496582031,
+            3.996673107147217,
+            -102.000732421875
+          ]
+        },
+        {
+          "seated": false,
+          "seconds": 2.1652332000085153,
+          "height_error": 0.003326892852783203,
+          "distance": 0.4541473388671875,
+          "passed": true,
+          "health": 100,
+          "target": [
+            -119,
+            4,
+            -102
+          ],
+          "floor_material": "Brick",
+          "grounded": true,
+          "actual": [
+            -118.54585266113281,
+            3.996673107147217,
+            -102.00001525878906
+          ]
+        },
+        {
+          "seated": false,
+          "seconds": 1.0009566000080667,
+          "height_error": 0.04332733154296875,
+          "distance": 1.08791983127594,
+          "passed": true,
+          "health": 100,
+          "target": [
+            -119,
+            4,
+            -119
+          ],
+          "floor_material": "Concrete",
+          "grounded": true,
+          "actual": [
+            -118.97630310058594,
+            3.9566726684570312,
+            -117.91233825683594
+          ]
+        },
+        {
+          "seated": false,
+          "seconds": 0.7666638999944553,
+          "height_error": 0.04666757583618164,
+          "distance": 1.8767518997192383,
+          "passed": true,
+          "health": 100,
+          "target": [
+            -133,
+            4,
+            -119
+          ],
+          "floor_material": "CeramicTiles",
+          "grounded": true,
+          "actual": [
+            -131.12802124023438,
+            4.046667575836182,
+            -118.8662338256836
+          ]
+        },
+        {
+          "seated": false,
+          "seconds": 0.6837168000056408,
+          "height_error": 0.04335594177246094,
+          "distance": 1.5411723852157593,
+          "passed": true,
+          "health": 100,
+          "target": [
+            -119,
+            4,
+            -119
+          ],
+          "floor_material": "Concrete",
+          "grounded": true,
+          "actual": [
+            -120.54109191894531,
+            3.956644058227539,
+            -118.98424530029297
+          ]
+        },
+        {
+          "seated": false,
+          "seconds": 2.999185900000157,
+          "height_error": 0.04332733154296875,
+          "distance": 1.0959012508392334,
+          "passed": true,
+          "health": 100,
+          "target": [
+            -119,
+            4,
+            -70
+          ],
+          "floor_material": "Concrete",
+          "grounded": true,
+          "actual": [
+            -119.0324478149414,
+            3.9566726684570312,
+            -71.09542083740234
+          ]
+        },
+        {
+          "seated": false,
+          "seconds": 2.900361099993461,
+          "height_error": 0.04332733154296875,
+          "distance": 1.6951297521591187,
+          "passed": true,
+          "health": 100,
+          "target": [
+            -119,
+            4,
+            -23
+          ],
+          "floor_material": "Concrete",
+          "grounded": true,
+          "actual": [
+            -119.00111389160156,
+            3.9566726684570312,
+            -24.69512939453125
+          ]
+        },
+        {
+          "seated": false,
+          "seconds": 0.7829217000107747,
+          "height_error": 0.04667043685913086,
+          "distance": 0.6491097807884216,
+          "passed": true,
+          "health": 100,
+          "target": [
+            -132,
+            4,
+            -23
+          ],
+          "floor_material": "CeramicTiles",
+          "grounded": true,
+          "actual": [
+            -131.35581970214844,
+            4.046670436859131,
+            -23.079845428466797
+          ]
+        },
+        {
+          "seated": false,
+          "seconds": 0.7503868000057992,
+          "height_error": 0.043331146240234375,
+          "distance": 0.7007457613945007,
+          "passed": true,
+          "health": 100,
+          "target": [
+            -119,
+            4,
+            -23
+          ],
+          "floor_material": "Concrete",
+          "grounded": true,
+          "actual": [
+            -119.70073699951172,
+            3.9566688537597656,
+            -23.003503799438477
+          ]
+        }
+      ],
+      "start": [
+        -0.9999912977218628,
+        4.026673316955566,
+        -116.13485717773438
+      ],
+      "passed": true,
+      "walk_speed": 16
+    },
+    {
+      "name": "Aladdins-and-south-quad",
+      "waypoints": [
+        {
+          "seated": false,
+          "seconds": 2.9499434000026667,
+          "height_error": 0.04332733154296875,
+          "distance": 0.8556389808654785,
+          "passed": true,
+          "health": 100,
+          "target": [
+            -119,
+            4,
+            25
+          ],
+          "floor_material": "Concrete",
+          "grounded": true,
+          "actual": [
+            -119.00202941894531,
+            3.9566726684570312,
+            24.144363403320312
+          ]
+        },
+        {
+          "seated": false,
+          "seconds": 2.9316179000015836,
+          "height_error": 0.04332733154296875,
+          "distance": 1.9219970703125,
+          "passed": true,
+          "health": 100,
+          "target": [
+            -119,
+            4,
+            73
+          ],
+          "floor_material": "Concrete",
+          "grounded": true,
+          "actual": [
+            -119.00006103515625,
+            3.9566726684570312,
+            71.0780029296875
+          ]
+        },
+        {
+          "seated": false,
+          "seconds": 0.7837462000024971,
+          "height_error": 0.04667043685913086,
+          "distance": 0.679042637348175,
+          "passed": true,
+          "health": 100,
+          "target": [
+            -132,
+            4,
+            73
+          ],
+          "floor_material": "CeramicTiles",
+          "grounded": true,
+          "actual": [
+            -131.32765197753906,
+            4.046670436859131,
+            72.9048843383789
+          ]
+        },
+        {
+          "seated": false,
+          "seconds": 0.7347345000016503,
+          "height_error": 0.0433349609375,
+          "distance": 0.938730001449585,
+          "passed": true,
+          "health": 100,
+          "target": [
+            -119,
+            4,
+            73
+          ],
+          "floor_material": "Concrete",
+          "grounded": true,
+          "actual": [
+            -119.93871307373047,
+            3.9566650390625,
+            72.9943618774414
+          ]
+        },
+        {
+          "seated": false,
+          "seconds": 1.2161968000000343,
+          "height_error": 0.004031658172607422,
+          "distance": 1.6442511081695557,
+          "passed": true,
+          "health": 100,
+          "target": [
+            -119,
+            4,
+            94
+          ],
+          "floor_material": "Brick",
+          "grounded": true,
+          "actual": [
+            -119.06649017333984,
+            3.9959683418273926,
+            92.35709381103516
+          ]
+        },
+        {
+          "seated": false,
+          "seconds": 2.9664964999974472,
+          "height_error": 0.003475666046142578,
+          "distance": 1.703378677368164,
+          "passed": true,
+          "health": 100,
+          "target": [
+            -70,
+            4,
+            94
+          ],
+          "floor_material": "Brick",
+          "grounded": true,
+          "actual": [
+            -71.7025146484375,
+            3.9965243339538574,
+            93.94575500488281
+          ]
+        },
+        {
+          "seated": false,
+          "seconds": 3.199266700001317,
+          "height_error": 0.003326892852783203,
+          "distance": 0.5022357106208801,
+          "passed": true,
+          "health": 100,
+          "target": [
+            -20,
+            4,
+            94
+          ],
+          "floor_material": "Brick",
+          "grounded": true,
+          "actual": [
+            -20.502235412597656,
+            3.996673107147217,
+            93.99946594238281
+          ]
+        },
+        {
+          "seated": false,
+          "seconds": 3.0834730000060517,
+          "height_error": 0.003326892852783203,
+          "distance": 1.1689395904541016,
+          "passed": true,
+          "health": 100,
+          "target": [
+            30,
+            4,
+            94
+          ],
+          "floor_material": "Brick",
+          "grounded": true,
+          "actual": [
+            28.8310604095459,
+            3.996673107147217,
+            93.99996948242188
+          ]
+        },
+        {
+          "seated": false,
+          "seconds": 3.3328426999942167,
+          "height_error": 0.003326892852783203,
+          "distance": 0.8354644775390625,
+          "passed": true,
+          "health": 100,
+          "target": [
+            83,
+            4,
+            94
+          ],
+          "floor_material": "Brick",
+          "grounded": true,
+          "actual": [
+            82.16453552246094,
+            3.996673107147217,
+            93.9999771118164
+          ]
+        },
+        {
+          "seated": false,
+          "seconds": 2.96632020000834,
+          "height_error": 0.003326892852783203,
+          "distance": 0.6238175630569458,
+          "passed": true,
+          "health": 100,
+          "target": [
+            83,
+            4,
+            46
+          ],
+          "floor_material": "Brick",
+          "grounded": true,
+          "actual": [
+            82.990234375,
+            3.996673107147217,
+            46.623741149902344
+          ]
+        },
+        {
+          "seated": false,
+          "seconds": 3.1005755999940448,
+          "height_error": 0.003326892852783203,
+          "distance": 1.023583173751831,
+          "passed": true,
+          "health": 100,
+          "target": [
+            83,
+            4,
+            -4
+          ],
+          "floor_material": "Brick",
+          "grounded": true,
+          "actual": [
+            82.99979400634766,
+            3.996673107147217,
+            -2.976416826248169
+          ]
+        },
+        {
+          "seated": false,
+          "seconds": 2.8504090000060387,
+          "height_error": 0.003326892852783203,
+          "distance": 1.4233856201171875,
+          "passed": true,
+          "health": 100,
+          "target": [
+            83,
+            4,
+            -50
+          ],
+          "floor_material": "Brick",
+          "grounded": true,
+          "actual": [
+            82.99995422363281,
+            3.996673107147217,
+            -48.57661437988281
+          ]
+        },
+        {
+          "seated": false,
+          "seconds": 1.2827303999947617,
+          "height_error": 0.003326892852783203,
+          "distance": 0.8899307250976562,
+          "passed": true,
+          "health": 100,
+          "target": [
+            83,
+            4,
+            -70
+          ],
+          "floor_material": "Brick",
+          "grounded": true,
+          "actual": [
+            82.9999771118164,
+            3.996673107147217,
+            -69.11006927490234
+          ]
+        }
+      ],
+      "start": [
+        -119.11272430419922,
+        3.9566726684570312,
+        -23.000574111938477
+      ],
+      "passed": true,
+      "walk_speed": 16
+    },
+    {
+      "name": "both-park-gates-and-rest-approach",
+      "waypoints": [
+        {
+          "seated": false,
+          "seconds": 1.5309988999943016,
+          "height_error": 0.003326892852783203,
+          "distance": 0.8303206562995911,
+          "passed": true,
+          "health": 100,
+          "target": [
+            95,
+            4,
+            -92
+          ],
+          "floor_material": "Brick",
+          "grounded": true,
+          "actual": [
+            94.60297393798828,
+            3.996673107147217,
+            -91.270751953125
+          ]
+        },
+        {
+          "seated": false,
+          "seconds": 0.667433800001163,
+          "height_error": 0.2833280563354492,
+          "distance": 1.7972356081008911,
+          "passed": true,
+          "health": 100,
+          "target": [
+            107,
+            4,
+            -92
+          ],
+          "floor_material": "Grass",
+          "grounded": true,
+          "actual": [
+            105.20585632324219,
+            3.716671943664551,
+            -91.89462280273438
+          ]
+        },
+        {
+          "seated": false,
+          "seconds": 2.432233899991843,
+          "height_error": 0.2833280563354492,
+          "distance": 1.3005695343017578,
+          "passed": true,
+          "health": 100,
+          "target": [
+            107,
+            4,
+            -132
+          ],
+          "floor_material": "Grass",
+          "grounded": true,
+          "actual": [
+            106.9450454711914,
+            3.716671943664551,
+            -130.70059204101562
+          ]
+        },
+        {
+          "seated": false,
+          "seconds": 1.1167806000012206,
+          "height_error": 0.2519359588623047,
+          "distance": 1.2269257307052612,
+          "passed": true,
+          "health": 100,
+          "target": [
+            88,
+            4,
+            -132
+          ],
+          "floor_material": "Grass",
+          "grounded": true,
+          "actual": [
+            89.22450256347656,
+            3.7480640411376953,
+            -131.9229278564453
+          ]
+        },
+        {
+          "seated": false,
+          "seconds": 1.0834885999938706,
+          "height_error": 0.2833280563354492,
+          "distance": 0.783201277256012,
+          "passed": true,
+          "health": 100,
+          "target": [
+            107,
+            4,
+            -132
+          ],
+          "floor_material": "Grass",
+          "grounded": true,
+          "actual": [
+            106.21680450439453,
+            3.716671943664551,
+            -131.9969940185547
+          ]
+        },
+        {
+          "seated": false,
+          "seconds": 2.0998144000041066,
+          "height_error": 0.283327579498291,
+          "distance": 1.1181358098983765,
+          "passed": true,
+          "health": 100,
+          "target": [
+            140,
+            4,
+            -140
+          ],
+          "floor_material": "Grass",
+          "grounded": true,
+          "actual": [
+            138.91201782226562,
+            3.716672420501709,
+            -139.74208068847656
+          ]
+        },
+        {
+          "seated": false,
+          "seconds": 1.1999346000084188,
+          "height_error": 0.2833280563354492,
+          "distance": 1.1493645906448364,
+          "passed": true,
+          "health": 100,
+          "target": [
+            140,
+            4,
+            -160
+          ],
+          "floor_material": "Grass",
+          "grounded": true,
+          "actual": [
+            139.94297790527344,
+            3.716671943664551,
+            -158.85205078125
+          ]
+        },
+        {
+          "seated": false,
+          "seconds": 0.9999113000085345,
+          "height_error": 0.2833280563354492,
+          "distance": 0.6122119426727295,
+          "passed": true,
+          "health": 100,
+          "target": [
+            125,
+            4,
+            -166
+          ],
+          "floor_material": "Grass",
+          "grounded": true,
+          "actual": [
+            125.55342102050781,
+            3.716671943664551,
+            -165.73822021484375
+          ]
+        },
+        {
+          "seated": false,
+          "seconds": 1.066772200007108,
+          "height_error": 0.2833280563354492,
+          "distance": 1.8666799068450928,
+          "passed": true,
+          "health": 100,
+          "target": [
+            110,
+            4,
+            -155
+          ],
+          "floor_material": "Grass",
+          "grounded": true,
+          "actual": [
+            111.53289794921875,
+            3.716671943664551,
+            -156.0652313232422
+          ]
+        },
+        {
+          "seated": false,
+          "seconds": 1.5007155000057537,
+          "height_error": 0.2833280563354492,
+          "distance": 0.4989568591117859,
+          "passed": true,
+          "health": 100,
+          "target": [
+            107,
+            4,
+            -132
+          ],
+          "floor_material": "Grass",
+          "grounded": true,
+          "actual": [
+            107.09183502197266,
+            3.716671943664551,
+            -132.4904327392578
+          ]
+        },
+        {
+          "seated": false,
+          "seconds": 2.4999188000074355,
+          "height_error": 0.283327579498291,
+          "distance": 0.49142569303512573,
+          "passed": true,
+          "health": 100,
+          "target": [
+            107,
+            4,
+            -92
+          ],
+          "floor_material": "Grass",
+          "grounded": true,
+          "actual": [
+            107.00105285644531,
+            3.716672420501709,
+            -92.49142456054688
+          ]
+        },
+        {
+          "seated": false,
+          "seconds": 1.1662152000062633,
+          "height_error": 0.3055419921875,
+          "distance": 0.4443737268447876,
+          "passed": true,
+          "health": 100,
+          "target": [
+            88,
+            4,
+            -92
+          ],
+          "floor_material": "Grass",
+          "grounded": true,
+          "actual": [
+            88.44428253173828,
+            3.6944580078125,
+            -92.00900268554688
+          ]
+        }
+      ],
+      "start": [
+        82.99999237060547,
+        3.996673107147217,
+        -69.95884704589844
+      ],
+      "passed": true,
+      "walk_speed": 16
+    }
+  ],
+  "camera": {
+    "distance_to_character": 12.797416687011719,
+    "type": "Custom",
+    "subject": "Workspace.IamBannedrew.Humanoid"
+  },
+  "method": "Actual Client Humanoid.MoveTo, WalkSpeed16; no teleports or speed modifications. Grounded endpoint, XZ<2 and Yerror<1.5 required. E input triggered existing door.",
+  "captured_at": "2026-09-27T17:59:05Z",
+  "limits": "Automated desktop walking smoke checks; not human fun, physical touch, hardware performance or multiplayer replay.",
+  "door": {
+    "settled_read": "Close",
+    "immediate_read": "Open",
+    "passed": true,
+    "action_after_E": "Open"
+  }
+}

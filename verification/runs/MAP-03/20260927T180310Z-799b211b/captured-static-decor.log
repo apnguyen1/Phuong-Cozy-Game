@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "mode": "Validate captured static evidence; does not rerun Roblox",
+  "native_parts": 618,
+  "non_part_instances": 602,
+  "textures": 0,
+  "saved_artifact_sha256": "3e6d5fdbe8e0026a7c9367ebddbb6bf828b36cbce0770c9a2820e5644a541d66",
+  "unchanged_captured_original_objects": 7124,
+  "unchanged_runtime_sources": 8,
+  "limits": "Palette is checked separately by the harness. Preservation compares only captured fields. Actual route regressions, visual quality and human acceptance require independent evidence review."
+}

@@ -1,5 +1,7 @@
 # Phuong’s Cozy World — dedicated tickets
 
+**September 27 update:** The user gave positive Draft 02 visual feedback and authorized saving and merging it; that checkpoint is now on `main`. [MAP-03](MAP-03.md) covers the requested third revision, focused on environment detail and visual polish. Earlier device, reconnect and gameplay acceptance gaps remain recorded; the merge does not convert them into passed tests.
+
 **September 26 implementation update:** The active user goal authorizes Draft 02 environment and lobby construction. [MAP-02](MAP-02.md) binds the whole decorated neighborhood; [PCW-17](PCW-17.md) gates the birthday room and timed entry. [PCW-04](PCW-04.md), [PCW-05](PCW-05.md) and [PCW-06](PCW-06.md) now include explicit current-scope amendments and preserve their original planning text as history. Their historical no-code boundaries no longer govern this authorized work. Draft 02 remains under independent review; scope approval does not mean final user acceptance. Other unimplemented quest tickets remain planned.
 
 **Historical planning baseline:** The user initially approved map v0.2 and requested tickets and rendered UI/color concepts, with **no code**. These are local project tickets, not externally published tracker issues. Owners are suggested roles, not assigned people or agents.
@@ -28,6 +30,7 @@ Tickets outside the September 26 environment/lobby scope remain unstarted. Art c
 | [PCW-16](PCW-16.md) | Mixed-device birthday rehearsal | Planned | 03–14 implemented later; target-device details from 15 |
 
 | [MAP-02](MAP-02.md) | Integrated decorated birthday world | Draft 02 review | 04; 05; 06; 17 |
+| [MAP-03](MAP-03.md) | Garden detail and environment polish | Draft 03 in progress | Approved Draft 02 layout |
 | [PCW-17](PCW-17.md) | Birthday lobby and personal timed entry | Draft 02 review | Current map |
 
 ## Suggested sequence

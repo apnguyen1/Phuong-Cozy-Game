@@ -1,0 +1,414 @@
+{
+  "schema_version": 1,
+  "type": "run",
+  "ticket_id": "MAP-03",
+  "ticket_path": "verification/contracts/MAP-03-draft03.json",
+  "run_id": "20260927T180310Z-799b211b",
+  "stage": "production",
+  "iteration": 1,
+  "builder": "polish03-and-integration",
+  "previous": null,
+  "changes": null,
+  "snapshot": {
+    "verification/contracts/MAP-03-draft03.json": "d33c7d268134e7be9afd4f48b37dca8bf1d78dc04679d91b9ac1d6c74c89aa6e",
+    "verification/palette.json": "559fd5251e386a7b83a9abb0031fd3d8b40b16026b8c86dd4951208ff6c5aea8",
+    "verification/verify.py": "ba1b6db1af8df7d0b22dc319a15ffb87728651da93d5181d5785f053cdba5992",
+    "verification/requirements.txt": "31864229d2dd8a2c4feddb7cc04e989ea6643d88158090384a80f69f951052a8",
+    "verification/roblox/capture.luau": "f7cb97324c9270237721e767ee2819ee97ea1b745aed1f7abb09112b8236058a",
+    "docs/tickets/MAP-03.md": "c2a61d610a521ab4901816656909cf05c3cd2306435bd16bd707ee34cd74d9eb",
+    "docs/draft02-user-handoff.md": "a5072a30f0928f655d64808372114685a5e81345b582407e6b0445ec6adbfa9f",
+    "roblox/build-polish03.luau": "26d7943b4a44196ad76bd6ce371c5a2d6003cfa5af8e27f5a654a654736edef3",
+    "roblox/build-draft01.luau": "6b87be891225c4b10c0a43d3e917388b9986ded89d20a56c1925c2f915f478d6",
+    "roblox/build-bedroom02.luau": "1db32436599597fb82c326eb0e51c441fcdb13e37ae2aea0ca331b1435459122",
+    "roblox/build-quad02.luau": "ac55360c676c1d2478d136cc11ac873e9348f8623b1ed69e3128fbd16859e40b",
+    "roblox/build-neighborhood02.luau": "aaa6612b2de34095e8f97fd0d8ac498afd2f35ad6c7838eeea181f2907d52925",
+    "roblox/build-lobby02.luau": "01da26ecbef41907c013f66fd5f47b36639751addb6a351dd5336196db0b5e4d",
+    "roblox/finalize-draft02.luau": "615fa4428fa0fb4abc8cc4abe0b86a89c7be198c55b7470226c764090e8d73ea",
+    "roblox/birthday-lobby.server.luau": "ad7be3c845b18bf4f19b733b2b85d17a9947f0b016c811b1e645452060764579",
+    "roblox/birthday-lobby.client.luau": "c1aba60de3edecc2b34e766c257674914028ab91f6f2590d54ddd579d73c8bae",
+    "roblox/draft-door.server.luau": "7984d1be093d7ff16182f62ed47d70226fdc081ecbc4b735258e40c4d7d4db7a",
+    "roblox/evidence/draft03/save-audit.json": "eb9ac85f606a33e98df704a9517650f2fd486359f1c9ffc770e724946ea2cc7a",
+    "roblox/evidence/draft03/scene-invariants.json": "e3bd61107568ae758d362d867fcc42f632f32906b9dac31080f80fb9d0526013",
+    "verification/check_polish03.py": "7ffbb11ed7dd2932d8a83988198895ea4aaf73a062fcd7b8cdd196c98e683657",
+    "roblox/Phuong-Cozy-World-Draft02.rbxl": "c0d957546b23a58aa99337492edfe08fb383501f3e6d8d58ddab1b8063d3a418",
+    "roblox/phuong-cozy-game.rbxl": "3e6d5fdbe8e0026a7c9367ebddbb6bf828b36cbce0770c9a2820e5644a541d66",
+    "verification/roblox/capture-polish03.luau": "9c8a4aaa01c87e15860b5d7e15f78297eb1b8ae58891d9e9a0e0ef6b42313021",
+    "verification/roblox/capture-preserved03.luau": "ec478ec02fd256a393e485f5980660b06fde8750ac13660c5284b28a013b288a",
+    "roblox/evidence/draft03/scene-baseline.json": "370de9d7543f57f46d1472b5c7c1dab5383cfa9d1fc4eaabc9ec54717f621ddd",
+    "roblox/evidence/draft03/runtime-baseline.json": "5113c4bacf852a2da1cb410deeb1f79d1c0cc298c459aae32a0e986769864c53",
+    "roblox/evidence/draft03/scene-current-independent.json": "bd714cdbe7a5f9a2ffa1f12ccf415be6221197b7ca445c6b355cce5cca3d4cb1",
+    "roblox/evidence/draft03/runtime-current-independent.json": "9decf6a776388ef3e661382a2cb880515f410cd44ec7466046ffebb737b12abe",
+    "roblox/tests/polish03-walk-client.luau": "8fde349def71bf5acbc593392256c36230b5a483103b4f05c15ba90231560476",
+    "roblox/capture-invariants03.luau": "bec73896a33acbdd543c5a91fb064ef690363cc10bff82c739277d73adf5a521",
+    "roblox/evidence/draft03/arrival-before.png": "379206657ebdc3590eb67fc6d0593c0385cb781b15b55d8969f5fdfb29aca81c",
+    "roblox/evidence/draft03/arrival-after.png": "3be47363ca473f2492fe8ee03786fcf14ed483d304af74806e0ddd6c433b74ab",
+    "roblox/evidence/draft03/house-before.png": "ac5cdcac76fbce1f825b1d3ac21635bf2d1986f2c0209323f6f4d801e20b87ca",
+    "roblox/evidence/draft03/house-after.png": "41af14bf75c6bef0ba7204bd7cdbc40f23ed8bd96666224469457b0514c9c66c",
+    "roblox/evidence/draft03/park-before.png": "1606268e26cf4ed83f772e02c8d62273b6ebd9be133c513e4126be492dfa43d6",
+    "roblox/evidence/draft03/park-after.png": "7e7c3b0d5bb1e5274c1e555e14c06b30a87ebc8d9b816a12b16648fa3904e132",
+    "roblox/evidence/draft03/street-before.png": "916ab2360c99810921a59604d2ebb15305257315fb906a389b9387ba6a39e238",
+    "roblox/evidence/draft03/street-after.png": "f48a403c8612f9ffbed707cd91a07409a8af404fab3bdfadbaaf8f4b093fbc95",
+    "roblox/evidence/draft03/window-detail.png": "a09ea50db3d3fa1a8a2544f9864a4ae03e3e50fe04e690cf46e59f92a060eafa",
+    "roblox/evidence/draft03/park-detail.png": "8cb2f785bc5e30981086c7dc8b1183aeb095a0b418d8a41e15bada47c37e14f2",
+    "roblox/evidence/draft03/shop-detail.png": "0ca2e60a4363c1df3950e14155431b95ac41d65dbdfbc37d8cda137451f84b8f",
+    "roblox/evidence/draft03/arrival-player.png": "87c4fac5800090559004e909a2ee3847afc3fdce73c834170597f49a062bd1e2",
+    "roblox/evidence/draft03/low-graphics-park.png": "2176c27bf0a73156877f1843e2f0a1834dfde05ccf0976f09aa79dc3e4043c18",
+    "roblox/evidence/draft03/runtime-porch.png": "45cd584d1a2164b5d64781f925a527645fec3eae9ab90b4cbd8e6e5328d85b4c",
+    "roblox/Phuong-Cozy-World-Draft03.rbxl": "3e6d5fdbe8e0026a7c9367ebddbb6bf828b36cbce0770c9a2820e5644a541d66",
+    "roblox/evidence/draft03/polish-studio-colors.json": "f66e80815b973632e60d885ff2ab1ec174f1164cba15281684827f9a5d5f93a8",
+    "roblox/evidence/draft03/navigation-results.json": "bf4c4083464afa7fee3657f87a88806567b3fdfb6533a0010f6c222dfd17817a",
+    "roblox/evidence/draft03/visual-evidence.json": "f870671dac34332d371b2a195f7e87d5027b2bb2478d3c098c959cd2bf2f5b7b",
+    "roblox/evidence/draft03/console.txt": "e0c0cbd4c65e63447f977b95676f58a3683ddc387c8a6aea837e00159def0599",
+    "@runtime": {
+      "python": "3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)]",
+      "Pillow": "12.3.0"
+    }
+  },
+  "fingerprint": "b60df047ead9d4b8b58876c4db1f6e18124c4d5e2e9a6a6f47852c3f71d83c17",
+  "checks": [
+    {
+      "id": "ticket-approved",
+      "status": "PASS",
+      "detail": "Approved ticket required; a draft is not an assignment"
+    },
+    {
+      "id": "palette",
+      "status": "PASS",
+      "detail": {
+        "forest": "#365744",
+        "sage": "#A8B995",
+        "cream": "#F5F0E4",
+        "wood": "#95674B",
+        "blossom": "#E8B7C6",
+        "brick": "#B66C68",
+        "golden": "#E8C779",
+        "ink": "#26382E"
+      }
+    },
+    {
+      "id": "input:docs/tickets/MAP-03.md",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:docs/draft02-user-handoff.md",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/build-polish03.luau",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/build-draft01.luau",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/build-bedroom02.luau",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/build-quad02.luau",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/build-neighborhood02.luau",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/build-lobby02.luau",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/finalize-draft02.luau",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/birthday-lobby.server.luau",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/birthday-lobby.client.luau",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/draft-door.server.luau",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/evidence/draft03/save-audit.json",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/evidence/draft03/scene-invariants.json",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:verification/check_polish03.py",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/Phuong-Cozy-World-Draft02.rbxl",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/phuong-cozy-game.rbxl",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:verification/roblox/capture-polish03.luau",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:verification/roblox/capture-preserved03.luau",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/evidence/draft03/scene-baseline.json",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/evidence/draft03/runtime-baseline.json",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/evidence/draft03/scene-current-independent.json",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/evidence/draft03/runtime-current-independent.json",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/tests/polish03-walk-client.luau",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/capture-invariants03.luau",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/evidence/draft03/arrival-before.png",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/evidence/draft03/arrival-after.png",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/evidence/draft03/house-before.png",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/evidence/draft03/house-after.png",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/evidence/draft03/park-before.png",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/evidence/draft03/park-after.png",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/evidence/draft03/street-before.png",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/evidence/draft03/street-after.png",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/evidence/draft03/window-detail.png",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/evidence/draft03/park-detail.png",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/evidence/draft03/shop-detail.png",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/evidence/draft03/arrival-player.png",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/evidence/draft03/low-graphics-park.png",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/evidence/draft03/runtime-porch.png",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "artifact:place",
+      "status": "PASS",
+      "detail": "File present; format/import correctness is an independent review gate"
+    },
+    {
+      "id": "artifact:polish-colors",
+      "status": "PASS",
+      "detail": {
+        "parts": 618,
+        "tokens": [
+          "blossom",
+          "brick",
+          "cream",
+          "forest",
+          "golden",
+          "sage",
+          "wood"
+        ],
+        "approved_texture_exceptions": [],
+        "note": "All authored BasePart colors checked. Explicit approved texture exceptions are reported separately; other color textures still require verified sources. Capture provenance, GUI, materials and actual import require independent review."
+      }
+    },
+    {
+      "id": "artifact:navigation",
+      "status": "PASS",
+      "detail": "File present; format/import correctness is an independent review gate"
+    },
+    {
+      "id": "artifact:views",
+      "status": "PASS",
+      "detail": "File present; format/import correctness is an independent review gate"
+    },
+    {
+      "id": "artifact:console",
+      "status": "PASS",
+      "detail": "File present; format/import correctness is an independent review gate"
+    },
+    {
+      "id": "test:captured-static-decor",
+      "status": "PASS",
+      "detail": {
+        "exit_code": 0,
+        "log": "verification/runs/MAP-03/20260927T180310Z-799b211b/captured-static-decor.log",
+        "sha256": "230eca743df8098af6c47885c4d18be764c669cb9ee7e47e1397d88c6872bf63"
+      }
+    }
+  ],
+  "gates": [
+    {
+      "id": "ticket-match",
+      "reviewer": "independent",
+      "prompt": "All ticket requirements and submitted source files are covered; the assigned object/activity was built, with no substituted scope."
+    },
+    {
+      "id": "shared-scope",
+      "reviewer": "independent",
+      "prompt": "Preserve touch/desktop access, independent third-person cameras, real group participation, one detailed bedroom, six quests and the empty user-authored note. No invented rooms, economy, forced cinematic or guest messages. Verify dependency interfaces and that automated tests exercise the actual ticket behavior."
+    },
+    {
+      "id": "visual-identity",
+      "reviewer": "independent",
+      "prompt": "Compare reference and actual result. Required silhouette, proportions, named features and color placement survive simplification; readability is clear at play scale."
+    },
+    {
+      "id": "roblox-import",
+      "reviewer": "independent",
+      "prompt": "Import this exact revision in Roblox Studio. Record place/model identity, scale, pivot, orientation, materials/textures, collision and console results; test it in context."
+    },
+    {
+      "id": "final-acceptance",
+      "reviewer": "human",
+      "prompt": "The user has reviewed this exact revision and explicitly accepted it as finished. Preserve their actual decision and comments."
+    },
+    {
+      "id": "MAP-03-AC01",
+      "reviewer": "independent",
+      "prompt": "Arrival-to-house views gain deliberate, layered low planting and cottage window-box detail; flowers and foliage have readable silhouettes and palette roles rather than unfinished generic masses."
+    },
+    {
+      "id": "MAP-03-AC02",
+      "reviewer": "independent",
+      "prompt": "Lawn-edge and sitting-area planting blends the broad Quad into adjacent destinations while preserving the continuous lawn, reference-based cross/diagonal paths and detailed community trees."
+    },
+    {
+      "id": "MAP-03-AC03",
+      "reviewer": "independent",
+      "prompt": "FOB Poke Bar, HeyTea and Aladdins retain their order and readable identities while receiving modest doorstep/planter/trim finishing details."
+    },
+    {
+      "id": "MAP-03-AC04",
+      "reviewer": "independent",
+      "prompt": "Jasper's park gains a finished planted rest corner and small paw motifs, with both gates, benches and the central fetch area visibly clear."
+    },
+    {
+      "id": "MAP-03-AC05",
+      "reviewer": "independent",
+      "prompt": "Existing authored geometry, materials, textures, collisions, seats, doors, spawn/destination positions, room layout and runtime source remain unchanged. The user's world offset is derived from the current home anchor."
+    },
+    {
+      "id": "MAP-03-AC06",
+      "reviewer": "independent",
+      "prompt": "New decor lives in one replaceable VisualPolish03 folder, has unique stable names, exact palette tags/colors, and at most 750 anchored BaseParts. New decorative parts have CanCollide, CanTouch and CanQuery disabled. No runtime scripts, external textures, extra lights or particles are added."
+    },
+    {
+      "id": "MAP-03-AC07",
+      "reviewer": "independent",
+      "prompt": "New decor reserves at least eight studs of clear width on outside door/gate approaches and the principal entry lane remains at least ten studs clear. Existing 7.6-stud shop door openings are preserved; this criterion does not claim they are widened. Actual normal-speed movement and camera views verify that planting does not hide access, wayfinding or required interactions."
+    },
+    {
+      "id": "MAP-03-AC08",
+      "reviewer": "independent",
+      "prompt": "Actual Studio views at player height and a wider view show a coherent improvement without floating/clipping decorations, intrusive repetition, obstructed signs or crowded walking space. Lower-graphics inspection preserves the principal new silhouettes; it does not claim hardware performance."
+    },
+    {
+      "id": "MAP-03-AC09",
+      "reviewer": "independent",
+      "prompt": "The working place and numbered Draft 03 checkpoint are saved locally, source and evidence are bound to this revision, and the original reviewed Draft 02 checkpoint remains intact."
+    },
+    {
+      "id": "MAP-03-AC10",
+      "reviewer": "independent",
+      "prompt": "An independent reviewer checks this scope and records specific defects/corrections. The user's previous Draft 02 feedback is not treated as acceptance of Draft 03."
+    },
+    {
+      "id": "MAP-03-scope",
+      "reviewer": "independent",
+      "prompt": "Deliverable: An editable Draft 03 place and repeatable static-detail builder, with actual Studio before/after views, palette and preservation evidence, relevant route checks and independent review. Improve the approved warm stylized neighborhood without changing its layout or gameplay.\nLimits/open decisions: No new activities, economy, rooms, brands, guest messages or personal birthday note. Keep the approved community-tree texture exception scoped to the original two IDs under QuadPlanting. Physical device performance, touch completion and same-account reconnect are carried forward as unverified; this static visual pass does not silently certify them. No Roblox publishing is requested.\nValidation: Follow verification/README.md: build, inspect actual Studio output, check, independent review, user playtest. Use a new MAP-03 review chain for this explicitly requested new visual scope, not a reset of MAP-02's exhausted iteration chain. Compare all original BaseParts with the prior captured baseline, verify runtime source and landmarks, capture the new folder's palette, verify its native-detail budget and noncolliding flags, and test relevant walking routes. Reuse prior evidence only for unchanged facts and identify that provenance clearly; do not rebind old runtime packets to a new place hash."
+    }
+  ],
+  "status": "READY_FOR_REVIEW"
+}
