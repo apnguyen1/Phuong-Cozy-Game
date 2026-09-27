@@ -1,0 +1,78 @@
+{
+  "reviewer": "independent-verifier",
+  "checked_at": "2026-09-26T19:53:29Z",
+  "phase": "preflight; builders still integrating",
+  "scripts": [
+    {
+      "name": "BirthdayLobbyServer",
+      "parseOK": true,
+      "sourceMatch": true
+    },
+    {
+      "name": "BirthdayLobbyClient",
+      "parseOK": true,
+      "sourceMatch": true
+    }
+  ],
+  "duplicate_full_part_paths": 374,
+  "sample_duplicate_paths": [
+    {
+      "count": 8,
+      "path": "Workspace.CozyWorld_Draft01.QuadPlanting.FlowerBed2.FlowerCenter"
+    },
+    {
+      "count": 3,
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree10.TreeBranch"
+    },
+    {
+      "count": 2,
+      "path": "Workspace.CozyWorld_Draft01.QuadPlanting.ReadingBench3.Seat"
+    },
+    {
+      "count": 2,
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.BirthdayCourtyard.RugBorder"
+    },
+    {
+      "count": 15,
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.Crossing"
+    },
+    {
+      "count": 9,
+      "path": "Workspace.CozyWorld_Draft01.Home.FrontWall"
+    },
+    {
+      "count": 2,
+      "path": "Workspace.CozyWorld_Draft01.Arrival.BirthdaySign.CreamFace"
+    },
+    {
+      "count": 4,
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.BirthdayCourtyard.PostFoot"
+    },
+    {
+      "count": 40,
+      "path": "Workspace.CozyWorld_Draft01.QuadPlanting.FlowerBed1.FlowerPetal"
+    },
+    {
+      "count": 40,
+      "path": "Workspace.CozyWorld_Draft01.QuadPlanting.FlowerBed5.FlowerPetal"
+    }
+  ],
+  "review_findings": [
+    {
+      "id": "V02-001",
+      "criterion": "Palette capture has unique part paths",
+      "expected": "Every captured BasePart full path uniquely identifies one live part",
+      "observed": "374 duplicated full part paths in live Edit model",
+      "fix": "Give repeated siblings deterministic suffixes before frozen capture",
+      "owner": "root integration"
+    },
+    {
+      "id": "V02-002",
+      "criterion": "Every captured texture ID maps to exact palette source",
+      "expected": "Imported albedo IDs have mapped verified source raster or no color textures remain",
+      "observed": "QuadPlanting retained rbxassetid://740989141 and rbxassetid://4668043207 in preflight live read",
+      "fix": "Complete verified texture-free blossom replacement or supply actual palette-valid imported source rasters",
+      "owner": "root integration"
+    }
+  ]
+}

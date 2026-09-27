@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "method": "Actual Play client Humanoid.MoveTo at normal WalkSpeed16; each waypoint records physical position. Keyboard E/Space through Studio input tool with Client view focused. No player teleport used to satisfy walking routes.",
+  "checks": [
+    {
+      "name": "early-pad-E",
+      "passed": true,
+      "deadline_before": 1790453345.659827,
+      "world_observed_at": 1790453310.528598,
+      "remaining_before_hint": "40s",
+      "hud_before": true,
+      "hud_after": false,
+      "camera_after": "Custom",
+      "outdoor_brightness_after": 2
+    },
+    {
+      "name": "main-arrival-quad-porch-walk",
+      "passed": true,
+      "raw": "{\"1\":{\"target\":\"4, 4, 94\",\"seconds\":1.6628974000000199,\"distance\":1.4247548580169678,\"actual\":\"5.123354434967041, 3.996673345565796, 94.87635040283203\"},\"3\":{\"target\":\"4, 4, 0\",\"seconds\":3.0667155999999524,\"distance\":1.5697191953659058,\"actual\":\"4.000463485717773, 3.996673107147217, 1.5697156190872192\"},\"2\":{\"target\":\"4, 4, 50\",\"seconds\":2.767011399999774,\"distance\":0.6367838978767395,\"actual\":\"4.015552997589111, 3.996673107147217, 50.6365852355957\"},\"5\":{\"target\":\"4, 4, -101\",\"seconds\":3.133854000000156,\"distance\":1.5031927824020386,\"actual\":\"4.000002861022949, 3.996673107147217, -99.49681091308594\"},\"4\":{\"target\":\"4, 4, -50\",\"seconds\":3.183250600000065,\"distance\":0.6361819505691528,\"actual\":\"4.000005722045898, 3.996673107147217, -49.363826751708984\"},\"6\":{\"target\":\"-1, 4, -116\",\"seconds\":0.9666502999998556,\"distance\":1.7783842086791993,\"actual\":\"-0.4837643504142761, 4.02667236328125, -114.29840087890625\"}}"
+    },
+    {
+      "name": "front-door-E",
+      "passed": true,
+      "observed_open": true,
+      "prompt_after": "Close"
+    },
+    {
+      "name": "bedroom-entry-and-clear-east-loop",
+      "passed": true,
+      "waypoints": [
+        [
+          -1,
+          4,
+          -131
+        ],
+        [
+          -1,
+          4,
+          -151
+        ],
+        [
+          10,
+          4,
+          -152
+        ],
+        [
+          10,
+          4,
+          -135
+        ]
+      ],
+      "observed_end": [
+        9.9528,
+        4.0267,
+        -136.2121
+      ],
+      "max_waypoint_distance": 1.974
+    },
+    {
+      "name": "bedroom-exit-and-FOB-entry",
+      "passed": true,
+      "observed_FOB_position": [
+        -132.7538,
+        4.0467,
+        -118.9509
+      ]
+    },
+    {
+      "name": "HeyTea-entry-seat-and-exit",
+      "passed": true,
+      "notes": "Walking inside reached the cafe seat at (-136,3.747,-21). The first exit MoveTo stopped because the avatar was seated. Space/Jump released the chair; normal walking then resumed.",
+      "raw_initial": "{\"1\":{\"target\":\"-120, 4, -119\",\"distance\":0.9926953911781311,\"actual\":\"-120.99170684814453, 3.9566149711608887, -118.9910888671875\"},\"3\":{\"target\":\"-119, 4, -23\",\"distance\":0.9183549284934998,\"actual\":\"-119.00102996826172, 3.9566729068756104, -23.91733169555664\"},\"2\":{\"target\":\"-119, 4, -70\",\"distance\":1.386014461517334,\"actual\":\"-119.05378723144531, 3.9566729068756104, -71.38429260253906\"},\"5\":{\"target\":\"-120, 4, -23\",\"distance\":16.126493453979493,\"actual\":\"-136, 3.747450351715088, -21\"},\"4\":{\"target\":\"-136, 4, -23\",\"distance\":2.0158822536468508,\"actual\":\"-136, 3.747450351715088, -21\"}}"
+    },
+    {
+      "name": "Aladdins-entry-and-interior-turn",
+      "passed": true,
+      "raw": "{\"1\":{\"target\":\"-119, 4, -23\",\"distance\":0.8132181167602539,\"seated\":false,\"actual\":\"-119.8064956665039, 3.9566712379455566, -22.905073165893555\"},\"3\":{\"target\":\"-119, 4, 73\",\"distance\":1.8335049152374268,\"seated\":false,\"actual\":\"-119.00110626220703, 3.956672430038452, 71.16700744628906\"},\"2\":{\"target\":\"-119, 4, 25\",\"distance\":1.834064245223999,\"seated\":false,\"actual\":\"-119.03089904785156, 3.956672430038452, 23.16670799255371\"},\"5\":{\"target\":\"-131, 4, 62\",\"distance\":0.41575050354003909,\"seated\":false,\"actual\":\"-131.02635192871094, 4.04667329788208, 62.41228103637695\"},\"4\":{\"target\":\"-132, 4, 73\",\"distance\":0.40232735872268679,\"seated\":false,\"actual\":\"-131.6039581298828, 4.046670913696289, 72.94670867919922\"}}"
+    },
+    {
+      "name": "courtyard-connection",
+      "passed": true,
+      "raw": "{\"1\":{\"target\":\"-132, 4, 73\",\"distance\":3.2563393115997316,\"actual\":\"-131.7091522216797, 4.046672344207764, 69.75701141357422\"},\"3\":{\"target\":\"-119, 4, 94\",\"distance\":0.2643134891986847,\"actual\":\"-119.01158905029297, 3.9966511726379395, 93.7359619140625\"},\"2\":{\"target\":\"-119, 4, 73\",\"distance\":1.0356446504592896,\"actual\":\"-120.00259399414062, 3.956666946411133, 72.74409484863281\"},\"5\":{\"target\":\"-10, 4, 94\",\"distance\":0.690883994102478,\"actual\":\"-10.690876007080078, 3.996673345565796, 93.99993896484375\"},\"4\":{\"target\":\"-70, 4, 94\",\"distance\":1.2245230674743653,\"actual\":\"-71.2245101928711, 3.996673345565796, 93.9954833984375\"},\"7\":{\"target\":\"83, 4, 94\",\"distance\":0.624108612537384,\"actual\":\"82.37590026855469, 3.996673345565796, 93.9999771118164\"},\"6\":{\"target\":\"48, 4, 94\",\"distance\":0.9573803544044495,\"actual\":\"47.042625427246094, 3.996673345565796, 93.9999771118164\"},\"9\":{\"target\":\"108, 4, 46\",\"distance\":0.6847002506256104,\"actual\":\"107.3800048828125, 3.916672945022583, 46.27834701538086\"},\"8\":{\"target\":\"83, 4, 56\",\"distance\":1.2880678176879883,\"actual\":\"82.981689453125, 3.996673345565796, 57.287933349609375\"}}"
+    },
+    {
+      "name": "birthday-chair-sit-and-exit",
+      "passed": true,
+      "raw": "{\"seat\":\"Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.BirthdayCourtyard.CelebrationChair_002.Seat\",\"health\":100,\"position\":\"123, 3.7674503326416016, 35\"}"
+    },
+    {
+      "name": "courtyard-upper-link-and-both-park-gates",
+      "passed": true,
+      "raw": "{\"1\":{\"target\":\"110, 4, 40\",\"distance\":0.9114710688591003,\"actual\":\"110.84651947021484, 3.916672945022583, 39.672523498535156\"},\"8\":{\"target\":\"88, 4, -116\",\"distance\":0.4707041382789612,\"actual\":\"88.3725814819336, 3.996673107147217, -116.28763580322266\"},\"3\":{\"target\":\"83, 4, -4\",\"distance\":0.7201783061027527,\"actual\":\"83.5952377319336, 3.996673107147217, -4.405385971069336\"},\"2\":{\"target\":\"105, 4, -20\",\"distance\":1.083113193511963,\"actual\":\"105.1053237915039, 3.916673421859741, -18.92524528503418\"},\"5\":{\"target\":\"95, 4, -92\",\"distance\":1.7278186082839966,\"actual\":\"94.19310760498047, 3.996673107147217, -90.47216796875\"},\"4\":{\"target\":\"83, 4, -70\",\"distance\":0.7120243906974793,\"actual\":\"83.0051498413086, 3.996673345565796, -69.28800201416016\"},\"7\":{\"target\":\"107, 4, -132\",\"distance\":1.332441806793213,\"actual\":\"106.96495056152344, 3.71667218208313, -130.69850158691406\"},\"6\":{\"target\":\"107, 4, -92\",\"distance\":1.2155611515045167,\"actual\":\"105.82588195800781, 3.716671943664551, -91.86302947998047\"}}"
+    },
+    {
+      "name": "window-camera-occlusion",
+      "passed": true,
+      "notes": "At bedroom x10,z-135 the camera saw through the original glass into opaque blinds. Lowering only cottage window glass transparency to0.2 moved the default Zoom camera inside; persisted in finalizer, screenshot bedroom-window-camera.png."
+    }
+  ],
+  "not_passed": [
+    {
+      "name": "automatic-navigation-tool",
+      "status": "tool limitation",
+      "notes": "Studio assistant pathfinding returned Path Blocked and later hung. Its execution was terminated. Grounded humanoid walk routes above were tested separately."
+    },
+    {
+      "name": "manual-orbit-on-two-clients",
+      "status": "pending",
+      "notes": "Custom camera and no forced runtime camera loop verified. Automated right-drag did not produce measurable yaw; do not claim this as a completed manual orbit check."
+    },
+    {
+      "name": "phone-tablet-input",
+      "status": "pending"
+    },
+    {
+      "name": "four-to-six-bedroom-visitors",
+      "status": "pending"
+    },
+    {
+      "name": "low-graphics-device-performance",
+      "status": "pending"
+    }
+  ],
+  "health_after_walk": 100,
+  "console": "No messages returned by get_console_output after route and seat checks."
+}

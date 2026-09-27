@@ -1,0 +1,157 @@
+{
+  "schema_version": 1,
+  "stage": "production",
+  "target": "roblox",
+  "status": "approved",
+  "approved_by": "User: active September 26, 2026 Draft 02 implementation goal and explicit name/store clarifications; scope authorization only, final acceptance pending",
+  "max_iterations": 3,
+  "criteria": [],
+  "id": "MAP-02",
+  "title": "MAP-02 \u2014 Integrated decorated birthday world, Draft 02",
+  "intent": "Improve the first map into a detailed, cohesive birthday neighborhood with reference-based Quad paths, Phuong's photographed bedroom, three requested stores and a decorated welcome room.",
+  "kind": "model",
+  "sources": [
+    "docs/tickets/MAP-02.md",
+    "docs/tickets/PCW-04.md",
+    "docs/tickets/PCW-05.md",
+    "docs/tickets/PCW-06.md",
+    "docs/tickets/PCW-17.md",
+    "docs/bedroom02-notes.md",
+    "docs/neighborhood02-notes.md",
+    "docs/lobby02-notes.md",
+    "docs/roblox-asset-register.md"
+  ],
+  "inputs": [
+    "roblox/build-draft01.luau",
+    "roblox/prepare-assets.luau",
+    "roblox/build-bedroom02.luau",
+    "roblox/build-lobby02.luau",
+    "roblox/build-neighborhood02.luau",
+    "roblox/build-quad02.luau",
+    "roblox/finalize-draft02.luau",
+    "roblox/birthday-lobby.server.luau",
+    "roblox/birthday-lobby.client.luau",
+    "roblox/draft-door.server.luau",
+    "roblox/draft-camera.client.luau",
+    "art/references/map/draft02-reference-quad.png",
+    "art/references/map/draft02-reference-bedroom-a.jpg",
+    "art/references/map/draft02-reference-bedroom-b.jpg",
+    "roblox/evidence/draft02/save-audit.json",
+    "roblox/evidence/draft02/live-source-check.json",
+    "roblox/evidence/draft02/navigation-results.json",
+    "roblox/evidence/draft02/lobby-play.png",
+    "roblox/evidence/draft02/bedroom-bed.png",
+    "roblox/evidence/draft02/bedroom-desk.png",
+    "roblox/evidence/draft02/bedroom-bed-final.png",
+    "roblox/evidence/draft02/bedroom-desk-final.png",
+    "roblox/evidence/draft02/bedroom-tv-print-final.png",
+    "roblox/evidence/draft02/quad-overview-final.png",
+    "roblox/evidence/draft02/stores-overview.png",
+    "roblox/evidence/draft02/fob-front.png",
+    "roblox/evidence/draft02/heytea-front.png",
+    "roblox/evidence/draft02/aladdins-play.png",
+    "roblox/evidence/draft02/courtyard.png",
+    "roblox/evidence/draft02/bedroom-window-camera.png",
+    "roblox/evidence/draft02/fob-board-close.png",
+    "roblox/evidence/draft02/heytea-board-close.png",
+    "roblox/evidence/draft02/aladdins-board-close.png",
+    "verification/check_party_runtime.py",
+    "roblox/tests/party-runtime.server.luau",
+    "roblox/tests/party-runtime.client.luau",
+    "roblox/evidence/draft02/party-runtime05-raw.json",
+    "roblox/evidence/draft02/party-source-bindings05.json",
+    "roblox/evidence/draft02/party-harness05-sources.json",
+    "roblox/evidence/draft02/device-preview-results.json",
+    "roblox/evidence/draft02/phone-lobby-before-layout.png",
+    "roblox/evidence/draft02/phone-lobby-responsive.png",
+    "roblox/evidence/draft02/tablet-lobby-responsive.png",
+    "roblox/evidence/draft02/runtime-iteration03-raw.json",
+    "roblox/evidence/draft02/bedroom-low-graphics.png",
+    "roblox/evidence/draft02/quad-low-graphics-ground.png",
+    "roblox/evidence/draft02/quad-low-graphics-aerial.png",
+    "roblox/tests/camera-runtime.server.luau",
+    "roblox/evidence/draft02/camera-runtime03-raw.json",
+    "roblox/evidence/draft02/camera-source-bindings03.json",
+    "roblox/evidence/draft02/camera-harness03-sources.json",
+    "roblox/evidence/draft02/independent-live-inventory03.json"
+  ],
+  "artifacts": [
+    {
+      "id": "place",
+      "path": "roblox/Phuong-Cozy-World-Draft02.rbxl",
+      "check": "exists"
+    },
+    {
+      "id": "studio-colors",
+      "path": "roblox/evidence/draft02/map-studio-colors.json",
+      "check": "studio_palette",
+      "allowed_tokens": [
+        "blossom",
+        "brick",
+        "cream",
+        "forest",
+        "golden",
+        "ink",
+        "sage",
+        "wood"
+      ],
+      "required_tokens": [
+        "blossom",
+        "brick",
+        "cream",
+        "forest",
+        "golden",
+        "ink",
+        "sage",
+        "wood"
+      ],
+      "texture_sources": {},
+      "approved_texture_exceptions": [
+        {
+          "content_id": "rbxassetid://740989141",
+          "property": "TextureID",
+          "path_prefix": "Workspace.CozyWorld_Draft01.QuadPlanting",
+          "approved_by": "User, September 26, 2026: Keep the detailed community trees as a palette exception",
+          "reason": "Explicit user choice to retain the detailed community blossom trees, including their brown trunk texture beyond the exact eight colors. Applies only to this exact content ID/property under QuadPlanting; native part colors and all other textures remain checked."
+        },
+        {
+          "content_id": "rbxassetid://4668043207",
+          "property": "ColorMap",
+          "path_prefix": "Workspace.CozyWorld_Draft01.QuadPlanting",
+          "approved_by": "User, September 26, 2026: Keep the detailed community trees as a palette exception",
+          "reason": "Explicit user choice to retain the detailed community blossom trees, including their pink foliage color map beyond the exact eight colors. Applies only to this exact content ID/property under QuadPlanting; native part colors and all other textures remain checked."
+        }
+      ]
+    },
+    {
+      "id": "navigation",
+      "path": "roblox/evidence/draft02/navigation-results.json",
+      "check": "exists"
+    },
+    {
+      "id": "console",
+      "path": "roblox/evidence/draft02/console.txt",
+      "check": "exists"
+    },
+    {
+      "id": "views",
+      "path": "roblox/evidence/draft02/visual-evidence.json",
+      "check": "exists"
+    }
+  ],
+  "commands": [
+    {
+      "id": "captured-party-behavior",
+      "argv": [
+        "{python}",
+        "verification/check_party_runtime.py",
+        "--complete-run",
+        "05",
+        "--camera-run",
+        "03"
+      ],
+      "cwd": ".",
+      "timeout_seconds": 30
+    }
+  ]
+}

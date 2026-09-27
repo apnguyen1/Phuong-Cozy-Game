@@ -1,0 +1,154 @@
+{
+  "schema_version": 1,
+  "run_id": "20260926T200504Z-eab81a56",
+  "report_sha256": "887478874b8bc2063954538da57271cce9f6c51b989d47f341858141d670ac00",
+  "reviewer": "independent-verifier",
+  "reviewer_type": "agent",
+  "decisions": [
+    {
+      "criterion": "ticket-match",
+      "verdict": "pending",
+      "notes": "Pending complete evidence for this exact revision; no pass inferred from a builder summary.",
+      "evidence": []
+    },
+    {
+      "criterion": "shared-scope",
+      "verdict": "pending",
+      "notes": "Pending complete evidence for this exact revision; no pass inferred from a builder summary.",
+      "evidence": []
+    },
+    {
+      "criterion": "visual-identity",
+      "verdict": "pending",
+      "notes": "Pending complete evidence for this exact revision; no pass inferred from a builder summary.",
+      "evidence": []
+    },
+    {
+      "criterion": "roblox-import",
+      "verdict": "pending",
+      "notes": "Pending complete evidence for this exact revision; no pass inferred from a builder summary.",
+      "evidence": []
+    },
+    {
+      "criterion": "playability",
+      "verdict": "pending",
+      "notes": "Pending complete evidence for this exact revision; no pass inferred from a builder summary.",
+      "evidence": []
+    },
+    {
+      "criterion": "replay",
+      "verdict": "fail",
+      "notes": "Actual engine iteration01 failed reset-before-entry and all three post-world reset checks. Snapshot reports a joined World player near X1992 inside the lobby. Builder is correcting lifecycle readiness; this report does not approve the correction.",
+      "evidence": [
+        "roblox/evidence/draft02/runtime-iteration01-raw.json"
+      ]
+    },
+    {
+      "criterion": "mixed-device",
+      "verdict": "pending",
+      "notes": "Pending complete evidence for this exact revision; no pass inferred from a builder summary.",
+      "evidence": []
+    },
+    {
+      "criterion": "shared-session",
+      "verdict": "fail",
+      "notes": "The first-expiry snapshot shows an additional late player already World and the friends-stay-in-lobby check false. Manual input/early movement may have contaminated this run, so it cannot prove timer independence; rerun with controlled test clients, then separately test real movement/cameras.",
+      "evidence": [
+        "roblox/evidence/draft02/runtime-iteration01-raw.json"
+      ]
+    },
+    {
+      "criterion": "PCW-17-AC01",
+      "verdict": "pending",
+      "notes": "Pending complete evidence for this exact revision; no pass inferred from a builder summary.",
+      "evidence": []
+    },
+    {
+      "criterion": "PCW-17-AC02",
+      "verdict": "pending",
+      "notes": "Pending complete evidence for this exact revision; no pass inferred from a builder summary.",
+      "evidence": []
+    },
+    {
+      "criterion": "PCW-17-AC03",
+      "verdict": "pending",
+      "notes": "Pending complete evidence for this exact revision; no pass inferred from a builder summary.",
+      "evidence": []
+    },
+    {
+      "criterion": "PCW-17-AC04",
+      "verdict": "pending",
+      "notes": "Pending complete evidence for this exact revision; no pass inferred from a builder summary.",
+      "evidence": []
+    },
+    {
+      "criterion": "PCW-17-AC05",
+      "verdict": "pending",
+      "notes": "Pending complete evidence for this exact revision; no pass inferred from a builder summary.",
+      "evidence": []
+    },
+    {
+      "criterion": "PCW-17-AC06",
+      "verdict": "fail",
+      "notes": "The first-expiry snapshot shows an additional late player already World and the friends-stay-in-lobby check false. Manual input/early movement may have contaminated this run, so it cannot prove timer independence; rerun with controlled test clients, then separately test real movement/cameras.",
+      "evidence": [
+        "roblox/evidence/draft02/runtime-iteration01-raw.json"
+      ]
+    },
+    {
+      "criterion": "PCW-17-AC07",
+      "verdict": "fail",
+      "notes": "Actual engine iteration01 failed reset-before-entry and all three post-world reset checks. Snapshot reports a joined World player near X1992 inside the lobby. Builder is correcting lifecycle readiness; this report does not approve the correction.",
+      "evidence": [
+        "roblox/evidence/draft02/runtime-iteration01-raw.json"
+      ]
+    },
+    {
+      "criterion": "PCW-17-AC08",
+      "verdict": "fail",
+      "notes": "Actual engine iteration01 failed reset-before-entry and all three post-world reset checks. Snapshot reports a joined World player near X1992 inside the lobby. Builder is correcting lifecycle readiness; this report does not approve the correction.",
+      "evidence": [
+        "roblox/evidence/draft02/runtime-iteration01-raw.json"
+      ]
+    },
+    {
+      "criterion": "PCW-17-AC09",
+      "verdict": "pending",
+      "notes": "Pending complete evidence for this exact revision; no pass inferred from a builder summary.",
+      "evidence": []
+    },
+    {
+      "criterion": "PCW-17-AC10",
+      "verdict": "pending",
+      "notes": "Pending complete evidence for this exact revision; no pass inferred from a builder summary.",
+      "evidence": []
+    },
+    {
+      "criterion": "PCW-17-AC11",
+      "verdict": "pending",
+      "notes": "Pending complete evidence for this exact revision; no pass inferred from a builder summary.",
+      "evidence": []
+    },
+    {
+      "criterion": "PCW-17-AC12",
+      "verdict": "fail",
+      "notes": "Failed actual engine result, and exact tested-source hashes were not captured before edits began. No source binding has been fabricated. Later corrected source requires a new bound test.",
+      "evidence": [
+        "roblox/evidence/draft02/runtime-iteration01-raw.json",
+        "verification/runs/PCW-17/20260926T200504Z-eab81a56/captured-engine-behavior.log"
+      ]
+    },
+    {
+      "criterion": "PCW-17-AC13",
+      "verdict": "pending",
+      "notes": "Pending complete evidence for this exact revision; no pass inferred from a builder summary.",
+      "evidence": []
+    },
+    {
+      "criterion": "PCW-17-scope",
+      "verdict": "pending",
+      "notes": "Pending complete evidence for this exact revision; no pass inferred from a builder summary.",
+      "evidence": []
+    }
+  ]
+}

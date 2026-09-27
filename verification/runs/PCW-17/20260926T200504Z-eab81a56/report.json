@@ -1,0 +1,266 @@
+{
+  "schema_version": 1,
+  "type": "run",
+  "ticket_id": "PCW-17",
+  "ticket_path": "verification/contracts/PCW-17-draft02.json",
+  "run_id": "20260926T200504Z-eab81a56",
+  "stage": "production",
+  "iteration": 1,
+  "builder": "lobby-builder",
+  "previous": null,
+  "changes": null,
+  "snapshot": {
+    "verification/contracts/PCW-17-draft02.json": "6869f09633a197df2f8238422673c8ca7fa8372fffa0dece8d22fc8871bfceed",
+    "verification/palette.json": "57f6930e33ca800aef92814c881f7f3fb1115511bc38f487e246d0e1264f3751",
+    "verification/verify.py": "910f37568e16a26b13d9da6cecb6b9a2d38e14d90147e382c2a1447c29eb03f9",
+    "verification/requirements.txt": "41b54a6fb2918667ca47a61d73b522629d84490f3d78f0f20b21135faba10d35",
+    "verification/roblox/capture.luau": "be4aa0bfb6441401570eb49b9737f7ce503ad6f0e8ed8c8846a9b1e5d9ad9afa",
+    "docs/tickets/PCW-17.md": "3ecf966af8feb546625e2b2ed337b363b4ddec050081261c06bb891512b10307",
+    "docs/tickets/MAP-02.md": "be9d36c871e986f2f12b1036a7211ad192617801336707d09c3a1857be4df093",
+    "docs/lobby02-notes.md": "188ee8b6a2c35584d84c1c16d0e0b0b018e8ff0cc108ab50a269d459c520d591",
+    "roblox/build-lobby02.luau": "7805bfba78e7dd9f7a6a200b24064b4c70031494ba269a5512a2571b575c8a7d",
+    "roblox/birthday-lobby.server.luau": "ad7be3c845b18bf4f19b733b2b85d17a9947f0b016c811b1e645452060764579",
+    "roblox/birthday-lobby.client.luau": "3e78c7d57332a54c23d01ae078e5281e48def07799edc516e3ec13d75d5ee6b4",
+    "roblox/finalize-draft02.luau": "4f105dec2b7371ad68bd647c5979d5332c1707bbb6eecb80a3d5dd1d655e62f8",
+    "roblox/tests/lobby-runtime-check.luau": "18a4484e46b48a3a933d6261e1813cdef42b8726a47d2e694024ba1e2f9d405d",
+    "roblox/evidence/draft02/runtime-results.json": "6230e13b4b3197c6318b5bee512b244fd4c731384cb855b7d9d39bf5ec378a19",
+    "verification/check_lobby_runtime.py": "198b79a2e006800741658ef2f1080b492217ab63b351ef848287b4d7dca25a68",
+    "roblox/Phuong-Cozy-World-Draft02.rbxl": null,
+    "roblox/evidence/draft02/lobby-studio-colors.json": null,
+    "roblox/evidence/draft02/console.txt": null,
+    "roblox/evidence/draft02/visual-evidence.json": null,
+    "@runtime": {
+      "python": "3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)]",
+      "Pillow": "missing"
+    }
+  },
+  "fingerprint": "b9dae2636c037eaeb3ac3c25bfce4e64a41d9f521334c87510d81a838369d08d",
+  "checks": [
+    {
+      "id": "ticket-approved",
+      "status": "PASS",
+      "detail": "Approved ticket required; a draft is not an assignment"
+    },
+    {
+      "id": "palette",
+      "status": "PASS",
+      "detail": {
+        "forest": "#365744",
+        "sage": "#A8B995",
+        "cream": "#F5F0E4",
+        "wood": "#95674B",
+        "blossom": "#E8B7C6",
+        "brick": "#B66C68",
+        "golden": "#E8C779",
+        "ink": "#26382E"
+      }
+    },
+    {
+      "id": "input:docs/tickets/PCW-17.md",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:docs/tickets/MAP-02.md",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:docs/lobby02-notes.md",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/build-lobby02.luau",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/birthday-lobby.server.luau",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/birthday-lobby.client.luau",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/finalize-draft02.luau",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/tests/lobby-runtime-check.luau",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/evidence/draft02/runtime-results.json",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:verification/check_lobby_runtime.py",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "artifact:place",
+      "status": "BLOCKED",
+      "detail": "Missing or empty artifact: roblox/Phuong-Cozy-World-Draft02.rbxl"
+    },
+    {
+      "id": "artifact:studio-colors",
+      "status": "BLOCKED",
+      "detail": "Missing or empty artifact: roblox/evidence/draft02/lobby-studio-colors.json"
+    },
+    {
+      "id": "artifact:runtime-results",
+      "status": "PASS",
+      "detail": "File present; format/import correctness is an independent review gate"
+    },
+    {
+      "id": "artifact:console",
+      "status": "BLOCKED",
+      "detail": "Missing or empty artifact: roblox/evidence/draft02/console.txt"
+    },
+    {
+      "id": "artifact:views",
+      "status": "BLOCKED",
+      "detail": "Missing or empty artifact: roblox/evidence/draft02/visual-evidence.json"
+    },
+    {
+      "id": "test:captured-engine-behavior",
+      "status": "FAIL",
+      "detail": {
+        "exit_code": 1,
+        "log": "verification/runs/PCW-17/20260926T200504Z-eab81a56/captured-engine-behavior.log",
+        "sha256": "dae4f20fbc05ffbbd19f0dc0af99cdabdf4a731808d9cc4fa899367c2efc60c1"
+      }
+    }
+  ],
+  "gates": [
+    {
+      "id": "ticket-match",
+      "reviewer": "independent",
+      "prompt": "All ticket requirements and submitted source files are covered; the assigned object/activity was built, with no substituted scope."
+    },
+    {
+      "id": "shared-scope",
+      "reviewer": "independent",
+      "prompt": "Preserve touch/desktop access, independent third-person cameras, real group participation, one detailed bedroom, six quests and the empty user-authored note. No invented rooms, economy, forced cinematic or guest messages. Verify dependency interfaces and that automated tests exercise the actual ticket behavior."
+    },
+    {
+      "id": "visual-identity",
+      "reviewer": "independent",
+      "prompt": "Compare reference and actual result. Required silhouette, proportions, named features and color placement survive simplification; readability is clear at play scale."
+    },
+    {
+      "id": "roblox-import",
+      "reviewer": "independent",
+      "prompt": "Import this exact revision in Roblox Studio. Record place/model identity, scale, pivot, orientation, materials/textures, collision and console results; test it in context."
+    },
+    {
+      "id": "final-acceptance",
+      "reviewer": "human",
+      "prompt": "The user has reviewed this exact revision and explicitly accepted it as finished. Preserve their actual decision and comments."
+    },
+    {
+      "id": "playability",
+      "reviewer": "independent",
+      "prompt": "In Studio Play, demonstrate start, intended actions, feedback, forgiving mistakes, completion and exit on the target controls. Inspect client/server errors."
+    },
+    {
+      "id": "replay",
+      "reviewer": "independent",
+      "prompt": "Test cancellation/re-entry, three repeated plays, leaving/returning and reconnect. No stuck controls, duplicate callbacks/rewards or lost committed session progress. Test cross-session saves only when PCW-13 defines them; do not invent persistence guarantees."
+    },
+    {
+      "id": "mixed-device",
+      "reviewer": "independent",
+      "prompt": "Complete the changed flow via touch on phone/tablet and via desktop controls. Record named devices, readable text, unobstructed move/jump/orbit zones, close/cancel and busy/error states."
+    },
+    {
+      "id": "shared-session",
+      "reviewer": "independent",
+      "prompt": "Use at least two clients: simultaneous actions, competing slot, disconnect, reservation release, late join and one reward only. Cameras stay independent; Phuong finishing permissions hold. For PCW-16 rehearse with 8-10 participants on named devices."
+    },
+    {
+      "id": "fun",
+      "reviewer": "human",
+      "prompt": "User playtest: was the goal clear, did choices/actions feel satisfying, was pacing comfortable, and would you replay? Record duration, enjoyable moment, friction and requested change. User decides whether it is good enough."
+    },
+    {
+      "id": "PCW-17-AC01",
+      "reviewer": "independent",
+      "prompt": "A fresh player first spawns safely inside the decorated enclosed room, with Happy 24th Birthday, Phuong visible and readable."
+    },
+    {
+      "id": "PCW-17-AC02",
+      "reviewer": "independent",
+      "prompt": "Birthday decorations and favorite-things displays furnish the room; eight seats and a clear central walking route remain usable."
+    },
+    {
+      "id": "PCW-17-AC03",
+      "reviewer": "independent",
+      "prompt": "A visible personal countdown starts at 60 seconds and decreases toward automatic world entry."
+    },
+    {
+      "id": "PCW-17-AC04",
+      "reviewer": "independent",
+      "prompt": "At expiry, that player relocates to outdoor arrival, remains movable and no longer sees the lobby countdown HUD."
+    },
+    {
+      "id": "PCW-17-AC05",
+      "reviewer": "independent",
+      "prompt": "A clearly explained prompt at the pad permits early entry; remote or out-of-room triggering cannot move a player."
+    },
+    {
+      "id": "PCW-17-AC06",
+      "reviewer": "independent",
+      "prompt": "Each player has an independent deadline and transition state; one player's early entry cannot transport another player or change their deadline/camera."
+    },
+    {
+      "id": "PCW-17-AC07",
+      "reviewer": "independent",
+      "prompt": "Reset before entry creates one fresh countdown; an old character loop cannot move the replacement early or duplicate UI."
+    },
+    {
+      "id": "PCW-17-AC08",
+      "reviewer": "independent",
+      "prompt": "Reset after world entry returns to the world without a new lobby timer; disconnect cleanup and late join behave independently."
+    },
+    {
+      "id": "PCW-17-AC09",
+      "reviewer": "independent",
+      "prompt": "Seated expiry releases the seat and moves a usable character without transporting furniture; prompt/expiry races do not duplicate transitions."
+    },
+    {
+      "id": "PCW-17-AC10",
+      "reviewer": "independent",
+      "prompt": "At least two actual clients demonstrate simultaneous presence, separate cameras, early entry, late join and reconnect; eight-player placement uses distinct available slots."
+    },
+    {
+      "id": "PCW-17-AC11",
+      "reviewer": "independent",
+      "prompt": "Desktop and touch users can read countdown, discover/activate pad, move and orbit without UI obstruction."
+    },
+    {
+      "id": "PCW-17-AC12",
+      "reviewer": "independent",
+      "prompt": "Installed runtime source parses, matches saved source, keeps deadline/destination server-owned and passes meaningful behavior checks, with no new errors in the changed flow."
+    },
+    {
+      "id": "PCW-17-AC13",
+      "reviewer": "independent",
+      "prompt": "Authored room/UI colors conform to the palette, and the saved place contains this reviewed lobby revision."
+    },
+    {
+      "id": "PCW-17-scope",
+      "reviewer": "independent",
+      "prompt": "Deliverable: A decorated enclosed spawn room, eight guest seats, exact greeting Happy 24th Birthday, Phuong, favorite-things displays, discoverable teleport pad, visible 60-second per-player countdown, server-controlled same-place relocation, independent third-person camera framing and persisted builder/server/client sources. Include actual behavioral checks and Studio client/server evidence.\nLimits/open decisions: This moves players between two regions in one place and needs no published destination. Favorite-things tables are decorative, not new quests. No purchases, forced cinematic, invented guest messages or birthday note are added. Rejoin is a fresh server visit; no cross-session lobby persistence is promised. Human clarity, pacing, enjoyment and exact-revision acceptance remain pending.\nValidation: Run the actual server-source behavior checks in Studio, then observe real early prompt entry, one unshortened 60-second expiry, seated expiry, reset on both sides, repeated entry, late join and disconnect/rejoin. Use two clients and touch plus desktop input; record outcomes/console. Compare installed/saved code, independently capture live palette, review player-height screenshots and bind the saved artifact before finalization."
+    }
+  ],
+  "status": "CHANGES_REQUIRED"
+}

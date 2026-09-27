@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "method": "Actual Roblox Studio built-in device simulation and engine screenshot capture; not physical hardware or a performance benchmark.",
+  "production_client_sha256": "c1aba60de3edecc2b34e766c257674914028ab91f6f2590d54ddd579d73c8bae",
+  "checkpoint_sha256": "c0d957546b23a58aa99337492edfe08fb383501f3e6d8d58ddab1b8063d3a418",
+  "phone": {
+    "profile": "iphone_7",
+    "orientation": "LandscapeRight",
+    "viewport": [
+      666,
+      374
+    ],
+    "touch_enabled": true,
+    "countdown_size": [
+      359.640015,
+      70
+    ],
+    "countdown_position": [
+      153.179993,
+      232
+    ],
+    "hint_text_bounds": [
+      232,
+      12
+    ],
+    "hint_label_size": [
+      339.640015,
+      22
+    ],
+    "screenshot": "roblox/evidence/draft02/phone-lobby-responsive.png",
+    "result": "Greeting, countdown, left movement and right jump controls are visibly separate. Hint fits. Previous top card covered greeting; original defect screenshot retained.",
+    "entry_input_result": "Pending. Avatar walked to prompt using Humanoid MoveTo. The touch prompt was visible in the Studio window. Automated tap and hold attempts did not demonstrate a World transition before countdown expiry; no touch-completion pass claimed."
+  },
+  "tablet": {
+    "profile": "ipad_10th_generation",
+    "orientation": "LandscapeRight",
+    "viewport": [
+      1179,
+      819
+    ],
+    "touch_enabled": true,
+    "countdown_size": [
+      410,
+      100
+    ],
+    "countdown_position": [
+      384.5,
+      12
+    ],
+    "hint_text_bounds": [
+      287,
+      15
+    ],
+    "hint_label_size": [
+      378,
+      35
+    ],
+    "screenshot": "roblox/evidence/draft02/tablet-lobby-responsive.png",
+    "result": "Top countdown, greeting and touch controls are visibly separate; hint fits."
+  },
+  "low_graphics": {
+    "frame_rate_manager": false,
+    "edit_quality_level": "Level01",
+    "quality_level": "Automatic",
+    "screenshots": [
+      "roblox/evidence/draft02/bedroom-low-graphics.png",
+      "roblox/evidence/draft02/quad-low-graphics-ground.png",
+      "roblox/evidence/draft02/quad-low-graphics-aerial.png"
+    ],
+    "result": "Nearby bedroom furnishings, cottage and paths remain recognizable. High aerial shows distant object culling at this lowest setting; no physical-device framerate or memory claim."
+  },
+  "restored_settings": {
+    "device": "default",
+    "frame_rate_manager": false,
+    "edit_quality_level": "Automatic",
+    "quality_level": "Automatic"
+  },
+  "remaining": [
+    "Physical touch completion and comfort",
+    "Physical low-end-device performance",
+    "Same-user reconnect",
+    "User visual and playtest acceptance"
+  ],
+  "multiplayer_input_mode_observation": {
+    "initial_focused_camera_runs": [
+      "camera-runtime01-raw.json",
+      "camera-runtime02-raw.json"
+    ],
+    "diagnostic": "Run02 actual child clients report Touch despite parent default profile and desktop single Play. Right button did not register and cursor did not lock.",
+    "corrected_run": "camera-runtime03-raw.json",
+    "corrected_setup": "Select built-in hd_720 desktop preset before multiplayer launch. Both child clients report touch=false, preferred=KeyboardAndMouse, rightButtonDown=true and normal LockCurrentPosition; both actual views rotate independently.",
+    "cleanup": "Temporary helpers removed; device simulation stopped, parent returned to default."
+  }
+}

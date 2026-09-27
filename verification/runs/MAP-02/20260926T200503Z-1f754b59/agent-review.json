@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "run_id": "20260926T200503Z-1f754b59",
+  "report_sha256": "9c4cc845d1f79eaab9c1c08c035e9900c63b24f6ddf4cbaeb3517b020143e6e8",
+  "reviewer": "independent-verifier",
+  "reviewer_type": "agent",
+  "decisions": [
+    {
+      "criterion": "ticket-match",
+      "verdict": "pending",
+      "notes": "",
+      "evidence": []
+    },
+    {
+      "criterion": "shared-scope",
+      "verdict": "pending",
+      "notes": "",
+      "evidence": []
+    },
+    {
+      "criterion": "visual-identity",
+      "verdict": "pending",
+      "notes": "",
+      "evidence": []
+    },
+    {
+      "criterion": "roblox-import",
+      "verdict": "pending",
+      "notes": "",
+      "evidence": []
+    },
+    {
+      "criterion": "MAP-02-AC01",
+      "verdict": "pending",
+      "notes": "",
+      "evidence": []
+    },
+    {
+      "criterion": "MAP-02-AC02",
+      "verdict": "pending",
+      "notes": "",
+      "evidence": []
+    },
+    {
+      "criterion": "MAP-02-AC03",
+      "verdict": "pending",
+      "notes": "",
+      "evidence": []
+    },
+    {
+      "criterion": "MAP-02-AC04",
+      "verdict": "pending",
+      "notes": "",
+      "evidence": []
+    },
+    {
+      "criterion": "MAP-02-AC05",
+      "verdict": "pending",
+      "notes": "",
+      "evidence": []
+    },
+    {
+      "criterion": "MAP-02-AC06",
+      "verdict": "pending",
+      "notes": "",
+      "evidence": []
+    },
+    {
+      "criterion": "MAP-02-AC07",
+      "verdict": "pending",
+      "notes": "",
+      "evidence": []
+    },
+    {
+      "criterion": "MAP-02-AC08",
+      "verdict": "pending",
+      "notes": "",
+      "evidence": []
+    },
+    {
+      "criterion": "MAP-02-AC09",
+      "verdict": "pending",
+      "notes": "",
+      "evidence": []
+    },
+    {
+      "criterion": "MAP-02-AC10",
+      "verdict": "pending",
+      "notes": "",
+      "evidence": []
+    },
+    {
+      "criterion": "MAP-02-AC11",
+      "verdict": "pending",
+      "notes": "",
+      "evidence": []
+    },
+    {
+      "criterion": "MAP-02-AC12",
+      "verdict": "pending",
+      "notes": "",
+      "evidence": []
+    },
+    {
+      "criterion": "MAP-02-scope",
+      "verdict": "pending",
+      "notes": "",
+      "evidence": []
+    }
+  ]
+}

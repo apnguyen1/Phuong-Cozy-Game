@@ -1,0 +1,306 @@
+{
+  "schema_version": 1,
+  "type": "run",
+  "ticket_id": "MAP-02",
+  "ticket_path": "verification/contracts/MAP-02-draft02.json",
+  "run_id": "20260926T200503Z-1f754b59",
+  "stage": "production",
+  "iteration": 1,
+  "builder": "root-integration",
+  "previous": null,
+  "changes": null,
+  "snapshot": {
+    "verification/contracts/MAP-02-draft02.json": "3abd784bc01158826f33b43ad868a1d064f6881e79113091875bdf22df33455e",
+    "verification/palette.json": "57f6930e33ca800aef92814c881f7f3fb1115511bc38f487e246d0e1264f3751",
+    "verification/verify.py": "910f37568e16a26b13d9da6cecb6b9a2d38e14d90147e382c2a1447c29eb03f9",
+    "verification/requirements.txt": "41b54a6fb2918667ca47a61d73b522629d84490f3d78f0f20b21135faba10d35",
+    "verification/roblox/capture.luau": "be4aa0bfb6441401570eb49b9737f7ce503ad6f0e8ed8c8846a9b1e5d9ad9afa",
+    "docs/tickets/MAP-02.md": "be9d36c871e986f2f12b1036a7211ad192617801336707d09c3a1857be4df093",
+    "docs/tickets/PCW-04.md": "88c1af32b3c0db03e8c6e77bc5184ee49fa9469371360ae1d41b310fc8d14d8f",
+    "docs/tickets/PCW-05.md": "a261ee61ff721118f18c1b06f271e5b103bae678b3f12d47f91726d46e84edaa",
+    "docs/tickets/PCW-06.md": "7a66b7fd0aef8ae030110451788e807bc6dcc83755dde3407c826f5edff9e47e",
+    "docs/tickets/PCW-17.md": "3ecf966af8feb546625e2b2ed337b363b4ddec050081261c06bb891512b10307",
+    "docs/bedroom02-notes.md": "a0a857014326b2abe9aa23cf26004ae141cc2161b47658666bb5e280b91dc71d",
+    "docs/neighborhood02-notes.md": "dbf613f4754ca8e4e3f1af364c91ed72d2ed1f188baf01b53e97bcdea0ee6996",
+    "docs/lobby02-notes.md": "188ee8b6a2c35584d84c1c16d0e0b0b018e8ff0cc108ab50a269d459c520d591",
+    "roblox/build-draft01.luau": "6b87be891225c4b10c0a43d3e917388b9986ded89d20a56c1925c2f915f478d6",
+    "roblox/prepare-assets.luau": "e828fdb226851e2a7e60097c2f4ed230ada7ea5e729f5d8c5fc364fb796ee1b1",
+    "roblox/build-bedroom02.luau": "7bab53e1291c443ad74f43db6714004bf4bb1a1f7e0604ce74b83625c8e87a14",
+    "roblox/build-lobby02.luau": "7805bfba78e7dd9f7a6a200b24064b4c70031494ba269a5512a2571b575c8a7d",
+    "roblox/build-neighborhood02.luau": "90a6858f22a128eb3f7ee13c0993de50f44fc95f465c4ceaae05b2364aaf6615",
+    "roblox/build-quad02.luau": "dc6841378903a35f60ea8c06d902081bcfa141794e3ee79e36b02241cd1b7419",
+    "roblox/build-blossom-template02.luau": "e2a2bbb6413cc9fc1ab88e6e5db3463a5a765f4db7f308d849605d7cd0be6afd",
+    "roblox/finalize-draft02.luau": "4f105dec2b7371ad68bd647c5979d5332c1707bbb6eecb80a3d5dd1d655e62f8",
+    "roblox/birthday-lobby.server.luau": "ad7be3c845b18bf4f19b733b2b85d17a9947f0b016c811b1e645452060764579",
+    "roblox/birthday-lobby.client.luau": "3e78c7d57332a54c23d01ae078e5281e48def07799edc516e3ec13d75d5ee6b4",
+    "roblox/draft-door.server.luau": "7984d1be093d7ff16182f62ed47d70226fdc081ecbc4b735258e40c4d7d4db7a",
+    "roblox/draft-camera.client.luau": "9795fd345226b702f9fa06808afd4dd1daf2c1ef7ddd868c15a648c9fb31e2bf",
+    "art/references/map/draft02-reference-quad.png": "e2642fb800155b35c541ce144f7d767d4e524c53e7ce1f5bc5c3525d2fc0b468",
+    "art/references/map/draft02-reference-bedroom-a.jpg": "f1d154895ab5c4002ee4548ae04837c973e7292cb1aa842592824e29cd20d391",
+    "art/references/map/draft02-reference-bedroom-b.jpg": "d08bcac36f58e0428f64ccde85a2c4dcc3ad068a485126a6dd4e97364b2ea93b",
+    "roblox/Phuong-Cozy-World-Draft02.rbxl": null,
+    "roblox/evidence/draft02/map-studio-colors.json": null,
+    "roblox/evidence/draft02/navigation-results.json": null,
+    "roblox/evidence/draft02/console.txt": null,
+    "roblox/evidence/draft02/visual-evidence.json": null,
+    "@runtime": {
+      "python": "3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)]",
+      "Pillow": "missing"
+    }
+  },
+  "fingerprint": "055f76bace6b7cf144215d3eaa1184805f366432460a61a5d3b6052067cdcd44",
+  "checks": [
+    {
+      "id": "ticket-approved",
+      "status": "PASS",
+      "detail": "Approved ticket required; a draft is not an assignment"
+    },
+    {
+      "id": "palette",
+      "status": "PASS",
+      "detail": {
+        "forest": "#365744",
+        "sage": "#A8B995",
+        "cream": "#F5F0E4",
+        "wood": "#95674B",
+        "blossom": "#E8B7C6",
+        "brick": "#B66C68",
+        "golden": "#E8C779",
+        "ink": "#26382E"
+      }
+    },
+    {
+      "id": "input:docs/tickets/MAP-02.md",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:docs/tickets/PCW-04.md",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:docs/tickets/PCW-05.md",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:docs/tickets/PCW-06.md",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:docs/tickets/PCW-17.md",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:docs/bedroom02-notes.md",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:docs/neighborhood02-notes.md",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:docs/lobby02-notes.md",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/build-draft01.luau",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/prepare-assets.luau",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/build-bedroom02.luau",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/build-lobby02.luau",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/build-neighborhood02.luau",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/build-quad02.luau",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/build-blossom-template02.luau",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/finalize-draft02.luau",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/birthday-lobby.server.luau",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/birthday-lobby.client.luau",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/draft-door.server.luau",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:roblox/draft-camera.client.luau",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:art/references/map/draft02-reference-quad.png",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:art/references/map/draft02-reference-bedroom-a.jpg",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "input:art/references/map/draft02-reference-bedroom-b.jpg",
+      "status": "PASS",
+      "detail": "Required input exists"
+    },
+    {
+      "id": "artifact:place",
+      "status": "BLOCKED",
+      "detail": "Missing or empty artifact: roblox/Phuong-Cozy-World-Draft02.rbxl"
+    },
+    {
+      "id": "artifact:studio-colors",
+      "status": "BLOCKED",
+      "detail": "Missing or empty artifact: roblox/evidence/draft02/map-studio-colors.json"
+    },
+    {
+      "id": "artifact:navigation",
+      "status": "BLOCKED",
+      "detail": "Missing or empty artifact: roblox/evidence/draft02/navigation-results.json"
+    },
+    {
+      "id": "artifact:console",
+      "status": "BLOCKED",
+      "detail": "Missing or empty artifact: roblox/evidence/draft02/console.txt"
+    },
+    {
+      "id": "artifact:views",
+      "status": "BLOCKED",
+      "detail": "Missing or empty artifact: roblox/evidence/draft02/visual-evidence.json"
+    }
+  ],
+  "gates": [
+    {
+      "id": "ticket-match",
+      "reviewer": "independent",
+      "prompt": "All ticket requirements and submitted source files are covered; the assigned object/activity was built, with no substituted scope."
+    },
+    {
+      "id": "shared-scope",
+      "reviewer": "independent",
+      "prompt": "Preserve touch/desktop access, independent third-person cameras, real group participation, one detailed bedroom, six quests and the empty user-authored note. No invented rooms, economy, forced cinematic or guest messages. Verify dependency interfaces and that automated tests exercise the actual ticket behavior."
+    },
+    {
+      "id": "visual-identity",
+      "reviewer": "independent",
+      "prompt": "Compare reference and actual result. Required silhouette, proportions, named features and color placement survive simplification; readability is clear at play scale."
+    },
+    {
+      "id": "roblox-import",
+      "reviewer": "independent",
+      "prompt": "Import this exact revision in Roblox Studio. Record place/model identity, scale, pivot, orientation, materials/textures, collision and console results; test it in context."
+    },
+    {
+      "id": "final-acceptance",
+      "reviewer": "human",
+      "prompt": "The user has reviewed this exact revision and explicitly accepted it as finished. Preserve their actual decision and comments."
+    },
+    {
+      "id": "MAP-02-AC01",
+      "reviewer": "independent",
+      "prompt": "The live model replaces the Draft 01 bare store masses, empty bedroom and birthday/park/perimeter reservations with recognizable decorative compositions and surface detail."
+    },
+    {
+      "id": "MAP-02-AC02",
+      "reviewer": "independent",
+      "prompt": "The Quad preserves the reference's main cross and paired diagonal panels over continuous landscape, with usable arrival/cottage/street/park/courtyard links."
+    },
+    {
+      "id": "MAP-02-AC03",
+      "reviewer": "independent",
+      "prompt": "Exactly one cottage room reflects both bedroom photos, including opposed bed/light and desk/shelf walls and recognizable key personal objects."
+    },
+    {
+      "id": "MAP-02-AC04",
+      "reviewer": "independent",
+      "prompt": "The bedroom retains entry/station clearances, a working front door, low-graphics readability and usable circulation for 4–6 visitors."
+    },
+    {
+      "id": "MAP-02-AC05",
+      "reviewer": "independent",
+      "prompt": "Three stores read FOB, HeyTea and Aladdins north to south; FOB is clearly FOB Poke Bar, and Aladdins refers to the UDistrict Ave restaurant."
+    },
+    {
+      "id": "MAP-02-AC06",
+      "reviewer": "independent",
+      "prompt": "All three shops, sidewalks and crossings are traversable; decorated store identities read from player height."
+    },
+    {
+      "id": "MAP-02-AC07",
+      "reviewer": "independent",
+      "prompt": "The birthday courtyard has finished furniture, decorations, eight usable seats, table settings and cake; both dog-park gates remain clear around new furnishings."
+    },
+    {
+      "id": "MAP-02-AC08",
+      "reviewer": "independent",
+      "prompt": "Initial arrivals use an enclosed decorated lobby with the exact greeting Happy 24th Birthday, Phuong and recognizable favorite-things displays; PCW-17 supplies its runtime evidence."
+    },
+    {
+      "id": "MAP-02-AC09",
+      "reviewer": "independent",
+      "prompt": "Planting, materials, furnishings and decorations create a soft warm stylized world, without prominent unfinished temporary masses, floating objects or intersecting decorations."
+    },
+    {
+      "id": "MAP-02-AC10",
+      "reviewer": "independent",
+      "prompt": "Each authored BasePart has the correct exact palette token/color; imported color textures have actual verified source mappings; lighting, GUI and material response receive visual review."
+    },
+    {
+      "id": "MAP-02-AC11",
+      "reviewer": "independent",
+      "prompt": "The user's existing whole-world placement is preserved; sources reproduce the new work and the saved Draft 02 place matches the reviewed live revision."
+    },
+    {
+      "id": "MAP-02-AC12",
+      "reviewer": "independent",
+      "prompt": "Independent review uses current Studio evidence, relevant checks, specific defects and verified revisions; actual user fun/visual/final acceptance is preserved as pending until received."
+    },
+    {
+      "id": "MAP-02-scope",
+      "reviewer": "independent",
+      "prompt": "Deliverable: An editable local Draft 02 Roblox place, matching persisted builder/runtime sources, real Studio screenshots/palette capture, console/navigation evidence and independent review. Scope includes arrival/cottage exterior, one bedroom, continuous blossom Quad, FOB Poke Bar, HeyTea, Aladdins, dog park, birthday courtyard and birthday lobby. PCW-17 separately gates lobby runtime behavior.\nLimits/open decisions: This environment and lobby request does not implement the future six quests, shop economy, NPC staff, animated Jasper, cake ceremony or personal birthday note. PCW-04/05/06 explicitly amend historical fair-block/fixed-footprint plans. No external publishing is requested. Exact photographic measurement and branded artwork are unnecessary; recognizable features, coherent finish and playable circulation remain required. An automated check cannot supply human acceptance.\nValidation: Use build → check → independent review → user playtest → revise. Bind the three supplied references, relevant builder/runtime sources, independent live Edit-model palette capture, saved place, overview/ground/interior views and console/navigation logs. Review every destination and world continuity, including low settings and inherited visitor-clearance/group-view checks. PCW-17 covers timed entry, early pad, reset/rejoin, touch/desktop and concurrent players. Finalize only when all gates and genuine user acceptance exist."
+    }
+  ],
+  "status": "BLOCKED"
+}

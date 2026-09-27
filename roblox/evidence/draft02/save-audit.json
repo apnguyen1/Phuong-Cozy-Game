@@ -1,0 +1,16 @@
+{
+  "saved_at_utc": "2026-09-26T21:09:13.897461+00:00",
+  "verified_at_utc": "2026-09-26T21:09:14.681874+00:00",
+  "working_place": "roblox/phuong-cozy-game.rbxl",
+  "checkpoint": "roblox/Phuong-Cozy-World-Draft02.rbxl",
+  "bytes": 1624669,
+  "sha256": "c0d957546b23a58aa99337492edfe08fb383501f3e6d8d58ddab1b8063d3a418",
+  "binary_header_hex": "3c726f626c6f782189ff0d0a1a0a00",
+  "method": "Studio Ctrl+S of production-only map, followed by byte-identical local checkpoint copy. No publishing.",
+  "runtime_source_bindings": {
+    "roblox/birthday-lobby.server.luau": "ad7be3c845b18bf4f19b733b2b85d17a9947f0b016c811b1e645452060764579",
+    "roblox/birthday-lobby.client.luau": "c1aba60de3edecc2b34e766c257674914028ab91f6f2590d54ddd579d73c8bae",
+    "roblox/tests/lobby-runtime-check.luau": "18a4484e46b48a3a933d6261e1813cdef42b8726a47d2e694024ba1e2f9d405d"
+  },
+  "final_visual_fix": "Responsive countdown layout on short viewports; previous TV and window improvements retained."
+}

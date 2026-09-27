@@ -212,6 +212,32 @@ def raster_check(path, artifact, colors):
     return {"visible_pixels": sum(counts.values()), "colors": dict(counts)}
 
 
+def texture_exceptions(artifact, capture_root):
+    """Explicit user decisions only; never exempt part colors or unrelated paths."""
+    exceptions = artifact.get("approved_texture_exceptions", [])
+    require(isinstance(exceptions, list), "approved_texture_exceptions must be a list")
+    seen = set()
+    for exception in exceptions:
+        require(isinstance(exception, dict), "Texture exception must be an object")
+        content_id = exception.get("content_id")
+        prefix = exception.get("path_prefix")
+        prop = exception.get("property")
+        require(isinstance(content_id, str) and re.fullmatch(r"rbxassetid://[1-9][0-9]*", content_id),
+                "Texture exception needs one exact rbxassetid content ID, without wildcards")
+        require(nonempty(prefix) and prefix == prefix.strip() and not prefix.endswith(".")
+                and all(prefix.split(".")) and not any(char in prefix for char in "*?[]")
+                and prefix.startswith(capture_root + "."),
+                "Texture exception path_prefix must name a specific descendant of the captured root")
+        require(prop in {"TextureID", "TextureId", "Texture", "ColorMap"},
+                "Texture exception needs an exact captured color-texture property")
+        require(nonempty(exception.get("approved_by")) and nonempty(exception.get("reason")),
+                "Texture exception needs approved_by and the scoped user-approved reason")
+        identity = (content_id, prefix, prop)
+        require(identity not in seen, "Duplicate texture exception scope")
+        seen.add(identity)
+    return exceptions
+
+
 def studio_check(path, artifact, colors, ticket):
     data = read_json(path)
     require(data.get("schema_version") == 1 and data.get("ticket_id") == ticket["id"], "Studio capture has the wrong schema or ticket id")
@@ -233,11 +259,27 @@ def studio_check(path, artifact, colors, ticket):
     require(isinstance(textures, list), "Studio capture needs a textures list, even when empty")
     mappings = artifact.get("texture_sources", {})
     require(isinstance(mappings, dict), "texture_sources must map Roblox content IDs to raster artifact IDs")
+    exceptions = texture_exceptions(artifact, data["root"])
+    usage = [0] * len(exceptions)
     raster_ids = {a["id"] for a in ticket["artifacts"] if a["check"] == "raster_palette"}
     for texture in textures:
         content_id = texture.get("content_id")
+        texture_path = texture.get("path", "")
+        matched = False
+        for index, exception in enumerate(exceptions):
+            prefix = exception["path_prefix"]
+            if (content_id == exception["content_id"] and texture.get("property") == exception["property"]
+                    and isinstance(texture_path, str)
+                    and (texture_path == prefix or texture_path.startswith(prefix + "."))):
+                usage[index] += 1
+                matched = True
+                break
+        if matched:
+            continue
         require(nonempty(content_id) and mappings.get(content_id) in raster_ids, f"Texture {content_id}: map its actual source to a raster_palette artifact in texture_sources")
-    return {"parts": len(parts), "tokens": sorted(seen), "note": "Authored BasePart colors only. Capture provenance, textures, GUI and actual import require independent review."}
+    return {"parts": len(parts), "tokens": sorted(seen),
+            "approved_texture_exceptions": [dict(exception, matched_references=usage[index]) for index, exception in enumerate(exceptions)],
+            "note": "All authored BasePart colors checked. Explicit approved texture exceptions are reported separately; other color textures still require verified sources. Capture provenance, GUI, materials and actual import require independent review."}
 
 
 def check_result(check_id, status, detail):

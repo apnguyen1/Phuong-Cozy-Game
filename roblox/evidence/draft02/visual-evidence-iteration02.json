@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "captured_in": "Roblox Studio; direct viewport screenshots, not generated concept images",
+  "assembled_at_utc": "2026-09-26T20:32:07.099123+00:00",
+  "checkpoint": "roblox\\Phuong-Cozy-World-Draft02.rbxl",
+  "checkpoint_sha256": "17f3dc3ceebaa6ab8e1791583394ef4229acc7a2a8196142a320778e4abc0e04",
+  "references": [
+    {
+      "path": "art/references/map/draft02-reference-bedroom-a.jpg",
+      "sha256": "f1d154895ab5c4002ee4548ae04837c973e7292cb1aa842592824e29cd20d391"
+    },
+    {
+      "path": "art/references/map/draft02-reference-bedroom-b.jpg",
+      "sha256": "d08bcac36f58e0428f64ccde85a2c4dcc3ad068a485126a6dd4e97364b2ea93b"
+    },
+    {
+      "path": "art/references/map/draft02-reference-quad.png",
+      "sha256": "e2642fb800155b35c541ce144f7d767d4e524c53e7ce1f5bc5c3525d2fc0b468"
+    }
+  ],
+  "views": [
+    {
+      "path": "roblox/evidence/draft02/lobby-play.png",
+      "sha256": "d321a59f90795162f7dfaefa2106278d5b9c00f9373ccd216350dc6a2cbba3bc",
+      "description": "Actual Play view of personal countdown, exact greeting and decorated welcome room."
+    },
+    {
+      "path": "roblox/evidence/draft02/bedroom-bed.png",
+      "sha256": "228f99215adcf2e14ba3d70cd97f7f003cdb7286f32a956f9aa65ad35c12ac76",
+      "description": "Corrected bed, plushies, ivy and light-wall details; captured before later TV-only move."
+    },
+    {
+      "path": "roblox/evidence/draft02/bedroom-desk.png",
+      "sha256": "05fdfa37016dbbed0df3edd9deef8b35ad5f135fc727b4e863afaeb5d3a118b7",
+      "description": "Opposed desk/shelf wall, photographed furnishings and warm white paint."
+    },
+    {
+      "path": "roblox/evidence/draft02/bedroom-bed-final.png",
+      "sha256": "1e88cbd74ddd0042e48f60d4ee73fdd5b499f108db4b3f04c261fe4fb5408f17",
+      "description": "Later view after front-window camera fix; TV move is outside this angle."
+    },
+    {
+      "path": "roblox/evidence/draft02/bedroom-desk-final.png",
+      "sha256": "a018515913b8cfddcdd6ba40c68a81fc68c029dc6d2aaaafd32e32de088494cf",
+      "description": "Later desk view after front-window camera fix; TV move is outside this angle."
+    },
+    {
+      "path": "roblox/evidence/draft02/bedroom-tv-print-final.png",
+      "sha256": "0a33e6ce9c7046af09f1c6c92b86daa3930f53b34ec547d2ed8abd7590dfacfb",
+      "description": "Final Edit view verifies separated TV, botanical print and mirror, with 1.45-stud frame gap."
+    },
+    {
+      "path": "roblox/evidence/draft02/quad-overview-final.png",
+      "sha256": "297d59329dc4f1fb1dbf917cca0feabd1edba9aef1766a7ca2ba0b5eb8687f9b",
+      "description": "Final outdoor geometry: central axis, paired X panels, continuous lawns and destination links."
+    },
+    {
+      "path": "roblox/evidence/draft02/stores-overview.png",
+      "sha256": "9dbc03eca9f32124e1f5230f84a19d34541e8791e3f85788706ae614c4c72402",
+      "description": "North-to-south FOB, HeyTea and Aladdins street, awnings and walkable sidewalk."
+    },
+    {
+      "path": "roblox/evidence/draft02/fob-front.png",
+      "sha256": "032270f31460982cd45c4d9366fa6ce6832f5af0a957922e60ae4dc625808f21",
+      "description": "Readable FOB and secondary POKE BAR identity."
+    },
+    {
+      "path": "roblox/evidence/draft02/heytea-front.png",
+      "sha256": "b5281b6d3f42f9047a8ed84c659d04d57dfb0e22db6c320ab42e7eb581074085",
+      "description": "Readable middle HeyTea frontage."
+    },
+    {
+      "path": "roblox/evidence/draft02/aladdins-play.png",
+      "sha256": "2a37d9df722a7b03368bf16955aa2ab3df63df832a908c562d2391ab9724c3ef",
+      "description": "Actual avatar entering Aladdins; some surface text had not rendered in this immediate frame."
+    },
+    {
+      "path": "roblox/evidence/draft02/courtyard.png",
+      "sha256": "7c72a5a431144dc601fd63aa87ab33bfc481a01619a68a8e952eddf944bea41d",
+      "description": "Decorated pergola, eight chairs, table settings, cake and gifts."
+    },
+    {
+      "path": "roblox/evidence/draft02/bedroom-window-camera.png",
+      "sha256": "b803a3ce1ac3ca355ff4632fd42e52053fe8b33f5cff516c0a3468ff6f3ea2fe",
+      "description": "Actual Play view confirming camera obstruction fixed; superseded for TV/print spacing by final wall view."
+    },
+    {
+      "path": "roblox/evidence/draft02/fob-board-close.png",
+      "sha256": "433c4e79ab76f7cc87a96b543c2dc9e7107b397cbc7b1d556449299b32b0beb9",
+      "description": "Current close Studio view confirming readable interior board; earlier blank distant/immediate-frame captures do not show this text. No model change needed."
+    },
+    {
+      "path": "roblox/evidence/draft02/heytea-board-close.png",
+      "sha256": "06b0d793d18ae6fee74295741163bffff9c4c93322ea2a03b06e6d8b5df87829",
+      "description": "Current close Studio view confirming readable interior board; earlier blank distant/immediate-frame captures do not show this text. No model change needed."
+    },
+    {
+      "path": "roblox/evidence/draft02/aladdins-board-close.png",
+      "sha256": "ecebbdd7fc5d6dc28724756cff4949b5bfbfe0ea3c9020d7c531477faeac2989",
+      "description": "Current close Studio view confirming readable interior board; earlier blank distant/immediate-frame captures do not show this text. No model change needed."
+    }
+  ],
+  "historical_rejected_views": [
+    "bedroom-bed-first.png",
+    "bedroom-desk-first.png",
+    "lobby-before-lighting.png",
+    "quad-overview-first.png"
+  ],
+  "view_limitations": [
+    "Views are taken at different integration points; descriptions identify local fixes and superseded evidence.",
+    "Screenshots do not demonstrate phone/tablet behavior, independent manual orbit, low graphics or a 4-6 visitor bedroom rehearsal."
+  ],
+  "runtime_evidence": "roblox/evidence/draft02/runtime-results.json",
+  "walking_evidence": "roblox/evidence/draft02/navigation-results.json",
+  "user_tree_exception": "Keep the detailed community trees as a palette exception; exact bark and foliage IDs/path are bound in MAP-02."
+}

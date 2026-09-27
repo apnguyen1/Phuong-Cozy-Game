@@ -4,7 +4,17 @@ Initial research: September 25, 2026. Arrival-to-house shortlist and preview rev
 
 Creator Store availability and free price were checked through the live Roblox asset search. Five candidates have now been inspected and used in the first Studio draft as recorded below. Other entries remain candidates. Draft adoption does not establish original authorship or final production suitability.
 
-## Draft 01 adoption — September 26
+## Draft 02 adoption — September 26
+
+This update supersedes the Draft 01 counts and placeholder status below. The saved local checkpoint is `roblox/Phuong-Cozy-World-Draft02.rbxl`; actual captures and save binding are in `roblox/evidence/draft02`.
+
+- **Community blossoms:** 21 reviewed static trees from model `12800074855`; collision trunks stay off the new paths. On September 26 the user explicitly chose **“Keep the detailed community trees as a palette exception.”** Only bark `rbxassetid://740989141` (`TextureID`) and foliage `rbxassetid://4668043207` (`ColorMap`) under `Workspace.CozyWorld_Draft01.QuadPlanting` are exempt from exact source-pixel palette matching. Independent capture retains 21 references to each. Native colors and other textures remain checked.
+- **Retained community environment:** Six reviewed lanterns, four benches and the existing sky remain in use. Small native petals/planting supplement the mesh accents. Original imports are preserved in storage; imported character/animation scripts remain disabled outside the active world.
+- **Native editable additions:** Joined brick Quad paths and pale edging; one furnished photographed bedroom; enclosed birthday lobby; three furnished FOB Poke Bar, HeyTea and Aladdins shops; birthday pergola, eight seats and tableware; park toys/water/benches; layered perimeter trees. These require no new external 3D import. The Synty kit remains an unused candidate.
+- **Checks:** Actual normal-speed routes reached the cottage, each shop, courtyard and both park gates. Courtyard/store seating and exits were exercised. Low-settings/mobile and larger group appearance/performance remain pending; this is draft adoption, not blanket final asset approval.
+
+## Draft 01 adoption — historical record
+
 
 | Asset | Contents inspected and adaptations | Current result |
 |---|---|---|
@@ -16,7 +26,7 @@ Creator Store availability and free price were checked through the live Roblox a
 
 Original imports remain in `ServerStorage.CozyDraftAssets.Incoming`. Adopted script-free templates are in `Reviewed`. The draft requires no external 3D import. The Synty pack is still a candidate; current storefronts are native placeholder masses.
 
-The following shortlist preserves the research findings and planned checks from before assembly. The adoption table above is the current status for those five assets.
+The following shortlist preserves the research findings and planned checks from before assembly. The Draft 02 update above is the current status; this earlier shortlist records the research baseline.
 
 ## Arrival-to-house shortlist — September 26
 

@@ -1,0 +1,17 @@
+{
+  "saved_at_utc": "2026-09-26T20:30:52.913409+00:00",
+  "verified_at_utc": "2026-09-26T20:30:54.875950+00:00",
+  "working_place": "roblox\\phuong-cozy-game.rbxl",
+  "checkpoint": "roblox\\Phuong-Cozy-World-Draft02.rbxl",
+  "bytes": 1624168,
+  "sha256": "17f3dc3ceebaa6ab8e1791583394ef4229acc7a2a8196142a320778e4abc0e04",
+  "binary_header_hex": "3c726f626c6f782189ff0d0a1a0a0000",
+  "method": "Studio Ctrl+S followed by a byte-identical local checkpoint copy; no publishing.",
+  "repository_update": "An external Git merge/stash restore temporarily replaced the working binary. This checkpoint was recopied only after the current saved 1624168-byte version returned. The three runtime/test files were restored to their exact tested LF bytes; only CRLF normalization had changed them.",
+  "runtime_source_bindings": {
+    "roblox/birthday-lobby.server.luau": "AD7BE3C845B18BF4F19B733B2B85D17A9947F0B016C811B1E645452060764579",
+    "roblox/birthday-lobby.client.luau": "3E78C7D57332A54C23D01AE078E5281E48DEF07799EDC516E3EC13D75D5EE6B4",
+    "roblox/tests/lobby-runtime-check.luau": "18A4484E46B48A3A933D6261E1813CDEF42B8726A47D2E694024BA1E2F9D405D"
+  },
+  "final_visual_fix": "Moved TV, reflections, socket and cable 3 studs north, leaving 1.45 studs between the TV and botanical frame. Builder source updated. No behavior or walking collision changes."
+}

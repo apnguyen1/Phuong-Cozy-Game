@@ -2,15 +2,20 @@
 
 A personal Roblox birthday game dedicated to my Pookie. Friends explore, decorate, enjoy her favorite things, and celebrate together.
 
-## Agreed Roblox plan
+Draft 02 adds the birthday lobby, reference-based bedroom, UW-inspired Quad paths, and detailed FOB Poke Bar, HeyTea, and Aladdins storefronts. Open the [working place](roblox/phuong-cozy-game.rbxl) in Studio and press Play. Explore the birthday room for up to 60 seconds, or use its golden pad to enter the world early. Use **E** at the cottage door.
 
-**Stage: approved map plan, visual concepts, and implementation tickets. No gameplay code or published experience yet.**
+- [Draft 02 changes, actual screenshots, and verification status](docs/roblox-draft02.md)
+- [Independent review and remaining checks](docs/draft02-independent-review.md)
+
+## Current Roblox direction
+
+**Stage: Draft 02 environment and birthday-entry lobby built and saved locally; independent review and user acceptance are tracked separately. The experience is unpublished.**
 
 - **Platform:** Roblox, with mobile, tablet, and desktop support from the start.
-- **Players:** Phuong, her boyfriend, and real friends participate together in the same session, designed for 8–10 players.
+- **Players:** Phuong, her boyfriend, and real friends participate together in the same session, the current map is designed for up to eight players. The older 8–10-player planning target remains historical.
 - **Camera:** Freely rotatable third-person view; each player keeps their own camera during activities.
 - **Experience:** Cozy exploration, decoration, and personal activities, aiming for about 30 minutes before open-ended social time.
-- **World:** A compact connected neighborhood with Phuong’s bedroom house, Jasper’s yard, a UDistrict street fair, the UW Quad, and a cooking/birthday patio.
+- **World:** A compact connected neighborhood with Phuong’s bedroom house, Jasper’s yard, three named UDistrict storefronts, the expanded blossom Quad, and a cooking/birthday patio.
 - **Interior:** Only Phuong’s bedroom is detailed, based on the supplied photos. The earlier four-room house is superseded.
 - **Celebration:** Six activities build toward cake and birthday wishes from the actual participants. The boyfriend writes the personal note himself; its content remains empty until supplied.
 
@@ -43,17 +48,17 @@ The [Mini Game Idea Plan](docs/design/mini-game-idea-plan.md) records the deeper
 
 ![Mobile exploration and decoration UI concept](docs/design/concepts/mobile-ui-concept-v1.png)
 
-These are rendered design concepts, not screenshots of a working Roblox game. The dimensioned map plan governs layout when an illustration differs. The photos inform recognizable details; the world does not recreate her Stardew farm.
+These older rendered design concepts are not screenshots. The September 26 user sketch, supplied aerial/room photos and current Draft 02 scope amendments govern the latest map; older provisional dimensions are historical. The photos inform recognizable details; the world does not recreate her Stardew farm.
 
 ## Dedicated tickets
 
-[The ticket board](docs/tickets/README.md) contains 16 local project tickets with scope, dependencies, acceptance criteria, and validation steps. They cover art and UI, world/camera layout, the bedroom, UDistrict, the Quad, all six activities, shared progress, celebration, personal content, and mixed-device rehearsal.
+[The ticket board](docs/tickets/README.md) contains the original 16 local project tickets plus MAP-02 and PCW-17 for the current draft with scope, dependencies, acceptance criteria, and validation steps. They cover art and UI, world/camera layout, the bedroom, UDistrict, the Quad, all six activities, shared progress, celebration, personal content, and mixed-device rehearsal.
 
-Future game implementation begins with the room/camera and touch interaction prototype, then connected reference geometry, shared activities, personal detail, and a group rehearsal. Ticket creation does not start that implementation.
+The environment and birthday-entry lobby are implemented. The six shared activities, wider device rehearsal and final celebration gameplay remain future work.
 
 ## Verification workflow
 
-The [verification system](verification/README.md) adds a reusable verifier agent, exact palette checks, ticket acceptance gates, Roblox evidence capture, and a build–review–revise loop. All 16 ticket contracts begin as drafts until their actual deliverables and test commands are assigned. Automatic checks are followed by independent review and human playtesting/final acceptance. No gameplay implementation or publishing is included.
+The [verification system](verification/README.md) adds a reusable verifier agent, exact palette checks, ticket acceptance gates, Roblox evidence capture, and a build–review–revise loop. The original ticket contracts remain drafts until their actual deliverables and test commands are assigned. MAP-02 and PCW-17 have scope-authorized production contracts for the current draft. Automatic checks are followed by independent review and human playtesting/final acceptance. No publishing is included.
 
 ## Earlier planning references
 

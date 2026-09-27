@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "stage": "production",
+  "target": "roblox",
+  "status": "approved",
+  "approved_by": "User: active September 26, 2026 Draft 02 implementation goal and explicit name/store clarifications; scope authorization only, final acceptance pending",
+  "max_iterations": 3,
+  "criteria": [],
+  "id": "PCW-17",
+  "title": "PCW-17 \u2014 Birthday welcome room and timed world entry",
+  "intent": "Let friends first arrive in a birthday room full of Phuong's favorite things, with a visible personal countdown and optional early-entry pad leading into the existing world.",
+  "kind": "game",
+  "sources": [
+    "docs/tickets/PCW-17.md",
+    "docs/tickets/MAP-02.md",
+    "docs/lobby02-notes.md"
+  ],
+  "inputs": [
+    "roblox/build-lobby02.luau",
+    "roblox/birthday-lobby.server.luau",
+    "roblox/birthday-lobby.client.luau",
+    "roblox/finalize-draft02.luau",
+    "roblox/tests/lobby-runtime-check.luau",
+    "roblox/evidence/draft02/runtime-results.json",
+    "verification/check_lobby_runtime.py",
+    "roblox/evidence/draft02/save-audit.json",
+    "roblox/evidence/draft02/live-source-check.json",
+    "roblox/evidence/draft02/navigation-results.json",
+    "roblox/evidence/draft02/lobby-play.png",
+    "roblox/evidence/draft02/runtime-iteration02-raw.json",
+    "verification/check_party_runtime.py",
+    "roblox/tests/party-runtime.server.luau",
+    "roblox/tests/party-runtime.client.luau",
+    "roblox/evidence/draft02/party-runtime05-raw.json",
+    "roblox/evidence/draft02/party-source-bindings05.json",
+    "roblox/evidence/draft02/party-harness05-sources.json",
+    "roblox/evidence/draft02/device-preview-results.json",
+    "roblox/evidence/draft02/phone-lobby-before-layout.png",
+    "roblox/evidence/draft02/phone-lobby-responsive.png",
+    "roblox/evidence/draft02/tablet-lobby-responsive.png",
+    "roblox/evidence/draft02/runtime-iteration03-raw.json",
+    "roblox/build-bedroom02.luau",
+    "roblox/draft-door.server.luau",
+    "roblox/tests/camera-runtime.server.luau",
+    "roblox/evidence/draft02/camera-runtime03-raw.json",
+    "roblox/evidence/draft02/camera-source-bindings03.json",
+    "roblox/evidence/draft02/camera-harness03-sources.json",
+    "roblox/evidence/draft02/independent-live-inventory03.json"
+  ],
+  "artifacts": [
+    {
+      "id": "place",
+      "path": "roblox/Phuong-Cozy-World-Draft02.rbxl",
+      "check": "exists"
+    },
+    {
+      "id": "studio-colors",
+      "path": "roblox/evidence/draft02/lobby-studio-colors.json",
+      "check": "studio_palette",
+      "allowed_tokens": [
+        "blossom",
+        "brick",
+        "cream",
+        "forest",
+        "golden",
+        "ink",
+        "sage",
+        "wood"
+      ],
+      "required_tokens": [
+        "blossom",
+        "brick",
+        "cream",
+        "forest",
+        "golden",
+        "ink",
+        "sage",
+        "wood"
+      ],
+      "texture_sources": {}
+    },
+    {
+      "id": "runtime-results",
+      "path": "roblox/evidence/draft02/runtime-results.json",
+      "check": "exists"
+    },
+    {
+      "id": "console",
+      "path": "roblox/evidence/draft02/console.txt",
+      "check": "exists"
+    },
+    {
+      "id": "views",
+      "path": "roblox/evidence/draft02/visual-evidence.json",
+      "check": "exists"
+    }
+  ],
+  "commands": [
+    {
+      "id": "captured-engine-behavior",
+      "argv": [
+        "{python}",
+        "verification/check_lobby_runtime.py",
+        "roblox/evidence/draft02/runtime-results.json"
+      ],
+      "cwd": ".",
+      "timeout_seconds": 30
+    },
+    {
+      "id": "captured-party-behavior",
+      "argv": [
+        "{python}",
+        "verification/check_party_runtime.py",
+        "--complete-run",
+        "05",
+        "--camera-run",
+        "03"
+      ],
+      "cwd": ".",
+      "timeout_seconds": 30
+    }
+  ]
+}

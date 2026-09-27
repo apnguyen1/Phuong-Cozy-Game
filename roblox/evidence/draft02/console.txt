@@ -1,0 +1,1 @@
+Studio console observation after the actual single-client lobby, room, store, courtyard and park walk: get_console_output returned an empty string. No client/server messages or errors were reported by that observation. This is not a claim about unobserved external multiplayer-client logs.

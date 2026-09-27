@@ -1,0 +1,12 @@
+# Draft 02 — verification iteration 02 changes
+
+September 26, 2026. This revision links the existing MAP-02 and PCW-17 iteration 01 reports; it does not restart their iteration budget.
+
+- Corrected lobby character placement races using per-character readiness and stable placement. Replaced user-ID modulo spawn selection with distinct available slots and disconnect release.
+- Reran the installed server/client in actual Studio multiplayer with hashes captured beforehand. All 15 scenarios pass, including a measured 60.064-second timer, independent waiting deadlines, seated expiry, pre-entry reset, three world resets, late join and released-slot reuse. Raw failed and successful engine results are preserved; the local validator consumes real evidence rather than rerunning Roblox.
+- Recorded separate real early-E input, normal-speed destination/shop/bedroom/park routes, front door and seat/exit checks. Recorded the navigation-tool failure separately. Manual orbit, touch, low graphics and group-space rehearsals remain pending.
+- Persisted deterministic unique names, native palette assignments, nonuniform sphere details, warm wood flooring and window camera occlusion fix. Moved the TV assembly three studs to separate it from the botanical print; final screenshot confirms a 1.45-stud gap. Close store screenshots confirm interior captions render.
+- Independently recaptured all 4,667 map parts and 597 lobby parts after final model freeze at 20:34:09–11 UTC. No duplicated paths; all native colors retain exact token/hex checks.
+- Recorded the user's explicit decision, “Keep the detailed community trees as a palette exception.” Only two exact retained IDs/properties under QuadPlanting are exempt, 21 references each. No other texture, native color or human gate is waived. All 36 verifier regression tests pass; integration independently reran them.
+- Saved the editable local place and identical Draft 02 checkpoint: 1,624,168 bytes, SHA256 `17f3dc3ceebaa6ab8e1791583394ef4229acc7a2a8196142a320778e4abc0e04`. Actual installed runtime content matches the tested files except one trailing CRLF added by insertion. No temporary engine-test script remains installed.
+- Bound real screenshots, source/save audit, captures, references and navigation evidence in the two contracts. Implementation scope approval and the tree choice do not constitute user fun or final acceptance. Those remain pending.

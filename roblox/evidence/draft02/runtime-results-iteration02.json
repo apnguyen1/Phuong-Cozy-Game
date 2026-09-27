@@ -1,0 +1,471 @@
+{
+  "engine_result": {
+    "checks": [
+      {
+        "details": 59.900079011917114,
+        "name": "initial-countdown-at-most-60",
+        "passed": true
+      },
+      {
+        "name": "two-distinct-spawn-positions",
+        "passed": true
+      },
+      {
+        "name": "lobby-is-default-spawn",
+        "passed": true
+      },
+      {
+        "details": {
+          "a": 1790453196.668416,
+          "originalB": 1790453190.635693,
+          "b": 1790453190.635693
+        },
+        "name": "reset-before-entry-restarts-only-own-countdown",
+        "passed": true
+      },
+      {
+        "name": "late-join-has-own-countdown",
+        "passed": true
+      },
+      {
+        "name": "guest-can-sit-during-countdown",
+        "passed": true
+      },
+      {
+        "details": {
+          "arrivedAt": 1790453190.733562,
+          "deadline": 1790453190.635693
+        },
+        "name": "full-timer-auto-enters-without-early-trigger",
+        "passed": true
+      },
+      {
+        "name": "seated-player-detaches-on-entry",
+        "passed": true
+      },
+      {
+        "name": "timer-does-not-pull-friends-early",
+        "passed": true
+      },
+      {
+        "name": "timer-arrives-in-outdoor-arrival",
+        "passed": true
+      },
+      {
+        "name": "reset-player-full-countdown-completes",
+        "passed": true
+      },
+      {
+        "name": "world-respawn-repeat-1",
+        "passed": true
+      },
+      {
+        "name": "world-respawn-repeat-2",
+        "passed": true
+      },
+      {
+        "name": "world-respawn-repeat-3",
+        "passed": true
+      },
+      {
+        "details": {
+          "releasedSlot": 2,
+          "newSlot": 2
+        },
+        "name": "disconnect-allows-fresh-guest",
+        "passed": true
+      }
+    ],
+    "events": [
+      {
+        "at": 1790453130.089895,
+        "location": "Loading",
+        "event": "location-change",
+        "name": "Player1"
+      },
+      {
+        "at": 1790453130.635736,
+        "name": "Player1",
+        "event": "deadline-change",
+        "deadline": 1790453190.635693
+      },
+      {
+        "at": 1790453130.63574,
+        "location": "Lobby",
+        "event": "location-change",
+        "name": "Player1"
+      },
+      {
+        "at": 1790453131.105643,
+        "location": "Loading",
+        "event": "location-change",
+        "name": "Player2"
+      },
+      {
+        "at": 1790453131.252202,
+        "name": "Player2",
+        "event": "deadline-change",
+        "deadline": 1790453191.252084
+      },
+      {
+        "at": 1790453131.252211,
+        "location": "Lobby",
+        "event": "location-change",
+        "name": "Player2"
+      },
+      {
+        "at": 1790453136.624375,
+        "event": "deadline-change",
+        "name": "Player2"
+      },
+      {
+        "at": 1790453136.624378,
+        "location": "Loading",
+        "event": "location-change",
+        "name": "Player2"
+      },
+      {
+        "at": 1790453136.668459,
+        "name": "Player2",
+        "event": "deadline-change",
+        "deadline": 1790453196.668416
+      },
+      {
+        "at": 1790453136.668462,
+        "location": "Lobby",
+        "event": "location-change",
+        "name": "Player2"
+      },
+      {
+        "at": 1790453140.264379,
+        "location": "Loading",
+        "event": "location-change",
+        "name": "Player3"
+      },
+      {
+        "at": 1790453140.586414,
+        "name": "Player3",
+        "event": "deadline-change",
+        "deadline": 1790453200.586366
+      },
+      {
+        "at": 1790453140.586416,
+        "location": "Lobby",
+        "event": "location-change",
+        "name": "Player3"
+      },
+      {
+        "at": 1790453190.69942,
+        "event": "deadline-change",
+        "name": "Player1"
+      },
+      {
+        "at": 1790453190.699423,
+        "location": "World",
+        "event": "location-change",
+        "name": "Player1"
+      },
+      {
+        "at": 1790453196.767379,
+        "event": "deadline-change",
+        "name": "Player2"
+      },
+      {
+        "at": 1790453196.767381,
+        "location": "World",
+        "event": "location-change",
+        "name": "Player2"
+      },
+      {
+        "at": 1790453200.717156,
+        "event": "deadline-change",
+        "name": "Player3"
+      },
+      {
+        "at": 1790453200.717159,
+        "location": "World",
+        "event": "location-change",
+        "name": "Player3"
+      },
+      {
+        "at": 1790453201.090939,
+        "location": "Loading",
+        "event": "location-change",
+        "name": "Player1"
+      },
+      {
+        "at": 1790453201.132344,
+        "location": "World",
+        "event": "location-change",
+        "name": "Player1"
+      },
+      {
+        "at": 1790453201.738251,
+        "location": "Loading",
+        "event": "location-change",
+        "name": "Player1"
+      },
+      {
+        "at": 1790453201.782316,
+        "location": "World",
+        "event": "location-change",
+        "name": "Player1"
+      },
+      {
+        "at": 1790453202.605972,
+        "location": "Loading",
+        "event": "location-change",
+        "name": "Player1"
+      },
+      {
+        "at": 1790453202.649744,
+        "location": "World",
+        "event": "location-change",
+        "name": "Player1"
+      },
+      {
+        "at": 1790453204.23279,
+        "location": "Loading",
+        "event": "location-change",
+        "name": "Player3"
+      },
+      {
+        "at": 1790453208.40206,
+        "location": "Loading",
+        "event": "location-change",
+        "name": "Player4"
+      },
+      {
+        "at": 1790453208.750382,
+        "name": "Player4",
+        "event": "deadline-change",
+        "deadline": 1790453268.750341
+      },
+      {
+        "at": 1790453208.750385,
+        "location": "Lobby",
+        "event": "location-change",
+        "name": "Player4"
+      }
+    ],
+    "snapshots": [
+      {
+        "players": [
+          {
+            "joined": false,
+            "name": "Player1",
+            "position": [
+              1992.5,
+              3.7966725826263428,
+              19
+            ],
+            "id": -1,
+            "location": "Lobby",
+            "slot": 0,
+            "remaining": 59.28369998931885
+          },
+          {
+            "joined": false,
+            "name": "Player2",
+            "position": [
+              1997.5,
+              3.7906405925750732,
+              19
+            ],
+            "id": -2,
+            "location": "Lobby",
+            "slot": 1,
+            "remaining": 59.90008306503296
+          }
+        ],
+        "at": 1790453131.352004,
+        "label": "initial-two-players"
+      },
+      {
+        "players": [
+          {
+            "joined": false,
+            "name": "Player1",
+            "position": [
+              1970,
+              3.672449827194214,
+              1
+            ],
+            "id": -1,
+            "location": "Lobby",
+            "slot": 0,
+            "remaining": 49.51762104034424
+          },
+          {
+            "joined": false,
+            "name": "Player2",
+            "position": [
+              1997.5,
+              3.7966725826263428,
+              19
+            ],
+            "id": -2,
+            "location": "Lobby",
+            "slot": 1,
+            "remaining": 55.55033802986145
+          },
+          {
+            "joined": false,
+            "name": "Player3",
+            "position": [
+              2002.5,
+              3.7966725826263428,
+              19
+            ],
+            "id": -3,
+            "location": "Lobby",
+            "slot": 2,
+            "remaining": 59.468283891677856
+          }
+        ],
+        "at": 1790453141.118083,
+        "label": "reset-late-join-and-seated-guest"
+      },
+      {
+        "players": [
+          {
+            "joined": true,
+            "name": "Player1",
+            "position": [
+              17.5,
+              4.209999084472656,
+              114
+            ],
+            "id": -1,
+            "location": "World",
+            "slot": 0
+          },
+          {
+            "joined": false,
+            "name": "Player2",
+            "position": [
+              1997.5,
+              3.7966725826263428,
+              19
+            ],
+            "id": -2,
+            "location": "Lobby",
+            "slot": 1,
+            "remaining": 5.934814929962158
+          },
+          {
+            "joined": false,
+            "name": "Player3",
+            "position": [
+              2002.5,
+              3.7966725826263428,
+              19
+            ],
+            "id": -3,
+            "location": "Lobby",
+            "slot": 2,
+            "remaining": 9.85276198387146
+          }
+        ],
+        "at": 1790453190.733604,
+        "label": "first-timer-expired-friends-still-in-lobby"
+      },
+      {
+        "players": [
+          {
+            "joined": true,
+            "name": "Player1",
+            "position": [
+              17.5,
+              3.9366729259490967,
+              114
+            ],
+            "id": -1,
+            "location": "World",
+            "slot": 0
+          },
+          {
+            "joined": true,
+            "name": "Player2",
+            "position": [
+              22.5,
+              3.996673107147217,
+              114
+            ],
+            "id": -2,
+            "location": "World",
+            "slot": 1
+          },
+          {
+            "joined": true,
+            "name": "Player3",
+            "position": [
+              27.5,
+              3.9366729259490967,
+              114
+            ],
+            "id": -3,
+            "location": "World",
+            "slot": 2
+          }
+        ],
+        "at": 1790453203.215943,
+        "label": "all-in-world-after-repeated-reset"
+      },
+      {
+        "players": [
+          {
+            "joined": true,
+            "name": "Player1",
+            "position": [
+              17.5,
+              3.9366729259490967,
+              114
+            ],
+            "id": -1,
+            "location": "World",
+            "slot": 0
+          },
+          {
+            "joined": true,
+            "name": "Player2",
+            "position": [
+              22.5,
+              3.996673107147217,
+              114
+            ],
+            "id": -2,
+            "location": "World",
+            "slot": 1
+          },
+          {
+            "joined": false,
+            "name": "Player4",
+            "position": [
+              2002.5,
+              3.7874743938446045,
+              19
+            ],
+            "id": -4,
+            "location": "Lobby",
+            "slot": 2,
+            "remaining": 59.934459924697876
+          }
+        ],
+        "at": 1790453208.815882,
+        "label": "replacement-guest-independent"
+      }
+    ],
+    "test": "Draft02Lobby",
+    "schema_version": 1,
+    "passed": true,
+    "engine": "Studio actual multiplayer"
+  },
+  "source_bindings": {
+    "roblox/birthday-lobby.server.luau": "ad7be3c845b18bf4f19b733b2b85d17a9947f0b016c811b1e645452060764579",
+    "roblox/birthday-lobby.client.luau": "3e78c7d57332a54c23d01ae078e5281e48def07799edc516e3ec13d75d5ee6b4",
+    "roblox/tests/lobby-runtime-check.luau": "18a4484e46b48a3a933d6261e1813cdef42b8726a47d2e694024ba1e2f9d405d"
+  },
+  "normalization": "Only contiguous numeric-key object arrays were converted to arrays; raw source retained beside this file. Source hashes captured before test launch.",
+  "raw_evidence": "roblox/evidence/draft02/runtime-iteration02-raw.json"
+}

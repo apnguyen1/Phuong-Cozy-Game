@@ -295,6 +295,77 @@ class VerificationTests(unittest.TestCase):
         self.save_ticket()
         self.assertEqual(self.run_ticket("--execute-checks")[2]["status"], "READY_FOR_REVIEW")
 
+    def exception_fixture(self):
+        capture = self.studio_fixture()
+        self.ticket.update(kind="model", commands=[])
+        capture["textures"] = [{"content_id": "rbxassetid://123", "property": "ColorMap", "path": "Workspace.Bed.Tree.Flowers.Appearance"}]
+        exception = {"content_id": "rbxassetid://123", "property": "ColorMap", "path_prefix": "Workspace.Bed.Tree",
+                     "approved_by": "User decision fixture only", "reason": "Fixture scoped permission to retain this tree texture"}
+        self.ticket["artifacts"][0]["approved_texture_exceptions"] = [exception]
+        self.put("assets/studio.json", capture)
+        self.save_ticket()
+        return capture, exception
+
+    def test_scoped_texture_exception_is_reported_without_human_approval(self):
+        _, exception = self.exception_fixture()
+        code, path, report = self.run_ticket()
+        self.assertEqual((code, report["status"]), (0, "READY_FOR_REVIEW"))
+        detail = next(c["detail"] for c in report["checks"] if c["id"] == "artifact:studio")
+        self.assertEqual(detail["approved_texture_exceptions"], [dict(exception, matched_references=1)])
+        self.assertEqual(self.finalize(path), 1)
+
+    def test_texture_exception_requires_approval_and_reason(self):
+        _, exception = self.exception_fixture()
+        for field in ("approved_by", "reason"):
+            with self.subTest(field=field):
+                old = exception[field]
+                exception[field] = "  "
+                self.save_ticket()
+                self.assertEqual(self.run_ticket()[2]["status"], "CHANGES_REQUIRED")
+                exception[field] = old
+
+    def test_texture_exception_does_not_cover_sibling_prefix(self):
+        capture, _ = self.exception_fixture()
+        capture["textures"][0]["path"] = "Workspace.Bed.TreeElsewhere.Flowers.Appearance"
+        self.put("assets/studio.json", capture)
+        self.assertEqual(self.run_ticket()[2]["status"], "CHANGES_REQUIRED")
+
+    def test_texture_exception_does_not_cover_other_id_or_property(self):
+        capture, _ = self.exception_fixture()
+        for field, value in (("content_id", "rbxassetid://124"), ("property", "TextureID")):
+            with self.subTest(field=field):
+                original = capture["textures"][0][field]
+                capture["textures"][0][field] = value
+                self.put("assets/studio.json", capture)
+                self.assertEqual(self.run_ticket()[2]["status"], "CHANGES_REQUIRED")
+                capture["textures"][0][field] = original
+
+    def test_texture_exception_does_not_hide_additional_unmapped_texture(self):
+        capture, _ = self.exception_fixture()
+        capture["textures"].append({"content_id": "rbxassetid://999", "property": "TextureID", "path": "Workspace.Bed.Sheet"})
+        self.put("assets/studio.json", capture)
+        self.assertEqual(self.run_ticket()[2]["status"], "CHANGES_REQUIRED")
+
+    def test_texture_exception_does_not_relax_native_part_colors(self):
+        capture, _ = self.exception_fixture()
+        capture["parts"][0]["hex"] = "#FFFFFF"
+        self.put("assets/studio.json", capture)
+        self.assertEqual(self.run_ticket()[2]["status"], "CHANGES_REQUIRED")
+
+    def test_texture_exception_rejects_broad_root_and_wildcards(self):
+        _, exception = self.exception_fixture()
+        for prefix in ("Workspace", "Workspace.Bed", "Workspace.Bed.*", "Workspace.Bed.Tree."):
+            with self.subTest(prefix=prefix):
+                exception["path_prefix"] = prefix
+                self.save_ticket()
+                self.assertEqual(self.run_ticket()[2]["status"], "CHANGES_REQUIRED")
+
+    def test_texture_exception_must_use_exact_asset_id(self):
+        _, exception = self.exception_fixture()
+        exception["content_id"] = "rbxassetid://*"
+        self.save_ticket()
+        self.assertEqual(self.run_ticket()[2]["status"], "CHANGES_REQUIRED")
+
     def test_concept_pass_does_not_imply_import_pass(self):
         self.ticket["stage"] = "concept"
         self.save_ticket()

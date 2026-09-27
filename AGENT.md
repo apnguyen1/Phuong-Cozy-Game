@@ -2,12 +2,14 @@
 
 ## Living theme and game plan
 
-**Version:** 0.8 — September 26, 2026
+**Version:** 0.9 — September 26, 2026
 
-**Stage:** First Roblox environment draft built; arrival-to-house construction authorized, with iterative visual review next.
+**Stage:** Draft 02 environment and birthday lobby implemented; actual Studio verification and user review tracked separately.
 **Purpose:** Keep the project’s personal meaning, scope, gameplay, and future implementation work in one evolving document.
 
 This document records decisions from the planning conversation. Confirmed direction takes precedence over earlier brainstorms. Items marked **provisional** or **to decide** are starting points for discussion, not implementation requirements. Future agents should preserve the confirmed direction and update this document when decisions change.
+
+**Latest authorized scope:** The user requested detailed decorations, Quad roads following their aerial reference, a separate enclosed birthday/game lobby with a personal 60-second countdown and entry pad, one bedroom matching their two photos, and exactly three stores: FOB Poke Bar, HeyTea in the middle, and Aladdins. The exact greeting is **Happy 24th Birthday, Phuong**. Preserve the user-moved outdoor map; derive new placement from `Home.Floor` rather than resetting Draft 01 coordinates. Draft 02 keeps the existing root name `CozyWorld_Draft01` for compatibility. See [Draft 02](docs/roblox-draft02.md), [MAP-02](docs/tickets/MAP-02.md), and [PCW-17](docs/tickets/PCW-17.md). Independent review and human acceptance are separate gates. The user explicitly authorized subagents and iteration through the existing verification system. The user explicitly approved retaining the detailed community blossom trees as a palette exception; MAP-02 scopes this to their two bark/foliage texture IDs under QuadPlanting. Native authored colors remain exact.
 
 **Current map direction (September 26, 2026):** Build toward Roblox while retaining Phuong's Cozy World. Design components individually, prioritize free community environment assets, identify any custom 3D asset gaps, and blend the component designs at the end. The active living plan is [Roblox map design](docs/roblox-map-design.md), with an [asset register](docs/roblox-asset-register.md). The user explicitly authorized the first arrival-to-house draft in the open Place1 and asked to resume after an intentional interruption. See [Draft 01](docs/roblox-draft01.md) for the built scope and validation. The older Phaser/Tiled implementation specification below is historical and does not govern Roblox authoring. Preserve the personal content, KISS-first approach, and reference art.
 

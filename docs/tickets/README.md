@@ -1,19 +1,21 @@
 # Phuong’s Cozy World — dedicated tickets
 
-The user approved map v0.2 and requested tickets and rendered UI/color concepts, with **no code**. These are local project tickets, not externally published tracker issues. Owners are suggested roles, not assigned people or agents.
+**September 26 implementation update:** The active user goal authorizes Draft 02 environment and lobby construction. [MAP-02](MAP-02.md) binds the whole decorated neighborhood; [PCW-17](PCW-17.md) gates the birthday room and timed entry. [PCW-04](PCW-04.md), [PCW-05](PCW-05.md) and [PCW-06](PCW-06.md) now include explicit current-scope amendments and preserve their original planning text as history. Their historical no-code boundaries no longer govern this authorized work. Draft 02 remains under independent review; scope approval does not mean final user acceptance. Other unimplemented quest tickets remain planned.
 
-Implementation tickets remain unstarted. Art concepts are for review; rendering an image does not complete UI implementation or validate mobile performance.
+**Historical planning baseline:** The user initially approved map v0.2 and requested tickets and rendered UI/color concepts, with **no code**. These are local project tickets, not externally published tracker issues. Owners are suggested roles, not assigned people or agents.
 
-**September 24 update:** The user requested a reusable [verification system](../../verification/README.md) and supplied the exact palette. The harness and verifier are now implementation work in this checkout; the original no-code execution boundaries below describe the earlier design task. Game/model production and publishing remain separate. Each ticket has a draft contract in [verification/contracts](../../verification/contracts/), with acceptance criteria read directly from its source ticket on every run.
+Tickets outside the September 26 environment/lobby scope remain unstarted. Art concepts are for review; rendering an image does not complete UI implementation or validate mobile performance.
+
+**September 24 update:** The user requested a reusable [verification system](../../verification/README.md) and supplied the exact palette. The harness and verifier are now implementation work in this checkout; the original no-code execution boundaries below describe the earlier design task. The September 26 request subsequently authorized the environment and lobby work; publishing remains separate. Each ticket has a draft contract in [verification/contracts](../../verification/contracts/), with acceptance criteria read directly from its source ticket on every run.
 
 | Ticket | Focus | Status | Dependencies |
 |---|---|---|---|
 | [PCW-01](PCW-01.md) | Art direction and color system | Concept review | None |
 | [PCW-02](PCW-02.md) | Mobile and desktop interface design | Planned | 01 |
 | [PCW-03](PCW-03.md) | Connected world layout and camera prototype | Planned | Approved map v0.2; 02 design |
-| [PCW-04](PCW-04.md) | Recreate Phuong's bedroom | Planned | 01; 03 |
-| [PCW-05](PCW-05.md) | Recreate the UDistrict fair block | Planned | 01; 03 |
-| [PCW-06](PCW-06.md) | Recreate the UW Quad | Planned | 01; 03 |
+| [PCW-04](PCW-04.md) | Recreate Phuong's bedroom | Draft 02 review | 01; 03 |
+| [PCW-05](PCW-05.md) | Recreate the UDistrict fair block | Draft 02 review | 01; 03 |
+| [PCW-06](PCW-06.md) | Recreate the UW Quad | Draft 02 review | 01; 03 |
 | [PCW-07](PCW-07.md) | Q01 — Everything Tucked In | Planned | 02; 04; 13 |
 | [PCW-08](PCW-08.md) | Q02 — Jasper's Favorite Things | Planned | 02; 03; 13 |
 | [PCW-09](PCW-09.md) | Q03 — A Tiny World of Her Own | Planned | 02; 04; 05; 13 |
@@ -24,6 +26,9 @@ Implementation tickets remain unstarted. Art concepts are for review; rendering 
 | [PCW-14](PCW-14.md) | Cake, wishes and photo gathering | Planned | 02; 03; 12; 13 |
 | [PCW-15](PCW-15.md) | Personal asset and content checklist | Planned | 01; 04; 05; 06 |
 | [PCW-16](PCW-16.md) | Mixed-device birthday rehearsal | Planned | 03–14 implemented later; target-device details from 15 |
+
+| [MAP-02](MAP-02.md) | Integrated decorated birthday world | Draft 02 review | 04; 05; 06; 17 |
+| [PCW-17](PCW-17.md) | Birthday lobby and personal timed entry | Draft 02 review | Current map |
 
 ## Suggested sequence
 

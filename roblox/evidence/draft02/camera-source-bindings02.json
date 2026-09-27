@@ -1,0 +1,10 @@
+{
+  "captured_before_test_at_utc": "2026-09-26T21:17:30.542071+00:00",
+  "files": {
+    "roblox/tests/camera-runtime.server.luau": "0b8429dcbc1617ee3b42008b894f2fa79c00952090b87799f10d05eb62669bd5",
+    "roblox/tests/party-runtime.client.luau": "d20f845283fe0edd22cc6c69135fab5054926bd25d9441b8bd8319893152e75b",
+    "roblox/birthday-lobby.server.luau": "ad7be3c845b18bf4f19b733b2b85d17a9947f0b016c811b1e645452060764579",
+    "roblox/birthday-lobby.client.luau": "c1aba60de3edecc2b34e766c257674914028ab91f6f2590d54ddd579d73c8bae",
+    "roblox/Phuong-Cozy-World-Draft02.rbxl": "c0d957546b23a58aa99337492edfe08fb383501f3e6d8d58ddab1b8063d3a418"
+  }
+}

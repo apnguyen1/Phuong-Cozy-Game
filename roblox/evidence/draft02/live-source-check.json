@@ -1,0 +1,19 @@
+{
+  "temporary_test_absent": true,
+  "home_floor": "-9, 0.020000457763671875, -148",
+  "matches": {
+    "client": {
+      "exact": true,
+      "equal_except_extra_trailing_crlf": false,
+      "live_sha256": "c1aba60de3edecc2b34e766c257674914028ab91f6f2590d54ddd579d73c8bae",
+      "tested_file_sha256": "c1aba60de3edecc2b34e766c257674914028ab91f6f2590d54ddd579d73c8bae"
+    },
+    "server": {
+      "exact": false,
+      "equal_except_extra_trailing_crlf": true,
+      "live_sha256": "f5c9b932299da5688102ecbe7ab8b32a3e09a7c4e615d4292c66025f7a5853f0",
+      "tested_file_sha256": "ad7be3c845b18bf4f19b733b2b85d17a9947f0b016c811b1e645452060764579"
+    }
+  },
+  "comparison": "Client exact tested file bytes; server differs only by one trailing CRLF from previous insertion. No runtime logic change."
+}

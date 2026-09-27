@@ -2,8 +2,8 @@
 *.rbxl.lock
 *.rbxlx.lock
 
-# Local verification environment and generated evidence
+# Local verification runtime and generated reports
 .venv-verification/
 __pycache__/
+*.pyc
 verification/runs/
-
