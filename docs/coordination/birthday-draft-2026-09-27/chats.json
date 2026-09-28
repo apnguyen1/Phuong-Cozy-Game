@@ -1,0 +1,113 @@
+{
+  "created": "2026-09-27",
+  "scope": "MVP implementation and verification coordination; historical draft documents preserved",
+  "model": "gpt-5.6-luna",
+  "reasoning": "low",
+  "coordinatorThreadId": "01a0e477-0493-74e0-b4c7-61ef81c56eb3",
+  "tasks": [
+    {
+      "id": "01",
+      "title": "Draft placement and bedroom arrival",
+      "threadId": "01a0e483-8fdd-7cf1-bfe5-78568cbc7ab5",
+      "hostId": "local",
+      "file": "C:/Users/andre/Repos/Phuong-Cozy-Game/docs/coordination/birthday-draft-2026-09-27/01-placement.md",
+      "tickets": "PCW-03, PCW-04, PCW-05, PCW-06, MAP-02, MAP-03"
+    },
+    {
+      "id": "02",
+      "title": "Draft Q01 Everything Tucked In",
+      "threadId": "01a0e483-a101-7d90-9d8c-223713356d78",
+      "hostId": "local",
+      "file": "C:/Users/andre/Repos/Phuong-Cozy-Game/docs/coordination/birthday-draft-2026-09-27/02-q01-bedroom.md",
+      "tickets": "PCW-07, PCW-04"
+    },
+    {
+      "id": "03",
+      "title": "Draft Q02 Jasper bedroom greeting and fetch",
+      "threadId": "01a0e483-b152-79e3-8fbe-830ad1a9134f",
+      "hostId": "local",
+      "file": "C:/Users/andre/Repos/Phuong-Cozy-Game/docs/coordination/birthday-draft-2026-09-27/03-q02-jasper.md",
+      "tickets": "PCW-08, PCW-04"
+    },
+    {
+      "id": "04",
+      "title": "Draft Q03 UDistrict miniature craft",
+      "threadId": "01a0e483-bfe7-76f1-ad3b-2b7e3b9b420f",
+      "hostId": "local",
+      "file": "C:/Users/andre/Repos/Phuong-Cozy-Game/docs/coordination/birthday-draft-2026-09-27/04-q03-craft.md",
+      "tickets": "PCW-09, PCW-05, PCW-04"
+    },
+    {
+      "id": "05",
+      "title": "Draft Q04 Reading under Quad blossoms",
+      "threadId": "01a0e483-cf9b-7433-965c-2a0515299f8e",
+      "hostId": "local",
+      "file": "C:/Users/andre/Repos/Phuong-Cozy-Game/docs/coordination/birthday-draft-2026-09-27/05-q04-reading.md",
+      "tickets": "PCW-10, PCW-06, PCW-02"
+    },
+    {
+      "id": "06",
+      "title": "Draft Q05 Shared-fund Labubu vending",
+      "threadId": "01a0e483-e5d3-7711-86b9-0f69a52825ec",
+      "hostId": "local",
+      "file": "C:/Users/andre/Repos/Phuong-Cozy-Game/docs/coordination/birthday-draft-2026-09-27/06-q05-labubu.md",
+      "tickets": "PCW-11, PCW-13, PCW-02"
+    },
+    {
+      "id": "07",
+      "title": "Draft Q06 Food at FOB and Aladdins",
+      "threadId": "01a0e483-f4fe-72b3-995d-5f6ca6fb8d60",
+      "hostId": "local",
+      "file": "C:/Users/andre/Repos/Phuong-Cozy-Game/docs/coordination/birthday-draft-2026-09-27/07-q06-food.md",
+      "tickets": "PCW-12, PCW-05"
+    },
+    {
+      "id": "08",
+      "title": "Draft birthday queue and group server entry",
+      "threadId": "01a0e484-06ce-7330-b8a1-bad5628d9ab9",
+      "hostId": "local",
+      "file": "C:/Users/andre/Repos/Phuong-Cozy-Game/docs/coordination/birthday-draft-2026-09-27/08-lobby-queue.md",
+      "tickets": "PCW-17, PCW-03"
+    },
+    {
+      "id": "09",
+      "title": "Draft shared birthday fund and cake quest",
+      "threadId": "01a0e484-1a42-7031-afdb-61da49e0232c",
+      "hostId": "local",
+      "file": "C:/Users/andre/Repos/Phuong-Cozy-Game/docs/coordination/birthday-draft-2026-09-27/09-progression-cake.md",
+      "tickets": "PCW-02, PCW-13, PCW-14, PCW-11"
+    },
+    {
+      "id": "10",
+      "title": "Draft Seattle surroundings and skyline",
+      "threadId": "01a0e484-2ad2-75c0-9519-ceb3c956d963",
+      "hostId": "local",
+      "file": "C:/Users/andre/Repos/Phuong-Cozy-Game/docs/coordination/birthday-draft-2026-09-27/10-seattle-boundary.md",
+      "tickets": "PCW-03, MAP-02, MAP-03"
+    },
+    {
+      "id": "11",
+      "title": "Draft cozy nighttime lighting",
+      "threadId": "01a0e484-3af0-7ca0-9b68-dc8b79ac2a5d",
+      "hostId": "local",
+      "file": "C:/Users/andre/Repos/Phuong-Cozy-Game/docs/coordination/birthday-draft-2026-09-27/11-night-lighting.md",
+      "tickets": "PCW-01, PCW-02, MAP-02, MAP-03"
+    },
+    {
+      "id": "12",
+      "title": "Draft grass decoration and outer Quad trees",
+      "threadId": "01a0e484-4ed9-7cc3-bf3d-7e34d9a2df7e",
+      "hostId": "local",
+      "file": "C:/Users/andre/Repos/Phuong-Cozy-Game/docs/coordination/birthday-draft-2026-09-27/12-grass-decoration.md",
+      "tickets": "PCW-06, MAP-03, MAP-02"
+    },
+    {
+      "id": "13",
+      "title": "Review birthday drafts and plan group rehearsal",
+      "threadId": "01a0e484-655c-7530-a1a9-f883e5d93932",
+      "hostId": "local",
+      "file": "C:/Users/andre/Repos/Phuong-Cozy-Game/docs/coordination/birthday-draft-2026-09-27/13-independent-review.md",
+      "tickets": "PCW-16 plus all submitted draft tickets and .codex/agents/verifier.toml"
+    }
+  ]
+}

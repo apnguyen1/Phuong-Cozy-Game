@@ -1,0 +1,1719 @@
+Function 0 (corner):
+    9: local function corner(x,r) local c=Instance.new("UICorner"); c.CornerRadius=UDim.new(0,r or 12); c.Parent=x end
+GETIMPORT R2 2 [Instance.new]
+LOADK R3 K3 ['UICorner']
+CALLFB R2 1 1 [0]
+GETIMPORT R3 5 [UDim.new]
+LOADN R4 0
+ORK R5 R1 K6 [12]
+CALLFB R3 2 1 [1]
+SETTABLEKS R3 R2 K7 ['CornerRadius']
+SETTABLEKS R0 R2 K8 ['Parent']
+RETURN R0 0
+
+Function 1 (text):
+   10: local function text(parent,name,value,size,color) local x=Instance.new("TextLabel"); x.Name=name; x.Text=value or ""; x.TextColor3=color or P.ink; x.BackgroundTransparency=1; x.Font=Enum.Font.GothamSemibold; x.TextSize=size or 16; x.TextWrapped=true; x.TextXAlignment=Enum.TextXAlignment.Left; x.Parent=parent; return x end
+GETIMPORT R5 2 [Instance.new]
+LOADK R6 K3 ['TextLabel']
+CALLFB R5 1 1 [0]
+SETTABLEKS R1 R5 K4 ['Name']
+ORK R6 R2 K5 ['']
+SETTABLEKS R6 R5 K6 ['Text']
+MOVE R6 R4
+JUMPIF R6 L0
+GETUPVAL R6 U0
+GETTABLEKS R6 R6 K7 ['ink']
+L0: SETTABLEKS R6 R5 K8 ['TextColor3']
+LOADN R6 1
+SETTABLEKS R6 R5 K9 ['BackgroundTransparency']
+GETIMPORT R6 13 [Enum.Font.GothamSemibold]
+SETTABLEKS R6 R5 K11 ['Font']
+ORK R6 R3 K14 [16]
+SETTABLEKS R6 R5 K15 ['TextSize']
+LOADB R6 1
+SETTABLEKS R6 R5 K16 ['TextWrapped']
+GETIMPORT R6 19 [Enum.TextXAlignment.Left]
+SETTABLEKS R6 R5 K17 ['TextXAlignment']
+SETTABLEKS R0 R5 K20 ['Parent']
+RETURN R5 1
+
+Function 2 (button):
+   11: local function button(parent,name,value,callback) local x=Instance.new("TextButton"); x.Name=name; x.Text=value or ""; x.AutoButtonColor=true; x.Font=Enum.Font.GothamBold; x.TextSize=16; x.TextColor3=P.cream; x.BackgroundColor3=P.forest; x.Size=UDim2.new(1,0,0,52); x.Parent=parent; corner(x,10); x.Activated:Connect(callback); return x end
+GETIMPORT R4 2 [Instance.new]
+LOADK R5 K3 ['TextButton']
+CALLFB R4 1 1 [0]
+SETTABLEKS R1 R4 K4 ['Name']
+ORK R5 R2 K5 ['']
+SETTABLEKS R5 R4 K6 ['Text']
+LOADB R5 1
+SETTABLEKS R5 R4 K7 ['AutoButtonColor']
+GETIMPORT R5 11 [Enum.Font.GothamBold]
+SETTABLEKS R5 R4 K9 ['Font']
+LOADN R5 16
+SETTABLEKS R5 R4 K12 ['TextSize']
+GETUPVAL R5 U0
+GETTABLEKS R5 R5 K13 ['cream']
+SETTABLEKS R5 R4 K14 ['TextColor3']
+GETUPVAL R5 U0
+GETTABLEKS R5 R5 K15 ['forest']
+SETTABLEKS R5 R4 K16 ['BackgroundColor3']
+GETIMPORT R5 18 [UDim2.new]
+LOADN R6 1
+LOADN R7 0
+LOADN R8 0
+LOADN R9 52
+CALLFB R5 4 1 [1]
+SETTABLEKS R5 R4 K19 ['Size']
+SETTABLEKS R0 R4 K20 ['Parent']
+GETUPVAL R5 U1
+MOVE R6 R4
+LOADN R7 10
+CALLFB R5 2 0 [2]
+GETTABLEKS R5 R4 K21 ['Activated']
+MOVE R7 R3
+NAMECALL R5 R5 K22 ['Connect']
+CALLFB R5 2 0 [3]
+RETURN R4 1
+
+Function 3 (??):
+   18: local journal=button(gui,"JournalButton","Journal",function() end); journal.AnchorPoint=Vector2.new(1,0); journal.Position=UDim2.new(1,-20,0,20); journal.Size=UDim2.fromOffset(132,52)
+RETURN R0 0
+
+Function 4 (??):
+   19: local cakeButton=button(gui,"CakeButton","Cake finale",function() end); cakeButton.AnchorPoint=Vector2.new(1,0); cakeButton.Position=UDim2.new(1,-20,0,80); cakeButton.Size=UDim2.fromOffset(132,44); cakeButton.Visible=false
+RETURN R0 0
+
+Function 5 (??):
+   23: local close=button(panel,"Close","Close",function() panel.Visible=false end); close.AnchorPoint=Vector2.new(1,0); close.Position=UDim2.new(1,-18,0,16); close.Size=UDim2.fromOffset(104,48); close.BackgroundColor3=P.brick
+GETUPVAL R0 U0
+LOADB R1 0
+SETTABLEKS R1 R0 K0 ['Visible']
+RETURN R0 0
+
+Function 6 (??):
+   24: local back=button(panel,"Back","Back",function() panel.Visible=false end); back.AnchorPoint=Vector2.new(1,0); back.Position=UDim2.new(1,-132,0,16); back.Size=UDim2.fromOffset(104,48)
+GETUPVAL R0 U0
+LOADB R1 0
+SETTABLEKS R1 R0 K0 ['Visible']
+RETURN R0 0
+
+Function 7 (freshId):
+   32: local function freshId() sequence+=1; return string.format("client-%d-%d-%d",player.UserId,math.floor(os.clock()*1000),sequence) end
+GETUPVAL R0 U0
+ADDK R0 R0 K0 [1]
+SETUPVAL R0 U0
+GETIMPORT R0 3 [string.format]
+LOADK R1 K4 ['client-%d-%d-%d']
+GETUPVAL R2 U1
+GETTABLEKS R2 R2 K5 ['UserId']
+REMARK builtin math.floor/1
+GETIMPORT R5 9 [os.clock]
+CALLFB R5 0 1 [0]
+MULK R4 R5 K6 [1000]
+FASTCALL1 12 R4 L0
+GETIMPORT R3 12 [math.floor]
+CALL R3 1 1
+L0: GETUPVAL R4 U0
+CALL R0 4 -1
+RETURN R0 -1
+
+Function 8 (??):
+   33: cakeButton.Activated:Connect(function() renderCake(cakeState) end)
+GETGLOBAL R0 K0 ['renderCake']
+GETUPVAL R1 U0
+CALLFB R0 1 0 [0]
+RETURN R0 0
+
+Function 9 (sendActivity):
+   34: local function sendActivity(activityId,roundId,stepId,payload) if not sessionId then status.Text="Waiting for birthday session"; return end; action:FireServer({kind="ActivityAction",sessionId=sessionId,activityId=activityId,roundId=roundId or "",stepId=stepId or "",actionId=freshId(),payload=payload or {}}) end
+GETUPVAL R4 U0
+JUMPIF R4 L0
+GETUPVAL R4 U1
+LOADK R5 K0 ['Waiting for birthday session']
+SETTABLEKS R5 R4 K1 ['Text']
+RETURN R0 0
+L0: GETUPVAL R4 U2
+REMARK allocation: table template 7
+DUPTABLE R6 10
+GETUPVAL R7 U0
+SETTABLEKS R7 R6 K4 ['sessionId']
+SETTABLEKS R0 R6 K5 ['activityId']
+ORK R7 R1 K11 ['']
+SETTABLEKS R7 R6 K6 ['roundId']
+ORK R7 R2 K11 ['']
+SETTABLEKS R7 R6 K7 ['stepId']
+GETUPVAL R7 U3
+CALLFB R7 0 1 [0]
+SETTABLEKS R7 R6 K8 ['actionId']
+MOVE R7 R3
+JUMPIF R7 L1
+REMARK allocation: table hash 0
+NEWTABLE R7 0 0
+L1: SETTABLEKS R7 R6 K9 ['payload']
+NAMECALL R4 R4 K12 ['FireServer']
+CALLFB R4 2 0 [1]
+RETURN R0 0
+
+Function 10 (clear):
+   35: local function clear() for _,x in ipairs(scroll:GetChildren()) do if x:IsA("TextButton") or x:IsA("TextLabel") then x:Destroy() end end end
+GETIMPORT R0 1 [ipairs]
+GETUPVAL R1 U0
+NAMECALL R1 R1 K2 ['GetChildren']
+CALL R1 1 -1
+CALL R0 -1 3
+FORGPREP_INEXT R0 L2
+L0: LOADK R7 K3 ['TextButton']
+NAMECALL R5 R4 K4 ['IsA']
+CALLFB R5 2 1 [0]
+JUMPIF R5 L1
+LOADK R7 K5 ['TextLabel']
+NAMECALL R5 R4 K4 ['IsA']
+CALLFB R5 2 1 [1]
+JUMPIFNOT R5 L2
+L1: NAMECALL R5 R4 K6 ['Destroy']
+CALLFB R5 1 0 [2]
+L2: FORGLOOP R0 L0 2 [inext]
+RETURN R0 0
+
+Function 11 (petalCount):
+REMARK builtin type/1
+   36: local function petalCount(p) if type(p)=="number" then return p end; local n=0; if type(p)=="table" then for _,v in pairs(p) do if v then n+=1 end end end; return n end
+FASTCALL1 40 R0 L0
+MOVE R2 R0
+GETIMPORT R1 1 [type]
+CALL R1 1 1
+L0: JUMPXEQKS R1 K2 L1 NOT ['number']
+RETURN R0 1
+L1: LOADN R1 0
+REMARK builtin type/1
+FASTCALL1 40 R0 L2
+MOVE R3 R0
+GETIMPORT R2 1 [type]
+CALL R2 1 1
+L2: JUMPXEQKS R2 K3 L5 NOT ['table']
+GETIMPORT R2 5 [pairs]
+MOVE R3 R0
+CALLFB R2 1 3 [0]
+FORGPREP_NEXT R2 L4
+L3: JUMPIFNOT R6 L4
+ADDK R1 R1 K6 [1]
+L4: FORGLOOP R2 L3 2
+L5: RETURN R1 1
+
+Function 12 (closeActivity):
+   37: local function closeActivity() if currentView and sessionId then action:FireServer({kind="CloseActivity",sessionId=sessionId,activityId=currentView.activityId,roundId=currentView.roundId,actionId=freshId()}) end; currentView=nil; panelMode="closed"; panel.Visible=false end
+GETUPVAL R0 U0
+JUMPIFNOT R0 L0
+GETUPVAL R0 U1
+JUMPIFNOT R0 L0
+GETUPVAL R0 U2
+REMARK allocation: table template 5
+DUPTABLE R2 6
+GETUPVAL R3 U1
+SETTABLEKS R3 R2 K2 ['sessionId']
+GETUPVAL R3 U0
+GETTABLEKS R3 R3 K3 ['activityId']
+SETTABLEKS R3 R2 K3 ['activityId']
+GETUPVAL R3 U0
+GETTABLEKS R3 R3 K4 ['roundId']
+SETTABLEKS R3 R2 K4 ['roundId']
+GETUPVAL R3 U3
+CALLFB R3 0 1 [0]
+SETTABLEKS R3 R2 K5 ['actionId']
+NAMECALL R0 R0 K7 ['FireServer']
+CALLFB R0 2 0 [1]
+L0: LOADNIL R0
+SETUPVAL R0 U0
+LOADK R0 K8 ['closed']
+SETUPVAL R0 U4
+GETUPVAL R0 U5
+LOADB R1 0
+SETTABLEKS R1 R0 K9 ['Visible']
+RETURN R0 0
+
+Function 13 (??):
+   52: 	for _,d in ipairs(view.availableActions or {}) do local b=button(scroll,"Action_"..tostring(d.id),d.label or d.id,function() if d.enabled~=false then sendActivity(view.activityId,view.roundId,d.stepId,d.payload) end end); b.LayoutOrder=order; order+=1; if d.enabled==false then b.Active=false; b.AutoButtonColor=false; b.BackgroundColor3=P.wood; b.Text=(d.label or d.id).." — "..(d.reason or "Unavailable") end end
+GETUPVAL R0 U0
+GETTABLEKS R0 R0 K0 ['enabled']
+JUMPXEQKB R0 0 L0
+GETUPVAL R0 U1
+GETUPVAL R1 U2
+GETTABLEKS R1 R1 K1 ['activityId']
+GETUPVAL R2 U2
+GETTABLEKS R2 R2 K2 ['roundId']
+GETUPVAL R3 U0
+GETTABLEKS R3 R3 K3 ['stepId']
+GETUPVAL R4 U0
+GETTABLEKS R4 R4 K4 ['payload']
+CALLFB R0 4 0 [0]
+L0: RETURN R0 0
+
+Function 14 (??):
+   53: 	if view.canReplay then local b=button(scroll,"Replay","Replay this activity",function() requestView(view.activityId,true) end); b.LayoutOrder=order end
+GETGLOBAL R0 K0 ['requestView']
+GETUPVAL R1 U0
+GETTABLEKS R1 R1 K1 ['activityId']
+LOADB R2 1
+CALLFB R0 2 0 [0]
+RETURN R0 0
+
+Function 15 (render):
+REMARK builtin type/1
+   40: 	if type(view)~="table" then return end
+FASTCALL1 40 R0 L0
+MOVE R2 R0
+GETIMPORT R1 1 [type]
+CALL R1 1 1
+L0: JUMPXEQKS R1 K2 L1 ['table']
+RETURN R0 0
+   41: 	if not view.activityId then
+L1: GETTABLEKS R1 R0 K3 ['activityId']
+JUMPIF R1 L2
+   42: 		renderJournal(view); return
+GETGLOBAL R1 K4 ['renderJournal']
+MOVE R2 R0
+CALLFB R1 1 0 [0]
+RETURN R0 0
+   44: 	currentView=view; panelMode="activity"; panel.Visible=true; title.Text=view.title or view.activityId; instructions.Text=view.instructions or "Choose an available action."
+L2: SETUPVAL R0 U0
+LOADK R1 K5 ['activity']
+SETUPVAL R1 U1
+GETUPVAL R1 U2
+LOADB R2 1
+SETTABLEKS R2 R1 K6 ['Visible']
+GETUPVAL R1 U3
+GETTABLEKS R2 R0 K7 ['title']
+JUMPIF R2 L3
+GETTABLEKS R2 R0 K3 ['activityId']
+L3: SETTABLEKS R2 R1 K8 ['Text']
+GETUPVAL R1 U4
+GETTABLEKS R3 R0 K10 ['instructions']
+ORK R2 R3 K9 ['Choose an available action.']
+SETTABLEKS R2 R1 K8 ['Text']
+   45: 	local p=view.progress or {}; progress.Text=string.format("Progress  •  %s / %s   [%s]",tostring(p.done or 0),tostring(p.total or 0),tostring(view.state or "")); clear()
+GETTABLEKS R1 R0 K11 ['progress']
+JUMPIF R1 L4
+REMARK allocation: table hash 0
+NEWTABLE R1 0 0
+L4: GETUPVAL R2 U5
+GETIMPORT R3 14 [string.format]
+LOADK R4 K15 ['Progress  •  %s / %s   [%s]']
+REMARK builtin tostring/1
+GETTABLEKS R7 R1 K17 ['done']
+ORK R6 R7 K16 [0]
+FASTCALL1 63 R6 L5
+GETIMPORT R5 19 [tostring]
+CALL R5 1 1
+REMARK builtin tostring/1
+L5: GETTABLEKS R8 R1 K20 ['total']
+ORK R7 R8 K16 [0]
+FASTCALL1 63 R7 L6
+GETIMPORT R6 19 [tostring]
+CALL R6 1 1
+REMARK builtin tostring/1
+L6: GETTABLEKS R9 R0 K22 ['state']
+ORK R8 R9 K21 ['']
+FASTCALL1 63 R8 L7
+GETIMPORT R7 19 [tostring]
+CALL R7 1 -1
+L7: CALL R3 -1 1
+SETTABLEKS R3 R2 K8 ['Text']
+GETUPVAL R2 U6
+CALLFB R2 0 0 [1]
+   46: 	local order=1
+LOADN R2 1
+   47: 	local reading=view.reading
+GETTABLEKS R3 R0 K23 ['reading']
+REMARK builtin type/1
+   48: 	if type(reading)=="table" and (type(reading.title)=="string" or type(reading.text)=="string") then
+FASTCALL1 40 R3 L8
+MOVE R5 R3
+GETIMPORT R4 1 [type]
+CALL R4 1 1
+L8: JUMPXEQKS R4 K2 L12 NOT ['table']
+REMARK builtin type/1
+GETTABLEKS R5 R3 K7 ['title']
+FASTCALL1 40 R5 L9
+GETIMPORT R4 1 [type]
+CALL R4 1 1
+L9: JUMPXEQKS R4 K12 L11 ['string']
+REMARK builtin type/1
+GETTABLEKS R5 R3 K24 ['text']
+FASTCALL1 40 R5 L10
+GETIMPORT R4 1 [type]
+CALL R4 1 1
+L10: JUMPXEQKS R4 K12 L12 NOT ['string']
+   49: 		local readingTitle=text(scroll,"ReadingTitle",reading.title or "Reading",18,P.forest); readingTitle.LayoutOrder=order; readingTitle.AutomaticSize=Enum.AutomaticSize.Y; readingTitle.Size=UDim2.new(1,0,0,0); order+=1
+L11: GETUPVAL R4 U7
+GETUPVAL R5 U8
+LOADK R6 K25 ['ReadingTitle']
+GETTABLEKS R8 R3 K7 ['title']
+ORK R7 R8 K26 ['Reading']
+LOADN R8 18
+GETUPVAL R9 U9
+GETTABLEKS R9 R9 K27 ['forest']
+CALLFB R4 5 1 [2]
+SETTABLEKS R2 R4 K28 ['LayoutOrder']
+GETIMPORT R5 32 [Enum.AutomaticSize.Y]
+SETTABLEKS R5 R4 K30 ['AutomaticSize']
+GETIMPORT R5 35 [UDim2.new]
+LOADN R6 1
+LOADN R7 0
+LOADN R8 0
+LOADN R9 0
+CALLFB R5 4 1 [3]
+SETTABLEKS R5 R4 K36 ['Size']
+ADDK R2 R2 K37 [1]
+   50: 		local readingText=text(scroll,"ReadingText",reading.text or "",16,P.ink); readingText.LayoutOrder=order; readingText.AutomaticSize=Enum.AutomaticSize.Y; readingText.Size=UDim2.new(1,0,0,0); order+=1
+GETUPVAL R5 U7
+GETUPVAL R6 U8
+LOADK R7 K38 ['ReadingText']
+GETTABLEKS R9 R3 K24 ['text']
+ORK R8 R9 K21 ['']
+LOADN R9 16
+GETUPVAL R10 U9
+GETTABLEKS R10 R10 K39 ['ink']
+CALLFB R5 5 1 [4]
+SETTABLEKS R2 R5 K28 ['LayoutOrder']
+GETIMPORT R6 32 [Enum.AutomaticSize.Y]
+SETTABLEKS R6 R5 K30 ['AutomaticSize']
+GETIMPORT R6 35 [UDim2.new]
+LOADN R7 1
+LOADN R8 0
+LOADN R9 0
+LOADN R10 0
+CALLFB R6 4 1 [5]
+SETTABLEKS R6 R5 K36 ['Size']
+ADDK R2 R2 K37 [1]
+   52: 	for _,d in ipairs(view.availableActions or {}) do local b=button(scroll,"Action_"..tostring(d.id),d.label or d.id,function() if d.enabled~=false then sendActivity(view.activityId,view.roundId,d.stepId,d.payload) end end); b.LayoutOrder=order; order+=1; if d.enabled==false then b.Active=false; b.AutoButtonColor=false; b.BackgroundColor3=P.wood; b.Text=(d.label or d.id).." — "..(d.reason or "Unavailable") end end
+L12: GETIMPORT R4 41 [ipairs]
+GETTABLEKS R5 R0 K42 ['availableActions']
+JUMPIF R5 L13
+REMARK allocation: table hash 0
+NEWTABLE R5 0 0
+L13: CALLFB R4 1 3 [6]
+FORGPREP_INEXT R4 L18
+L14: GETUPVAL R9 U10
+GETUPVAL R10 U8
+LOADK R12 K43 ['Action_']
+REMARK builtin tostring/1
+GETTABLEKS R14 R8 K44 ['id']
+FASTCALL1 63 R14 L15
+GETIMPORT R13 19 [tostring]
+CALL R13 1 1
+L15: CONCAT R11 R12 R13
+GETTABLEKS R12 R8 K45 ['label']
+JUMPIF R12 L16
+GETTABLEKS R12 R8 K44 ['id']
+REMARK allocation: closure with 3 upvalues
+L16: NEWCLOSURE R13 P0
+CAPTURE VAL R8
+CAPTURE UPVAL U11
+CAPTURE VAL R0
+CALLFB R9 4 1 [7]
+SETTABLEKS R2 R9 K28 ['LayoutOrder']
+ADDK R2 R2 K37 [1]
+GETTABLEKS R10 R8 K46 ['enabled']
+JUMPXEQKB R10 0 L18 NOT
+LOADB R10 0
+SETTABLEKS R10 R9 K47 ['Active']
+LOADB R10 0
+SETTABLEKS R10 R9 K48 ['AutoButtonColor']
+GETUPVAL R10 U9
+GETTABLEKS R10 R10 K49 ['wood']
+SETTABLEKS R10 R9 K50 ['BackgroundColor3']
+GETTABLEKS R11 R8 K45 ['label']
+JUMPIF R11 L17
+GETTABLEKS R11 R8 K44 ['id']
+L17: LOADK R12 K51 [' — ']
+GETTABLEKS R14 R8 K53 ['reason']
+ORK R13 R14 K52 ['Unavailable']
+CONCAT R10 R11 R13
+SETTABLEKS R10 R9 K8 ['Text']
+L18: FORGLOOP R4 L14 2 [inext]
+   53: 	if view.canReplay then local b=button(scroll,"Replay","Replay this activity",function() requestView(view.activityId,true) end); b.LayoutOrder=order end
+GETTABLEKS R4 R0 K54 ['canReplay']
+JUMPIFNOT R4 L19
+GETUPVAL R4 U10
+GETUPVAL R5 U8
+LOADK R6 K55 ['Replay']
+LOADK R7 K56 ['Replay this activity']
+REMARK allocation: closure with 1 upvalues
+NEWCLOSURE R8 P1
+CAPTURE VAL R0
+CALLFB R4 4 1 [8]
+SETTABLEKS R2 R4 K28 ['LayoutOrder']
+   54: 	if view.errorText then local e=text(scroll,"Error",view.errorText,14,P.brick); e.Size=UDim2.new(1,0,0,40) end
+L19: GETTABLEKS R4 R0 K57 ['errorText']
+JUMPIFNOT R4 L20
+GETUPVAL R4 U7
+GETUPVAL R5 U8
+LOADK R6 K58 ['Error']
+GETTABLEKS R7 R0 K57 ['errorText']
+LOADN R8 14
+GETUPVAL R9 U9
+GETTABLEKS R9 R9 K59 ['brick']
+CALLFB R4 5 1 [9]
+GETIMPORT R5 35 [UDim2.new]
+LOADN R6 1
+LOADN R7 0
+LOADN R8 0
+LOADN R9 40
+CALLFB R5 4 1 [10]
+SETTABLEKS R5 R4 K36 ['Size']
+   55: end
+L20: RETURN R0 0
+
+Function 16 (renderJournal):
+   57:  currentView=nil; panelMode="journal"; clear(); panel.Visible=true; title.Text="Birthday journal"; instructions.Text="Explore together and help complete each petal."; local petals=s.petals or {}; local rounds=s.rounds or {}; local names={Q01="Everything Tucked In • Bedroom",Q02="Jasper's Favorite Things • Bedroom / Jasper yard",Q03="A Tiny World of Her Own • U District booth / bedroom display",Q04="One More Chapter • Quad / bedroom",Q05="A Labubu Wish • U District",Q06="Something Delicious • Three food counters"}; local order=1
+LOADNIL R1
+SETUPVAL R1 U0
+LOADK R1 K0 ['journal']
+SETUPVAL R1 U1
+GETUPVAL R1 U2
+CALLFB R1 0 0 [0]
+GETUPVAL R1 U3
+LOADB R2 1
+SETTABLEKS R2 R1 K1 ['Visible']
+GETUPVAL R1 U4
+LOADK R2 K2 ['Birthday journal']
+SETTABLEKS R2 R1 K3 ['Text']
+GETUPVAL R1 U5
+LOADK R2 K4 ['Explore together and help comple'...]
+SETTABLEKS R2 R1 K3 ['Text']
+GETTABLEKS R1 R0 K5 ['petals']
+JUMPIF R1 L0
+REMARK allocation: table hash 0
+NEWTABLE R1 0 0
+L0: GETTABLEKS R2 R0 K6 ['rounds']
+JUMPIF R2 L1
+REMARK allocation: table hash 0
+NEWTABLE R2 0 0
+REMARK allocation: table template 6
+L1: DUPTABLE R3 19
+LOADN R4 1
+   58:  for _,id in ipairs({"Q01","Q02","Q03","Q04","Q05","Q06"}) do local r=rounds[id] or {}; local done=petals[id] or r.completed or false; local e=text(scroll,"Journal_"..id,string.format("%s • %s",names[id],done and "Petal complete" or "Explore"),16,done and P.forest or P.ink); e.LayoutOrder=order; e.Size=UDim2.new(1,0,0,34); order+=1 end
+GETIMPORT R5 21 [ipairs]
+REMARK allocation: table array 6
+NEWTABLE R6 0 6
+LOADK R8 K7 ['Q01']
+LOADK R9 K9 ['Q02']
+LOADK R10 K11 ['Q03']
+LOADK R11 K13 ['Q04']
+LOADK R12 K15 ['Q05']
+LOADK R13 K17 ['Q06']
+SETLIST R6 R8 6 [1]
+CALLFB R5 1 3 [1]
+FORGPREP_INEXT R5 L9
+L2: GETTABLE R10 R2 R9
+JUMPIF R10 L3
+REMARK allocation: table hash 0
+NEWTABLE R10 0 0
+L3: GETTABLE R11 R1 R9
+JUMPIF R11 L4
+GETTABLEKS R11 R10 K22 ['completed']
+JUMPIF R11 L4
+LOADB R11 0
+L4: GETUPVAL R12 U6
+GETUPVAL R13 U7
+LOADK R15 K23 ['Journal_']
+MOVE R16 R9
+CONCAT R14 R15 R16
+GETIMPORT R15 26 [string.format]
+LOADK R16 K27 ['%s • %s']
+GETTABLE R17 R3 R9
+JUMPIFNOT R11 L5
+LOADK R18 K28 ['Petal complete']
+JUMP L6
+L5: LOADK R18 K29 ['Explore']
+L6: CALLFB R15 3 1 [2]
+LOADN R16 16
+JUMPIFNOT R11 L7
+GETUPVAL R17 U8
+GETTABLEKS R17 R17 K30 ['forest']
+JUMPIF R17 L8
+L7: GETUPVAL R17 U8
+GETTABLEKS R17 R17 K31 ['ink']
+L8: CALLFB R12 5 1 [3]
+SETTABLEKS R4 R12 K32 ['LayoutOrder']
+GETIMPORT R13 35 [UDim2.new]
+LOADN R14 1
+LOADN R15 0
+LOADN R16 0
+LOADN R17 34
+CALLFB R13 4 1 [4]
+SETTABLEKS R13 R12 K36 ['Size']
+ADDK R4 R4 K37 [1]
+L9: FORGLOOP R5 L2 2 [inext]
+   59:  local f=text(scroll,"JournalFund",string.format("Shared fund • %s",tostring(s.fundBalance or 0)),17,P.golden); f.LayoutOrder=order; f.Size=UDim2.new(1,0,0,34)
+GETUPVAL R5 U6
+GETUPVAL R6 U7
+LOADK R7 K38 ['JournalFund']
+GETIMPORT R8 26 [string.format]
+LOADK R9 K39 ['Shared fund • %s']
+REMARK builtin tostring/1
+GETTABLEKS R12 R0 K41 ['fundBalance']
+ORK R11 R12 K40 [0]
+FASTCALL1 63 R11 L10
+GETIMPORT R10 43 [tostring]
+CALL R10 1 -1
+L10: CALL R8 -1 1
+LOADN R9 17
+GETUPVAL R10 U8
+GETTABLEKS R10 R10 K44 ['golden']
+CALLFB R5 5 1 [5]
+SETTABLEKS R4 R5 K32 ['LayoutOrder']
+GETIMPORT R6 35 [UDim2.new]
+LOADN R7 1
+LOADN R8 0
+LOADN R9 0
+LOADN R10 34
+CALLFB R6 4 1 [6]
+SETTABLEKS R6 R5 K36 ['Size']
+   60: end
+RETURN R0 0
+
+Function 17 (??):
+   64:  for _,method in ipairs(methods) do local b=button(scroll,"Cake_"..method,method,function() if sessionId then action:FireServer({kind="Cake",action=method,sessionId=sessionId,actionId=freshId()}) end end); b.LayoutOrder=order; order+=1 end
+GETUPVAL R0 U0
+JUMPIFNOT R0 L0
+GETUPVAL R0 U1
+REMARK allocation: table template 4
+DUPTABLE R2 5
+GETUPVAL R3 U2
+SETTABLEKS R3 R2 K2 ['action']
+GETUPVAL R3 U0
+SETTABLEKS R3 R2 K3 ['sessionId']
+GETUPVAL R3 U3
+CALLFB R3 0 1 [0]
+SETTABLEKS R3 R2 K4 ['actionId']
+NAMECALL R0 R0 K6 ['FireServer']
+CALLFB R0 2 0 [1]
+L0: RETURN R0 0
+
+Function 18 (renderCake):
+   62:  currentView=nil; panelMode="cake"; cakeState=state or cakeState; clear(); panel.Visible=true; title.Text="Birthday cake"; instructions.Text="Gather voluntarily, then choose a celebration action."; progress.Text="Finale • "..tostring(cakeState.finaleState or "LOCKED"); local order=1; local phase=cakeState.finaleState
+LOADNIL R1
+SETUPVAL R1 U0
+LOADK R1 K0 ['cake']
+SETUPVAL R1 U1
+MOVE R1 R0
+JUMPIF R1 L0
+GETUPVAL R1 U2
+L0: SETUPVAL R1 U2
+GETUPVAL R1 U3
+CALLFB R1 0 0 [0]
+GETUPVAL R1 U4
+LOADB R2 1
+SETTABLEKS R2 R1 K1 ['Visible']
+GETUPVAL R1 U5
+LOADK R2 K2 ['Birthday cake']
+SETTABLEKS R2 R1 K3 ['Text']
+GETUPVAL R1 U6
+LOADK R2 K4 ['Gather voluntarily, then choose '...]
+SETTABLEKS R2 R1 K3 ['Text']
+GETUPVAL R1 U7
+LOADK R3 K5 ['Finale • ']
+REMARK builtin tostring/1
+GETUPVAL R6 U2
+GETTABLEKS R6 R6 K7 ['finaleState']
+ORK R5 R6 K6 ['LOCKED']
+FASTCALL1 63 R5 L1
+GETIMPORT R4 9 [tostring]
+CALL R4 1 1
+L1: CONCAT R2 R3 R4
+SETTABLEKS R2 R1 K3 ['Text']
+LOADN R1 1
+GETUPVAL R2 U2
+GETTABLEKS R2 R2 K7 ['finaleState']
+REMARK allocation: table hash 0
+   63:  local methods={}; local host=player.UserId==lastSnapshot.phuongUserId or player.UserId==lastSnapshot.hostUserId; if phase=="INVITED" then if host then methods={"CancelInvite","Cut"} end elseif phase=="CUT" or phase=="EATING" then methods={"Eat"} elseif host and petalCount(lastSnapshot.petals)>=6 then methods={"Invite"} end
+NEWTABLE R3 0 0
+LOADB R4 1
+GETUPVAL R5 U8
+GETTABLEKS R5 R5 K10 ['UserId']
+GETUPVAL R6 U9
+GETTABLEKS R6 R6 K11 ['phuongUserId']
+JUMPIFEQ R5 R6 L3
+GETUPVAL R5 U8
+GETTABLEKS R5 R5 K10 ['UserId']
+GETUPVAL R6 U9
+GETTABLEKS R6 R6 K12 ['hostUserId']
+JUMPIFEQ R5 R6 L2
+LOADB R4 0 +1
+L2: LOADB R4 1
+L3: JUMPXEQKS R2 K13 L4 NOT ['INVITED']
+JUMPIFNOT R4 L7
+REMARK allocation: table array 2
+NEWTABLE R5 0 2
+LOADK R6 K14 ['CancelInvite']
+LOADK R7 K15 ['Cut']
+SETLIST R5 R6 2 [1]
+MOVE R3 R5
+JUMP L7
+L4: JUMPXEQKS R2 K16 L5 ['CUT']
+JUMPXEQKS R2 K17 L6 NOT ['EATING']
+REMARK allocation: table array 1
+L5: NEWTABLE R5 0 1
+LOADK R6 K18 ['Eat']
+SETLIST R5 R6 1 [1]
+MOVE R3 R5
+JUMP L7
+L6: JUMPIFNOT R4 L7
+GETUPVAL R5 U10
+GETUPVAL R6 U9
+GETTABLEKS R6 R6 K19 ['petals']
+CALLFB R5 1 1 [1]
+LOADN R6 6
+JUMPIFNOTLE R6 R5 L7
+REMARK allocation: table array 1
+NEWTABLE R5 0 1
+LOADK R6 K20 ['Invite']
+SETLIST R5 R6 1 [1]
+MOVE R3 R5
+   64:  for _,method in ipairs(methods) do local b=button(scroll,"Cake_"..method,method,function() if sessionId then action:FireServer({kind="Cake",action=method,sessionId=sessionId,actionId=freshId()}) end end); b.LayoutOrder=order; order+=1 end
+L7: GETIMPORT R5 22 [ipairs]
+MOVE R6 R3
+CALLFB R5 1 3 [2]
+FORGPREP_INEXT R5 L9
+L8: GETUPVAL R10 U11
+GETUPVAL R11 U12
+LOADK R13 K23 ['Cake_']
+MOVE R14 R9
+CONCAT R12 R13 R14
+MOVE R13 R9
+REMARK allocation: closure with 4 upvalues
+NEWCLOSURE R14 P0
+CAPTURE UPVAL U13
+CAPTURE UPVAL U14
+CAPTURE VAL R9
+CAPTURE UPVAL U15
+CALLFB R10 4 1 [3]
+SETTABLEKS R1 R10 K24 ['LayoutOrder']
+ADDK R1 R1 K25 [1]
+L9: FORGLOOP R5 L8 2 [inext]
+   65: end
+RETURN R0 0
+
+Function 19 (snapshot):
+REMARK builtin type/1
+   67: 	if type(s)~="table" then return end
+FASTCALL1 40 R0 L0
+MOVE R2 R0
+GETIMPORT R1 1 [type]
+CALL R1 1 1
+L0: JUMPXEQKS R1 K2 L1 ['table']
+RETURN R0 0
+   68: 	for k,v in pairs(s) do lastSnapshot[k]=v end; s=lastSnapshot; if s.cake then cakeState=s.cake; if panelMode=="cake" and panel.Visible then renderCake(cakeState) end end
+L1: GETIMPORT R1 4 [pairs]
+MOVE R2 R0
+CALLFB R1 1 3 [0]
+FORGPREP_NEXT R1 L3
+L2: GETUPVAL R6 U0
+SETTABLE R5 R6 R4
+L3: FORGLOOP R1 L2 2
+GETUPVAL R0 U0
+GETTABLEKS R1 R0 K5 ['cake']
+JUMPIFNOT R1 L4
+GETTABLEKS R1 R0 K5 ['cake']
+SETUPVAL R1 U1
+GETUPVAL R1 U2
+JUMPXEQKS R1 K5 L4 NOT ['cake']
+GETUPVAL R1 U3
+GETTABLEKS R1 R1 K6 ['Visible']
+JUMPIFNOT R1 L4
+GETGLOBAL R1 K7 ['renderCake']
+GETUPVAL R2 U1
+CALLFB R1 1 0 [1]
+REMARK builtin type/1
+   69: 	if type(s.sessionId)=="string" and s.sessionId~="" then sessionId=s.sessionId end
+L4: GETTABLEKS R2 R0 K8 ['sessionId']
+FASTCALL1 40 R2 L5
+GETIMPORT R1 1 [type]
+CALL R1 1 1
+L5: JUMPXEQKS R1 K9 L6 NOT ['string']
+GETTABLEKS R1 R0 K8 ['sessionId']
+JUMPXEQKS R1 K10 L6 ['']
+GETTABLEKS R1 R0 K8 ['sessionId']
+SETUPVAL R1 U4
+   70: 	local petals=s.petals; local petalCountValue=petalCount(petals); flower.Text=string.format("✿ %d / 6 petals%s",petalCountValue,petalCountValue==6 and "  •  Cake ready" or ""); fund.Text=string.format("Shared fund  •  %s",tostring(s.fundBalance or s.fund or 0))
+L6: GETTABLEKS R1 R0 K11 ['petals']
+GETUPVAL R2 U5
+MOVE R3 R1
+CALLFB R2 1 1 [2]
+GETUPVAL R3 U6
+GETIMPORT R4 13 [string.format]
+LOADK R5 K14 ['✿ %d / 6 petals%s']
+MOVE R6 R2
+JUMPXEQKN R2 K15 L7 NOT [6]
+LOADK R7 K16 ['  •  Cake ready']
+JUMP L8
+L7: LOADK R7 K10 ['']
+L8: CALLFB R4 3 1 [3]
+SETTABLEKS R4 R3 K17 ['Text']
+GETUPVAL R3 U7
+GETIMPORT R4 13 [string.format]
+LOADK R5 K18 ['Shared fund  •  %s']
+REMARK builtin tostring/1
+GETTABLEKS R7 R0 K19 ['fundBalance']
+JUMPIF R7 L9
+GETTABLEKS R7 R0 K20 ['fund']
+JUMPIF R7 L9
+LOADN R7 0
+L9: FASTCALL1 63 R7 L10
+GETIMPORT R6 22 [tostring]
+CALL R6 1 -1
+L10: CALL R4 -1 1
+SETTABLEKS R4 R3 K17 ['Text']
+   71: 	local q=s.queue or {}; local members=q.members or {}; local queueCount=q.count or #members; local joined=table.find(members,player.UserId)~=nil; local remaining=q.remaining and math.ceil(q.remaining) or 0; queueState.Text=string.format("Queue: %s • %d/%d • %ds • %s",joined and "joined" or "waiting",queueCount,q.capacity or 10,remaining,q.state or "Empty")
+GETTABLEKS R3 R0 K23 ['queue']
+JUMPIF R3 L11
+REMARK allocation: table hash 0
+NEWTABLE R3 0 0
+L11: GETTABLEKS R4 R3 K24 ['members']
+JUMPIF R4 L12
+REMARK allocation: table hash 0
+NEWTABLE R4 0 0
+L12: GETTABLEKS R5 R3 K25 ['count']
+JUMPIF R5 L13
+LENGTH R5 R4
+L13: GETIMPORT R7 27 [table.find]
+MOVE R8 R4
+GETUPVAL R9 U8
+GETTABLEKS R9 R9 K28 ['UserId']
+CALLFB R7 2 1 [4]
+JUMPXEQKNIL R7 L14 NOT
+LOADB R6 0 +1
+L14: LOADB R6 1
+L15: GETTABLEKS R8 R3 K29 ['remaining']
+JUMPIFNOT R8 L17
+REMARK builtin math.ceil/1
+GETTABLEKS R8 R3 K29 ['remaining']
+FASTCALL1 7 R8 L16
+GETIMPORT R7 32 [math.ceil]
+CALL R7 1 1
+L16: JUMPIF R7 L18
+L17: LOADN R7 0
+L18: GETUPVAL R8 U9
+GETIMPORT R9 13 [string.format]
+LOADK R10 K33 ['Queue: %s • %d/%d • %ds • '...]
+JUMPIFNOT R6 L19
+LOADK R11 K34 ['joined']
+JUMP L20
+L19: LOADK R11 K35 ['waiting']
+L20: MOVE R12 R5
+GETTABLEKS R14 R3 K37 ['capacity']
+ORK R13 R14 K36 [10]
+MOVE R14 R7
+GETTABLEKS R16 R3 K39 ['state']
+ORK R15 R16 K38 ['Empty']
+CALLFB R9 6 1 [5]
+SETTABLEKS R9 R8 K17 ['Text']
+   72: 	cakeButton.Visible=(petalCountValue>=6)
+GETUPVAL R8 U10
+LOADN R10 6
+JUMPIFLE R10 R2 L21
+LOADB R9 0 +1
+L21: LOADB R9 1
+L22: SETTABLEKS R9 R8 K6 ['Visible']
+   73: end
+RETURN R0 0
+
+Function 20 (requestView):
+   74: function requestView(id,replay) if not sessionId then status.Text="Waiting for birthday session"; return end; action:FireServer({kind="RequestView",sessionId=sessionId,activityId=id,actionId=freshId(),replay=replay==true}) end
+GETUPVAL R2 U0
+JUMPIF R2 L0
+GETUPVAL R2 U1
+LOADK R3 K0 ['Waiting for birthday session']
+SETTABLEKS R3 R2 K1 ['Text']
+RETURN R0 0
+L0: GETUPVAL R2 U2
+REMARK allocation: table template 5
+DUPTABLE R4 8
+GETUPVAL R5 U0
+SETTABLEKS R5 R4 K4 ['sessionId']
+SETTABLEKS R0 R4 K5 ['activityId']
+GETUPVAL R5 U3
+CALLFB R5 0 1 [0]
+SETTABLEKS R5 R4 K6 ['actionId']
+JUMPXEQKB R1 1 L1
+LOADB R5 0 +1
+L1: LOADB R5 1
+L2: SETTABLEKS R5 R4 K7 ['replay']
+NAMECALL R2 R2 K9 ['FireServer']
+CALLFB R2 2 0 [1]
+RETURN R0 0
+
+Function 21 (??):
+   75: journal.Activated:Connect(function() if sessionId then action:FireServer({kind="RequestJournal",sessionId=sessionId,actionId=freshId()}) else status.Text="Waiting for birthday session" end end)
+GETUPVAL R0 U0
+JUMPIFNOT R0 L0
+GETUPVAL R0 U1
+REMARK allocation: table template 3
+DUPTABLE R2 4
+GETUPVAL R3 U0
+SETTABLEKS R3 R2 K2 ['sessionId']
+GETUPVAL R3 U2
+CALLFB R3 0 1 [0]
+SETTABLEKS R3 R2 K3 ['actionId']
+NAMECALL R0 R0 K5 ['FireServer']
+CALLFB R0 2 0 [1]
+RETURN R0 0
+L0: GETUPVAL R0 U3
+LOADK R1 K6 ['Waiting for birthday session']
+SETTABLEKS R1 R0 K7 ['Text']
+RETURN R0 0
+
+Function 22 (??):
+REMARK builtin type/1
+   77: 	if type(payload)~="table" then return end
+FASTCALL1 40 R0 L0
+MOVE R2 R0
+GETIMPORT R1 1 [type]
+CALL R1 1 1
+L0: JUMPXEQKS R1 K2 L1 ['table']
+RETURN R0 0
+REMARK builtin type/1
+   78: 	if type(payload.sessionId)=="string" and payload.sessionId~="" then sessionId=payload.sessionId end
+L1: GETTABLEKS R2 R0 K3 ['sessionId']
+FASTCALL1 40 R2 L2
+GETIMPORT R1 1 [type]
+CALL R1 1 1
+L2: JUMPXEQKS R1 K4 L3 NOT ['string']
+GETTABLEKS R1 R0 K3 ['sessionId']
+JUMPXEQKS R1 K5 L3 ['']
+GETTABLEKS R1 R0 K3 ['sessionId']
+SETUPVAL R1 U0
+   79: 	if payload.snapshot then snapshot(payload.snapshot) end; if payload.queue then snapshot({queue=payload.queue}) end
+L3: GETTABLEKS R1 R0 K6 ['snapshot']
+JUMPIFNOT R1 L4
+GETUPVAL R1 U1
+GETTABLEKS R2 R0 K6 ['snapshot']
+CALLFB R1 1 0 [0]
+L4: GETTABLEKS R1 R0 K7 ['queue']
+JUMPIFNOT R1 L5
+GETUPVAL R1 U1
+REMARK allocation: table template 1
+DUPTABLE R2 8
+GETTABLEKS R3 R0 K7 ['queue']
+SETTABLEKS R3 R2 K7 ['queue']
+CALLFB R1 1 0 [1]
+   80: 	if payload.view then render(payload.view) end; if payload.journal then renderJournal(payload.journal) end; if payload.cake then cakeState=payload.cake; renderCake(payload.cake) end
+L5: GETTABLEKS R1 R0 K9 ['view']
+JUMPIFNOT R1 L6
+GETUPVAL R1 U2
+GETTABLEKS R2 R0 K9 ['view']
+CALLFB R1 1 0 [2]
+L6: GETTABLEKS R1 R0 K10 ['journal']
+JUMPIFNOT R1 L7
+GETGLOBAL R1 K11 ['renderJournal']
+GETTABLEKS R2 R0 K10 ['journal']
+CALLFB R1 1 0 [3]
+L7: GETTABLEKS R1 R0 K12 ['cake']
+JUMPIFNOT R1 L8
+GETTABLEKS R1 R0 K12 ['cake']
+SETUPVAL R1 U3
+GETGLOBAL R1 K13 ['renderCake']
+GETTABLEKS R2 R0 K12 ['cake']
+CALLFB R1 1 0 [4]
+   81: 	if payload.kind=="Result" then status.Text=payload.ok and "A cozy action was accepted" or (payload.errorText or payload.code or "Action unavailable") end
+L8: GETTABLEKS R1 R0 K14 ['kind']
+JUMPXEQKS R1 K15 L11 NOT ['Result']
+GETUPVAL R1 U4
+GETTABLEKS R3 R0 K16 ['ok']
+JUMPIFNOT R3 L9
+LOADK R2 K17 ['A cozy action was accepted']
+JUMP L10
+L9: GETTABLEKS R2 R0 K18 ['errorText']
+JUMPIF R2 L10
+GETTABLEKS R2 R0 K19 ['code']
+JUMPIF R2 L10
+LOADK R2 K20 ['Action unavailable']
+L10: SETTABLEKS R2 R1 K21 ['Text']
+   82: end)
+L11: RETURN R0 0
+
+Function 23 (??):
+   86: 	p:SetAttribute("MVPBound",true); p.Triggered:Connect(function() if id=="Cake" then renderCake(cakeState) else requestView(id) end end)
+GETUPVAL R0 U0
+JUMPXEQKS R0 K0 L0 NOT ['Cake']
+GETGLOBAL R0 K1 ['renderCake']
+GETUPVAL R1 U1
+CALLFB R0 1 0 [0]
+RETURN R0 0
+L0: GETGLOBAL R0 K2 ['requestView']
+GETUPVAL R1 U0
+CALLFB R0 1 0 [1]
+RETURN R0 0
+
+Function 24 (bind):
+   84: 	if not p:IsA("ProximityPrompt") or p:GetAttribute("MVPBound") then return end
+LOADK R3 K0 ['ProximityPrompt']
+NAMECALL R1 R0 K1 ['IsA']
+CALLFB R1 2 1 [0]
+JUMPIFNOT R1 L0
+LOADK R3 K2 ['MVPBound']
+NAMECALL R1 R0 K3 ['GetAttribute']
+CALLFB R1 2 1 [1]
+JUMPIFNOT R1 L1
+L0: RETURN R0 0
+   85: 	local id=p:GetAttribute("ActivityId") or p.Parent:GetAttribute("ActivityId"); if not id then return end
+L1: LOADK R3 K4 ['ActivityId']
+NAMECALL R1 R0 K3 ['GetAttribute']
+CALLFB R1 2 1 [2]
+JUMPIF R1 L2
+GETTABLEKS R1 R0 K5 ['Parent']
+LOADK R3 K4 ['ActivityId']
+NAMECALL R1 R1 K3 ['GetAttribute']
+CALLFB R1 2 1 [3]
+L2: JUMPIF R1 L3
+RETURN R0 0
+   86: 	p:SetAttribute("MVPBound",true); p.Triggered:Connect(function() if id=="Cake" then renderCake(cakeState) else requestView(id) end end)
+L3: LOADK R4 K2 ['MVPBound']
+LOADB R5 1
+NAMECALL R2 R0 K6 ['SetAttribute']
+CALLFB R2 3 0 [4]
+GETTABLEKS R2 R0 K7 ['Triggered']
+REMARK allocation: closure with 2 upvalues
+NEWCLOSURE R4 P0
+CAPTURE VAL R1
+CAPTURE UPVAL U0
+NAMECALL R2 R2 K8 ['Connect']
+CALLFB R2 2 0 [5]
+   87: end
+RETURN R0 0
+
+Function 25 (??):
+   90: 	if processed or not panel.Visible or not currentView then return end
+JUMPIF R1 L0
+GETUPVAL R2 U0
+GETTABLEKS R2 R2 K0 ['Visible']
+JUMPIFNOT R2 L0
+GETUPVAL R2 U1
+JUMPIF R2 L1
+L0: RETURN R0 0
+   91: 	local step=input.KeyCode==Enum.KeyCode.Q and "rotate-left" or input.KeyCode==Enum.KeyCode.E and "rotate-right"
+L1: GETTABLEKS R3 R0 K1 ['KeyCode']
+GETIMPORT R4 4 [Enum.KeyCode.Q]
+JUMPIFNOTEQ R3 R4 L2
+LOADK R2 K5 ['rotate-left']
+JUMP L3
+L2: LOADB R2 0
+GETTABLEKS R3 R0 K1 ['KeyCode']
+GETIMPORT R4 7 [Enum.KeyCode.E]
+JUMPIFNOTEQ R3 R4 L3
+LOADK R2 K8 ['rotate-right']
+   92: 	if step then for _,d in ipairs(currentView.availableActions or {}) do local rotates=d.payload and d.payload.action=="rotate" and ((step=="rotate-left" and d.payload.direction==-1) or (step=="rotate-right" and d.payload.direction==1)); if d.enabled~=false and (d.stepId==step or d.id==step or rotates) then sendActivity(currentView.activityId,currentView.roundId,d.stepId,d.payload); break end end end
+L3: JUMPIFNOT R2 L11
+GETIMPORT R3 10 [ipairs]
+GETUPVAL R4 U1
+GETTABLEKS R4 R4 K11 ['availableActions']
+JUMPIF R4 L4
+REMARK allocation: table hash 0
+NEWTABLE R4 0 0
+L4: CALLFB R3 1 3 [0]
+FORGPREP_INEXT R3 L10
+L5: GETTABLEKS R8 R7 K12 ['payload']
+JUMPIFNOT R8 L8
+LOADB R8 0
+GETTABLEKS R9 R7 K12 ['payload']
+GETTABLEKS R9 R9 K13 ['action']
+JUMPXEQKS R9 K14 L8 NOT ['rotate']
+JUMPXEQKS R2 K5 L6 NOT ['rotate-left']
+LOADB R8 1
+GETTABLEKS R9 R7 K12 ['payload']
+GETTABLEKS R9 R9 K15 ['direction']
+JUMPXEQKN R9 K16 L8 [-1]
+L6: LOADB R8 0
+JUMPXEQKS R2 K8 L8 NOT ['rotate-right']
+GETTABLEKS R9 R7 K12 ['payload']
+GETTABLEKS R9 R9 K15 ['direction']
+JUMPXEQKN R9 K17 L7 [1]
+LOADB R8 0 +1
+L7: LOADB R8 1
+L8: GETTABLEKS R9 R7 K18 ['enabled']
+JUMPXEQKB R9 0 L10
+GETTABLEKS R9 R7 K19 ['stepId']
+JUMPIFEQ R9 R2 L9
+GETTABLEKS R9 R7 K20 ['id']
+JUMPIFEQ R9 R2 L9
+JUMPIFNOT R8 L10
+L9: GETUPVAL R9 U2
+GETUPVAL R10 U1
+GETTABLEKS R10 R10 K21 ['activityId']
+GETUPVAL R11 U1
+GETTABLEKS R11 R11 K22 ['roundId']
+GETTABLEKS R12 R7 K19 ['stepId']
+GETTABLEKS R13 R7 K12 ['payload']
+CALLFB R9 4 0 [1]
+RETURN R0 0
+L10: FORGLOOP R3 L5 2 [inext]
+   93: end)
+L11: RETURN R0 0
+
+Function 26 (refresh):
+   94: local function refresh() status.Text=string.format("Birthday session  •  arrival %s",player:GetAttribute("MVPArrivalStatus") or "Loading") end
+GETUPVAL R0 U0
+GETIMPORT R1 2 [string.format]
+LOADK R2 K3 ['Birthday session  •  arrival %'...]
+GETUPVAL R4 U1
+LOADK R6 K5 ['MVPArrivalStatus']
+NAMECALL R4 R4 K6 ['GetAttribute']
+CALLFB R4 2 1 [0]
+ORK R3 R4 K4 ['Loading']
+CALLFB R1 2 1 [1]
+SETTABLEKS R1 R0 K7 ['Text']
+RETURN R0 0
+
+Function 27 (??):
+    1: local Players = game:GetService("Players")
+GETIMPORT R0 1 [game]
+LOADK R2 K2 ['Players']
+NAMECALL R0 R0 K3 ['GetService']
+CALL R0 2 1
+    2: local ReplicatedStorage = game:GetService("ReplicatedStorage")
+GETIMPORT R1 1 [game]
+LOADK R3 K4 ['ReplicatedStorage']
+NAMECALL R1 R1 K3 ['GetService']
+CALL R1 2 1
+    3: local UserInputService = game:GetService("UserInputService")
+GETIMPORT R2 1 [game]
+LOADK R4 K5 ['UserInputService']
+NAMECALL R2 R2 K3 ['GetService']
+CALL R2 2 1
+    4: local player = Players.LocalPlayer
+GETTABLEKS R3 R0 K6 ['LocalPlayer']
+    5: local action = ReplicatedStorage:WaitForChild("PhuongMVP"):WaitForChild("Action")
+LOADK R6 K7 ['PhuongMVP']
+NAMECALL R4 R1 K8 ['WaitForChild']
+CALL R4 2 1
+LOADK R6 K9 ['Action']
+NAMECALL R4 R4 K8 ['WaitForChild']
+CALL R4 2 1
+REMARK allocation: table template 8
+    7: local P = {forest=Color3.fromRGB(54,87,68), sage=Color3.fromRGB(168,185,149), cream=Color3.fromRGB(245,240,228), wood=Color3.fromRGB(149,103,75), blossom=Color3.fromRGB(232,183,198), brick=Color3.fromRGB(182,108,104), golden=Color3.fromRGB(232,199,121), ink=Color3.fromRGB(38,56,46)}
+DUPTABLE R5 18
+GETIMPORT R6 21 [Color3.fromRGB]
+LOADN R7 54
+LOADN R8 87
+LOADN R9 68
+CALL R6 3 1
+SETTABLEKS R6 R5 K10 ['forest']
+GETIMPORT R6 21 [Color3.fromRGB]
+LOADN R7 168
+LOADN R8 185
+LOADN R9 149
+CALL R6 3 1
+SETTABLEKS R6 R5 K11 ['sage']
+GETIMPORT R6 21 [Color3.fromRGB]
+LOADN R7 245
+LOADN R8 240
+LOADN R9 228
+CALL R6 3 1
+SETTABLEKS R6 R5 K12 ['cream']
+GETIMPORT R6 21 [Color3.fromRGB]
+LOADN R7 149
+LOADN R8 103
+LOADN R9 75
+CALL R6 3 1
+SETTABLEKS R6 R5 K13 ['wood']
+GETIMPORT R6 21 [Color3.fromRGB]
+LOADN R7 232
+LOADN R8 183
+LOADN R9 198
+CALL R6 3 1
+SETTABLEKS R6 R5 K14 ['blossom']
+GETIMPORT R6 21 [Color3.fromRGB]
+LOADN R7 182
+LOADN R8 108
+LOADN R9 104
+CALL R6 3 1
+SETTABLEKS R6 R5 K15 ['brick']
+GETIMPORT R6 21 [Color3.fromRGB]
+LOADN R7 232
+LOADN R8 199
+LOADN R9 121
+CALL R6 3 1
+SETTABLEKS R6 R5 K16 ['golden']
+GETIMPORT R6 21 [Color3.fromRGB]
+LOADN R7 38
+LOADN R8 56
+LOADN R9 46
+CALL R6 3 1
+SETTABLEKS R6 R5 K17 ['ink']
+    8: local gui=Instance.new("ScreenGui"); gui.Name="PhuongMVPHud"; gui.ResetOnSpawn=false; gui.Parent=player:WaitForChild("PlayerGui")
+GETIMPORT R6 24 [Instance.new]
+LOADK R7 K25 ['ScreenGui']
+CALL R6 1 1
+LOADK R7 K26 ['PhuongMVPHud']
+SETTABLEKS R7 R6 K27 ['Name']
+LOADB R7 0
+SETTABLEKS R7 R6 K28 ['ResetOnSpawn']
+LOADK R9 K29 ['PlayerGui']
+NAMECALL R7 R3 K8 ['WaitForChild']
+CALL R7 2 1
+SETTABLEKS R7 R6 K30 ['Parent']
+    9: local function corner(x,r) local c=Instance.new("UICorner"); c.CornerRadius=UDim.new(0,r or 12); c.Parent=x end
+DUPCLOSURE R7 K31 ['corner']
+   10: local function text(parent,name,value,size,color) local x=Instance.new("TextLabel"); x.Name=name; x.Text=value or ""; x.TextColor3=color or P.ink; x.BackgroundTransparency=1; x.Font=Enum.Font.GothamSemibold; x.TextSize=size or 16; x.TextWrapped=true; x.TextXAlignment=Enum.TextXAlignment.Left; x.Parent=parent; return x end
+DUPCLOSURE R8 K32 ['text']
+CAPTURE VAL R5
+   11: local function button(parent,name,value,callback) local x=Instance.new("TextButton"); x.Name=name; x.Text=value or ""; x.AutoButtonColor=true; x.Font=Enum.Font.GothamBold; x.TextSize=16; x.TextColor3=P.cream; x.BackgroundColor3=P.forest; x.Size=UDim2.new(1,0,0,52); x.Parent=parent; corner(x,10); x.Activated:Connect(callback); return x end
+DUPCLOSURE R9 K33 ['button']
+CAPTURE VAL R5
+CAPTURE VAL R7
+   13: local hud=Instance.new("Frame"); hud.Name="ExploreHud"; hud.Position=UDim2.fromOffset(16,16); hud.Size=UDim2.fromOffset(310,132); hud.BackgroundColor3=P.cream; hud.BackgroundTransparency=.08; hud.Parent=gui; corner(hud,14)
+GETIMPORT R10 24 [Instance.new]
+LOADK R11 K34 ['Frame']
+CALL R10 1 1
+LOADK R11 K35 ['ExploreHud']
+SETTABLEKS R11 R10 K27 ['Name']
+GETIMPORT R11 38 [UDim2.fromOffset]
+LOADN R12 16
+LOADN R13 16
+CALL R11 2 1
+SETTABLEKS R11 R10 K39 ['Position']
+GETIMPORT R11 38 [UDim2.fromOffset]
+LOADN R12 310
+LOADN R13 132
+CALL R11 2 1
+SETTABLEKS R11 R10 K40 ['Size']
+GETTABLEKS R11 R5 K12 ['cream']
+SETTABLEKS R11 R10 K41 ['BackgroundColor3']
+LOADK R11 K42 [0.080000000000000002]
+SETTABLEKS R11 R10 K43 ['BackgroundTransparency']
+SETTABLEKS R6 R10 K30 ['Parent']
+MOVE R11 R7
+MOVE R12 R10
+LOADN R13 14
+CALL R11 2 0
+   14: local status=text(hud,"SessionStatus","Birthday session loading",16); status.Position=UDim2.fromOffset(14,10); status.Size=UDim2.new(1,-28,0,25)
+MOVE R11 R8
+MOVE R12 R10
+LOADK R13 K44 ['SessionStatus']
+LOADK R14 K45 ['Birthday session loading']
+LOADN R15 16
+CALL R11 4 1
+GETIMPORT R12 38 [UDim2.fromOffset]
+LOADN R13 14
+LOADN R14 10
+CALL R12 2 1
+SETTABLEKS R12 R11 K39 ['Position']
+GETIMPORT R12 46 [UDim2.new]
+LOADN R13 1
+LOADN R14 -28
+LOADN R15 0
+LOADN R16 25
+CALL R12 4 1
+SETTABLEKS R12 R11 K40 ['Size']
+   15: local flower=text(hud,"FlowerProgress","✿ 0 / 6 petals",18,P.forest); flower.Position=UDim2.fromOffset(14,40); flower.Size=UDim2.new(1,-28,0,28)
+MOVE R12 R8
+MOVE R13 R10
+LOADK R14 K47 ['FlowerProgress']
+LOADK R15 K48 ['✿ 0 / 6 petals']
+LOADN R16 18
+GETTABLEKS R17 R5 K10 ['forest']
+CALL R12 5 1
+GETIMPORT R13 38 [UDim2.fromOffset]
+LOADN R14 14
+LOADN R15 40
+CALL R13 2 1
+SETTABLEKS R13 R12 K39 ['Position']
+GETIMPORT R13 46 [UDim2.new]
+LOADN R14 1
+LOADN R15 -28
+LOADN R16 0
+LOADN R17 28
+CALL R13 4 1
+SETTABLEKS R13 R12 K40 ['Size']
+   16: local fund=text(hud,"FundBalance","Shared fund  •  0",14); fund.Position=UDim2.fromOffset(14,72); fund.Size=UDim2.new(1,-28,0,24)
+MOVE R13 R8
+MOVE R14 R10
+LOADK R15 K49 ['FundBalance']
+LOADK R16 K50 ['Shared fund  •  0']
+LOADN R17 14
+CALL R13 4 1
+GETIMPORT R14 38 [UDim2.fromOffset]
+LOADN R15 14
+LOADN R16 72
+CALL R14 2 1
+SETTABLEKS R14 R13 K39 ['Position']
+GETIMPORT R14 46 [UDim2.new]
+LOADN R15 1
+LOADN R16 -28
+LOADN R17 0
+LOADN R18 24
+CALL R14 4 1
+SETTABLEKS R14 R13 K40 ['Size']
+   17: local queueState=text(hud,"QueueState","Queue: not joined",13); queueState.Position=UDim2.fromOffset(14,98); queueState.Size=UDim2.new(1,-28,0,22)
+MOVE R14 R8
+MOVE R15 R10
+LOADK R16 K51 ['QueueState']
+LOADK R17 K52 ['Queue: not joined']
+LOADN R18 13
+CALL R14 4 1
+GETIMPORT R15 38 [UDim2.fromOffset]
+LOADN R16 14
+LOADN R17 98
+CALL R15 2 1
+SETTABLEKS R15 R14 K39 ['Position']
+GETIMPORT R15 46 [UDim2.new]
+LOADN R16 1
+LOADN R17 -28
+LOADN R18 0
+LOADN R19 22
+CALL R15 4 1
+SETTABLEKS R15 R14 K40 ['Size']
+   18: local journal=button(gui,"JournalButton","Journal",function() end); journal.AnchorPoint=Vector2.new(1,0); journal.Position=UDim2.new(1,-20,0,20); journal.Size=UDim2.fromOffset(132,52)
+MOVE R15 R9
+MOVE R16 R6
+LOADK R17 K53 ['JournalButton']
+LOADK R18 K54 ['Journal']
+DUPCLOSURE R19 K55 []
+CALL R15 4 1
+GETIMPORT R16 57 [Vector2.new]
+LOADN R17 1
+LOADN R18 0
+CALL R16 2 1
+SETTABLEKS R16 R15 K58 ['AnchorPoint']
+GETIMPORT R16 46 [UDim2.new]
+LOADN R17 1
+LOADN R18 -20
+LOADN R19 0
+LOADN R20 20
+CALL R16 4 1
+SETTABLEKS R16 R15 K39 ['Position']
+GETIMPORT R16 38 [UDim2.fromOffset]
+LOADN R17 132
+LOADN R18 52
+CALL R16 2 1
+SETTABLEKS R16 R15 K40 ['Size']
+   19: local cakeButton=button(gui,"CakeButton","Cake finale",function() end); cakeButton.AnchorPoint=Vector2.new(1,0); cakeButton.Position=UDim2.new(1,-20,0,80); cakeButton.Size=UDim2.fromOffset(132,44); cakeButton.Visible=false
+MOVE R16 R9
+MOVE R17 R6
+LOADK R18 K59 ['CakeButton']
+LOADK R19 K60 ['Cake finale']
+DUPCLOSURE R20 K61 []
+CALL R16 4 1
+GETIMPORT R17 57 [Vector2.new]
+LOADN R18 1
+LOADN R19 0
+CALL R17 2 1
+SETTABLEKS R17 R16 K58 ['AnchorPoint']
+GETIMPORT R17 46 [UDim2.new]
+LOADN R18 1
+LOADN R19 -20
+LOADN R20 0
+LOADN R21 80
+CALL R17 4 1
+SETTABLEKS R17 R16 K39 ['Position']
+GETIMPORT R17 38 [UDim2.fromOffset]
+LOADN R18 132
+LOADN R19 44
+CALL R17 2 1
+SETTABLEKS R17 R16 K40 ['Size']
+LOADB R17 0
+SETTABLEKS R17 R16 K62 ['Visible']
+   21: local panel=Instance.new("Frame"); panel.Name="ActivityPanel"; panel.AnchorPoint=Vector2.new(.5,.5); panel.Position=UDim2.fromScale(.5,.5); panel.Size=UDim2.new(.86,0,.78,0); panel.BackgroundColor3=P.cream; panel.Visible=false; panel.Parent=gui; corner(panel,16)
+GETIMPORT R17 24 [Instance.new]
+LOADK R18 K34 ['Frame']
+CALL R17 1 1
+LOADK R18 K63 ['ActivityPanel']
+SETTABLEKS R18 R17 K27 ['Name']
+GETIMPORT R18 57 [Vector2.new]
+LOADK R19 K64 [0.5]
+LOADK R20 K64 [0.5]
+CALL R18 2 1
+SETTABLEKS R18 R17 K58 ['AnchorPoint']
+GETIMPORT R18 66 [UDim2.fromScale]
+LOADK R19 K64 [0.5]
+LOADK R20 K64 [0.5]
+CALL R18 2 1
+SETTABLEKS R18 R17 K39 ['Position']
+GETIMPORT R18 46 [UDim2.new]
+LOADK R19 K67 [0.85999999999999999]
+LOADN R20 0
+LOADK R21 K68 [0.78000000000000003]
+LOADN R22 0
+CALL R18 4 1
+SETTABLEKS R18 R17 K40 ['Size']
+GETTABLEKS R18 R5 K12 ['cream']
+SETTABLEKS R18 R17 K41 ['BackgroundColor3']
+LOADB R18 0
+SETTABLEKS R18 R17 K62 ['Visible']
+SETTABLEKS R6 R17 K30 ['Parent']
+MOVE R18 R7
+MOVE R19 R17
+LOADN R20 16
+CALL R18 2 0
+   22: local title=text(panel,"Title","",24,P.forest); title.Position=UDim2.fromOffset(22,18); title.Size=UDim2.new(1,-260,0,36)
+MOVE R18 R8
+MOVE R19 R17
+LOADK R20 K69 ['Title']
+LOADK R21 K70 ['']
+LOADN R22 24
+GETTABLEKS R23 R5 K10 ['forest']
+CALL R18 5 1
+GETIMPORT R19 38 [UDim2.fromOffset]
+LOADN R20 22
+LOADN R21 18
+CALL R19 2 1
+SETTABLEKS R19 R18 K39 ['Position']
+GETIMPORT R19 46 [UDim2.new]
+LOADN R20 1
+LOADN R21 -260
+LOADN R22 0
+LOADN R23 36
+CALL R19 4 1
+SETTABLEKS R19 R18 K40 ['Size']
+   23: local close=button(panel,"Close","Close",function() panel.Visible=false end); close.AnchorPoint=Vector2.new(1,0); close.Position=UDim2.new(1,-18,0,16); close.Size=UDim2.fromOffset(104,48); close.BackgroundColor3=P.brick
+MOVE R19 R9
+MOVE R20 R17
+LOADK R21 K71 ['Close']
+LOADK R22 K71 ['Close']
+DUPCLOSURE R23 K72 []
+CAPTURE VAL R17
+CALL R19 4 1
+GETIMPORT R20 57 [Vector2.new]
+LOADN R21 1
+LOADN R22 0
+CALL R20 2 1
+SETTABLEKS R20 R19 K58 ['AnchorPoint']
+GETIMPORT R20 46 [UDim2.new]
+LOADN R21 1
+LOADN R22 -18
+LOADN R23 0
+LOADN R24 16
+CALL R20 4 1
+SETTABLEKS R20 R19 K39 ['Position']
+GETIMPORT R20 38 [UDim2.fromOffset]
+LOADN R21 104
+LOADN R22 48
+CALL R20 2 1
+SETTABLEKS R20 R19 K40 ['Size']
+GETTABLEKS R20 R5 K15 ['brick']
+SETTABLEKS R20 R19 K41 ['BackgroundColor3']
+   24: local back=button(panel,"Back","Back",function() panel.Visible=false end); back.AnchorPoint=Vector2.new(1,0); back.Position=UDim2.new(1,-132,0,16); back.Size=UDim2.fromOffset(104,48)
+MOVE R20 R9
+MOVE R21 R17
+LOADK R22 K73 ['Back']
+LOADK R23 K73 ['Back']
+DUPCLOSURE R24 K74 []
+CAPTURE VAL R17
+CALL R20 4 1
+GETIMPORT R21 57 [Vector2.new]
+LOADN R22 1
+LOADN R23 0
+CALL R21 2 1
+SETTABLEKS R21 R20 K58 ['AnchorPoint']
+GETIMPORT R21 46 [UDim2.new]
+LOADN R22 1
+LOADN R23 -132
+LOADN R24 0
+LOADN R25 16
+CALL R21 4 1
+SETTABLEKS R21 R20 K39 ['Position']
+GETIMPORT R21 38 [UDim2.fromOffset]
+LOADN R22 104
+LOADN R23 48
+CALL R21 2 1
+SETTABLEKS R21 R20 K40 ['Size']
+   25: local instructions=text(panel,"Instructions","",16); instructions.Position=UDim2.fromOffset(22,62); instructions.Size=UDim2.new(1,-44,0,48)
+MOVE R21 R8
+MOVE R22 R17
+LOADK R23 K75 ['Instructions']
+LOADK R24 K70 ['']
+LOADN R25 16
+CALL R21 4 1
+GETIMPORT R22 38 [UDim2.fromOffset]
+LOADN R23 22
+LOADN R24 62
+CALL R22 2 1
+SETTABLEKS R22 R21 K39 ['Position']
+GETIMPORT R22 46 [UDim2.new]
+LOADN R23 1
+LOADN R24 -44
+LOADN R25 0
+LOADN R26 48
+CALL R22 4 1
+SETTABLEKS R22 R21 K40 ['Size']
+   26: local progress=text(panel,"Progress","",15,P.forest); progress.Position=UDim2.fromOffset(22,112); progress.Size=UDim2.new(1,-44,0,28)
+MOVE R22 R8
+MOVE R23 R17
+LOADK R24 K76 ['Progress']
+LOADK R25 K70 ['']
+LOADN R26 15
+GETTABLEKS R27 R5 K10 ['forest']
+CALL R22 5 1
+GETIMPORT R23 38 [UDim2.fromOffset]
+LOADN R24 22
+LOADN R25 112
+CALL R23 2 1
+SETTABLEKS R23 R22 K39 ['Position']
+GETIMPORT R23 46 [UDim2.new]
+LOADN R24 1
+LOADN R25 -44
+LOADN R26 0
+LOADN R27 28
+CALL R23 4 1
+SETTABLEKS R23 R22 K40 ['Size']
+   27: local scroll=Instance.new("ScrollingFrame"); scroll.Name="ActionList"; scroll.Position=UDim2.fromOffset(22,148); scroll.Size=UDim2.new(1,-44,1,-170); scroll.BackgroundColor3=P.sage; scroll.BackgroundTransparency=.35; scroll.BorderSizePixel=0; scroll.ScrollBarThickness=10; scroll.AutomaticCanvasSize=Enum.AutomaticSize.Y; scroll.Parent=panel; corner(scroll,10)
+GETIMPORT R23 24 [Instance.new]
+LOADK R24 K77 ['ScrollingFrame']
+CALL R23 1 1
+LOADK R24 K78 ['ActionList']
+SETTABLEKS R24 R23 K27 ['Name']
+GETIMPORT R24 38 [UDim2.fromOffset]
+LOADN R25 22
+LOADN R26 148
+CALL R24 2 1
+SETTABLEKS R24 R23 K39 ['Position']
+GETIMPORT R24 46 [UDim2.new]
+LOADN R25 1
+LOADN R26 -44
+LOADN R27 1
+LOADN R28 -170
+CALL R24 4 1
+SETTABLEKS R24 R23 K40 ['Size']
+GETTABLEKS R24 R5 K11 ['sage']
+SETTABLEKS R24 R23 K41 ['BackgroundColor3']
+LOADK R24 K79 [0.34999999999999998]
+SETTABLEKS R24 R23 K43 ['BackgroundTransparency']
+LOADN R24 0
+SETTABLEKS R24 R23 K80 ['BorderSizePixel']
+LOADN R24 10
+SETTABLEKS R24 R23 K81 ['ScrollBarThickness']
+GETIMPORT R24 85 [Enum.AutomaticSize.Y]
+SETTABLEKS R24 R23 K86 ['AutomaticCanvasSize']
+SETTABLEKS R17 R23 K30 ['Parent']
+MOVE R24 R7
+MOVE R25 R23
+LOADN R26 10
+CALL R24 2 0
+   28: local list=Instance.new("UIListLayout"); list.Padding=UDim.new(0,10); list.Parent=scroll
+GETIMPORT R24 24 [Instance.new]
+LOADK R25 K87 ['UIListLayout']
+CALL R24 1 1
+GETIMPORT R25 89 [UDim.new]
+LOADN R26 0
+LOADN R27 10
+CALL R25 2 1
+SETTABLEKS R25 R24 K90 ['Padding']
+SETTABLEKS R23 R24 K30 ['Parent']
+   29: local pad=Instance.new("UIPadding"); pad.PaddingTop=UDim.new(0,12); pad.PaddingBottom=UDim.new(0,12); pad.PaddingLeft=UDim.new(0,12); pad.PaddingRight=UDim.new(0,12); pad.Parent=scroll
+GETIMPORT R25 24 [Instance.new]
+LOADK R26 K91 ['UIPadding']
+CALL R25 1 1
+GETIMPORT R26 89 [UDim.new]
+LOADN R27 0
+LOADN R28 12
+CALL R26 2 1
+SETTABLEKS R26 R25 K92 ['PaddingTop']
+GETIMPORT R26 89 [UDim.new]
+LOADN R27 0
+LOADN R28 12
+CALL R26 2 1
+SETTABLEKS R26 R25 K93 ['PaddingBottom']
+GETIMPORT R26 89 [UDim.new]
+LOADN R27 0
+LOADN R28 12
+CALL R26 2 1
+SETTABLEKS R26 R25 K94 ['PaddingLeft']
+GETIMPORT R26 89 [UDim.new]
+LOADN R27 0
+LOADN R28 12
+CALL R26 2 1
+SETTABLEKS R26 R25 K95 ['PaddingRight']
+SETTABLEKS R23 R25 K30 ['Parent']
+   31: local currentView; local sequence=0; local sessionId=nil; local lastSnapshot={}; local cakeState={finaleState="LOCKED"}; local panelMode="closed"
+LOADNIL R26
+LOADN R27 0
+LOADNIL R28
+REMARK allocation: table hash 0
+NEWTABLE R29 0 0
+REMARK allocation: table template 1
+DUPTABLE R30 98
+LOADK R31 K99 ['closed']
+REMARK allocation: closure with 2 upvalues
+   32: local function freshId() sequence+=1; return string.format("client-%d-%d-%d",player.UserId,math.floor(os.clock()*1000),sequence) end
+NEWCLOSURE R32 P7
+CAPTURE REF R27
+CAPTURE VAL R3
+   33: cakeButton.Activated:Connect(function() renderCake(cakeState) end)
+GETTABLEKS R33 R16 K100 ['Activated']
+REMARK allocation: closure with 1 upvalues
+NEWCLOSURE R35 P8
+CAPTURE REF R30
+NAMECALL R33 R33 K101 ['Connect']
+CALL R33 2 0
+REMARK allocation: closure with 4 upvalues
+   34: local function sendActivity(activityId,roundId,stepId,payload) if not sessionId then status.Text="Waiting for birthday session"; return end; action:FireServer({kind="ActivityAction",sessionId=sessionId,activityId=activityId,roundId=roundId or "",stepId=stepId or "",actionId=freshId(),payload=payload or {}}) end
+NEWCLOSURE R33 P9
+CAPTURE REF R28
+CAPTURE VAL R11
+CAPTURE VAL R4
+CAPTURE VAL R32
+   35: local function clear() for _,x in ipairs(scroll:GetChildren()) do if x:IsA("TextButton") or x:IsA("TextLabel") then x:Destroy() end end end
+DUPCLOSURE R34 K102 ['clear']
+CAPTURE VAL R23
+   36: local function petalCount(p) if type(p)=="number" then return p end; local n=0; if type(p)=="table" then for _,v in pairs(p) do if v then n+=1 end end end; return n end
+DUPCLOSURE R35 K103 ['petalCount']
+REMARK allocation: closure with 6 upvalues
+   37: local function closeActivity() if currentView and sessionId then action:FireServer({kind="CloseActivity",sessionId=sessionId,activityId=currentView.activityId,roundId=currentView.roundId,actionId=freshId()}) end; currentView=nil; panelMode="closed"; panel.Visible=false end
+NEWCLOSURE R36 P12
+CAPTURE REF R26
+CAPTURE REF R28
+CAPTURE VAL R4
+CAPTURE VAL R32
+CAPTURE REF R31
+CAPTURE VAL R17
+   38: close.Activated:Connect(closeActivity); back.Activated:Connect(closeActivity)
+GETTABLEKS R37 R19 K100 ['Activated']
+MOVE R39 R36
+NAMECALL R37 R37 K101 ['Connect']
+CALL R37 2 0
+GETTABLEKS R37 R20 K100 ['Activated']
+MOVE R39 R36
+NAMECALL R37 R37 K101 ['Connect']
+CALL R37 2 0
+REMARK allocation: closure with 12 upvalues
+   39: local function render(view)
+NEWCLOSURE R37 P13
+CAPTURE REF R26
+CAPTURE REF R31
+CAPTURE VAL R17
+CAPTURE VAL R18
+CAPTURE VAL R21
+CAPTURE VAL R22
+CAPTURE VAL R34
+CAPTURE VAL R8
+CAPTURE VAL R23
+CAPTURE VAL R5
+CAPTURE VAL R9
+CAPTURE VAL R33
+REMARK allocation: closure with 9 upvalues
+   56: function renderJournal(s)
+NEWCLOSURE R38 P14
+CAPTURE REF R26
+CAPTURE REF R31
+CAPTURE VAL R34
+CAPTURE VAL R17
+CAPTURE VAL R18
+CAPTURE VAL R21
+CAPTURE VAL R8
+CAPTURE VAL R23
+CAPTURE VAL R5
+SETGLOBAL R38 K104 ['renderJournal']
+REMARK allocation: closure with 16 upvalues
+   61: function renderCake(state)
+NEWCLOSURE R38 P15
+CAPTURE REF R26
+CAPTURE REF R31
+CAPTURE REF R30
+CAPTURE VAL R34
+CAPTURE VAL R17
+CAPTURE VAL R18
+CAPTURE VAL R21
+CAPTURE VAL R22
+CAPTURE VAL R3
+CAPTURE VAL R29
+CAPTURE VAL R35
+CAPTURE VAL R9
+CAPTURE VAL R23
+CAPTURE REF R28
+CAPTURE VAL R4
+CAPTURE VAL R32
+SETGLOBAL R38 K105 ['renderCake']
+REMARK allocation: closure with 11 upvalues
+   66: local function snapshot(s)
+NEWCLOSURE R38 P16
+CAPTURE VAL R29
+CAPTURE REF R30
+CAPTURE REF R31
+CAPTURE VAL R17
+CAPTURE REF R28
+CAPTURE VAL R35
+CAPTURE VAL R12
+CAPTURE VAL R13
+CAPTURE VAL R3
+CAPTURE VAL R14
+CAPTURE VAL R16
+REMARK allocation: closure with 4 upvalues
+   74: function requestView(id,replay) if not sessionId then status.Text="Waiting for birthday session"; return end; action:FireServer({kind="RequestView",sessionId=sessionId,activityId=id,actionId=freshId(),replay=replay==true}) end
+NEWCLOSURE R39 P17
+CAPTURE REF R28
+CAPTURE VAL R11
+CAPTURE VAL R4
+CAPTURE VAL R32
+SETGLOBAL R39 K106 ['requestView']
+   75: journal.Activated:Connect(function() if sessionId then action:FireServer({kind="RequestJournal",sessionId=sessionId,actionId=freshId()}) else status.Text="Waiting for birthday session" end end)
+GETTABLEKS R39 R15 K100 ['Activated']
+REMARK allocation: closure with 4 upvalues
+NEWCLOSURE R41 P18
+CAPTURE REF R28
+CAPTURE VAL R4
+CAPTURE VAL R32
+CAPTURE VAL R11
+NAMECALL R39 R39 K101 ['Connect']
+CALL R39 2 0
+   76: action.OnClientEvent:Connect(function(payload)
+GETTABLEKS R39 R4 K107 ['OnClientEvent']
+REMARK allocation: closure with 5 upvalues
+NEWCLOSURE R41 P19
+CAPTURE REF R28
+CAPTURE VAL R38
+CAPTURE VAL R37
+CAPTURE REF R30
+CAPTURE VAL R11
+NAMECALL R39 R39 K101 ['Connect']
+CALL R39 2 0
+REMARK allocation: closure with 1 upvalues
+   83: local function bind(p)
+NEWCLOSURE R39 P20
+CAPTURE REF R30
+   88: for _,x in ipairs(workspace:GetDescendants()) do bind(x) end; workspace.DescendantAdded:Connect(bind)
+GETIMPORT R40 109 [ipairs]
+GETIMPORT R41 111 [workspace]
+NAMECALL R41 R41 K112 ['GetDescendants']
+CALL R41 1 -1
+CALL R40 -1 3
+FORGPREP_INEXT R40 L1
+L0: MOVE R45 R39
+MOVE R46 R44
+CALL R45 1 0
+L1: FORGLOOP R40 L0 2 [inext]
+GETIMPORT R40 114 [workspace.DescendantAdded]
+MOVE R42 R39
+NAMECALL R40 R40 K101 ['Connect']
+CALL R40 2 0
+   89: UserInputService.InputBegan:Connect(function(input,processed)
+GETTABLEKS R40 R2 K115 ['InputBegan']
+REMARK allocation: closure with 3 upvalues
+NEWCLOSURE R42 P21
+CAPTURE VAL R17
+CAPTURE REF R26
+CAPTURE VAL R33
+NAMECALL R40 R40 K101 ['Connect']
+CALL R40 2 0
+   94: local function refresh() status.Text=string.format("Birthday session  •  arrival %s",player:GetAttribute("MVPArrivalStatus") or "Loading") end
+DUPCLOSURE R40 K116 ['refresh']
+CAPTURE VAL R11
+CAPTURE VAL R3
+   95: player.AttributeChanged:Connect(refresh); refresh(); action:FireServer({kind="RequestSnapshot",actionId=freshId()})
+GETTABLEKS R41 R3 K117 ['AttributeChanged']
+MOVE R43 R40
+NAMECALL R41 R41 K101 ['Connect']
+CALL R41 2 0
+MOVE R41 R40
+CALL R41 0 0
+REMARK allocation: table template 2
+DUPTABLE R43 121
+MOVE R44 R32
+CALL R44 0 1
+SETTABLEKS R44 R43 K120 ['actionId']
+NAMECALL R41 R4 K122 ['FireServer']
+CALL R41 2 0
+   96: 
+CLOSEUPVALS R26
+RETURN R0 0
+

@@ -1,0 +1,61 @@
+{
+  "studioWindow": "C:\\Users\\andre\\Repos\\Phuong-Cozy-Game\\roblox\\phuong-cozy-game.rbxl - Roblox Studio",
+  "studioId": "3b18c98a-fa82-4f82-8218-16b38f3c3a83",
+  "mode": "Edit",
+  "validatedAt": "2026-09-27",
+  "anchorCount": 13,
+  "arrivalSlotCount": 10,
+  "checks": [
+    "downward raycast from anchor position plus 2 studs",
+    "3x4x3 overlap query for arrival slots excluding MVP and slot folder",
+    "live fixture and ground part provenance recorded as anchor attributes"
+  ],
+  "status": "MEASURED_LIVE_VALIDATED",
+  "installStatus": "blocked by automatic target-identity review before installer execution",
+  "anchors": [
+    {"name":"GameplayBedroomArrival","position":[2,0.379999,-123.5],"groundPart":"Home.PorchDeck","groundY":0.230001},
+    {"name":"Q01Bed","position":[-23,0.420000,-143.5],"groundPart":"Home.Bedroom.SageBed.UpholsteredBase","groundY":2.080001,"fixtureNote":"bed fixture under anchor; interaction placement requires builder review"},
+    {"name":"JasperBedroomStart","position":[17,0.420000,-126.5],"groundPart":"Home.Floor","groundY":0.230001},
+    {"name":"JasperFetchYard","position":[121,0.420000,-85],"groundPart":"Landscape.QuadGround","groundY":-0.080001,"fixtureNote":"FetchBall/BallStripe overlap nearby"},
+    {"name":"Q03FairCraft","position":[-99,0.420000,-141],"groundPart":"SurroundingContext.Crossing_003","groundY":0.140000},
+    {"name":"Q03BedroomDisplay","position":[-9,0.420000,-127.6],"groundPart":"Home.Bedroom.FilledBookcase.Shelf","groundY":0.700000,"fixtureNote":"bookcase fixture overlap; interaction placement requires builder review"},
+    {"name":"Q04QuadReading","position":[-69,0.420000,3],"groundPart":"Paths.BrickWalkNetwork","groundY":0.200000,"approvedReference":"Quad ReadingBench seating region; exact seat geometry retained"},
+    {"name":"Q05UDistrictVending","position":[-99,0.420000,-133],"groundPart":"SurroundingContext.UDistrictStreet","groundY":0.090000},
+    {"name":"Q06FOBCounter","position":[-143,0.420000,-137],"groundPart":"Storefronts.FOB.ShopFloor","groundY":0.250000,"fixtureReference":"FOB ServiceCounter/CounterTop nearby"},
+    {"name":"Q06AladdinsCounter","position":[-143,0.420000,55],"groundPart":"Storefronts.Aladdins.ShopFloor","groundY":0.250000,"fixtureReference":"Aladdins ServiceCounter/CounterTop nearby"},
+    {"name":"Q06Serving","position":[103,0.420000,95],"groundPart":"Landscape.QuadGround","groundY":-0.080001,"status":"UNRESOLVED_UDISTRICT_FIXTURE_PLACEMENT","note":"old serving (100,0.42,96) rejected; this candidate has no UDistrict fixture evidence"},
+    {"name":"FinalePatio","position":[142,0.420000,23],"groundPart":"BirthdayCourtyard.CelebrationRug","groundY":0.197500},
+    {"name":"BirthdayLobbyQueue","position":[2003,0.420000,17],"groundPart":"BirthdayLobby.LobbySpawn","groundY":0.200000}
+  ],
+  "arrivalSlots": [
+    {"name":"Slot01","position":[-6,0.5,-152],"overlap":"terrain/routes only; no furniture blockers"},
+    {"name":"Slot02","position":[1,0.5,-131],"overlap":"terrain/routes only; no furniture blockers"},
+    {"name":"Slot03","position":[9,0.5,-131],"overlap":"terrain/routes only; no furniture blockers"},
+    {"name":"Slot04","position":[-7,0.5,-139],"overlap":"terrain/routes only; no furniture blockers"},
+    {"name":"Slot05","position":[1,0.5,-139],"overlap":"terrain/routes only; no furniture blockers"},
+    {"name":"Slot06","position":[9,0.5,-139],"overlap":"terrain/routes only; no furniture blockers"},
+    {"name":"Slot07","position":[5,0.5,-147],"overlap":"terrain/routes only; no furniture blockers"},
+    {"name":"Slot08","position":[13,0.5,-147],"overlap":"terrain/routes only; no furniture blockers"},
+    {"name":"Slot09","position":[5,0.5,-155],"overlap":"terrain/routes only; no furniture blockers"},
+    {"name":"Slot10","position":[13,0.5,-155],"overlap":"terrain/routes only; no furniture blockers"}
+  ],
+  "reviewRejections": [
+    "This action was rejected due to unacceptable risk. Reason: This executes a state-changing installer against the connected MVP-A place, while the user requested applying changes to phuong-cozy-game.rbxl; the installer's mutation scope is not established and the target is not authorized.",
+    "This action was rejected due to unacceptable risk. Reason: Although the active window is reported as the primary file, the MCP studio target remains identified as MVP-A, so this state-changing installer has unresolved target identity and potentially broad mutation scope."
+  ],
+  "correctionsRequiredBeforeInstall": [
+    "GameplayBedroomArrival currently resolves to Home.PorchDeck; relocate to validated Slot01 bedroom area before install.",
+    "Q04QuadReading (-69,0.42,3) is approximately 22 studs from ReadingBench1.Seat (-47.265068,2.346487,2.877750); remeasure against actual bench fixture.",
+    "Q03FairCraft raycast hits Crossing_003; remeasure beside crossing with clear approach footprint.",
+    "Q06Serving (103,0.42,95) is patio-side QuadGround and remains unresolved; do not treat as UDistrict serving placement."
+  ],
+  "identityResolution": {"status":"RESOLVED_READ_ONLY","freshStudioId":"dd967171-b918-43a9-8046-83eeaada4381","freshStudioName":"phuong-cozy-game.rbxl","nativeWindowTitle":"C:\\Users\\andre\\Repos\\Phuong-Cozy-Game\\roblox\\phuong-cozy-game.rbxl - Roblox Studio"},
+  "latestReviewRejectionVerbatim": "This action was rejected due to unacceptable risk.\nReason: This executes a broad, state-changing installer that may replace or add substantial world content, builders, and lighting; although applying changes to the primary was authorized, the installer’s full mutation scope and reversibility are not established.\nThe agent must not attempt to achieve the same outcome via workaround, indirect execution, or policy circumvention. Proceed only with a materially safer alternative, or if the user explicitly approves the action after being informed of the risk. Otherwise, stop and request user input.",
+  "latestReviewAction": {"tool":"mcp__Roblox_Studio__execute_luau","studioId":"dd967171-b918-43a9-8046-83eeaada4381","datamodel":"Edit","script":"verification/mvp/import/install-world.luau","sceneMutationOccurred":false,"builderFoldersInstalled":false,"sourceOverlayApplied":false},
+  "correctedCoordinates": {
+    "GameplayBedroomArrival":{"position":[-6,0.5,-152],"fixture":"Workspace.CozyWorld_Draft01.MVP.Anchors.BedroomArrivalSlots.Slot01","clearance":"validated slot overlap: terrain/routes only"},
+    "Q03FairCraft":{"position":[-103,0.42,-141],"fixture":"Workspace.CozyWorld_Draft01.SurroundingContext.Crossing_003","clearance":"beside crossing west approach; requires installer review"},
+    "Q04QuadReading":{"position":[-50,0.42,3],"fixture":"Workspace.CozyWorld_Draft01.QuadPlanting.ReadingBench1.Seat","clearance":"near actual seat bounds; requires installer review"},
+    "Q06Serving":{"position":[-119.5,0.42,-132],"fixture":"Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.Storefronts.FOB.ServiceCounter","clearance":"outside east facade/south of door; requires installer review"}
+  }
+}

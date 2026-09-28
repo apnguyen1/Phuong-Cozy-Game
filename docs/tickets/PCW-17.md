@@ -1,12 +1,18 @@
-# PCW-17 — Birthday welcome room and timed world entry
+# PCW-17 — Birthday welcome room and shared group entry
 
 **Status:** Implementation scope authorized by the active September 26, 2026 user goal; independent review in progress. Final acceptance is pending.
 
 **Builder:** World integration and component builders. **Reviewer:** Independent verifier, separate from builders.
 
+## September 27, 2026 implementation amendment
+
+The earlier personal countdown, per-player early-entry pad, and same-place outdoor relocation below are retained as historical Draft 02 requirements only. For the current MVP, the active behavior is one explicit opt-in `BirthdayLobbyQueue` square in the free lobby. Anyone may wait indefinitely without joining. The first accepted member starts one server-owned 60-second deadline. When the accepted count reaches eight, the deadline becomes `min(existing deadline, serverNow + 10 seconds)`; dropping below eight never extends it, and an empty queue resets to a new generation. Capacity is ten and reaching ten never launches immediately.
+
+At expiry, only the exact frozen roster transfers together to one reserved gameplay server and arrives in the existing bedroom using ten safe arrival slots. Lobby bystanders and late entrants remain in the lobby. Production transfer uses a real configured Roblox reserved destination; the marked Studio-only local party adapter is only a playtest aid and is not teleport evidence. Real published-server, mixed-device, reconnect, failure/retry and group evidence remain required; this amendment does not mark any criterion passed.
+
 ## Purpose
 
-Let friends first arrive in a birthday room full of Phuong's favorite things, with a visible personal countdown and optional early-entry pad leading into the existing world.
+Let friends first arrive in a birthday room full of Phuong's favorite things, then explicitly join one shared timed group transfer into the existing bedroom.
 
 ## Deliverable
 

@@ -43,5 +43,10 @@
     }
   ],
   "commands": [],
-  "criteria": []
+  "criteria": [
+    {"id":"six-petal-gate","text":"Cake invitation is unavailable until all six shared petals are committed."},
+    {"id":"authorized-finale","text":"Only present Phuong or an explicitly configured host fallback may invite/cut; host is unset by default."},
+    {"id":"voluntary-gathering","text":"Players walk voluntarily with independent cameras; no full-roster gate, forced teleport, or forced camera switch."},
+    {"id":"free-play","text":"Guests may eat and continue activities after cutting; the personal birthday note remains empty and user-authored."}
+  ]
 }

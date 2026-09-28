@@ -1,0 +1,89 @@
+# Current feature-by-feature integration handoff
+
+## Current instructions supersede the historical notes below
+
+Latest status: all delivered runtime feature changes from the 13 chats are saved in `roblox/phuong-cozy-game.rbxl`. The five final activity repairs (Q01, Q02, Q04, Q05, Q06) were each applied separately, natively saved to the primary, and checkpointed before the next merge. The exact primary was closed and reopened: 1,739,536 bytes, saved September 27 at 17:47:14 Pacific, Studio `41aeca53-fc7d-4a04-9233-99b2b9734ec4`. Studio is back in Edit after testing; Play state was not saved. Main/client are enabled, while build-world and legacy personal-countdown handlers remain disabled.
+
+Final package: 31 entries, SHA-256 `D85456C6C543FEBE63001C797F500126D4475334B27E3E839CBE8291483AE58E`. All 31 local/package/reference payloads match, and a direct comparison against the reopened place's actual Script.Source returned 31 exact, zero normalized-only, zero mismatches. Ten actual-source module suites passed independently. Coverage review found no delivered runtime source omitted; old client descriptors are superseded by server views and the generic renderer.
+
+The saved-place one-player progression smoke passed: all five earning activities completed for 100 shared-fund units, five 20-unit Labubu purchases fulfilled the wanted figure on the fifth draw, six petals unlocked cake, and actual UI Invite/Cut/Eat clicks reached EATING. Actual Q06 Replay reset progress to 0/6 and accepted a new step. Earlier real one-player queue countdown/reset/bedroom transfer also passed on the unchanged final Main/client. Console showed no errors or missing anchors in the latest run. See `verification/mvp/saved-place-progression-smoke-20260927.md`, the raw route result, and independent `saved-place-progression-review-20260927.md`.
+
+The merge and narrow local smoke are complete, not final ticket acceptance. Still pending: real 8–10-player/device rehearsal, route/camera clearance, reconnect/late join, human fun/visual review, and a configured published transfer destination. A nonblocking cake response diagnostic cleanup is recorded in the smoke report. No upload or publishing occurred. There is no active Studio writer lease; further changes require a new coordinator assignment, not a repeat of this completed merge.
+
+## Earlier integration records — superseded by the current status above
+
+Active sequential merge: all six activity stations, LobbyQueue, SeattleBoundary (250 parts), NightLighting, and GrassDecoration have primary saves. The sole writer is applying the separately reviewed Q01/Q04/Q06 activity-code and client-reading overlays, then the final CakeFinale repair. NightLighting missed its standalone historical checkpoint before GrassDecoration; preserve that fact instead of fabricating a prior snapshot. See the append-only execution ledger for actual stage evidence and retry history.
+
+Current reviewed source bundle: 31 entries, SHA-256 `96213B7C301130FAA6D7816275B8557D8D12F1C3BCA534BF017D33043C76E5E6`. The previous A2C8 bundle read UTF-8 source using Windows default encoding and corrupted three text payloads. The packager now uses explicit UTF-8, and independent comparison confirms all 31 XML payloads exactly match local sources. The import index hash matches the current file. Do not replace correct Studio glyphs with the old corrupted reference. The old source-equality helper embeds the obsolete reference and must be regenerated before use.
+
+Latest CakeFinale source is `946E2F2CB5F61A4F81C79C619D3EB40A144739C60A182B4BDAF7701CC01E1A7C`; its overlay is `76FD6758FB44C0D71C1EBA3F4E767DDC5AF82F0FEF980DDDD32E7D63D859E8AC`. All feature/source merges are saved in the primary and it was natively reopened. Fresh Studio ID is `ac69268a-efcf-4a1a-b2f2-98cdf22947d7`. Ten seats are independently confirmed. The original verifier chat is released and idle. `/root/final_saved_verifier` retested Q01/Q03/client: 3/3 exact against the corrected UTF-8 reference, completing the earlier 28 exact matches. See `verification/mvp/studio-source-equality-followup-20260927.md`.
+
+The sole writer `/root/primary_world_apply` now owns Q04 placement correction. The bench marker/props have been raised and aligned to the actual seat and saved in a separate checkpoint; bedroom desk/Kindle placement is being checked before release. Next: independent placement check, controlled enable of only Main/client with a separate save, then independent local engine smoke. Runtime entrypoints remain disabled until that stage. Independent current-source tests pass 10/10; this does not prove engine gameplay.
+
+After the final feature save, the writer must reopen only the saved exact primary and report its fresh Studio identity. Task 13 then receives a narrow read-only source/scene inspection lease. Runtime enabling and engine smoke are separate later steps; do not mark the game playable from source compilation or installation alone.
+
+Save As changes the active document. Always restore the full absolute destination `C:/Users/andre/Repos/Phuong-Cozy-Game/roblox/phuong-cozy-game.rbxl` and verify the native full title before the next mutation; a file named `phuong-cozy-game.rbxl` inside `roblox/checkpoints` is not the primary. Preserve accidental copies and report their actual paths. Filesystem timestamps are observed facts, while unobserved historical save times remain unknown. `verification/mvp/merge-progress.json` is the execution ledger; `merge-checkpoint-audit.json` is a separate independent metadata audit.
+
+The latest user message, after the previous risk disclosure, explicitly requests merging ALL feature changes ONE BY ONE and saving EACH merge. This is authorization for sequential local feature integration into `roblox/phuong-cozy-game.rbxl`. Do not run the all-feature installer, ask for the same authorization again, or publish. Respect any new security rejection.
+
+`/root/primary_world_apply` holds exclusive Studio/UI ownership: preserve a baseline checkpoint, apply the reviewed Main arrival fix, save primary and a per-feature checkpoint, and maintain `verification/mvp/merge-progress.json` plus readable status. Direct filesystem checkpoint copy failed; capture the actual error without assuming its cause. Supported native Save As and return to primary may be used for ordinary I/O failures. No ACL changes or alternate execution of a rejected operation.
+
+`/root/q06_source_repair` owns local selected-feature installer changes, exact module-update/invocation helpers and actual dispatch tests; no Studio access. `/root/world_install_review` independently reviews them. An initial selector draft had nil parent references because its local folders were declared too late; it must be repaired and behaviorally retested before import. Current helper API is `OnlyFeature`; user-flow invocations must explicitly select exactly one canonical builder.
+
+Sequence: Task01 arrival/integration support; Task09 reconcile imported fund/progression/cake foundation; Tasks02–07 Q01–Q06 individually; Task08 lobby queue; Task10 Seattle; Task11 night; Task12 grass; Task13 independent engine checks, controlled runtime enable and user playtest. Save and verify each concrete feature BEFORE starting the next. Map already imported source truthfully; do not fabricate changes or call source import a gameplay pass.
+
+Starting primary checkpoint is 1,717,073 bytes at 15:31:13.953928 local, with corrected markers but no new builder scenery installed. Original backup remains `roblox/phuong-cozy-game-primary-backup-20260927-1500.rbxl`. Last known primary Studio ID `dd967171-b918-43a9-8046-83eeaada4381` must be revalidated after reopen. Entry scripts stay disabled until controlled smoke. `install` is a ModuleScript with no Disabled property; `build-world` remains disabled Edit-only Script. Main-only update SHA `63DA4E4298892E998F2081B9CFB3C49C851E2B6B4B5D8B2793876F808500918F` is already independently reviewed.
+
+## Historical handoffs — superseded where they conflict with the current instructions
+
+## Current stop point: informed approval pending
+
+The primary is saved at September 27, 2026, 15:31:13.953928 local time, 1,717,073 bytes, with the four corrected markers. The fresh primary target ID remains `dd967171-b918-43a9-8046-83eeaada4381` in Edit. The world installer was rejected by automatic approval review after identity resolution because its full mutation scope and reversibility were not established. It explicitly required a materially safer alternative or informed user approval. No ten-builder installation or Main overlay occurred. The scoped worker stopped and released the lease. Do not resume the rejected operation until the new permission request is answered; do not use another channel to achieve it.
+
+The concrete review package is [primary-install-approval.md](primary-install-approval.md), opened for the user. A pending question asks approval for the prepared stations, queue, Seattle scenery, grass, nighttime lighting, arrival fix, primary save and local tests. Original and current integration checkpoints must be preserved. Earlier approvals remain valid for already completed work; this new request specifically addresses the later automatic review rejection.
+
+Latest checkpoint: primary saved at 15:26:11, 1,716,830 bytes, including measured marker work. Automatic review rejected the world installer twice while MCP still identified the target as MVP-A despite its native primary title. The worker safely saved, closed only the saved window, reopened the exact primary, and confirmed fresh MCP ID `dd967171-b918-43a9-8046-83eeaada4381`, name `phuong-cozy-game.rbxl`, matching its native full path. The previous rejection was not bypassed through another channel. Target identity is now established for a normal scoped retry; any new rejection must still be respected.
+
+Detailed audit corrected an earlier overbroad measurement claim: gameplay arrival was on the porch, craft needs to clear the crossing, reading needs an actual bench-derived approach, and Q06 serving still needs UDistrict placement. Those four corrections remain required before world installation. Ten arrival-slot checks are retained. The current source package is `32044A609209D7C63B4A67C8B045ED18D6EA84B989C7E8A6757DEFDF44FE0865`; only Main changed since the prior package, fixing the actual slot-folder lookup. The independently cleared Main-only overlay is `verification/mvp/import/update-main.luau`, SHA-256 `63DA4E4298892E998F2081B9CFB3C49C851E2B6B4B5D8B2793876F808500918F`. The placement worker applies it after world installation, keeps it disabled, saves primary, and then releases for smoke tests.
+
+Current execution owner: `/root/primary_world_apply` (GPT-5.6 Luna, Low), holding the exclusive bounded Studio/UI lease for measuring the remaining required markers, running the reviewed world wrapper, and saving the primary. Owner 01 and verifier 13 are idle. The current primary checkpoint is 1,716,605 bytes at 15:18:38 and includes remotes, disabled legacy countdowns, and the measured Slot01 correction. Studio was returned from a user preview to Edit. Remaining required markers must be validated against real fixtures and clearance before MEASURED is assigned; the wrapper correctly rejected the still-unmeasured gameplay arrival marker. The scoped worker leaves runtime entrypoints disabled and returns Edit mode for the independent next gate.
+
+## Latest user direction: consolidate into the primary place
+
+The user explicitly requested applying all changes to `roblox/phuong-cozy-game.rbxl` after observing that neither place had been updated on disk. This supersedes the prior copy-only destination restriction. Owner 01 must preserve a new timestamped copy of the existing primary file, then save the currently imported MVP-A Studio state into the primary file and save incremental installation progress there. Do not leave the deliverable only in Studio memory. The backup and each saved checkpoint need actual file metadata evidence. Draft saves do not imply gameplay approval or permission to publish.
+
+The independent source inspection is releasing its read-only lease for this save. One confirmed installer-class defect is being repaired in the package: `ServerStorage/PhuongMVPTools/install` must be a ModuleScript because it returns the installer function. The source text remains unchanged. `build-world` stays an explicitly invoked Edit-mode Script, not a required module. Owner 01 will receive the updated package digest and repair only the owned installed installer class after the initial save.
+
+Owner 13 released the lease without an equality result because the old Studio ID became unavailable. Owner 01 now holds the exclusive consolidation/install/smoke lease. Fresh target: `3b18c98a-fa82-4f82-8218-16b38f3c3a83`, named `phuong-cozy-game-MVP-A.rbxl`; re-inspect whether unsaved imported sources survived. The primary backup is `roblox/phuong-cozy-game-primary-backup-20260927-1500.rbxl`, 1,648,676 bytes. Independent review cleared the corrected package SHA-256 `DD27A27ADD6BDA42371584842E10927F6143414F807AF7DB7BFC9B706D1D59D3`: 27 ModuleScripts, 2 Scripts, 1 LocalScript, all 30 source payload hashes unchanged. This current digest supersedes the historical digest below.
+
+Primary Save As completed through the observed overwrite confirmation at September 27, 2026, 15:15:03 local time. `roblox/phuong-cozy-game.rbxl` is now 1,716,459 bytes and contains the imported source checkpoint. The backup remains intact. This save precedes the visible world-builder installation and does not claim playable MVP or source-equality approval. Owner 01 continues into measured station/scenery installation, then saves the same primary file before local smoke.
+
+The first world invocation rejected all anchors/builders before scene change because its caller shapes were incorrect. The independently reviewed replacement is `verification/mvp/import/install-world.luau`, SHA-256 `F9F94F446E101128410D86DF3D88235EC58FD4F2E51C8AB72AABC8B647B9E417`. It resolves the anchor Lua map and passes the actual tools/builders Folder. Owner 01 has execution clearance. Separate live checks confirmed `ReplicatedStorage.PhuongMVP.Action`, `View`, and `QueueState` are RemoteEvents, both exact legacy birthday handlers are disabled, and Slot01 is measured at `(-6, 0.5, -152)`. These working-session changes need a primary save; they do not prove runtime gameplay.
+
+This coordinator handoff supersedes earlier statements that local installation approval is pending. It does not claim that the MVP is installed or playable.
+
+## Approved scope
+
+The user explicitly approved: "Approve the local copy and tests" and allowed requesting further PC/Roblox MCP authorization if needed. Proceed with the reviewed executable scripts, world builders, measured marker corrections, and local Studio tests in the separate MVP copy. Do not ask for the same installation approval again. Respect any new tool denial and report its exact action and reason.
+
+- Local copy: `C:/Users/andre/Repos/Phuong-Cozy-Game/roblox/phuong-cozy-game-MVP-A.rbxl`.
+- Verified saved file: 1,654,123 bytes at September 27, 2026, 14:49:50 local time, before runtime insertion.
+- Active copy reported by the integrator: Studio ID `6d32c205-501d-41bc-934f-3eb42a74f4ec`, named `phuong-cozy-game-MVP-A.rbxl`. Revalidate the current target before mutation.
+- Preserve the original place and prior checkpoints. Disable only the two recorded legacy birthday countdown handlers in the new copy. Preserve unrelated scripts and world geometry.
+- Publishing and uploading are outside this approval.
+
+## Reviewed source revision
+
+The verifier confirmed all 30 sources in the refreshed bundle match current saved sources. Bundle SHA-256: `3B59C66BCF0DF17CA6402404FCD3E17730B65E11BF298B1934DCC24A149D1DF9`.
+
+Both official Roblox identities are configured: Phuong/Phamlet707 `3971290001`, host/IamBannedrew `1078077474`. Both present accounts have birthday cake controls. Phuong-specific Labubu spending and activity finalization retain the established host fallback while Phuong is absent. The independent actual-source adapter passed all nine supported specs after this change; this does not prove Studio gameplay.
+
+## Execution ownership
+
+1. The scoped source worker executed both independently reviewed corrected import chunks in the authorized MVP copy after Owner 01 released the lease. Live inventory reports 30 sources (26 ModuleScripts, 3 Scripts, 1 LocalScript), 35 importer-owned descendants, and zero enabled entrypoints. No world build, remotes, legacy toggles, save, or Play occurred. Source count and hash attributes alone are not exact source equality evidence.
+2. Owner 13 now holds an exclusive read-only check of actual installed Source text against the approved original bundle payloads. The source worker and Owner 01 must remain idle on Studio. Runtime scripts remain disabled. After independent equality evidence and release, the coordinator returns the installation and initial smoke lease to Owner 01. No generic replacement activity logic.
+3. Owner 01 installs the measured anchors/options and ten world builders, records engine errors, and routes activity/service repairs to their owners through the coordinator.
+4. Owner 01 saves the copied checkpoint and reports the exact installed revision, Studio target, and Edit state. The coordinator then transfers the exclusive test window to Owner 13.
+5. Owner 13 independently tests the installed game. The coordinator requests the user's first playtest only after the appropriate engine checks pass, using `verification/mvp/STUDIO_TEST_WINDOW.md`.
+
+Earlier insertion rejection records remain historical evidence from before this approval and before the new local copy existed. They do not authorize bypassing a new rejection, and they are not a reason to stop an otherwise supported, approved insertion into this copy.

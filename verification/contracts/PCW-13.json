@@ -43,5 +43,10 @@
     }
   ],
   "commands": [],
-  "criteria": []
+  "criteria": [
+    {"id":"shared-fund","text":"Server-owned session fund starts at zero; Q01/Q02/Q03/Q04/Q06 first clears pay 20 once, explicit replays pay 10 once, Q05 pays zero, and rewards are not multiplied by player count."},
+    {"id":"idempotent-receipts","text":"Activity, round, step, action, completion, and purchase receipts deduplicate repeated taps, saves, retries, and reconnects."},
+    {"id":"reconnect-session","text":"Rejoining the same session restores committed state and accepted steps; a new session starts empty."},
+    {"id":"activity-boundary","text":"Activity adapters validate actor, round, accepted steps, and completion before calling the shared completion API."}
+  ]
 }

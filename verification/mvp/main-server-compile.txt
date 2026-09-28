@@ -1,0 +1,2145 @@
+Function 0 (uid):
+   28: local function uid(p) return p and p.UserId end
+MOVE R1 R0
+JUMPIFNOT R1 L0
+GETTABLEKS R1 R0 K0 ['UserId']
+L0: RETURN R1 1
+
+Function 1 (anchor):
+   30:  local v = anchors[name]; return v and (v:IsA("BasePart") and v or v:FindFirstChildWhichIsA("BasePart", true))
+GETUPVAL R2 U0
+GETTABLE R1 R2 R0
+MOVE R2 R1
+JUMPIFNOT R2 L1
+LOADK R5 K0 ['BasePart']
+NAMECALL R3 R1 K1 ['IsA']
+CALLFB R3 2 1 [0]
+JUMPIFNOT R3 L0
+MOVE R2 R1
+JUMPIF R2 L1
+L0: LOADK R4 K0 ['BasePart']
+LOADB R5 1
+NAMECALL R2 R1 K2 ['FindFirstChildWhichIsA']
+CALLFB R2 3 1 [1]
+L1: RETURN R2 1
+
+Function 2 (character):
+   33:  local c = p and p.Character; local h = c and c:FindFirstChildOfClass("Humanoid"); local r = c and c:FindFirstChild("HumanoidRootPart")
+MOVE R1 R0
+JUMPIFNOT R1 L0
+GETTABLEKS R1 R0 K0 ['Character']
+L0: MOVE R2 R1
+JUMPIFNOT R2 L1
+LOADK R4 K1 ['Humanoid']
+NAMECALL R2 R1 K2 ['FindFirstChildOfClass']
+CALLFB R2 2 1 [0]
+L1: MOVE R3 R1
+JUMPIFNOT R3 L2
+LOADK R5 K3 ['HumanoidRootPart']
+NAMECALL R3 R1 K4 ['FindFirstChild']
+CALLFB R3 2 1 [1]
+   34:  if not c or not h or h.Health <= 0 or not r then return nil end; return c, r
+L2: JUMPIFNOT R1 L3
+JUMPIFNOT R2 L3
+GETTABLEKS R4 R2 K5 ['Health']
+LOADN R5 0
+JUMPIFLE R4 R5 L3
+JUMPIF R3 L4
+L3: LOADNIL R4
+RETURN R4 1
+L4: MOVE R4 R1
+MOVE R5 R3
+RETURN R4 2
+
+Function 3 (near):
+   37:  local _, r = character(p); local a = anchor(name); return r and a and (r.Position-a.Position).Magnitude <= radius
+GETUPVAL R3 U0
+MOVE R4 R0
+CALLFB R3 1 2 [0]
+GETUPVAL R5 U1
+MOVE R6 R1
+CALLFB R5 1 1 [1]
+MOVE R6 R4
+JUMPIFNOT R6 L1
+MOVE R6 R5
+JUMPIFNOT R6 L1
+GETTABLEKS R8 R4 K0 ['Position']
+GETTABLEKS R9 R5 K0 ['Position']
+SUB R7 R8 R9
+GETTABLEKS R7 R7 K1 ['Magnitude']
+JUMPIFLE R7 R2 L0
+LOADB R6 0 +1
+L0: LOADB R6 1
+L1: RETURN R6 1
+
+Function 4 (place):
+   40:  local c, a = character(p), anchor(name); if not c or not a then return false end; c:PivotTo(a.CFrame+Vector3.new(0,3,0)); return true
+GETUPVAL R4 U0
+MOVE R5 R0
+CALLFB R4 1 1 [0]
+MOVE R2 R4
+GETUPVAL R3 U1
+MOVE R4 R1
+CALLFB R3 1 1 [1]
+JUMPIFNOT R2 L0
+JUMPIF R3 L1
+L0: LOADB R4 0
+RETURN R4 1
+L1: GETTABLEKS R7 R3 K0 ['CFrame']
+GETIMPORT R8 3 [Vector3.new]
+LOADN R9 0
+LOADN R10 3
+LOADN R11 0
+CALLFB R8 3 1 [2]
+ADD R6 R7 R8
+NAMECALL R4 R2 K4 ['PivotTo']
+CALLFB R4 2 0 [3]
+LOADB R4 1
+RETURN R4 1
+
+Function 5 (snapshot):
+   43:  local s = session:GetSnapshot(); s.queue = queue:Snapshot(); s.cake = cake:GetState()
+GETUPVAL R0 U0
+NAMECALL R0 R0 K0 ['GetSnapshot']
+CALLFB R0 1 1 [0]
+GETUPVAL R1 U1
+NAMECALL R1 R1 K1 ['Snapshot']
+CALLFB R1 1 1 [1]
+SETTABLEKS R1 R0 K2 ['queue']
+GETUPVAL R1 U2
+NAMECALL R1 R1 K3 ['GetState']
+CALLFB R1 1 1 [2]
+SETTABLEKS R1 R0 K4 ['cake']
+REMARK allocation: table template 3
+   44:  s.arrival = {capacity=10, occupied=0, ready={}}
+DUPTABLE R1 10
+REMARK allocation: table hash 0
+NEWTABLE R2 0 0
+SETTABLEKS R2 R1 K9 ['ready']
+SETTABLEKS R1 R0 K11 ['arrival']
+   45:  for player, entry in pairs(arrivalByUser) do s.arrival.occupied += 1; s.arrival.ready[player] = entry.ready == true end
+GETIMPORT R1 13 [pairs]
+GETUPVAL R2 U3
+CALLFB R1 1 3 [3]
+FORGPREP_NEXT R1 L3
+L0: GETTABLEKS R6 R0 K11 ['arrival']
+GETTABLEKS R7 R6 K7 ['occupied']
+ADDK R7 R7 K14 [1]
+SETTABLEKS R7 R6 K7 ['occupied']
+GETTABLEKS R6 R0 K11 ['arrival']
+GETTABLEKS R6 R6 K9 ['ready']
+GETTABLEKS R8 R5 K9 ['ready']
+JUMPXEQKB R8 1 L1
+LOADB R7 0 +1
+L1: LOADB R7 1
+L2: SETTABLE R7 R6 R4
+L3: FORGLOOP R1 L0 2
+   46:  return s
+RETURN R0 1
+
+Function 6 (send):
+REMARK builtin type/1
+   49:  request=type(request)=="table" and request or {}
+FASTCALL1 40 R1 L0
+MOVE R7 R1
+GETIMPORT R6 1 [type]
+CALL R6 1 1
+L0: JUMPXEQKS R6 K2 L1 NOT ['table']
+MOVE R5 R1
+JUMPIF R5 L2
+REMARK allocation: table hash 0
+L1: NEWTABLE R5 0 0
+L2: MOVE R1 R5
+REMARK allocation: table template 10
+   50:  local r = {kind="Result", ok=ok, code=code, sessionId=sessionId, activityId=request and request.activityId, roundId=request and request.roundId, actionId=request and request.actionId, stepId=request and request.stepId, actorUserId=uid(p), snapshot=snapshot()}
+DUPTABLE R5 14
+SETTABLEKS R2 R5 K5 ['ok']
+SETTABLEKS R3 R5 K6 ['code']
+GETUPVAL R6 U0
+SETTABLEKS R6 R5 K7 ['sessionId']
+MOVE R6 R1
+JUMPIFNOT R6 L3
+GETTABLEKS R6 R1 K8 ['activityId']
+L3: SETTABLEKS R6 R5 K8 ['activityId']
+MOVE R6 R1
+JUMPIFNOT R6 L4
+GETTABLEKS R6 R1 K9 ['roundId']
+L4: SETTABLEKS R6 R5 K9 ['roundId']
+MOVE R6 R1
+JUMPIFNOT R6 L5
+GETTABLEKS R6 R1 K10 ['actionId']
+L5: SETTABLEKS R6 R5 K10 ['actionId']
+MOVE R6 R1
+JUMPIFNOT R6 L6
+GETTABLEKS R6 R1 K11 ['stepId']
+L6: SETTABLEKS R6 R5 K11 ['stepId']
+GETUPVAL R6 U1
+MOVE R7 R0
+CALLFB R6 1 1 [0]
+SETTABLEKS R6 R5 K12 ['actorUserId']
+GETUPVAL R6 U2
+CALLFB R6 0 1 [1]
+SETTABLEKS R6 R5 K13 ['snapshot']
+   51:  if extra then for k,v in pairs(extra) do r[k]=v end end; action:FireClient(p,r); return r
+JUMPIFNOT R4 L9
+GETIMPORT R6 16 [pairs]
+MOVE R7 R4
+CALLFB R6 1 3 [2]
+FORGPREP_NEXT R6 L8
+L7: SETTABLE R10 R5 R9
+L8: FORGLOOP R6 L7 2
+L9: GETUPVAL R6 U3
+MOVE R8 R0
+MOVE R9 R5
+NAMECALL R6 R6 K17 ['FireClient']
+CALLFB R6 3 0 [3]
+RETURN R5 1
+
+Function 7 (broadcast):
+   54:  for _, p in ipairs(Players:GetPlayers()) do send(p,{kind="RequestSnapshot"},true,"Snapshot") end
+GETIMPORT R0 1 [ipairs]
+GETUPVAL R1 U0
+NAMECALL R1 R1 K2 ['GetPlayers']
+CALL R1 1 -1
+CALL R0 -1 3
+FORGPREP_INEXT R0 L1
+L0: GETUPVAL R5 U1
+MOVE R6 R4
+REMARK allocation: table template 1
+DUPTABLE R7 5
+LOADB R8 1
+LOADK R9 K6 ['Snapshot']
+CALLFB R5 4 0 [0]
+L1: FORGLOOP R0 L0 2 [inext]
+   55: end
+RETURN R0 0
+
+Function 8 (view):
+   57:  if not a then return {state="UNAVAILABLE",errorText="ActivityUnavailable"} end
+JUMPIF R0 L0
+REMARK allocation: table template 2
+DUPTABLE R2 4
+RETURN R2 1
+   58:  local ok, result = pcall(a.GetView,a,uid(p)); return ok and result or {state="UNAVAILABLE",errorText=tostring(result)}
+L0: GETTABLEKS R3 R0 K5 ['GetView']
+MOVE R4 R0
+GETUPVAL R5 U0
+MOVE R6 R1
+CALL R5 1 -1
+FASTPCALL pcall L1
+GETIMPORT R2 7 [pcall]
+CALL R2 -1 2
+L1: JUMPIFNOT R2 L2
+MOVE R4 R3
+JUMPIF R4 L4
+REMARK allocation: table template 2
+L2: DUPTABLE R4 8
+REMARK builtin tostring/1
+FASTCALL1 63 R3 L3
+MOVE R6 R3
+GETIMPORT R5 10 [tostring]
+CALL R5 1 1
+L3: SETTABLEKS R5 R4 K2 ['errorText']
+L4: RETURN R4 1
+
+Function 9 (construct):
+   61:  local ctor=module.new or module.New; if not ctor then activityErrors[name]="missing constructor"; return end
+GETTABLEKS R3 R1 K0 ['new']
+JUMPIF R3 L0
+GETTABLEKS R3 R1 K1 ['New']
+L0: JUMPIF R3 L1
+GETUPVAL R4 U0
+LOADK R5 K2 ['missing constructor']
+SETTABLE R5 R4 R0
+RETURN R0 0
+   62:  local ok,value=pcall(ctor,context); if ok then activities[name]=value else activityErrors[name]=tostring(value) end
+L1: MOVE R5 R3
+MOVE R6 R2
+FASTPCALL pcall L2
+GETIMPORT R4 4 [pcall]
+CALL R4 2 2
+L2: JUMPIFNOT R4 L3
+GETUPVAL R6 U1
+SETTABLE R5 R6 R0
+RETURN R0 0
+L3: GETUPVAL R6 U0
+REMARK builtin tostring/1
+FASTCALL1 63 R5 L4
+MOVE R8 R5
+GETIMPORT R7 6 [tostring]
+CALL R7 1 1
+L4: SETTABLE R7 R6 R0
+   63: end
+RETURN R0 0
+
+Function 10 (installPrompt):
+   68:  if not instance then return end
+JUMPIF R1 L0
+RETURN R0 0
+   69:  local host=instance:IsA("BasePart") and instance or instance:FindFirstChildWhichIsA("BasePart",true); if not host then return end
+L0: LOADK R5 K0 ['BasePart']
+NAMECALL R3 R1 K1 ['IsA']
+CALLFB R3 2 1 [0]
+JUMPIFNOT R3 L1
+MOVE R2 R1
+JUMPIF R2 L2
+L1: LOADK R4 K0 ['BasePart']
+LOADB R5 1
+NAMECALL R2 R1 K2 ['FindFirstChildWhichIsA']
+CALLFB R2 3 1 [1]
+L2: JUMPIF R2 L3
+RETURN R0 0
+   70:  local prompt=host:FindFirstChild("MVPProximityPrompt") or Instance.new("ProximityPrompt")
+L3: LOADK R5 K3 ['MVPProximityPrompt']
+NAMECALL R3 R2 K4 ['FindFirstChild']
+CALLFB R3 2 1 [2]
+JUMPIF R3 L4
+GETIMPORT R3 7 [Instance.new]
+LOADK R4 K8 ['ProximityPrompt']
+CALLFB R3 1 1 [3]
+   71:  prompt.Name="MVPProximityPrompt"; prompt.ActionText=promptLabels[id] or id; prompt.ObjectText=promptObjects[id] or id; prompt.KeyboardKeyCode=Enum.KeyCode.E
+L4: LOADK R4 K3 ['MVPProximityPrompt']
+SETTABLEKS R4 R3 K9 ['Name']
+GETUPVAL R6 U0
+GETTABLE R5 R6 R0
+OR R4 R5 R0
+SETTABLEKS R4 R3 K10 ['ActionText']
+GETUPVAL R6 U1
+GETTABLE R5 R6 R0
+OR R4 R5 R0
+SETTABLEKS R4 R3 K11 ['ObjectText']
+GETIMPORT R4 15 [Enum.KeyCode.E]
+SETTABLEKS R4 R3 K16 ['KeyboardKeyCode']
+   72:  prompt.HoldDuration=0; prompt.MaxActivationDistance=12; prompt.RequiresLineOfSight=false; prompt:SetAttribute("ActivityId",id); prompt.Parent=host
+LOADN R4 0
+SETTABLEKS R4 R3 K17 ['HoldDuration']
+LOADN R4 12
+SETTABLEKS R4 R3 K18 ['MaxActivationDistance']
+LOADB R4 0
+SETTABLEKS R4 R3 K19 ['RequiresLineOfSight']
+LOADK R6 K20 ['ActivityId']
+MOVE R7 R0
+NAMECALL R4 R3 K21 ['SetAttribute']
+CALLFB R4 3 0 [4]
+SETTABLEKS R2 R3 K22 ['Parent']
+   73: end
+RETURN R0 0
+
+Function 11 (isPresent):
+   74: local world={isPresent=function(id) return session:IsPresent(id) end,presentUserIds=session.presence,anchors=anchors}
+GETUPVAL R1 U0
+MOVE R3 R0
+NAMECALL R1 R1 K0 ['IsPresent']
+CALL R1 2 -1
+RETURN R1 -1
+
+Function 12 (??):
+REMARK allocation: table hash 0
+   84:   local checked={}; for _,p in ipairs(players) do local e=arrivalByUser[p.UserId]; local c=character(p); if not e or not e.part or not c then error("arrival slot or character not ready") end; table.insert(checked,{player=p,entry=e,character=c}) end
+NEWTABLE R1 0 0
+GETIMPORT R2 1 [ipairs]
+MOVE R3 R0
+CALLFB R2 1 3 [0]
+FORGPREP_INEXT R2 L3
+L0: GETUPVAL R8 U0
+GETTABLEKS R9 R6 K2 ['UserId']
+GETTABLE R7 R8 R9
+GETUPVAL R8 U1
+MOVE R9 R6
+CALLFB R8 1 1 [1]
+JUMPIFNOT R7 L1
+GETTABLEKS R9 R7 K3 ['part']
+JUMPIFNOT R9 L1
+JUMPIF R8 L2
+L1: GETIMPORT R9 5 [error]
+LOADK R10 K6 ['arrival slot or character not re'...]
+CALLFB R9 1 0 [2]
+REMARK builtin table.insert/2
+REMARK allocation: table template 3
+L2: DUPTABLE R11 10
+SETTABLEKS R6 R11 K7 ['player']
+SETTABLEKS R7 R11 K8 ['entry']
+SETTABLEKS R8 R11 K9 ['character']
+FASTCALL2 52 R1 R11 L3
+MOVE R10 R1
+GETIMPORT R9 13 [table.insert]
+CALL R9 2 0
+L3: FORGLOOP R2 L0 2 [inext]
+   85:   for _,item in ipairs(checked) do item.character:PivotTo(item.entry.part.CFrame+Vector3.new(0,3,0)); item.entry.transferred=true; item.player:SetAttribute("MVPArrivalStatus","Transferred") end
+GETIMPORT R2 1 [ipairs]
+MOVE R3 R1
+CALLFB R2 1 3 [3]
+FORGPREP_INEXT R2 L5
+L4: GETTABLEKS R7 R6 K9 ['character']
+GETTABLEKS R10 R6 K8 ['entry']
+GETTABLEKS R10 R10 K3 ['part']
+GETTABLEKS R10 R10 K14 ['CFrame']
+GETIMPORT R11 17 [Vector3.new]
+LOADN R12 0
+LOADN R13 3
+LOADN R14 0
+CALLFB R11 3 1 [4]
+ADD R9 R10 R11
+NAMECALL R7 R7 K18 ['PivotTo']
+CALLFB R7 2 0 [5]
+GETTABLEKS R7 R6 K8 ['entry']
+LOADB R8 1
+SETTABLEKS R8 R7 K19 ['transferred']
+GETTABLEKS R7 R6 K7 ['player']
+LOADK R9 K20 ['MVPArrivalStatus']
+LOADK R10 K21 ['Transferred']
+NAMECALL R7 R7 K22 ['SetAttribute']
+CALLFB R7 3 0 [6]
+L5: FORGLOOP R2 L4 2 [inext]
+   86:   broadcast(); return true
+GETUPVAL R2 U2
+CALLFB R2 0 0 [7]
+LOADB R2 1
+RETURN R2 1
+
+Function 13 (transferQueue):
+   93:  if not roster then return end
+JUMPIF R0 L0
+RETURN R0 0
+REMARK allocation: table hash 0
+   94:  local players={}; for _,id in ipairs(roster.members) do local p=Players:GetPlayerByUserId(id); local e=arrivalByUser[id]; if not p or not e or not e.part or not e.ready or not character(p) then queue:FailTransfer(); return end; table.insert(players,p) end
+L0: NEWTABLE R1 0 0
+GETIMPORT R2 1 [ipairs]
+GETTABLEKS R3 R0 K2 ['members']
+CALLFB R2 1 3 [0]
+FORGPREP_INEXT R2 L4
+L1: GETUPVAL R7 U0
+MOVE R9 R6
+NAMECALL R7 R7 K3 ['GetPlayerByUserId']
+CALLFB R7 2 1 [1]
+GETUPVAL R9 U1
+GETTABLE R8 R9 R6
+JUMPIFNOT R7 L2
+JUMPIFNOT R8 L2
+GETTABLEKS R9 R8 K4 ['part']
+JUMPIFNOT R9 L2
+GETTABLEKS R9 R8 K5 ['ready']
+JUMPIFNOT R9 L2
+GETUPVAL R9 U2
+MOVE R10 R7
+CALLFB R9 1 1 [2]
+JUMPIF R9 L3
+L2: GETUPVAL R9 U3
+NAMECALL R9 R9 K6 ['FailTransfer']
+CALLFB R9 1 0 [3]
+RETURN R0 0
+REMARK builtin table.insert/2
+L3: FASTCALL2 52 R1 R7 L4
+MOVE R10 R1
+MOVE R11 R7
+GETIMPORT R9 9 [table.insert]
+CALL R9 2 0
+L4: FORGLOOP R2 L1 2 [inext]
+   95:  if not queue:BeginTransfer() then return end
+GETUPVAL R2 U3
+NAMECALL R2 R2 K10 ['BeginTransfer']
+CALLFB R2 1 1 [4]
+JUMPIF R2 L5
+RETURN R0 0
+   96:  if not transfer then queue:FailTransfer(); return end
+L5: GETUPVAL R2 U4
+JUMPIF R2 L6
+GETUPVAL R2 U3
+NAMECALL R2 R2 K6 ['FailTransfer']
+CALLFB R2 1 0 [5]
+RETURN R0 0
+   97:  local ok,result=pcall(transfer.Transfer,transfer,players,roster); if ok and result then queue:CompleteTransfer() else queue:FailTransfer() end
+L6: GETUPVAL R3 U4
+GETTABLEKS R3 R3 K11 ['Transfer']
+GETUPVAL R4 U4
+MOVE R5 R1
+MOVE R6 R0
+FASTPCALL pcall L7
+GETIMPORT R2 13 [pcall]
+CALL R2 4 2
+L7: JUMPIFNOT R2 L8
+JUMPIFNOT R3 L8
+GETUPVAL R4 U3
+NAMECALL R4 R4 K14 ['CompleteTransfer']
+CALLFB R4 1 0 [6]
+RETURN R0 0
+L8: GETUPVAL R4 U3
+NAMECALL R4 R4 K6 ['FailTransfer']
+CALLFB R4 1 0 [7]
+   98: end
+RETURN R0 0
+
+Function 14 (nearActivity):
+  101:  if r.activityId=="Q02" then if r.stepId=="greet" then return near(p,"JasperBedroomStart",24) end; if r.stepId then return near(p,"JasperFetchYard",24) end; return near(p,"JasperBedroomStart",24) or near(p,"JasperFetchYard",24) end
+GETTABLEKS R2 R1 K0 ['activityId']
+JUMPXEQKS R2 K1 L3 NOT ['Q02']
+GETTABLEKS R2 R1 K2 ['stepId']
+JUMPXEQKS R2 K3 L0 NOT ['greet']
+GETUPVAL R2 U0
+MOVE R3 R0
+LOADK R4 K4 ['JasperBedroomStart']
+LOADN R5 24
+CALL R2 3 -1
+RETURN R2 -1
+L0: GETTABLEKS R2 R1 K2 ['stepId']
+JUMPIFNOT R2 L1
+GETUPVAL R2 U0
+MOVE R3 R0
+LOADK R4 K5 ['JasperFetchYard']
+LOADN R5 24
+CALL R2 3 -1
+RETURN R2 -1
+L1: GETUPVAL R2 U0
+MOVE R3 R0
+LOADK R4 K4 ['JasperBedroomStart']
+LOADN R5 24
+CALLFB R2 3 1 [0]
+JUMPIF R2 L2
+GETUPVAL R2 U0
+MOVE R3 R0
+LOADK R4 K5 ['JasperFetchYard']
+LOADN R5 24
+CALLFB R2 3 1 [1]
+L2: RETURN R2 1
+  102:  if r.activityId=="Q04" then return near(p,"Q04QuadReading",24) or near(p,"Q04BedroomKindle",24) end
+L3: GETTABLEKS R2 R1 K0 ['activityId']
+JUMPXEQKS R2 K6 L5 NOT ['Q04']
+GETUPVAL R2 U0
+MOVE R3 R0
+LOADK R4 K7 ['Q04QuadReading']
+LOADN R5 24
+CALLFB R2 3 1 [2]
+JUMPIF R2 L4
+GETUPVAL R2 U0
+MOVE R3 R0
+LOADK R4 K8 ['Q04BedroomKindle']
+LOADN R5 24
+CALLFB R2 3 1 [3]
+L4: RETURN R2 1
+  103:  if r.activityId=="Q03" then return near(p,"Q03FairCraft",24) or near(p,"Q03BedroomDisplay",24) end
+L5: GETTABLEKS R2 R1 K0 ['activityId']
+JUMPXEQKS R2 K9 L7 NOT ['Q03']
+GETUPVAL R2 U0
+MOVE R3 R0
+LOADK R4 K10 ['Q03FairCraft']
+LOADN R5 24
+CALLFB R2 3 1 [4]
+JUMPIF R2 L6
+GETUPVAL R2 U0
+MOVE R3 R0
+LOADK R4 K11 ['Q03BedroomDisplay']
+LOADN R5 24
+CALLFB R2 3 1 [5]
+L6: RETURN R2 1
+  104:  if r.activityId=="Q06" then
+L7: GETTABLEKS R2 R1 K0 ['activityId']
+JUMPXEQKS R2 K12 L13 NOT ['Q06']
+  105:   local slot=r.payload and r.payload.slotId
+GETTABLEKS R2 R1 K13 ['payload']
+JUMPIFNOT R2 L8
+GETTABLEKS R2 R1 K13 ['payload']
+GETTABLEKS R2 R2 K14 ['slotId']
+  106:   if slot=="sauce" then return near(p,"Q06AladdinsCounter",24) end
+L8: JUMPXEQKS R2 K15 L9 NOT ['sauce']
+GETUPVAL R3 U0
+MOVE R4 R0
+LOADK R5 K16 ['Q06AladdinsCounter']
+LOADN R6 24
+CALL R3 3 -1
+RETURN R3 -1
+  107:   if slot=="settingA" or slot=="settingB" then return near(p,"Q06Serving",24) end
+L9: JUMPXEQKS R2 K17 L10 ['settingA']
+JUMPXEQKS R2 K18 L11 NOT ['settingB']
+L10: GETUPVAL R3 U0
+MOVE R4 R0
+LOADK R5 K19 ['Q06Serving']
+LOADN R6 24
+CALL R3 3 -1
+RETURN R3 -1
+  108:   if not slot then return near(p,"Q06FOBCounter",24) or near(p,"Q06AladdinsCounter",24) or near(p,"Q06Serving",24) end
+L11: JUMPIF R2 L13
+GETUPVAL R3 U0
+MOVE R4 R0
+LOADK R5 K20 ['Q06FOBCounter']
+LOADN R6 24
+CALLFB R3 3 1 [6]
+JUMPIF R3 L12
+GETUPVAL R3 U0
+MOVE R4 R0
+LOADK R5 K16 ['Q06AladdinsCounter']
+LOADN R6 24
+CALLFB R3 3 1 [7]
+JUMPIF R3 L12
+GETUPVAL R3 U0
+MOVE R4 R0
+LOADK R5 K19 ['Q06Serving']
+LOADN R6 24
+CALLFB R3 3 1 [8]
+L12: RETURN R3 1
+  110:  return near(p,station[r.activityId],24)
+L13: GETUPVAL R2 U0
+MOVE R3 R0
+GETUPVAL R5 U1
+GETTABLEKS R6 R1 K0 ['activityId']
+GETTABLE R4 R5 R6
+LOADN R5 24
+CALL R2 3 -1
+RETURN R2 -1
+
+Function 15 (queueInside):
+  113:  local _,hrp=character(p); local floor=mvp:FindFirstChild("QueueFloor",true) or mvp:FindFirstChild("QueueFloor")
+GETUPVAL R1 U0
+MOVE R2 R0
+CALLFB R1 1 2 [0]
+GETUPVAL R3 U1
+LOADK R5 K0 ['QueueFloor']
+LOADB R6 1
+NAMECALL R3 R3 K1 ['FindFirstChild']
+CALLFB R3 3 1 [1]
+JUMPIF R3 L0
+GETUPVAL R3 U1
+LOADK R5 K0 ['QueueFloor']
+NAMECALL R3 R3 K1 ['FindFirstChild']
+CALLFB R3 2 1 [2]
+  114:  if not hrp or not floor or not floor:IsA("BasePart") then return false end
+L0: JUMPIFNOT R2 L1
+JUMPIFNOT R3 L1
+LOADK R6 K2 ['BasePart']
+NAMECALL R4 R3 K3 ['IsA']
+CALLFB R4 2 1 [3]
+JUMPIF R4 L2
+L1: LOADB R4 0
+RETURN R4 1
+  115:  local localPos=floor.CFrame:PointToObjectSpace(hrp.Position); local half=floor.Size*.5
+L2: GETTABLEKS R4 R3 K4 ['CFrame']
+GETTABLEKS R6 R2 K5 ['Position']
+NAMECALL R4 R4 K6 ['PointToObjectSpace']
+CALLFB R4 2 1 [4]
+GETTABLEKS R6 R3 K8 ['Size']
+MULK R5 R6 K7 [0.5]
+  116:  return math.abs(localPos.X)<=half.X and math.abs(localPos.Z)<=half.Z and localPos.Y>=-4 and localPos.Y<=8
+LOADB R6 0
+REMARK builtin math.abs/1
+GETTABLEKS R8 R4 K9 ['X']
+FASTCALL1 2 R8 L3
+GETIMPORT R7 12 [math.abs]
+CALL R7 1 1
+L3: GETTABLEKS R8 R5 K9 ['X']
+JUMPIFNOTLE R7 R8 L6
+LOADB R6 0
+REMARK builtin math.abs/1
+GETTABLEKS R8 R4 K13 ['Z']
+FASTCALL1 2 R8 L4
+GETIMPORT R7 12 [math.abs]
+CALL R7 1 1
+L4: GETTABLEKS R8 R5 K13 ['Z']
+JUMPIFNOTLE R7 R8 L6
+LOADB R6 0
+GETTABLEKS R7 R4 K14 ['Y']
+LOADN R8 -4
+JUMPIFNOTLE R8 R7 L6
+GETTABLEKS R7 R4 K14 ['Y']
+LOADN R8 8
+JUMPIFLE R7 R8 L5
+LOADB R6 0 +1
+L5: LOADB R6 1
+L6: RETURN R6 1
+
+Function 16 (updateQueueSign):
+  119:  local sign=mvp:FindFirstChild("QueueSign",true); if not sign then return end
+GETUPVAL R1 U0
+LOADK R3 K0 ['QueueSign']
+LOADB R4 1
+NAMECALL R1 R1 K1 ['FindFirstChild']
+CALLFB R1 3 1 [0]
+JUMPIF R1 L0
+RETURN R0 0
+  120:  local gui=sign:FindFirstChildWhichIsA("SurfaceGui",true) or Instance.new("SurfaceGui"); gui.Name="QueueSignSurface"; gui.Parent=sign
+L0: LOADK R4 K2 ['SurfaceGui']
+LOADB R5 1
+NAMECALL R2 R1 K3 ['FindFirstChildWhichIsA']
+CALLFB R2 3 1 [1]
+JUMPIF R2 L1
+GETIMPORT R2 6 [Instance.new]
+LOADK R3 K2 ['SurfaceGui']
+CALLFB R2 1 1 [2]
+L1: LOADK R3 K7 ['QueueSignSurface']
+SETTABLEKS R3 R2 K8 ['Name']
+SETTABLEKS R1 R2 K9 ['Parent']
+  121:  local label=gui:FindFirstChild("QueueText") or Instance.new("TextLabel"); label.Name="QueueText"; label.Size=UDim2.fromScale(1,1); label.BackgroundTransparency=1; label.TextColor3=Color3.fromRGB(38,56,46); label.TextScaled=true; label.Parent=gui
+LOADK R5 K10 ['QueueText']
+NAMECALL R3 R2 K1 ['FindFirstChild']
+CALLFB R3 2 1 [3]
+JUMPIF R3 L2
+GETIMPORT R3 6 [Instance.new]
+LOADK R4 K11 ['TextLabel']
+CALLFB R3 1 1 [4]
+L2: LOADK R4 K10 ['QueueText']
+SETTABLEKS R4 R3 K8 ['Name']
+GETIMPORT R4 14 [UDim2.fromScale]
+LOADN R5 1
+LOADN R6 1
+CALLFB R4 2 1 [5]
+SETTABLEKS R4 R3 K15 ['Size']
+LOADN R4 1
+SETTABLEKS R4 R3 K16 ['BackgroundTransparency']
+GETIMPORT R4 19 [Color3.fromRGB]
+LOADN R5 38
+LOADN R6 56
+LOADN R7 46
+CALLFB R4 3 1 [6]
+SETTABLEKS R4 R3 K20 ['TextColor3']
+LOADB R4 1
+SETTABLEKS R4 R3 K21 ['TextScaled']
+SETTABLEKS R2 R3 K9 ['Parent']
+  122:  label.Text=string.format("Birthday group  %d/10\n%s",q.count,q.remaining and ("Shared wait: "..math.ceil(q.remaining).."s") or "Step inside to join")
+GETIMPORT R4 24 [string.format]
+LOADK R5 K25 ['Birthday group  %d/10\x0A%s']
+GETTABLEKS R6 R0 K26 ['count']
+GETTABLEKS R8 R0 K27 ['remaining']
+JUMPIFNOT R8 L4
+LOADK R8 K28 ['Shared wait: ']
+REMARK builtin math.ceil/1
+GETTABLEKS R10 R0 K27 ['remaining']
+FASTCALL1 7 R10 L3
+GETIMPORT R9 31 [math.ceil]
+CALL R9 1 1
+L3: LOADK R10 K32 ['s']
+CONCAT R7 R8 R10
+JUMPIF R7 L5
+L4: LOADK R7 K33 ['Step inside to join']
+L5: CALLFB R4 3 1 [7]
+SETTABLEKS R4 R3 K34 ['Text']
+  123: end
+RETURN R0 0
+
+Function 17 (canonical):
+REMARK builtin type/1
+  125:  if type(r.sessionId)~="string" or r.sessionId~=sessionId then return nil,"BadSessionId" end
+GETTABLEKS R3 R1 K0 ['sessionId']
+FASTCALL1 40 R3 L0
+GETIMPORT R2 2 [type]
+CALL R2 1 1
+L0: JUMPXEQKS R2 K3 L1 NOT ['string']
+GETTABLEKS R2 R1 K0 ['sessionId']
+GETUPVAL R3 U0
+JUMPIFEQ R2 R3 L2
+L1: LOADNIL R2
+LOADK R3 K4 ['BadSessionId']
+RETURN R2 2
+REMARK builtin type/1
+  126:  if type(r.activityId)~="string" or not activities[r.activityId] then return nil,"ActivityUnavailable" end
+L2: GETTABLEKS R3 R1 K5 ['activityId']
+FASTCALL1 40 R3 L3
+GETIMPORT R2 2 [type]
+CALL R2 1 1
+L3: JUMPXEQKS R2 K3 L4 NOT ['string']
+GETUPVAL R3 U1
+GETTABLEKS R4 R1 K5 ['activityId']
+GETTABLE R2 R3 R4
+JUMPIF R2 L5
+L4: LOADNIL R2
+LOADK R3 K6 ['ActivityUnavailable']
+RETURN R2 2
+REMARK builtin type/1
+  127:  if type(r.actionId)~="string" or r.actionId=="" then return nil,"BadActionId" end; r.actorUserId=uid(p); return r
+L5: GETTABLEKS R3 R1 K7 ['actionId']
+FASTCALL1 40 R3 L6
+GETIMPORT R2 2 [type]
+CALL R2 1 1
+L6: JUMPXEQKS R2 K3 L7 NOT ['string']
+GETTABLEKS R2 R1 K7 ['actionId']
+JUMPXEQKS R2 K8 L8 NOT ['']
+L7: LOADNIL R2
+LOADK R3 K9 ['BadActionId']
+RETURN R2 2
+L8: GETUPVAL R2 U2
+MOVE R3 R0
+CALLFB R2 1 1 [0]
+SETTABLEKS R2 R1 K10 ['actorUserId']
+RETURN R1 1
+
+Function 18 (release):
+  130:  local a=activityId and activities[activityId]; if a and a.ReleaseActor then pcall(a.ReleaseActor,a,uid(p),roundId) end
+MOVE R3 R1
+JUMPIFNOT R3 L0
+GETUPVAL R4 U0
+GETTABLE R3 R4 R1
+L0: JUMPIFNOT R3 L1
+GETTABLEKS R4 R3 K0 ['ReleaseActor']
+JUMPIFNOT R4 L1
+GETTABLEKS R5 R3 K0 ['ReleaseActor']
+MOVE R6 R3
+GETUPVAL R7 U1
+MOVE R8 R0
+CALLFB R7 1 1 [0]
+MOVE R8 R2
+FASTPCALL pcall L1
+GETIMPORT R4 2 [pcall]
+CALL R4 4 0
+  131: end
+L1: RETURN R0 0
+
+Function 19 (openRound):
+  133:  if not nearActivity(p,r) then return false,"TooFar" end
+GETUPVAL R2 U0
+MOVE R3 R0
+MOVE R4 R1
+CALLFB R2 2 1 [0]
+JUMPIF R2 L0
+LOADB R2 0
+LOADK R3 K0 ['TooFar']
+RETURN R2 2
+  134:  local a=activities[r.activityId]; if currentRounds[r.activityId] and not r.replay then r.roundId=currentRounds[r.activityId]; return true,"RoundExisting",{view=view(a,p)} end
+L0: GETUPVAL R3 U1
+GETTABLEKS R4 R1 K1 ['activityId']
+GETTABLE R2 R3 R4
+GETUPVAL R4 U2
+GETTABLEKS R5 R1 K1 ['activityId']
+GETTABLE R3 R4 R5
+JUMPIFNOT R3 L1
+GETTABLEKS R3 R1 K2 ['replay']
+JUMPIF R3 L1
+GETUPVAL R4 U2
+GETTABLEKS R5 R1 K1 ['activityId']
+GETTABLE R3 R4 R5
+SETTABLEKS R3 R1 K3 ['roundId']
+LOADB R3 1
+LOADK R4 K4 ['RoundExisting']
+REMARK allocation: table template 1
+DUPTABLE R5 6
+GETUPVAL R6 U3
+MOVE R7 R2
+MOVE R8 R0
+CALLFB R6 2 1 [1]
+SETTABLEKS R6 R5 K5 ['view']
+RETURN R3 3
+  135:  roundSerial+=1; r.roundId="round:"..r.activityId..":"..roundSerial
+L1: GETUPVAL R3 U4
+ADDK R3 R3 K7 [1]
+SETUPVAL R3 U4
+LOADK R4 K8 ['round:']
+GETTABLEKS R5 R1 K1 ['activityId']
+LOADK R6 K9 [':']
+GETUPVAL R7 U4
+CONCAT R3 R4 R7
+SETTABLEKS R3 R1 K3 ['roundId']
+  136:  if r.activityId=="Q06" then r.stepId="base" end
+GETTABLEKS R3 R1 K1 ['activityId']
+JUMPXEQKS R3 K10 L2 NOT ['Q06']
+LOADK R3 K11 ['base']
+SETTABLEKS R3 R1 K12 ['stepId']
+  137:  local ok,result=pcall(a.CreateRound,a,r); if not ok then return false,"RoundRejected",{errorText=tostring(result)} end
+L2: GETTABLEKS R4 R2 K13 ['CreateRound']
+MOVE R5 R2
+MOVE R6 R1
+FASTPCALL pcall L3
+GETIMPORT R3 15 [pcall]
+CALL R3 3 2
+L3: JUMPIF R3 L5
+LOADB R5 0
+LOADK R6 K16 ['RoundRejected']
+REMARK allocation: table template 1
+DUPTABLE R7 18
+REMARK builtin tostring/1
+FASTCALL1 63 R4 L4
+MOVE R9 R4
+GETIMPORT R8 20 [tostring]
+CALL R8 1 1
+L4: SETTABLEKS R8 R7 K17 ['errorText']
+RETURN R5 3
+  138:  currentRounds[r.activityId]=r.roundId; return true,"RoundCreated",{round=result,view=view(a,p)}
+L5: GETUPVAL R5 U2
+GETTABLEKS R6 R1 K1 ['activityId']
+GETTABLEKS R7 R1 K3 ['roundId']
+SETTABLE R7 R5 R6
+LOADB R5 1
+LOADK R6 K21 ['RoundCreated']
+REMARK allocation: table template 2
+DUPTABLE R7 23
+SETTABLEKS R4 R7 K22 ['round']
+GETUPVAL R8 U3
+MOVE R9 R2
+MOVE R10 R0
+CALLFB R8 2 1 [2]
+SETTABLEKS R8 R7 K5 ['view']
+RETURN R5 3
+
+Function 20 (apply):
+  141:  local req,err=canonical(p,r); if not req then return false,err end
+GETUPVAL R2 U0
+MOVE R3 R0
+MOVE R4 R1
+CALLFB R2 2 2 [0]
+JUMPIF R2 L0
+LOADB R4 0
+MOVE R5 R3
+RETURN R4 2
+REMARK builtin type/1
+  142:  if type(r.roundId)~="string" or type(r.stepId)~="string" then return false,"BadAction" end
+L0: GETTABLEKS R5 R1 K0 ['roundId']
+FASTCALL1 40 R5 L1
+GETIMPORT R4 2 [type]
+CALL R4 1 1
+L1: JUMPXEQKS R4 K3 L3 NOT ['string']
+REMARK builtin type/1
+GETTABLEKS R5 R1 K4 ['stepId']
+FASTCALL1 40 R5 L2
+GETIMPORT R4 2 [type]
+CALL R4 1 1
+L2: JUMPXEQKS R4 K3 L4 ['string']
+L3: LOADB R4 0
+LOADK R5 K5 ['BadAction']
+RETURN R4 2
+  143:  if not nearActivity(p,r) then return false,"TooFar" end
+L4: GETUPVAL R4 U1
+MOVE R5 R0
+MOVE R6 R1
+CALLFB R4 2 1 [1]
+JUMPIF R4 L5
+LOADB R4 0
+LOADK R5 K6 ['TooFar']
+RETURN R4 2
+  144:  local ok,result=pcall(activities[r.activityId].Apply,activities[r.activityId],req)
+L5: GETUPVAL R6 U2
+GETTABLEKS R7 R1 K7 ['activityId']
+GETTABLE R5 R6 R7
+GETTABLEKS R5 R5 K8 ['Apply']
+GETUPVAL R7 U2
+GETTABLEKS R8 R1 K7 ['activityId']
+GETTABLE R6 R7 R8
+MOVE R7 R2
+FASTPCALL pcall L6
+GETIMPORT R4 10 [pcall]
+CALL R4 3 2
+  145:  if not ok then return false,"ActionRejected",{errorText=tostring(result),view=view(activities[r.activityId],p),failedResult=result} end
+L6: JUMPIF R4 L8
+LOADB R6 0
+LOADK R7 K11 ['ActionRejected']
+REMARK allocation: table template 3
+DUPTABLE R8 15
+REMARK builtin tostring/1
+FASTCALL1 63 R5 L7
+MOVE R10 R5
+GETIMPORT R9 17 [tostring]
+CALL R9 1 1
+L7: SETTABLEKS R9 R8 K12 ['errorText']
+GETUPVAL R9 U3
+GETUPVAL R11 U2
+GETTABLEKS R12 R1 K7 ['activityId']
+GETTABLE R10 R11 R12
+MOVE R11 R0
+CALLFB R9 2 1 [2]
+SETTABLEKS R9 R8 K13 ['view']
+SETTABLEKS R5 R8 K14 ['failedResult']
+RETURN R6 3
+REMARK builtin type/1
+  146:  if type(result)~="table" then return false,"ActionRejected",{errorText="Invalid activity result"} end
+L8: FASTCALL1 40 R5 L9
+MOVE R7 R5
+GETIMPORT R6 2 [type]
+CALL R6 1 1
+L9: JUMPXEQKS R6 K18 L10 ['table']
+LOADB R6 0
+LOADK R7 K11 ['ActionRejected']
+REMARK allocation: table template 1
+DUPTABLE R8 20
+RETURN R6 3
+  147:  return result.ok~=false,result.code or "Accepted",{receipt=result.receipt,view=result.view or view(activities[r.activityId],p),result=result}
+L10: GETTABLEKS R7 R5 K21 ['ok']
+JUMPXEQKB R7 0 L11 NOT
+LOADB R6 0 +1
+L11: LOADB R6 1
+L12: GETTABLEKS R8 R5 K23 ['code']
+ORK R7 R8 K22 ['Accepted']
+REMARK allocation: table template 3
+DUPTABLE R8 26
+GETTABLEKS R9 R5 K24 ['receipt']
+SETTABLEKS R9 R8 K24 ['receipt']
+GETTABLEKS R9 R5 K13 ['view']
+JUMPIF R9 L13
+GETUPVAL R9 U3
+GETUPVAL R11 U2
+GETTABLEKS R12 R1 K7 ['activityId']
+GETTABLE R10 R11 R12
+MOVE R11 R0
+CALLFB R9 2 1 [3]
+L13: SETTABLEKS R9 R8 K13 ['view']
+SETTABLEKS R5 R8 K25 ['result']
+RETURN R6 3
+
+Function 21 (??):
+REMARK builtin type/1
+  150:  if type(r)~="table" or type(r.kind)~="string" then return send(p,r,false,"BadPayload") end
+FASTCALL1 40 R1 L0
+MOVE R3 R1
+GETIMPORT R2 1 [type]
+CALL R2 1 1
+L0: JUMPXEQKS R2 K2 L2 NOT ['table']
+REMARK builtin type/1
+GETTABLEKS R3 R1 K3 ['kind']
+FASTCALL1 40 R3 L1
+GETIMPORT R2 1 [type]
+CALL R2 1 1
+L1: JUMPXEQKS R2 K4 L3 ['string']
+L2: GETUPVAL R2 U0
+MOVE R3 R0
+MOVE R4 R1
+LOADB R5 0
+LOADK R6 K5 ['BadPayload']
+CALL R2 4 -1
+RETURN R2 -1
+  151:  if r.actorUserId~=nil or r.player~=nil then return send(p,r,false,"ClientAuthorityRejected") end
+L3: GETTABLEKS R2 R1 K6 ['actorUserId']
+JUMPXEQKNIL R2 L4 NOT
+GETTABLEKS R2 R1 K7 ['player']
+JUMPXEQKNIL R2 L5
+L4: GETUPVAL R2 U0
+MOVE R3 R0
+MOVE R4 R1
+LOADB R5 0
+LOADK R6 K8 ['ClientAuthorityRejected']
+CALL R2 4 -1
+RETURN R2 -1
+  152:  if r.kind=="ActivityAction" then local ok,c,e=apply(p,r); send(p,r,ok,c,e); if ok then broadcast() end; return end
+L5: GETTABLEKS R2 R1 K3 ['kind']
+JUMPXEQKS R2 K9 L7 NOT ['ActivityAction']
+GETUPVAL R2 U1
+MOVE R3 R0
+MOVE R4 R1
+CALLFB R2 2 3 [0]
+GETUPVAL R5 U0
+MOVE R6 R0
+MOVE R7 R1
+MOVE R8 R2
+MOVE R9 R3
+MOVE R10 R4
+CALLFB R5 5 0 [1]
+JUMPIFNOT R2 L6
+GETUPVAL R5 U2
+CALLFB R5 0 0 [2]
+L6: RETURN R0 0
+  153:  if r.kind=="RequestView" then local req,err=canonical(p,r); if not req then return send(p,r,false,err) end; if req.replay and (not currentRounds[req.activityId] or not view(activities[req.activityId],p).canReplay) then return send(p,req,false,"ReplayUnavailable") end; local ok,c,e=openRound(p,req); return send(p,req,ok,c,e) end
+L7: GETTABLEKS R2 R1 K3 ['kind']
+JUMPXEQKS R2 K10 L11 NOT ['RequestView']
+GETUPVAL R2 U3
+MOVE R3 R0
+MOVE R4 R1
+CALLFB R2 2 2 [3]
+JUMPIF R2 L8
+GETUPVAL R4 U0
+MOVE R5 R0
+MOVE R6 R1
+LOADB R7 0
+MOVE R8 R3
+CALL R4 4 -1
+RETURN R4 -1
+L8: GETTABLEKS R4 R2 K11 ['replay']
+JUMPIFNOT R4 L10
+GETUPVAL R5 U4
+GETTABLEKS R6 R2 K12 ['activityId']
+GETTABLE R4 R5 R6
+JUMPIFNOT R4 L9
+GETUPVAL R4 U5
+GETUPVAL R6 U6
+GETTABLEKS R7 R2 K12 ['activityId']
+GETTABLE R5 R6 R7
+MOVE R6 R0
+CALLFB R4 2 1 [4]
+GETTABLEKS R4 R4 K13 ['canReplay']
+JUMPIF R4 L10
+L9: GETUPVAL R4 U0
+MOVE R5 R0
+MOVE R6 R2
+LOADB R7 0
+LOADK R8 K14 ['ReplayUnavailable']
+CALL R4 4 -1
+RETURN R4 -1
+L10: GETUPVAL R4 U7
+MOVE R5 R0
+MOVE R6 R2
+CALLFB R4 2 3 [5]
+GETUPVAL R7 U0
+MOVE R8 R0
+MOVE R9 R2
+MOVE R10 R4
+MOVE R11 R5
+MOVE R12 R6
+CALL R7 5 -1
+RETURN R7 -1
+  154:  if r.kind=="CloseActivity" then release(p,r.activityId,r.roundId); return send(p,r,true,"Released") end
+L11: GETTABLEKS R2 R1 K3 ['kind']
+JUMPXEQKS R2 K15 L12 NOT ['CloseActivity']
+GETUPVAL R2 U8
+MOVE R3 R0
+GETTABLEKS R4 R1 K12 ['activityId']
+GETTABLEKS R5 R1 K16 ['roundId']
+CALLFB R2 3 0 [6]
+GETUPVAL R2 U0
+MOVE R3 R0
+MOVE R4 R1
+LOADB R5 1
+LOADK R6 K17 ['Released']
+CALL R2 4 -1
+RETURN R2 -1
+  155:  if r.kind=="RequestJournal" then return send(p,r,true,"Journal",{journal=snapshot()}) end
+L12: GETTABLEKS R2 R1 K3 ['kind']
+JUMPXEQKS R2 K18 L13 NOT ['RequestJournal']
+GETUPVAL R2 U0
+MOVE R3 R0
+MOVE R4 R1
+LOADB R5 1
+LOADK R6 K19 ['Journal']
+REMARK allocation: table template 1
+DUPTABLE R7 21
+GETUPVAL R8 U9
+CALLFB R8 0 1 [7]
+SETTABLEKS R8 R7 K20 ['journal']
+CALL R2 5 -1
+RETURN R2 -1
+  156:  if r.kind=="RequestSnapshot" then return send(p,r,true,"Snapshot") end
+L13: GETTABLEKS R2 R1 K3 ['kind']
+JUMPXEQKS R2 K22 L14 NOT ['RequestSnapshot']
+GETUPVAL R2 U0
+MOVE R3 R0
+MOVE R4 R1
+LOADB R5 1
+LOADK R6 K23 ['Snapshot']
+CALL R2 4 -1
+RETURN R2 -1
+  157:  if r.kind=="QueueJoin" then if not queueInside(p) then return send(p,r,false,"TooFar") end; local ok,c=queue:Join(uid(p),now()); send(p,r,ok,c); broadcast(); return end
+L14: GETTABLEKS R2 R1 K3 ['kind']
+JUMPXEQKS R2 K24 L16 NOT ['QueueJoin']
+GETUPVAL R2 U10
+MOVE R3 R0
+CALLFB R2 1 1 [8]
+JUMPIF R2 L15
+GETUPVAL R2 U0
+MOVE R3 R0
+MOVE R4 R1
+LOADB R5 0
+LOADK R6 K25 ['TooFar']
+CALL R2 4 -1
+RETURN R2 -1
+L15: GETUPVAL R2 U11
+GETUPVAL R4 U12
+MOVE R5 R0
+CALLFB R4 1 1 [9]
+GETUPVAL R5 U13
+CALL R5 0 -1
+NAMECALL R2 R2 K26 ['Join']
+CALL R2 -1 2
+GETUPVAL R4 U0
+MOVE R5 R0
+MOVE R6 R1
+MOVE R7 R2
+MOVE R8 R3
+CALLFB R4 4 0 [10]
+GETUPVAL R4 U2
+CALLFB R4 0 0 [11]
+RETURN R0 0
+  158:  if r.kind=="QueueLeave" then local ok,c=queue:Leave(uid(p)); send(p,r,ok,c); broadcast(); return end
+L16: GETTABLEKS R2 R1 K3 ['kind']
+JUMPXEQKS R2 K27 L17 NOT ['QueueLeave']
+GETUPVAL R2 U11
+GETUPVAL R4 U12
+MOVE R5 R0
+CALL R4 1 -1
+NAMECALL R2 R2 K28 ['Leave']
+CALL R2 -1 2
+GETUPVAL R4 U0
+MOVE R5 R0
+MOVE R6 R1
+MOVE R7 R2
+MOVE R8 R3
+CALLFB R4 4 0 [12]
+GETUPVAL R4 U2
+CALLFB R4 0 0 [13]
+RETURN R0 0
+  159:  if r.kind=="Cake" then if type(r.sessionId)~="string" or r.sessionId~=sessionId or type(r.actionId)~="string" or r.actionId=="" then return send(p,r,false,"BadCakeRequest") end; if not session:IsPresent(uid(p)) then return send(p,r,false,"NotPresent") end; if not near(p,"FinalePatio",28) then return send(p,r,false,"TooFar") end; local allowed={Invite=true,CancelInvite=true,Cut=true,Eat=true}; if not allowed[r.action] then return send(p,r,false,"UnsupportedCakeAction") end; local ok,result=pcall(cake[r.action],cake,uid(p)); send(p,r,ok,ok and (r.action.."Accepted") or "CakeRejected",{cake=cake:GetState(),result=result,errorText=ok and nil or tostring(result)}); if ok then broadcast() end; return end
+L17: GETTABLEKS R2 R1 K3 ['kind']
+JUMPXEQKS R2 K29 L31 NOT ['Cake']
+REMARK builtin type/1
+GETTABLEKS R3 R1 K30 ['sessionId']
+FASTCALL1 40 R3 L18
+GETIMPORT R2 1 [type]
+CALL R2 1 1
+L18: JUMPXEQKS R2 K4 L20 NOT ['string']
+GETTABLEKS R2 R1 K30 ['sessionId']
+GETUPVAL R3 U14
+JUMPIFNOTEQ R2 R3 L20
+REMARK builtin type/1
+GETTABLEKS R3 R1 K31 ['actionId']
+FASTCALL1 40 R3 L19
+GETIMPORT R2 1 [type]
+CALL R2 1 1
+L19: JUMPXEQKS R2 K4 L20 NOT ['string']
+GETTABLEKS R2 R1 K31 ['actionId']
+JUMPXEQKS R2 K32 L21 NOT ['']
+L20: GETUPVAL R2 U0
+MOVE R3 R0
+MOVE R4 R1
+LOADB R5 0
+LOADK R6 K33 ['BadCakeRequest']
+CALL R2 4 -1
+RETURN R2 -1
+L21: GETUPVAL R2 U15
+GETUPVAL R4 U12
+MOVE R5 R0
+CALL R4 1 -1
+NAMECALL R2 R2 K34 ['IsPresent']
+CALL R2 -1 1
+JUMPIF R2 L22
+GETUPVAL R2 U0
+MOVE R3 R0
+MOVE R4 R1
+LOADB R5 0
+LOADK R6 K35 ['NotPresent']
+CALL R2 4 -1
+RETURN R2 -1
+L22: GETUPVAL R2 U16
+MOVE R3 R0
+LOADK R4 K36 ['FinalePatio']
+LOADN R5 28
+CALLFB R2 3 1 [14]
+JUMPIF R2 L23
+GETUPVAL R2 U0
+MOVE R3 R0
+MOVE R4 R1
+LOADB R5 0
+LOADK R6 K25 ['TooFar']
+CALL R2 4 -1
+RETURN R2 -1
+REMARK allocation: table template 4
+L23: DUPTABLE R2 42
+GETTABLEKS R4 R1 K43 ['action']
+GETTABLE R3 R2 R4
+JUMPIF R3 L24
+GETUPVAL R3 U0
+MOVE R4 R0
+MOVE R5 R1
+LOADB R6 0
+LOADK R7 K44 ['UnsupportedCakeAction']
+CALL R3 4 -1
+RETURN R3 -1
+L24: GETUPVAL R5 U17
+GETTABLEKS R6 R1 K43 ['action']
+GETTABLE R4 R5 R6
+GETUPVAL R5 U17
+GETUPVAL R6 U12
+MOVE R7 R0
+CALL R6 1 -1
+FASTPCALL pcall L25
+GETIMPORT R3 46 [pcall]
+CALL R3 -1 2
+L25: GETUPVAL R5 U0
+MOVE R6 R0
+MOVE R7 R1
+MOVE R8 R3
+JUMPIFNOT R3 L26
+GETTABLEKS R10 R1 K43 ['action']
+LOADK R11 K47 ['Accepted']
+CONCAT R9 R10 R11
+JUMPIF R9 L27
+L26: LOADK R9 K48 ['CakeRejected']
+REMARK allocation: table template 3
+L27: DUPTABLE R10 52
+GETUPVAL R11 U17
+NAMECALL R11 R11 K53 ['GetState']
+CALLFB R11 1 1 [15]
+SETTABLEKS R11 R10 K49 ['cake']
+SETTABLEKS R4 R10 K50 ['result']
+JUMPIFNOT R3 L28
+REMARK builtin tostring/1
+L28: FASTCALL1 63 R4 L29
+MOVE R12 R4
+GETIMPORT R11 55 [tostring]
+CALL R11 1 1
+L29: SETTABLEKS R11 R10 K51 ['errorText']
+CALLFB R5 5 0 [16]
+JUMPIFNOT R3 L30
+GETUPVAL R5 U2
+CALLFB R5 0 0 [17]
+L30: RETURN R0 0
+  160:  send(p,r,false,"UnsupportedAction")
+L31: GETUPVAL R2 U0
+MOVE R3 R0
+MOVE R4 R1
+LOADB R5 0
+LOADK R6 K56 ['UnsupportedAction']
+CALLFB R2 4 0 [18]
+  161: end)
+RETURN R0 0
+
+Function 22 (ready):
+  168:  local function ready() local e=arrivalByUser[p.UserId]; local c=character(p); if e and c then e.ready=true; if e.transferred then c:PivotTo(e.part.CFrame+Vector3.new(0,3,0)) end; p:SetAttribute("MVPArrivalStatus",e.transferred and "Transferred" or "Ready") end end
+GETUPVAL R1 U0
+GETUPVAL R2 U1
+GETTABLEKS R2 R2 K0 ['UserId']
+GETTABLE R0 R1 R2
+GETUPVAL R1 U2
+GETUPVAL R2 U1
+CALLFB R1 1 1 [0]
+JUMPIFNOT R0 L3
+JUMPIFNOT R1 L3
+LOADB R2 1
+SETTABLEKS R2 R0 K1 ['ready']
+GETTABLEKS R2 R0 K2 ['transferred']
+JUMPIFNOT R2 L0
+GETTABLEKS R5 R0 K3 ['part']
+GETTABLEKS R5 R5 K4 ['CFrame']
+GETIMPORT R6 7 [Vector3.new]
+LOADN R7 0
+LOADN R8 3
+LOADN R9 0
+CALLFB R6 3 1 [1]
+ADD R4 R5 R6
+NAMECALL R2 R1 K8 ['PivotTo']
+CALLFB R2 2 0 [2]
+L0: GETUPVAL R2 U1
+LOADK R4 K9 ['MVPArrivalStatus']
+GETTABLEKS R6 R0 K2 ['transferred']
+JUMPIFNOT R6 L1
+LOADK R5 K10 ['Transferred']
+JUMP L2
+L1: LOADK R5 K11 ['Ready']
+L2: NAMECALL R2 R2 K12 ['SetAttribute']
+CALLFB R2 3 0 [3]
+L3: RETURN R0 0
+
+Function 23 (??):
+  169:  p.CharacterAdded:Connect(function() task.spawn(function() for _=1,20 do if character(p) then ready(); return end; task.wait(.1) end end) end)
+LOADN R2 1
+LOADN R0 20
+LOADN R1 1
+FORNPREP R0 L2
+L0: GETUPVAL R3 U0
+GETUPVAL R4 U1
+CALLFB R3 1 1 [0]
+JUMPIFNOT R3 L1
+GETUPVAL R3 U2
+CALLFB R3 0 0 [1]
+RETURN R0 0
+L1: GETIMPORT R3 2 [task.wait]
+LOADK R4 K3 [0.10000000000000001]
+CALLFB R3 1 0 [2]
+FORNLOOP R0 L0
+L2: RETURN R0 0
+
+Function 24 (??):
+  169:  p.CharacterAdded:Connect(function() task.spawn(function() for _=1,20 do if character(p) then ready(); return end; task.wait(.1) end end) end)
+GETIMPORT R0 2 [task.spawn]
+REMARK allocation: closure with 3 upvalues
+NEWCLOSURE R1 P0
+CAPTURE UPVAL U0
+CAPTURE UPVAL U1
+CAPTURE UPVAL U2
+CALLFB R0 1 0 [0]
+RETURN R0 0
+
+Function 25 (??):
+  170:  p.CharacterRemoving:Connect(function() local e=arrivalByUser[p.UserId]; if e then e.ready=false end end); ready()
+GETUPVAL R1 U0
+GETUPVAL R2 U1
+GETTABLEKS R2 R2 K0 ['UserId']
+GETTABLE R0 R1 R2
+JUMPIFNOT R0 L0
+LOADB R1 0
+SETTABLEKS R1 R0 K1 ['ready']
+L0: RETURN R0 0
+
+Function 26 (assign):
+  163:  if arrivalByUser[p.UserId] then return end; if arrivalCount>=10 then p:SetAttribute("MVPArrivalStatus","Full"); return end
+GETUPVAL R2 U0
+GETTABLEKS R3 R0 K0 ['UserId']
+GETTABLE R1 R2 R3
+JUMPIFNOT R1 L0
+RETURN R0 0
+L0: GETUPVAL R1 U1
+LOADN R2 10
+JUMPIFNOTLE R2 R1 L1
+LOADK R3 K1 ['MVPArrivalStatus']
+LOADK R4 K2 ['Full']
+NAMECALL R1 R0 K3 ['SetAttribute']
+CALLFB R1 3 0 [0]
+RETURN R0 0
+  164:  local folder=arrivalFolder; local target
+L1: GETUPVAL R1 U2
+LOADNIL R2
+  165:  if folder then for _,v in ipairs(folder:GetChildren()) do if v:IsA("BasePart") and not arrivalSlots[v] then target=v; break end end end
+JUMPIFNOT R1 L4
+GETIMPORT R3 5 [ipairs]
+NAMECALL R4 R1 K6 ['GetChildren']
+CALL R4 1 -1
+CALL R3 -1 3
+FORGPREP_INEXT R3 L3
+L2: LOADK R10 K7 ['BasePart']
+NAMECALL R8 R7 K8 ['IsA']
+CALLFB R8 2 1 [1]
+JUMPIFNOT R8 L3
+GETUPVAL R9 U3
+GETTABLE R8 R9 R7
+JUMPIF R8 L3
+MOVE R2 R7
+JUMP L4
+L3: FORGLOOP R3 L2 2 [inext]
+  166:  if not target then p:SetAttribute("MVPArrivalStatus","NotReady"); return end
+L4: JUMPIF R2 L5
+LOADK R5 K1 ['MVPArrivalStatus']
+LOADK R6 K9 ['NotReady']
+NAMECALL R3 R0 K3 ['SetAttribute']
+CALLFB R3 3 0 [2]
+RETURN R0 0
+  167:  arrivalSlots[target]=p; arrivalByUser[p.UserId]={part=target,ready=false,transferred=false}; arrivalCount += 1; p:SetAttribute("MVPArrivalSlot",target.Name); p:SetAttribute("MVPArrivalStatus","ReadyPendingCharacter")
+L5: GETUPVAL R3 U3
+SETTABLE R0 R3 R2
+GETUPVAL R3 U0
+GETTABLEKS R4 R0 K0 ['UserId']
+REMARK allocation: table template 3
+DUPTABLE R5 14
+SETTABLEKS R2 R5 K10 ['part']
+SETTABLE R5 R3 R4
+GETUPVAL R3 U1
+ADDK R3 R3 K15 [1]
+SETUPVAL R3 U1
+LOADK R5 K16 ['MVPArrivalSlot']
+GETTABLEKS R6 R2 K17 ['Name']
+NAMECALL R3 R0 K3 ['SetAttribute']
+CALLFB R3 3 0 [3]
+LOADK R5 K1 ['MVPArrivalStatus']
+LOADK R6 K18 ['ReadyPendingCharacter']
+NAMECALL R3 R0 K3 ['SetAttribute']
+CALLFB R3 3 0 [4]
+REMARK allocation: closure with 3 upvalues
+  168:  local function ready() local e=arrivalByUser[p.UserId]; local c=character(p); if e and c then e.ready=true; if e.transferred then c:PivotTo(e.part.CFrame+Vector3.new(0,3,0)) end; p:SetAttribute("MVPArrivalStatus",e.transferred and "Transferred" or "Ready") end end
+NEWCLOSURE R3 P0
+CAPTURE UPVAL U0
+CAPTURE VAL R0
+CAPTURE UPVAL U4
+  169:  p.CharacterAdded:Connect(function() task.spawn(function() for _=1,20 do if character(p) then ready(); return end; task.wait(.1) end end) end)
+GETTABLEKS R4 R0 K19 ['CharacterAdded']
+REMARK allocation: closure with 3 upvalues
+NEWCLOSURE R6 P1
+CAPTURE UPVAL U4
+CAPTURE VAL R0
+CAPTURE VAL R3
+NAMECALL R4 R4 K20 ['Connect']
+CALLFB R4 2 0 [5]
+  170:  p.CharacterRemoving:Connect(function() local e=arrivalByUser[p.UserId]; if e then e.ready=false end end); ready()
+GETTABLEKS R4 R0 K21 ['CharacterRemoving']
+REMARK allocation: closure with 2 upvalues
+NEWCLOSURE R6 P2
+CAPTURE UPVAL U0
+CAPTURE VAL R0
+NAMECALL R4 R4 K20 ['Connect']
+CALLFB R4 2 0 [6]
+MOVE R4 R3
+CALLFB R4 0 0 [7]
+  171: end
+RETURN R0 0
+
+Function 27 (??):
+  172: Players.PlayerAdded:Connect(function(p) session:SetPresence(p.UserId,true); p:SetAttribute("MVPSessionId",sessionId); assign(p); send(p,{kind="RequestSnapshot"},true,"Snapshot") end)
+GETUPVAL R1 U0
+GETTABLEKS R3 R0 K0 ['UserId']
+LOADB R4 1
+NAMECALL R1 R1 K1 ['SetPresence']
+CALLFB R1 3 0 [0]
+LOADK R3 K2 ['MVPSessionId']
+GETUPVAL R4 U1
+NAMECALL R1 R0 K3 ['SetAttribute']
+CALLFB R1 3 0 [1]
+GETUPVAL R1 U2
+MOVE R2 R0
+CALLFB R1 1 0 [2]
+GETUPVAL R1 U3
+MOVE R2 R0
+REMARK allocation: table template 1
+DUPTABLE R3 6
+LOADB R4 1
+LOADK R5 K7 ['Snapshot']
+CALLFB R1 4 0 [3]
+RETURN R0 0
+
+Function 28 (??):
+  173: Players.PlayerRemoving:Connect(function(p) session:SetPresence(p.UserId,false); queue:Leave(p.UserId); local e=arrivalByUser[p.UserId]; if e then arrivalSlots[e.part]=nil; arrivalByUser[p.UserId]=nil; arrivalCount -= 1 end; for _,a in pairs(activities) do if a.ReleaseActor then pcall(a.ReleaseActor,a,p.UserId) end end; broadcast() end)
+GETUPVAL R1 U0
+GETTABLEKS R3 R0 K0 ['UserId']
+LOADB R4 0
+NAMECALL R1 R1 K1 ['SetPresence']
+CALLFB R1 3 0 [0]
+GETUPVAL R1 U1
+GETTABLEKS R3 R0 K0 ['UserId']
+NAMECALL R1 R1 K2 ['Leave']
+CALLFB R1 2 0 [1]
+GETUPVAL R2 U2
+GETTABLEKS R3 R0 K0 ['UserId']
+GETTABLE R1 R2 R3
+JUMPIFNOT R1 L0
+GETUPVAL R2 U3
+GETTABLEKS R3 R1 K3 ['part']
+LOADNIL R4
+SETTABLE R4 R2 R3
+GETUPVAL R2 U2
+GETTABLEKS R3 R0 K0 ['UserId']
+LOADNIL R4
+SETTABLE R4 R2 R3
+GETUPVAL R2 U4
+SUBK R2 R2 K4 [1]
+SETUPVAL R2 U4
+L0: GETIMPORT R2 6 [pairs]
+GETUPVAL R3 U5
+CALLFB R2 1 3 [2]
+FORGPREP_NEXT R2 L2
+L1: GETTABLEKS R7 R6 K7 ['ReleaseActor']
+JUMPIFNOT R7 L2
+GETTABLEKS R8 R6 K7 ['ReleaseActor']
+MOVE R9 R6
+GETTABLEKS R10 R0 K0 ['UserId']
+FASTPCALL pcall L2
+GETIMPORT R7 9 [pcall]
+CALL R7 3 0
+L2: FORGLOOP R2 L1 2
+GETUPVAL R2 U6
+CALLFB R2 0 0 [3]
+RETURN R0 0
+
+Function 29 (??):
+  175:  if now()>=queueScanAt then queueScanAt=now()+.2; for _,p in ipairs(Players:GetPlayers()) do local e=arrivalByUser[p.UserId]; if not (e and e.transferred) then if queueInside(p) then queue:Join(p.UserId,now()) elseif queue.state=="Open" or queue.state=="Shortened" then queue:Leave(p.UserId) end end end end
+GETUPVAL R0 U0
+CALLFB R0 0 1 [0]
+GETUPVAL R1 U1
+JUMPIFNOTLE R1 R0 L5
+GETUPVAL R1 U0
+CALLFB R1 0 1 [1]
+ADDK R0 R1 K0 [0.20000000000000001]
+SETUPVAL R0 U1
+GETIMPORT R0 2 [ipairs]
+GETUPVAL R1 U2
+NAMECALL R1 R1 K3 ['GetPlayers']
+CALL R1 1 -1
+CALL R0 -1 3
+FORGPREP_INEXT R0 L4
+L0: GETUPVAL R6 U3
+GETTABLEKS R7 R4 K4 ['UserId']
+GETTABLE R5 R6 R7
+JUMPIFNOT R5 L1
+GETTABLEKS R6 R5 K5 ['transferred']
+JUMPIF R6 L4
+L1: GETUPVAL R6 U4
+MOVE R7 R4
+CALLFB R6 1 1 [2]
+JUMPIFNOT R6 L2
+GETUPVAL R6 U5
+GETTABLEKS R8 R4 K4 ['UserId']
+GETUPVAL R9 U0
+CALL R9 0 -1
+NAMECALL R6 R6 K6 ['Join']
+CALL R6 -1 0
+JUMP L4
+L2: GETUPVAL R6 U5
+GETTABLEKS R6 R6 K7 ['state']
+JUMPXEQKS R6 K8 L3 ['Open']
+GETUPVAL R6 U5
+GETTABLEKS R6 R6 K7 ['state']
+JUMPXEQKS R6 K9 L4 NOT ['Shortened']
+L3: GETUPVAL R6 U5
+GETTABLEKS R8 R4 K4 ['UserId']
+NAMECALL R6 R6 K10 ['Leave']
+CALLFB R6 2 0 [3]
+L4: FORGLOOP R0 L0 2 [inext]
+  176:  local q=queue:Snapshot(); local key=string.format("%s:%d:%d:%s",q.state,q.count,math.floor(q.remaining or -1),table.concat(q.members,",")); if key~=queueBroadcastKey then queueBroadcastKey=key; updateQueueSign(q); broadcast() end
+L5: GETUPVAL R0 U5
+NAMECALL R0 R0 K11 ['Snapshot']
+CALLFB R0 1 1 [4]
+GETIMPORT R1 14 [string.format]
+LOADK R2 K15 ['%s:%d:%d:%s']
+GETTABLEKS R3 R0 K7 ['state']
+GETTABLEKS R4 R0 K16 ['count']
+REMARK builtin math.floor/1
+GETTABLEKS R7 R0 K18 ['remaining']
+ORK R6 R7 K17 [-1]
+FASTCALL1 12 R6 L6
+GETIMPORT R5 21 [math.floor]
+CALL R5 1 1
+L6: GETIMPORT R6 24 [table.concat]
+GETTABLEKS R7 R0 K25 ['members']
+LOADK R8 K26 [',']
+CALL R6 2 -1
+CALL R1 -1 1
+GETUPVAL R2 U6
+JUMPIFEQ R1 R2 L7
+SETUPVAL R1 U6
+GETUPVAL R2 U7
+MOVE R3 R0
+CALLFB R2 1 0 [5]
+GETUPVAL R2 U8
+CALLFB R2 0 0 [6]
+  177:  local expired,_,roster=queue:Tick(now()); if expired then transferQueue(roster) end
+L7: GETUPVAL R2 U5
+GETUPVAL R4 U0
+CALL R4 0 -1
+NAMECALL R2 R2 K27 ['Tick']
+CALL R2 -1 3
+JUMPIFNOT R2 L8
+GETUPVAL R5 U9
+MOVE R6 R4
+CALLFB R5 1 0 [7]
+  178: end)
+L8: RETURN R0 0
+
+Function 30 (??):
+    1: local Players = game:GetService("Players")
+GETIMPORT R0 1 [game]
+LOADK R2 K2 ['Players']
+NAMECALL R0 R0 K3 ['GetService']
+CALL R0 2 1
+    2: local ReplicatedStorage = game:GetService("ReplicatedStorage")
+GETIMPORT R1 1 [game]
+LOADK R3 K4 ['ReplicatedStorage']
+NAMECALL R1 R1 K3 ['GetService']
+CALL R1 2 1
+    3: local RunService = game:GetService("RunService")
+GETIMPORT R2 1 [game]
+LOADK R4 K5 ['RunService']
+NAMECALL R2 R2 K3 ['GetService']
+CALL R2 2 1
+    4: local root = workspace:WaitForChild("CozyWorld_Draft01")
+GETIMPORT R3 7 [workspace]
+LOADK R5 K8 ['CozyWorld_Draft01']
+NAMECALL R3 R3 K9 ['WaitForChild']
+CALL R3 2 1
+    5: local mvp = root:WaitForChild("MVP")
+LOADK R6 K10 ['MVP']
+NAMECALL R4 R3 K9 ['WaitForChild']
+CALL R4 2 1
+    6: local action = ReplicatedStorage:WaitForChild("PhuongMVP"):WaitForChild("Action")
+LOADK R7 K11 ['PhuongMVP']
+NAMECALL R5 R1 K9 ['WaitForChild']
+CALL R5 2 1
+LOADK R7 K12 ['Action']
+NAMECALL R5 R5 K9 ['WaitForChild']
+CALL R5 2 1
+    7: local Anchors = require(script.Parent.Parent.shared.Anchors)
+GETIMPORT R6 14 [require]
+GETIMPORT R7 17 [script.Parent.Parent]
+GETTABLEKS R7 R7 K18 ['shared']
+GETTABLEKS R7 R7 K19 ['Anchors']
+CALL R6 1 1
+    8: local Config = require(script.Parent.Parent.shared.Config)
+GETIMPORT R7 14 [require]
+GETIMPORT R8 17 [script.Parent.Parent]
+GETTABLEKS R8 R8 K18 ['shared']
+GETTABLEKS R8 R8 K20 ['Config']
+CALL R7 1 1
+    9: local SessionService = require(script.Parent.SessionService)
+GETIMPORT R8 14 [require]
+GETIMPORT R9 22 [script.Parent.SessionService]
+CALL R8 1 1
+   10: local QueueService = require(script.Parent.QueueService)
+GETIMPORT R9 14 [require]
+GETIMPORT R10 24 [script.Parent.QueueService]
+CALL R9 1 1
+   11: local CakeService = require(script.Parent.CakeService)
+GETIMPORT R10 14 [require]
+GETIMPORT R11 26 [script.Parent.CakeService]
+CALL R10 1 1
+   12: local TeleportAdapter = require(script.Parent.TeleportAdapter)
+GETIMPORT R11 14 [require]
+GETIMPORT R12 28 [script.Parent.TeleportAdapter]
+CALL R11 1 1
+   13: local LocalPartyTransferAdapter = require(script.Parent.LocalPartyTransferAdapter)
+GETIMPORT R12 14 [require]
+GETIMPORT R13 30 [script.Parent.LocalPartyTransferAdapter]
+CALL R12 1 1
+   15: local now = os.clock
+GETIMPORT R13 33 [os.clock]
+   16: local sessionId = "MVP-" .. tostring(math.floor(workspace:GetServerTimeNow()))
+LOADK R15 K34 ['MVP-']
+REMARK builtin tostring/1+
+REMARK builtin math.floor/1+
+GETIMPORT R18 7 [workspace]
+NAMECALL R18 R18 K35 ['GetServerTimeNow']
+CALL R18 1 -1
+FASTCALL 12 L0
+GETIMPORT R17 38 [math.floor]
+CALL R17 -1 -1
+L0: FASTCALL 63 L1
+GETIMPORT R16 40 [tostring]
+CALL R16 -1 1
+L1: CONCAT R14 R15 R16
+   17: local session = SessionService.new({sessionId = sessionId})
+GETTABLEKS R15 R8 K41 ['new']
+REMARK allocation: table template 1
+DUPTABLE R16 43
+SETTABLEKS R14 R16 K42 ['sessionId']
+CALL R15 1 1
+   18: local queue = QueueService.new({clock = now, capacity = 10})
+GETTABLEKS R16 R9 K41 ['new']
+REMARK allocation: table template 2
+DUPTABLE R17 46
+SETTABLEKS R13 R17 K32 ['clock']
+CALL R16 1 1
+   19: local cake = CakeService.new(session)
+GETTABLEKS R17 R10 K41 ['new']
+MOVE R18 R15
+CALL R17 1 1
+   20: local anchors, missingAnchors = Anchors.Resolve(mvp)
+GETTABLEKS R18 R6 K47 ['Resolve']
+MOVE R19 R4
+CALL R18 1 2
+   21: local arrivalFolder = mvp:WaitForChild("Anchors"):WaitForChild("BedroomArrivalSlots")
+LOADK R22 K19 ['Anchors']
+NAMECALL R20 R4 K9 ['WaitForChild']
+CALL R20 2 1
+LOADK R22 K48 ['BedroomArrivalSlots']
+NAMECALL R20 R20 K9 ['WaitForChild']
+CALL R20 2 1
+REMARK allocation: table hash 0
+   22: local activities, activityErrors = {}, {}
+NEWTABLE R21 0 0
+REMARK allocation: table hash 0
+NEWTABLE R22 0 0
+REMARK allocation: table hash 0
+   23: local arrivalSlots, arrivalByUser, currentRounds = {}, {}, {}
+NEWTABLE R23 0 0
+REMARK allocation: table hash 0
+NEWTABLE R24 0 0
+REMARK allocation: table hash 0
+NEWTABLE R25 0 0
+   24: local arrivalCount = 0
+LOADN R26 0
+   25: local roundSerial = 0
+LOADN R27 0
+   26: local queueBroadcastKey = ""
+LOADK R28 K49 ['']
+   27: local queueScanAt = 0
+LOADN R29 0
+   28: local function uid(p) return p and p.UserId end
+DUPCLOSURE R30 K50 ['uid']
+   29: local function anchor(name)
+DUPCLOSURE R31 K51 ['anchor']
+CAPTURE VAL R18
+   32: local function character(p)
+DUPCLOSURE R32 K52 ['character']
+   36: local function near(p, name, radius)
+DUPCLOSURE R33 K53 ['near']
+CAPTURE VAL R32
+CAPTURE VAL R31
+   39: local function place(p, name)
+DUPCLOSURE R34 K54 ['place']
+CAPTURE VAL R32
+CAPTURE VAL R31
+   42: local function snapshot()
+DUPCLOSURE R35 K55 ['snapshot']
+CAPTURE VAL R15
+CAPTURE VAL R16
+CAPTURE VAL R17
+CAPTURE VAL R24
+   48: local function send(p, request, ok, code, extra)
+DUPCLOSURE R36 K56 ['send']
+CAPTURE VAL R14
+CAPTURE VAL R30
+CAPTURE VAL R35
+CAPTURE VAL R5
+   53: local function broadcast()
+DUPCLOSURE R37 K57 ['broadcast']
+CAPTURE VAL R0
+CAPTURE VAL R36
+   56: local function view(a,p)
+DUPCLOSURE R38 K58 ['view']
+CAPTURE VAL R30
+   60: local function construct(name,module,context)
+DUPCLOSURE R39 K59 ['construct']
+CAPTURE VAL R22
+CAPTURE VAL R21
+REMARK allocation: table template 7
+   65: local promptLabels={Q01="Make the bed",Q02="Visit Jasper",Q03="Craft a keepsake",Q04="Read together",Q05="Make a Labubu wish",Q06="Share a food memory",Cake="Birthday cake"}
+DUPTABLE R40 74
+REMARK allocation: table template 7
+   66: local promptObjects={Q01="Everything Tucked In",Q02="Jasper's Favorite Things",Q03="A Tiny World of Her Own",Q04="One More Chapter",Q05="A Labubu Wish",Q06="Something Delicious",Cake="Birthday cake"}
+DUPTABLE R41 81
+   67: local function installPrompt(id, instance)
+DUPCLOSURE R42 K82 ['installPrompt']
+CAPTURE VAL R40
+CAPTURE VAL R41
+REMARK allocation: table template 3
+   74: local world={isPresent=function(id) return session:IsPresent(id) end,presentUserIds=session.presence,anchors=anchors}
+DUPTABLE R43 86
+DUPCLOSURE R44 K87 ['isPresent']
+CAPTURE VAL R15
+SETTABLEKS R44 R43 K83 ['isPresent']
+GETTABLEKS R44 R15 K88 ['presence']
+SETTABLEKS R44 R43 K84 ['presentUserIds']
+SETTABLEKS R18 R43 K85 ['anchors']
+   75: construct("Q01",require(script.Parent.activities.Q01),{session=session,clock=now,world=world})
+MOVE R44 R39
+LOADK R45 K60 ['Q01']
+GETIMPORT R46 14 [require]
+GETIMPORT R47 90 [script.Parent.activities]
+GETTABLEKS R47 R47 K60 ['Q01']
+CALL R46 1 1
+REMARK allocation: table template 3
+DUPTABLE R47 93
+SETTABLEKS R15 R47 K91 ['session']
+SETTABLEKS R13 R47 K32 ['clock']
+SETTABLEKS R43 R47 K92 ['world']
+CALL R44 3 0
+   76: construct("Q02",require(script.Parent.activities.Q02),{session=session,clock=now,world=world})
+MOVE R44 R39
+LOADK R45 K62 ['Q02']
+GETIMPORT R46 14 [require]
+GETIMPORT R47 90 [script.Parent.activities]
+GETTABLEKS R47 R47 K62 ['Q02']
+CALL R46 1 1
+REMARK allocation: table template 3
+DUPTABLE R47 93
+SETTABLEKS R15 R47 K91 ['session']
+SETTABLEKS R13 R47 K32 ['clock']
+SETTABLEKS R43 R47 K92 ['world']
+CALL R44 3 0
+   77: construct("Q03",require(script.Parent.activities.Q03),{session=session,clock=now,context=world})
+MOVE R44 R39
+LOADK R45 K64 ['Q03']
+GETIMPORT R46 14 [require]
+GETIMPORT R47 90 [script.Parent.activities]
+GETTABLEKS R47 R47 K64 ['Q03']
+CALL R46 1 1
+REMARK allocation: table template 3
+DUPTABLE R47 95
+SETTABLEKS R15 R47 K91 ['session']
+SETTABLEKS R13 R47 K32 ['clock']
+SETTABLEKS R43 R47 K94 ['context']
+CALL R44 3 0
+   78: construct("Q04",require(script.Parent.activities.Q04),{session=session,clock=now,context=world})
+MOVE R44 R39
+LOADK R45 K66 ['Q04']
+GETIMPORT R46 14 [require]
+GETIMPORT R47 90 [script.Parent.activities]
+GETTABLEKS R47 R47 K66 ['Q04']
+CALL R46 1 1
+REMARK allocation: table template 3
+DUPTABLE R47 95
+SETTABLEKS R15 R47 K91 ['session']
+SETTABLEKS R13 R47 K32 ['clock']
+SETTABLEKS R43 R47 K94 ['context']
+CALL R44 3 0
+   79: construct("Q05",require(script.Parent.activities.Q05),{session=session,clock=now,context=world,presentUserIds=session.presence})
+MOVE R44 R39
+LOADK R45 K68 ['Q05']
+GETIMPORT R46 14 [require]
+GETIMPORT R47 90 [script.Parent.activities]
+GETTABLEKS R47 R47 K68 ['Q05']
+CALL R46 1 1
+REMARK allocation: table template 4
+DUPTABLE R47 96
+SETTABLEKS R15 R47 K91 ['session']
+SETTABLEKS R13 R47 K32 ['clock']
+SETTABLEKS R43 R47 K94 ['context']
+GETTABLEKS R48 R15 K88 ['presence']
+SETTABLEKS R48 R47 K84 ['presentUserIds']
+CALL R44 3 0
+   80: construct("Q06",require(script.Parent.activities.Q06),{session=session,clock=now,actor=world.isPresent,context=world})
+MOVE R44 R39
+LOADK R45 K70 ['Q06']
+GETIMPORT R46 14 [require]
+GETIMPORT R47 90 [script.Parent.activities]
+GETTABLEKS R47 R47 K70 ['Q06']
+CALL R46 1 1
+REMARK allocation: table template 4
+DUPTABLE R47 98
+SETTABLEKS R15 R47 K91 ['session']
+SETTABLEKS R13 R47 K32 ['clock']
+GETTABLEKS R48 R43 K83 ['isPresent']
+SETTABLEKS R48 R47 K97 ['actor']
+SETTABLEKS R43 R47 K94 ['context']
+CALL R44 3 0
+   81: local transfer
+LOADNIL R44
+   82: if RunService:IsStudio() then
+NAMECALL R45 R2 K99 ['IsStudio']
+CALL R45 1 1
+JUMPIFNOT R45 L2
+   83:  transfer=LocalPartyTransferAdapter.new(function(players)
+GETTABLEKS R45 R12 K41 ['new']
+DUPCLOSURE R46 K100 []
+CAPTURE VAL R24
+CAPTURE VAL R32
+CAPTURE VAL R37
+CALL R45 1 1
+MOVE R44 R45
+JUMP L5
+   89:  local placeId=game:GetAttribute("GameplayPlaceId") or Config.GameplayPlaceId
+L2: GETIMPORT R45 1 [game]
+LOADK R47 K101 ['GameplayPlaceId']
+NAMECALL R45 R45 K102 ['GetAttribute']
+CALL R45 2 1
+JUMPIF R45 L3
+GETTABLEKS R45 R7 K101 ['GameplayPlaceId']
+   90:  if placeId and placeId ~= 0 then transfer=TeleportAdapter.new({GameplayPlaceId=placeId},{}) else warn("GameplayPlaceId is unconfigured; production transfer is disabled") end
+L3: JUMPIFNOT R45 L4
+JUMPXEQKN R45 K103 L4 [0]
+GETTABLEKS R46 R11 K41 ['new']
+REMARK allocation: table template 1
+DUPTABLE R47 104
+SETTABLEKS R45 R47 K101 ['GameplayPlaceId']
+REMARK allocation: table hash 0
+NEWTABLE R48 0 0
+CALL R46 2 1
+MOVE R44 R46
+JUMP L5
+L4: GETIMPORT R46 106 [warn]
+LOADK R47 K107 ['GameplayPlaceId is unconfigured;'...]
+CALL R46 1 0
+REMARK allocation: closure with 5 upvalues
+   92: local function transferQueue(roster)
+L5: NEWCLOSURE R45 P13
+CAPTURE VAL R0
+CAPTURE VAL R24
+CAPTURE VAL R32
+CAPTURE VAL R16
+CAPTURE REF R44
+REMARK allocation: table template 6
+   99: local station={Q01="Q01Bed",Q02="JasperBedroomStart",Q03="Q03FairCraft",Q04="Q04QuadReading",Q05="Q05UDistrictVending",Q06="Q06FOBCounter"}
+DUPTABLE R46 114
+  100: local function nearActivity(p,r)
+DUPCLOSURE R47 K115 ['nearActivity']
+CAPTURE VAL R33
+CAPTURE VAL R46
+  112: local function queueInside(p)
+DUPCLOSURE R48 K116 ['queueInside']
+CAPTURE VAL R32
+CAPTURE VAL R4
+  118: local function updateQueueSign(q)
+DUPCLOSURE R49 K117 ['updateQueueSign']
+CAPTURE VAL R4
+  124: local function canonical(p,r)
+DUPCLOSURE R50 K118 ['canonical']
+CAPTURE VAL R14
+CAPTURE VAL R21
+CAPTURE VAL R30
+  129: local function release(p, activityId, roundId)
+DUPCLOSURE R51 K119 ['release']
+CAPTURE VAL R21
+CAPTURE VAL R30
+REMARK allocation: closure with 5 upvalues
+  132: local function openRound(p,r)
+NEWCLOSURE R52 P19
+CAPTURE VAL R47
+CAPTURE VAL R21
+CAPTURE VAL R25
+CAPTURE VAL R38
+CAPTURE REF R27
+  140: local function apply(p,r)
+DUPCLOSURE R53 K120 ['apply']
+CAPTURE VAL R50
+CAPTURE VAL R47
+CAPTURE VAL R21
+CAPTURE VAL R38
+  149: action.OnServerEvent:Connect(function(p,r)
+GETTABLEKS R54 R5 K121 ['OnServerEvent']
+DUPCLOSURE R56 K122 []
+CAPTURE VAL R36
+CAPTURE VAL R53
+CAPTURE VAL R37
+CAPTURE VAL R50
+CAPTURE VAL R25
+CAPTURE VAL R38
+CAPTURE VAL R21
+CAPTURE VAL R52
+CAPTURE VAL R51
+CAPTURE VAL R35
+CAPTURE VAL R48
+CAPTURE VAL R16
+CAPTURE VAL R30
+CAPTURE VAL R13
+CAPTURE VAL R14
+CAPTURE VAL R15
+CAPTURE VAL R33
+CAPTURE VAL R17
+NAMECALL R54 R54 K123 ['Connect']
+CALL R54 2 0
+REMARK allocation: closure with 5 upvalues
+  162: local function assign(p)
+NEWCLOSURE R54 P22
+CAPTURE VAL R24
+CAPTURE REF R26
+CAPTURE VAL R20
+CAPTURE VAL R23
+CAPTURE VAL R32
+  172: Players.PlayerAdded:Connect(function(p) session:SetPresence(p.UserId,true); p:SetAttribute("MVPSessionId",sessionId); assign(p); send(p,{kind="RequestSnapshot"},true,"Snapshot") end)
+GETTABLEKS R55 R0 K124 ['PlayerAdded']
+DUPCLOSURE R57 K125 []
+CAPTURE VAL R15
+CAPTURE VAL R14
+CAPTURE VAL R54
+CAPTURE VAL R36
+NAMECALL R55 R55 K123 ['Connect']
+CALL R55 2 0
+  173: Players.PlayerRemoving:Connect(function(p) session:SetPresence(p.UserId,false); queue:Leave(p.UserId); local e=arrivalByUser[p.UserId]; if e then arrivalSlots[e.part]=nil; arrivalByUser[p.UserId]=nil; arrivalCount -= 1 end; for _,a in pairs(activities) do if a.ReleaseActor then pcall(a.ReleaseActor,a,p.UserId) end end; broadcast() end)
+GETTABLEKS R55 R0 K126 ['PlayerRemoving']
+REMARK allocation: closure with 7 upvalues
+NEWCLOSURE R57 P24
+CAPTURE VAL R15
+CAPTURE VAL R16
+CAPTURE VAL R24
+CAPTURE VAL R23
+CAPTURE REF R26
+CAPTURE VAL R21
+CAPTURE VAL R37
+NAMECALL R55 R55 K123 ['Connect']
+CALL R55 2 0
+  174: RunService.Heartbeat:Connect(function()
+GETTABLEKS R55 R2 K127 ['Heartbeat']
+REMARK allocation: closure with 10 upvalues
+NEWCLOSURE R57 P25
+CAPTURE VAL R13
+CAPTURE REF R29
+CAPTURE VAL R0
+CAPTURE VAL R24
+CAPTURE VAL R48
+CAPTURE VAL R16
+CAPTURE REF R28
+CAPTURE VAL R49
+CAPTURE VAL R37
+CAPTURE VAL R45
+NAMECALL R55 R55 K123 ['Connect']
+CALL R55 2 0
+  179: for id,name in pairs(station) do installPrompt(id,anchor(name)) end
+GETIMPORT R55 129 [pairs]
+MOVE R56 R46
+CALL R55 1 3
+FORGPREP_NEXT R55 L7
+L6: MOVE R60 R42
+MOVE R61 R58
+MOVE R62 R31
+MOVE R63 R59
+CALL R62 1 -1
+CALL R60 -1 0
+L7: FORGLOOP R55 L6 2
+  180: installPrompt("Q02",anchor("JasperFetchYard")); installPrompt("Q04",anchor("Q04BedroomKindle")); installPrompt("Q06",anchor("Q06AladdinsCounter")); installPrompt("Q06",anchor("Q06Serving")); installPrompt("Cake",anchor("FinalePatio"))
+MOVE R55 R42
+LOADK R56 K62 ['Q02']
+MOVE R57 R31
+LOADK R58 K130 ['JasperFetchYard']
+CALL R57 1 -1
+CALL R55 -1 0
+MOVE R55 R42
+LOADK R56 K66 ['Q04']
+MOVE R57 R31
+LOADK R58 K131 ['Q04BedroomKindle']
+CALL R57 1 -1
+CALL R55 -1 0
+MOVE R55 R42
+LOADK R56 K70 ['Q06']
+MOVE R57 R31
+LOADK R58 K132 ['Q06AladdinsCounter']
+CALL R57 1 -1
+CALL R55 -1 0
+MOVE R55 R42
+LOADK R56 K70 ['Q06']
+MOVE R57 R31
+LOADK R58 K133 ['Q06Serving']
+CALL R57 1 -1
+CALL R55 -1 0
+MOVE R55 R42
+LOADK R56 K72 ['Cake']
+MOVE R57 R31
+LOADK R58 K134 ['FinalePatio']
+CALL R57 1 -1
+CALL R55 -1 0
+  181: installPrompt("Q03",anchor("Q03BedroomDisplay"))
+MOVE R55 R42
+LOADK R56 K64 ['Q03']
+MOVE R57 R31
+LOADK R58 K135 ['Q03BedroomDisplay']
+CALL R57 1 -1
+CALL R55 -1 0
+  182: local legacyPortal=workspace:FindFirstChild("BirthdayLobby",true)
+GETIMPORT R55 7 [workspace]
+LOADK R57 K136 ['BirthdayLobby']
+LOADB R58 1
+NAMECALL R55 R55 K137 ['FindFirstChild']
+CALL R55 3 1
+  183: legacyPortal=legacyPortal and legacyPortal:FindFirstChild("Portal",true)
+MOVE R56 R55
+JUMPIFNOT R56 L8
+LOADK R58 K138 ['Portal']
+LOADB R59 1
+NAMECALL R56 R55 K137 ['FindFirstChild']
+CALL R56 3 1
+L8: MOVE R55 R56
+  184: legacyPortal=legacyPortal and legacyPortal:FindFirstChild("PortalPrompt")
+MOVE R56 R55
+JUMPIFNOT R56 L9
+LOADK R58 K139 ['PortalPrompt']
+NAMECALL R56 R55 K137 ['FindFirstChild']
+CALL R56 2 1
+L9: MOVE R55 R56
+  185: legacyPortal=legacyPortal and legacyPortal:FindFirstChild("EnterWorld")
+MOVE R56 R55
+JUMPIFNOT R56 L10
+LOADK R58 K140 ['EnterWorld']
+NAMECALL R56 R55 K137 ['FindFirstChild']
+CALL R56 2 1
+L10: MOVE R55 R56
+  186: if legacyPortal and legacyPortal:IsA("ProximityPrompt") then legacyPortal.Enabled=false end
+JUMPIFNOT R55 L11
+LOADK R58 K141 ['ProximityPrompt']
+NAMECALL R56 R55 K142 ['IsA']
+CALL R56 2 1
+JUMPIFNOT R56 L11
+LOADB R56 0
+SETTABLEKS R56 R55 K143 ['Enabled']
+  187: for _,p in ipairs(Players:GetPlayers()) do session:SetPresence(p.UserId,true); p:SetAttribute("MVPSessionId",sessionId); assign(p); send(p,{kind="RequestSnapshot"},true,"Snapshot") end
+L11: GETIMPORT R56 145 [ipairs]
+NAMECALL R57 R0 K146 ['GetPlayers']
+CALL R57 1 -1
+CALL R56 -1 3
+FORGPREP_INEXT R56 L13
+L12: GETTABLEKS R63 R60 K147 ['UserId']
+LOADB R64 1
+NAMECALL R61 R15 K148 ['SetPresence']
+CALL R61 3 0
+LOADK R63 K149 ['MVPSessionId']
+MOVE R64 R14
+NAMECALL R61 R60 K150 ['SetAttribute']
+CALL R61 3 0
+MOVE R61 R54
+MOVE R62 R60
+CALL R61 1 0
+MOVE R61 R36
+MOVE R62 R60
+REMARK allocation: table template 1
+DUPTABLE R63 153
+LOADB R64 1
+LOADK R65 K154 ['Snapshot']
+CALL R61 4 0
+L13: FORGLOOP R56 L12 2 [inext]
+  188: print("Phuong MVP server integration active",sessionId,"missing anchors:",table.concat(missingAnchors,","))
+GETIMPORT R56 156 [print]
+LOADK R57 K157 ['Phuong MVP server integration ac'...]
+MOVE R58 R14
+LOADK R59 K158 ['missing anchors:']
+GETIMPORT R60 161 [table.concat]
+MOVE R61 R19
+LOADK R62 K162 [',']
+CALL R60 2 -1
+CALL R56 -1 0
+  189: for name,defect in pairs(activityErrors) do warn("Activity "..name.." unavailable: "..defect) end
+GETIMPORT R56 129 [pairs]
+MOVE R57 R22
+CALL R56 1 3
+FORGPREP_NEXT R56 L15
+L14: GETIMPORT R61 106 [warn]
+LOADK R63 K163 ['Activity ']
+MOVE R64 R59
+LOADK R65 K164 [' unavailable: ']
+MOVE R66 R60
+CONCAT R62 R63 R66
+CALL R61 1 0
+L15: FORGLOOP R56 L14 2
+  190: 
+CLOSEUPVALS R26
+RETURN R0 0
+

@@ -1,0 +1,35 @@
+{
+  "auditedAtUtc": "2026-09-27T23:00:00Z",
+  "scope": "filesystem metadata only; does not certify Studio source equality or gameplay",
+  "primary": {
+    "path": "roblox/phuong-cozy-game.rbxl",
+    "bytes": 1718440,
+    "lastWriteTimeUtc": "2026-09-27T22:56:07Z",
+    "stage": "current filesystem state; feature attribution not independently proven"
+  },
+  "checkpoints": [
+    {
+      "path": "roblox/checkpoints/phuong-cozy-game-before-main-fix-20260927-1531.rbxl",
+      "bytes": 1717069,
+      "lastWriteTimeUtc": "2026-09-27T22:41:22Z",
+      "stage": "pre-Main-fix label; filesystem timestamp observed, historical Studio save time unknown"
+    },
+    {
+      "path": "roblox/checkpoints/phuong-cozy-game-post-main-20260927-1542.rbxl",
+      "bytes": 1717088,
+      "lastWriteTimeUtc": "2026-09-27T22:44:28Z",
+      "stage": "post-Main label; filesystem timestamp observed, historical Studio save time unknown"
+    },
+    {
+      "path": "roblox/checkpoints/phuong-cozy-game-post-Q02-20260927-1556.rbxl",
+      "bytes": 1718440,
+      "lastWriteTimeUtc": "2026-09-27T22:56:22Z",
+      "stage": "post-Q02 label; filesystem timestamp observed, historical Studio save time unknown"
+    }
+  ],
+  "notes": [
+    "Primary byte length currently equals the post-Q02 checkpoint byte length, but equality of content and feature attribution were not inferred from size.",
+    "The merge ledger's embedded historical timestamps were not treated as independently observed save times.",
+    "The Q02 checkpoint has an adjacent lock file; no claim is made about active ownership or save completion beyond filesystem metadata."
+  ]
+}

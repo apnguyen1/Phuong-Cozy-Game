@@ -1,0 +1,37 @@
+{
+  "recordedAt": "2026-09-27T16:50:31.9774527-07:00",
+  "studioId": "ac69268a-efcf-4a1a-b2f2-98cdf22947d7",
+  "primaryPath": "C:\\Users\\andre\\Repos\\Phuong-Cozy-Game\\roblox\\phuong-cozy-game.rbxl",
+  "checkpointPath": "C:\\Users\\andre\\Repos\\Phuong-Cozy-Game\\roblox\\checkpoints\\phuong-cozy-game-post-Q04-bedroom-desk-fix-20260927-1650.rbxl",
+  "desk": {
+    "path": "Workspace.CozyWorld_Draft01.Home.Bedroom.StudyDesk.Desktop",
+    "center": "(-23,4.70000076,-130.25)",
+    "size": "(18,0.41999999,6.5)",
+    "topY": 4.91000076
+  },
+  "marker": {
+    "path": "Workspace.CozyWorld_Draft01.MVP.Anchors.Q04BedroomKindle",
+    "cframe": "(-23,4.90999985,-130.25)",
+    "placementStatus": "MEASURED"
+  },
+  "prompt": {
+    "path": "Workspace.CozyWorld_Draft01.MVP.Stations.Q04Station.BedroomKindlePrompt",
+    "cframe": "(-23,5.15999985,-130.25)",
+    "size": "(0.8,0.18,0.55)",
+    "relation": "0.25 studs above desk top"
+  },
+  "quad": {
+    "seatPath": "Workspace.CozyWorld_Draft01.QuadPlanting.ReadingBench1.Seat",
+    "seatCenter": "(-44.2650681,2.34648705,1.8777504)",
+    "seatSize": "(2.24,0.224,1.792)",
+    "bookPath": "Workspace.CozyWorld_Draft01.MVP.Stations.Q04Station.QuadReadingBook",
+    "bookCFrame": "(-44.2650681,2.56999993,1.8777504)"
+  },
+  "runtime": {
+    "mainDisabled": true,
+    "clientDisabled": true,
+    "mode": "Edit",
+    "primaryBytes": 1733069,
+    "primaryLastWrite": "2026-09-27T16:49:13.7959981-07:00"
+  }
+}

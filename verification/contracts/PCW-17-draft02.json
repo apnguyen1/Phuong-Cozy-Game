@@ -5,10 +5,19 @@
   "status": "approved",
   "approved_by": "User: active September 26, 2026 Draft 02 implementation goal and explicit name/store clarifications; scope authorization only, final acceptance pending",
   "max_iterations": 3,
-  "criteria": [],
+  "criteria": [
+    "Anyone may wait indefinitely in the lobby; standing on the queue square alone does not join.",
+    "The first accepted member starts one server-owned 60-second queue deadline.",
+    "At eight accepted members, deadline becomes min(existing deadline, serverNow + 10 seconds); later arrivals never extend it and dropping below eight never extends it.",
+    "Capacity is 10; an eleventh member is rejected and reaching 10 never launches immediately.",
+    "An empty queue resets to a new generation; stale membership, timer, and callbacks cannot affect the next generation.",
+    "At expiry the server freezes one exact unique roster; only that roster transfers to one reserved gameplay server and bedroom, while lobby bystanders remain.",
+    "Production transfer evidence uses a published Roblox reserved destination; the marked Studio-only local adapter is not accepted as teleport evidence.",
+    "Published group, mixed-device, reconnect, partial-failure/retry, ten-arrival-slot, camera, and human playtest gates remain pending until independently evidenced."
+  ],
   "id": "PCW-17",
-  "title": "PCW-17 \u2014 Birthday welcome room and timed world entry",
-  "intent": "Let friends first arrive in a birthday room full of Phuong's favorite things, with a visible personal countdown and optional early-entry pad leading into the existing world.",
+  "title": "PCW-17 \u2014 Birthday welcome room and shared group entry",
+  "intent": "Shared opt-in birthday queue: first member starts 60 seconds, eight shortens the existing deadline to at most 10 seconds, capacity 10, empty reset, and only the frozen roster transfers to one reserved gameplay server and bedroom.",
   "kind": "game",
   "sources": [
     "docs/tickets/PCW-17.md",

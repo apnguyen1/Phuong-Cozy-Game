@@ -1,0 +1,25 @@
+{
+  "studio": {"id":"f8a201c4-eba5-421b-a862-87d2afafc17e","name":"phuong-cozy-game.rbxl","mode":"Edit","root":"Workspace.CozyWorld_Draft01","draftVersion":"03","readOnly":true},
+  "quad": {
+    "ground":{"path":"Workspace.CozyWorld_Draft01.Landscape.QuadGround","position":[19,-0.280000687,-31.99999237],"size":[360,0.400000006,336]},
+    "routeNetwork":{"path":"Workspace.CozyWorld_Draft01.Paths.BrickWalkNetwork","position":[-9.094573975,0.090000459,-34],"size":[222.2844086,0.220000029,300.1199951]},
+    "routeBorder":{"path":"Workspace.CozyWorld_Draft01.Paths.ContinuousPathBorder","position":[-8.917793274,0.000000462, -33.8985939],"size":[222.2844086,0.220000029,300.3228149]},
+    "routeDefinitionsPath":"Workspace.CozyWorld_Draft01.Paths.RouteDefinitions",
+    "keepoutPolicy":"Use every RouteDefinitions child plus an 8-stud approach buffer; no route child geometry was modified."
+  },
+  "worldBoundsExcludingMVP":{"min":[-168.8702393,-6.170000076,-246.3341675],"max":[2044.75,39,136],"size":[2213.6202393,45.17000008,382.3341675],"source":"all BaseParts under CozyWorld_Draft01 excluding descendants of CozyWorld_Draft01.MVP; conservative AABB, not a facade placement approval"},
+  "quadReadingBenches":[
+    {"name":"ReadingBench1","path":"Workspace.CozyWorld_Draft01.QuadPlanting.ReadingBench1","center":[-45.00001144,2.480421066,3.00007987],"size":[8.867182732,4.267175198,5.080842972]},
+    {"name":"ReadingBench2","path":"Workspace.CozyWorld_Draft01.QuadPlanting.ReadingBench2","center":[51,2.480421066,-11.00006962],"size":[8.867183685,4.267168999,5.080842972]},
+    {"name":"ReadingBench3","path":"Workspace.CozyWorld_Draft01.QuadPlanting.ReadingBench3","center":[-46.00001144,2.480421066,-93.99993896],"size":[8.867182732,4.267163276,5.080842972]},
+    {"name":"ReadingBench4","path":"Workspace.CozyWorld_Draft01.QuadPlanting.ReadingBench4","center":[55.99999619,2.480421066,85.99993134],"size":[8.867172241,4.267170906,5.080842972]}
+  ],
+  "udistrictFoodMeasurements": {
+    "FOB":{"path":"Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.Storefronts.FOB","center":[-138.9146576,9.087499619,-129.75],"size":[34.17067337,18.27499771,68.5]},
+    "Aladdins":{"path":"Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.Storefronts.Aladdins","center":[-138.9146576,9.087499619,62.25],"size":[34.17067337,18.27499771,68.5]},
+    "servingZoneStatus":"PROPOSED_FROM_MEASURED_STOREFRONTS; Q06 owner must confirm counter/door clearance",
+    "proposedServingPositions":[[-120,0.42,-129.75],[-120,0.42,62.25]],
+    "rejectedPosition":[100,0.42,96]
+  },
+  "bedroomArrivalSlots":{"status":"NOT_SAFE_FOR_TEN","slots":{"Slot01":{"position":[-10,0.5,-130],"blockers":["Workspace.CozyWorld_Draft01.Home.Bedroom.FilledBookcase.BookcaseSide","Workspace.CozyWorld_Draft01.Home.Bedroom.FilledBookcase.Shelf"]},"Slot02":{"position":[-2,0.5,-130],"blockers":[]},"Slot03":{"position":[6,0.5,-130],"blockers":[]},"Slot04":{"position":[-10,0.5,-138],"blockers":[]},"Slot05":{"position":[-2,0.5,-138],"blockers":[]},"Slot06":{"position":[6,0.5,-138],"blockers":[]},"Slot07":{"position":[2,0.5,-146],"blockers":[]},"Slot08":{"position":[10,0.5,-146],"blockers":[]},"Slot09":{"position":[2,0.5,-154],"blockers":[]},"Slot10":{"position":[10,0.5,-154],"blockers":[]}},"method":"GetPartBoundsInBox(slot CFrame, slot size + Vector3.new(2,4,2)), excluding MVP; Home.Floor ignored as ground"}
+}
