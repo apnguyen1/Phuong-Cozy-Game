@@ -1,0 +1,19 @@
+server_compile_exit=0
+client_compile_exit=0
+request=type(request)=="table" and request or {}
+local function installPrompt(id, instance)
+local function transferQueue(roster)
+local function queueInside(p)
+if r.kind=="QueueJoin" then if not queueInside(p) then return send(p,r,false,"TooFar") end; local ok,c=queue:Join(uid(p),now()); send(p,r,ok,c); broadcast(); return end
+for _,p in ipairs(Players:GetPlayers()) do if queueInside(p) then queue:Join(p.UserId,now()) elseif queue.state=="Open" or queue.state=="Shortened" then queue:Leave(p.UserId) end end
+local expired,_,roster=queue:Tick(now()); if expired then transferQueue(roster) end
+for id,name in pairs(station) do installPrompt(id,anchor(name)) end
+installPrompt("Q02",anchor("JasperFetchYard")); installPrompt("Q04",anchor("Q04BedroomKindle")); installPrompt("Q06",anchor("Q06AladdinsCounter")); installPrompt("Q06",anchor("Q06Serving")); installPrompt("Cake",anchor("FinalePatio"))
+local legacyPortal=workspace:FindFirstChild("BirthdayLobby",true)
+legacyPortal=legacyPortal and legacyPortal:FindFirstChild("Portal",true)
+legacyPortal=legacyPortal and legacyPortal:FindFirstChild("PortalPrompt")
+legacyPortal=legacyPortal and legacyPortal:FindFirstChild("EnterWorld")
+if legacyPortal and legacyPortal:IsA("ProximityPrompt") then legacyPortal.Enabled=false end
+local cakeButton=button(gui,"CakeButton","Cake finale",function() end); cakeButton.AnchorPoint=Vector2.new(1,0); cakeButton.Position=UDim2.new(1,-20,0,80); cakeButton.Size=UDim2.fromOffset(132,44); cakeButton.Visible=false
+clear(); panel.Visible=true; title.Text="Birthday journal"; instructions.Text="Explore together and help complete each petal."; progress.Text="Shared progress"; local entries={"Q01 • Bedroom • Make the bed","Q02 • Jasper's yard • Find the welcome","Q03 • Bedroom • Craft and display","Q04 • Quad or bedroom • Read together","Q05 • U District • Make a Labubu wish","Q06 • Three counters • Share food memories"}; for i,label in ipairs(entries) do local e=text(scroll,"Journal_"..i,label,16,P.ink); e.LayoutOrder=i; e.Size=UDim2.new(1,0,0,34) end; return
+p:SetAttribute("MVPBound",true); p.Triggered:Connect(function() if id=="Cake" then panel.Visible=true; title.Text="Birthday cake"; instructions.Text="Gather voluntarily, then choose a celebration action."; clear(); for _,method in ipairs({"Invite","CancelInvite","Cut","Eat"}) do local b=button(scroll,"Cake_"..method,method,function() if sessionId then action:FireServer({kind="Cake",action=method,sessionId=sessionId,actionId=freshId()}) end end); b.Size=UDim2.new(1,0,0,48) end else requestView(id) end end)

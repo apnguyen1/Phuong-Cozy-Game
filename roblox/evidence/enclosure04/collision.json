@@ -1,0 +1,5125 @@
+{
+  "method": "Actual Edit workspace Raycast with Filter Include SeattleBoundary and RespectCanCollide=true. Samples at field+0.5,5,15,50,90; corners diagonal outward",
+  "edge_samples": [
+    {
+      "direction": [
+        0,
+        0,
+        -25
+      ],
+      "name": "North_0_0.5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.North",
+      "start": [
+        35.12977600097656,
+        0.4199973940849304,
+        -175.726318359375
+      ],
+      "position": [
+        35.12977600097656,
+        0.4199981689453125,
+        -183.726318359375
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        25
+      ],
+      "name": "South_0_0.5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.South",
+      "start": [
+        35.12977600097656,
+        0.4199973940849304,
+        210.6077880859375
+      ],
+      "position": [
+        35.12977600097656,
+        0.4199981689453125,
+        218.6077880859375
+      ]
+    },
+    {
+      "direction": [
+        -25,
+        0,
+        0
+      ],
+      "name": "West_0_0.5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.West",
+      "start": [
+        42.12977600097656,
+        0.4199973940849304,
+        -182.726318359375
+      ],
+      "position": [
+        34.12977600097656,
+        0.4199981689453125,
+        -182.726318359375
+      ]
+    },
+    {
+      "direction": [
+        25,
+        0,
+        0
+      ],
+      "name": "East_0_0.5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.East",
+      "start": [
+        441.8251037597656,
+        0.4199973940849304,
+        -182.726318359375
+      ],
+      "position": [
+        449.8251037597656,
+        0.4199981689453125,
+        -182.726318359375
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        -25
+      ],
+      "name": "North_1_0.5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.North",
+      "start": [
+        76.49930572509766,
+        0.4199973940849304,
+        -175.726318359375
+      ],
+      "position": [
+        76.49929809570312,
+        0.4199981689453125,
+        -183.726318359375
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        25
+      ],
+      "name": "South_1_0.5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.South",
+      "start": [
+        76.49930572509766,
+        0.4199973940849304,
+        210.6077880859375
+      ],
+      "position": [
+        76.49929809570312,
+        0.4199981689453125,
+        218.6077880859375
+      ]
+    },
+    {
+      "direction": [
+        -25,
+        0,
+        0
+      ],
+      "name": "West_1_0.5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.West",
+      "start": [
+        42.12977600097656,
+        0.4199973940849304,
+        -142.69290161132812
+      ],
+      "position": [
+        34.12977600097656,
+        0.4199981689453125,
+        -142.69290161132812
+      ]
+    },
+    {
+      "direction": [
+        25,
+        0,
+        0
+      ],
+      "name": "East_1_0.5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.East",
+      "start": [
+        441.8251037597656,
+        0.4199973940849304,
+        -142.69290161132812
+      ],
+      "position": [
+        449.8251037597656,
+        0.4199981689453125,
+        -142.69290161132812
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        -25
+      ],
+      "name": "North_2_0.5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.North",
+      "start": [
+        117.86884307861328,
+        0.4199973940849304,
+        -175.726318359375
+      ],
+      "position": [
+        117.86884307861328,
+        0.4199981689453125,
+        -183.726318359375
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        25
+      ],
+      "name": "South_2_0.5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.South",
+      "start": [
+        117.86884307861328,
+        0.4199973940849304,
+        210.6077880859375
+      ],
+      "position": [
+        117.86884307861328,
+        0.4199981689453125,
+        218.6077880859375
+      ]
+    },
+    {
+      "direction": [
+        -25,
+        0,
+        0
+      ],
+      "name": "West_2_0.5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.West",
+      "start": [
+        42.12977600097656,
+        0.4199973940849304,
+        -102.65950012207031
+      ],
+      "position": [
+        34.12977600097656,
+        0.4199981689453125,
+        -102.65950012207031
+      ]
+    },
+    {
+      "direction": [
+        25,
+        0,
+        0
+      ],
+      "name": "East_2_0.5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.East",
+      "start": [
+        441.8251037597656,
+        0.4199973940849304,
+        -102.65950012207031
+      ],
+      "position": [
+        449.8251037597656,
+        0.4199981689453125,
+        -102.65950012207031
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        -25
+      ],
+      "name": "North_3_0.5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.North",
+      "start": [
+        159.23837280273438,
+        0.4199973940849304,
+        -175.726318359375
+      ],
+      "position": [
+        159.23837280273438,
+        0.4199981689453125,
+        -183.726318359375
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        25
+      ],
+      "name": "South_3_0.5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.South",
+      "start": [
+        159.23837280273438,
+        0.4199973940849304,
+        210.6077880859375
+      ],
+      "position": [
+        159.23837280273438,
+        0.4199981689453125,
+        218.6077880859375
+      ]
+    },
+    {
+      "direction": [
+        -25,
+        0,
+        0
+      ],
+      "name": "West_3_0.5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.West",
+      "start": [
+        42.12977600097656,
+        0.4199973940849304,
+        -62.6260871887207
+      ],
+      "position": [
+        34.12977600097656,
+        0.4199981689453125,
+        -62.62608337402344
+      ]
+    },
+    {
+      "direction": [
+        25,
+        0,
+        0
+      ],
+      "name": "East_3_0.5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.East",
+      "start": [
+        441.8251037597656,
+        0.4199973940849304,
+        -62.6260871887207
+      ],
+      "position": [
+        449.8251037597656,
+        0.4199981689453125,
+        -62.62608337402344
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        -25
+      ],
+      "name": "North_4_0.5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.North",
+      "start": [
+        200.60791015625,
+        0.4199973940849304,
+        -175.726318359375
+      ],
+      "position": [
+        200.60791015625,
+        0.4199981689453125,
+        -183.726318359375
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        25
+      ],
+      "name": "South_4_0.5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.South",
+      "start": [
+        200.60791015625,
+        0.4199973940849304,
+        210.6077880859375
+      ],
+      "position": [
+        200.60791015625,
+        0.4199981689453125,
+        218.6077880859375
+      ]
+    },
+    {
+      "direction": [
+        -25,
+        0,
+        0
+      ],
+      "name": "West_4_0.5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.West",
+      "start": [
+        42.12977600097656,
+        0.4199973940849304,
+        -22.592676162719727
+      ],
+      "position": [
+        34.12977600097656,
+        0.4199981689453125,
+        -22.592674255371094
+      ]
+    },
+    {
+      "direction": [
+        25,
+        0,
+        0
+      ],
+      "name": "East_4_0.5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.East",
+      "start": [
+        441.8251037597656,
+        0.4199973940849304,
+        -22.592676162719727
+      ],
+      "position": [
+        449.8251037597656,
+        0.4199981689453125,
+        -22.592674255371094
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        -25
+      ],
+      "name": "North_5_0.5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.North",
+      "start": [
+        241.97744750976562,
+        0.4199973940849304,
+        -175.726318359375
+      ],
+      "position": [
+        241.97744750976562,
+        0.4199981689453125,
+        -183.726318359375
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        25
+      ],
+      "name": "South_5_0.5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.South",
+      "start": [
+        241.97744750976562,
+        0.4199973940849304,
+        210.6077880859375
+      ],
+      "position": [
+        241.97744750976562,
+        0.4199981689453125,
+        218.6077880859375
+      ]
+    },
+    {
+      "direction": [
+        -25,
+        0,
+        0
+      ],
+      "name": "West_5_0.5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.West",
+      "start": [
+        42.12977600097656,
+        0.4199973940849304,
+        17.44073486328125
+      ],
+      "position": [
+        34.12977600097656,
+        0.4199981689453125,
+        17.44073486328125
+      ]
+    },
+    {
+      "direction": [
+        25,
+        0,
+        0
+      ],
+      "name": "East_5_0.5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.East",
+      "start": [
+        441.8251037597656,
+        0.4199973940849304,
+        17.44073486328125
+      ],
+      "position": [
+        449.8251037597656,
+        0.4199981689453125,
+        17.44073486328125
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        -25
+      ],
+      "name": "North_6_0.5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.North",
+      "start": [
+        283.34698486328125,
+        0.4199973940849304,
+        -175.726318359375
+      ],
+      "position": [
+        283.34698486328125,
+        0.4199981689453125,
+        -183.726318359375
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        25
+      ],
+      "name": "South_6_0.5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.South",
+      "start": [
+        283.34698486328125,
+        0.4199973940849304,
+        210.6077880859375
+      ],
+      "position": [
+        283.34698486328125,
+        0.4199981689453125,
+        218.6077880859375
+      ]
+    },
+    {
+      "direction": [
+        -25,
+        0,
+        0
+      ],
+      "name": "West_6_0.5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.West",
+      "start": [
+        42.12977600097656,
+        0.4199973940849304,
+        57.474143981933594
+      ],
+      "position": [
+        34.12977600097656,
+        0.4199981689453125,
+        57.474143981933594
+      ]
+    },
+    {
+      "direction": [
+        25,
+        0,
+        0
+      ],
+      "name": "East_6_0.5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.East",
+      "start": [
+        441.8251037597656,
+        0.4199973940849304,
+        57.474143981933594
+      ],
+      "position": [
+        449.8251037597656,
+        0.4199981689453125,
+        57.474143981933594
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        -25
+      ],
+      "name": "North_7_0.5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.North",
+      "start": [
+        324.71649169921875,
+        0.4199973940849304,
+        -175.726318359375
+      ],
+      "position": [
+        324.71649169921875,
+        0.4199981689453125,
+        -183.726318359375
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        25
+      ],
+      "name": "South_7_0.5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.South",
+      "start": [
+        324.71649169921875,
+        0.4199973940849304,
+        210.6077880859375
+      ],
+      "position": [
+        324.71649169921875,
+        0.4199981689453125,
+        218.6077880859375
+      ]
+    },
+    {
+      "direction": [
+        -25,
+        0,
+        0
+      ],
+      "name": "West_7_0.5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.West",
+      "start": [
+        42.12977600097656,
+        0.4199973940849304,
+        97.50755310058594
+      ],
+      "position": [
+        34.12977600097656,
+        0.4199981689453125,
+        97.50755310058594
+      ]
+    },
+    {
+      "direction": [
+        25,
+        0,
+        0
+      ],
+      "name": "East_7_0.5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.East",
+      "start": [
+        441.8251037597656,
+        0.4199973940849304,
+        97.50755310058594
+      ],
+      "position": [
+        449.8251037597656,
+        0.4199981689453125,
+        97.50755310058594
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        -25
+      ],
+      "name": "North_8_0.5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.North",
+      "start": [
+        366.0860290527344,
+        0.4199973940849304,
+        -175.726318359375
+      ],
+      "position": [
+        366.0860290527344,
+        0.4199981689453125,
+        -183.726318359375
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        25
+      ],
+      "name": "South_8_0.5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.South",
+      "start": [
+        366.0860290527344,
+        0.4199973940849304,
+        210.6077880859375
+      ],
+      "position": [
+        366.0860290527344,
+        0.4199981689453125,
+        218.6077880859375
+      ]
+    },
+    {
+      "direction": [
+        -25,
+        0,
+        0
+      ],
+      "name": "West_8_0.5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.West",
+      "start": [
+        42.12977600097656,
+        0.4199973940849304,
+        137.5409698486328
+      ],
+      "position": [
+        34.12977600097656,
+        0.4199981689453125,
+        137.5409698486328
+      ]
+    },
+    {
+      "direction": [
+        25,
+        0,
+        0
+      ],
+      "name": "East_8_0.5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.East",
+      "start": [
+        441.8251037597656,
+        0.4199973940849304,
+        137.5409698486328
+      ],
+      "position": [
+        449.8251037597656,
+        0.4199981689453125,
+        137.5409698486328
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        -25
+      ],
+      "name": "North_9_0.5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.North",
+      "start": [
+        407.45556640625,
+        0.4199973940849304,
+        -175.726318359375
+      ],
+      "position": [
+        407.45556640625,
+        0.4199981689453125,
+        -183.726318359375
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        25
+      ],
+      "name": "South_9_0.5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.South",
+      "start": [
+        407.45556640625,
+        0.4199973940849304,
+        210.6077880859375
+      ],
+      "position": [
+        407.45556640625,
+        0.4199981689453125,
+        218.6077880859375
+      ]
+    },
+    {
+      "direction": [
+        -25,
+        0,
+        0
+      ],
+      "name": "West_9_0.5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.West",
+      "start": [
+        42.12977600097656,
+        0.4199973940849304,
+        177.57437133789062
+      ],
+      "position": [
+        34.12977600097656,
+        0.4199981689453125,
+        177.57437133789062
+      ]
+    },
+    {
+      "direction": [
+        25,
+        0,
+        0
+      ],
+      "name": "East_9_0.5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.East",
+      "start": [
+        441.8251037597656,
+        0.4199973940849304,
+        177.57437133789062
+      ],
+      "position": [
+        449.8251037597656,
+        0.4199981689453125,
+        177.57437133789062
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        -25
+      ],
+      "name": "North_10_0.5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.North",
+      "start": [
+        448.8251037597656,
+        0.4199973940849304,
+        -175.726318359375
+      ],
+      "position": [
+        448.8251037597656,
+        0.4199981689453125,
+        -183.726318359375
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        25
+      ],
+      "name": "South_10_0.5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.South",
+      "start": [
+        448.8251037597656,
+        0.4199973940849304,
+        210.6077880859375
+      ],
+      "position": [
+        448.8251037597656,
+        0.4199981689453125,
+        218.6077880859375
+      ]
+    },
+    {
+      "direction": [
+        -25,
+        0,
+        0
+      ],
+      "name": "West_10_0.5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.West",
+      "start": [
+        42.12977600097656,
+        0.4199973940849304,
+        217.6077880859375
+      ],
+      "position": [
+        34.12977600097656,
+        0.4199981689453125,
+        217.6077880859375
+      ]
+    },
+    {
+      "direction": [
+        25,
+        0,
+        0
+      ],
+      "name": "East_10_0.5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.East",
+      "start": [
+        441.8251037597656,
+        0.4199973940849304,
+        217.6077880859375
+      ],
+      "position": [
+        449.8251037597656,
+        0.4199981689453125,
+        217.6077880859375
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        -25
+      ],
+      "name": "North_0_5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.North",
+      "start": [
+        35.12977600097656,
+        4.919997215270996,
+        -175.726318359375
+      ],
+      "position": [
+        35.12977600097656,
+        4.9199981689453125,
+        -183.726318359375
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        25
+      ],
+      "name": "South_0_5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.South",
+      "start": [
+        35.12977600097656,
+        4.919997215270996,
+        210.6077880859375
+      ],
+      "position": [
+        35.12977600097656,
+        4.9199981689453125,
+        218.6077880859375
+      ]
+    },
+    {
+      "direction": [
+        -25,
+        0,
+        0
+      ],
+      "name": "West_0_5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.West",
+      "start": [
+        42.12977600097656,
+        4.919997215270996,
+        -182.726318359375
+      ],
+      "position": [
+        34.12977600097656,
+        4.9199981689453125,
+        -182.726318359375
+      ]
+    },
+    {
+      "direction": [
+        25,
+        0,
+        0
+      ],
+      "name": "East_0_5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.East",
+      "start": [
+        441.8251037597656,
+        4.919997215270996,
+        -182.726318359375
+      ],
+      "position": [
+        449.8251037597656,
+        4.9199981689453125,
+        -182.726318359375
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        -25
+      ],
+      "name": "North_1_5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.North",
+      "start": [
+        76.49930572509766,
+        4.919997215270996,
+        -175.726318359375
+      ],
+      "position": [
+        76.49929809570312,
+        4.9199981689453125,
+        -183.726318359375
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        25
+      ],
+      "name": "South_1_5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.South",
+      "start": [
+        76.49930572509766,
+        4.919997215270996,
+        210.6077880859375
+      ],
+      "position": [
+        76.49929809570312,
+        4.9199981689453125,
+        218.6077880859375
+      ]
+    },
+    {
+      "direction": [
+        -25,
+        0,
+        0
+      ],
+      "name": "West_1_5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.West",
+      "start": [
+        42.12977600097656,
+        4.919997215270996,
+        -142.69290161132812
+      ],
+      "position": [
+        34.12977600097656,
+        4.9199981689453125,
+        -142.69290161132812
+      ]
+    },
+    {
+      "direction": [
+        25,
+        0,
+        0
+      ],
+      "name": "East_1_5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.East",
+      "start": [
+        441.8251037597656,
+        4.919997215270996,
+        -142.69290161132812
+      ],
+      "position": [
+        449.8251037597656,
+        4.9199981689453125,
+        -142.69290161132812
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        -25
+      ],
+      "name": "North_2_5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.North",
+      "start": [
+        117.86884307861328,
+        4.919997215270996,
+        -175.726318359375
+      ],
+      "position": [
+        117.86884307861328,
+        4.9199981689453125,
+        -183.726318359375
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        25
+      ],
+      "name": "South_2_5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.South",
+      "start": [
+        117.86884307861328,
+        4.919997215270996,
+        210.6077880859375
+      ],
+      "position": [
+        117.86884307861328,
+        4.9199981689453125,
+        218.6077880859375
+      ]
+    },
+    {
+      "direction": [
+        -25,
+        0,
+        0
+      ],
+      "name": "West_2_5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.West",
+      "start": [
+        42.12977600097656,
+        4.919997215270996,
+        -102.65950012207031
+      ],
+      "position": [
+        34.12977600097656,
+        4.9199981689453125,
+        -102.65950012207031
+      ]
+    },
+    {
+      "direction": [
+        25,
+        0,
+        0
+      ],
+      "name": "East_2_5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.East",
+      "start": [
+        441.8251037597656,
+        4.919997215270996,
+        -102.65950012207031
+      ],
+      "position": [
+        449.8251037597656,
+        4.9199981689453125,
+        -102.65950012207031
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        -25
+      ],
+      "name": "North_3_5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.North",
+      "start": [
+        159.23837280273438,
+        4.919997215270996,
+        -175.726318359375
+      ],
+      "position": [
+        159.23837280273438,
+        4.9199981689453125,
+        -183.726318359375
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        25
+      ],
+      "name": "South_3_5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.South",
+      "start": [
+        159.23837280273438,
+        4.919997215270996,
+        210.6077880859375
+      ],
+      "position": [
+        159.23837280273438,
+        4.9199981689453125,
+        218.6077880859375
+      ]
+    },
+    {
+      "direction": [
+        -25,
+        0,
+        0
+      ],
+      "name": "West_3_5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.West",
+      "start": [
+        42.12977600097656,
+        4.919997215270996,
+        -62.6260871887207
+      ],
+      "position": [
+        34.12977600097656,
+        4.9199981689453125,
+        -62.62608337402344
+      ]
+    },
+    {
+      "direction": [
+        25,
+        0,
+        0
+      ],
+      "name": "East_3_5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.East",
+      "start": [
+        441.8251037597656,
+        4.919997215270996,
+        -62.6260871887207
+      ],
+      "position": [
+        449.8251037597656,
+        4.9199981689453125,
+        -62.62608337402344
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        -25
+      ],
+      "name": "North_4_5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.North",
+      "start": [
+        200.60791015625,
+        4.919997215270996,
+        -175.726318359375
+      ],
+      "position": [
+        200.60791015625,
+        4.9199981689453125,
+        -183.726318359375
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        25
+      ],
+      "name": "South_4_5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.South",
+      "start": [
+        200.60791015625,
+        4.919997215270996,
+        210.6077880859375
+      ],
+      "position": [
+        200.60791015625,
+        4.9199981689453125,
+        218.6077880859375
+      ]
+    },
+    {
+      "direction": [
+        -25,
+        0,
+        0
+      ],
+      "name": "West_4_5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.West",
+      "start": [
+        42.12977600097656,
+        4.919997215270996,
+        -22.592676162719727
+      ],
+      "position": [
+        34.12977600097656,
+        4.9199981689453125,
+        -22.592674255371094
+      ]
+    },
+    {
+      "direction": [
+        25,
+        0,
+        0
+      ],
+      "name": "East_4_5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.East",
+      "start": [
+        441.8251037597656,
+        4.919997215270996,
+        -22.592676162719727
+      ],
+      "position": [
+        449.8251037597656,
+        4.9199981689453125,
+        -22.592674255371094
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        -25
+      ],
+      "name": "North_5_5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.North",
+      "start": [
+        241.97744750976562,
+        4.919997215270996,
+        -175.726318359375
+      ],
+      "position": [
+        241.97744750976562,
+        4.9199981689453125,
+        -183.726318359375
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        25
+      ],
+      "name": "South_5_5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.South",
+      "start": [
+        241.97744750976562,
+        4.919997215270996,
+        210.6077880859375
+      ],
+      "position": [
+        241.97744750976562,
+        4.9199981689453125,
+        218.6077880859375
+      ]
+    },
+    {
+      "direction": [
+        -25,
+        0,
+        0
+      ],
+      "name": "West_5_5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.West",
+      "start": [
+        42.12977600097656,
+        4.919997215270996,
+        17.44073486328125
+      ],
+      "position": [
+        34.12977600097656,
+        4.9199981689453125,
+        17.44073486328125
+      ]
+    },
+    {
+      "direction": [
+        25,
+        0,
+        0
+      ],
+      "name": "East_5_5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.East",
+      "start": [
+        441.8251037597656,
+        4.919997215270996,
+        17.44073486328125
+      ],
+      "position": [
+        449.8251037597656,
+        4.9199981689453125,
+        17.44073486328125
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        -25
+      ],
+      "name": "North_6_5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.North",
+      "start": [
+        283.34698486328125,
+        4.919997215270996,
+        -175.726318359375
+      ],
+      "position": [
+        283.34698486328125,
+        4.9199981689453125,
+        -183.726318359375
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        25
+      ],
+      "name": "South_6_5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.South",
+      "start": [
+        283.34698486328125,
+        4.919997215270996,
+        210.6077880859375
+      ],
+      "position": [
+        283.34698486328125,
+        4.9199981689453125,
+        218.6077880859375
+      ]
+    },
+    {
+      "direction": [
+        -25,
+        0,
+        0
+      ],
+      "name": "West_6_5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.West",
+      "start": [
+        42.12977600097656,
+        4.919997215270996,
+        57.474143981933594
+      ],
+      "position": [
+        34.12977600097656,
+        4.9199981689453125,
+        57.474143981933594
+      ]
+    },
+    {
+      "direction": [
+        25,
+        0,
+        0
+      ],
+      "name": "East_6_5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.East",
+      "start": [
+        441.8251037597656,
+        4.919997215270996,
+        57.474143981933594
+      ],
+      "position": [
+        449.8251037597656,
+        4.9199981689453125,
+        57.474143981933594
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        -25
+      ],
+      "name": "North_7_5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.North",
+      "start": [
+        324.71649169921875,
+        4.919997215270996,
+        -175.726318359375
+      ],
+      "position": [
+        324.71649169921875,
+        4.9199981689453125,
+        -183.726318359375
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        25
+      ],
+      "name": "South_7_5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.South",
+      "start": [
+        324.71649169921875,
+        4.919997215270996,
+        210.6077880859375
+      ],
+      "position": [
+        324.71649169921875,
+        4.9199981689453125,
+        218.6077880859375
+      ]
+    },
+    {
+      "direction": [
+        -25,
+        0,
+        0
+      ],
+      "name": "West_7_5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.West",
+      "start": [
+        42.12977600097656,
+        4.919997215270996,
+        97.50755310058594
+      ],
+      "position": [
+        34.12977600097656,
+        4.9199981689453125,
+        97.50755310058594
+      ]
+    },
+    {
+      "direction": [
+        25,
+        0,
+        0
+      ],
+      "name": "East_7_5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.East",
+      "start": [
+        441.8251037597656,
+        4.919997215270996,
+        97.50755310058594
+      ],
+      "position": [
+        449.8251037597656,
+        4.9199981689453125,
+        97.50755310058594
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        -25
+      ],
+      "name": "North_8_5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.North",
+      "start": [
+        366.0860290527344,
+        4.919997215270996,
+        -175.726318359375
+      ],
+      "position": [
+        366.0860290527344,
+        4.9199981689453125,
+        -183.726318359375
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        25
+      ],
+      "name": "South_8_5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.South",
+      "start": [
+        366.0860290527344,
+        4.919997215270996,
+        210.6077880859375
+      ],
+      "position": [
+        366.0860290527344,
+        4.9199981689453125,
+        218.6077880859375
+      ]
+    },
+    {
+      "direction": [
+        -25,
+        0,
+        0
+      ],
+      "name": "West_8_5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.West",
+      "start": [
+        42.12977600097656,
+        4.919997215270996,
+        137.5409698486328
+      ],
+      "position": [
+        34.12977600097656,
+        4.9199981689453125,
+        137.5409698486328
+      ]
+    },
+    {
+      "direction": [
+        25,
+        0,
+        0
+      ],
+      "name": "East_8_5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.East",
+      "start": [
+        441.8251037597656,
+        4.919997215270996,
+        137.5409698486328
+      ],
+      "position": [
+        449.8251037597656,
+        4.9199981689453125,
+        137.5409698486328
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        -25
+      ],
+      "name": "North_9_5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.North",
+      "start": [
+        407.45556640625,
+        4.919997215270996,
+        -175.726318359375
+      ],
+      "position": [
+        407.45556640625,
+        4.9199981689453125,
+        -183.726318359375
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        25
+      ],
+      "name": "South_9_5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.South",
+      "start": [
+        407.45556640625,
+        4.919997215270996,
+        210.6077880859375
+      ],
+      "position": [
+        407.45556640625,
+        4.9199981689453125,
+        218.6077880859375
+      ]
+    },
+    {
+      "direction": [
+        -25,
+        0,
+        0
+      ],
+      "name": "West_9_5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.West",
+      "start": [
+        42.12977600097656,
+        4.919997215270996,
+        177.57437133789062
+      ],
+      "position": [
+        34.12977600097656,
+        4.9199981689453125,
+        177.57437133789062
+      ]
+    },
+    {
+      "direction": [
+        25,
+        0,
+        0
+      ],
+      "name": "East_9_5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.East",
+      "start": [
+        441.8251037597656,
+        4.919997215270996,
+        177.57437133789062
+      ],
+      "position": [
+        449.8251037597656,
+        4.9199981689453125,
+        177.57437133789062
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        -25
+      ],
+      "name": "North_10_5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.North",
+      "start": [
+        448.8251037597656,
+        4.919997215270996,
+        -175.726318359375
+      ],
+      "position": [
+        448.8251037597656,
+        4.9199981689453125,
+        -183.726318359375
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        25
+      ],
+      "name": "South_10_5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.South",
+      "start": [
+        448.8251037597656,
+        4.919997215270996,
+        210.6077880859375
+      ],
+      "position": [
+        448.8251037597656,
+        4.9199981689453125,
+        218.6077880859375
+      ]
+    },
+    {
+      "direction": [
+        -25,
+        0,
+        0
+      ],
+      "name": "West_10_5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.West",
+      "start": [
+        42.12977600097656,
+        4.919997215270996,
+        217.6077880859375
+      ],
+      "position": [
+        34.12977600097656,
+        4.9199981689453125,
+        217.6077880859375
+      ]
+    },
+    {
+      "direction": [
+        25,
+        0,
+        0
+      ],
+      "name": "East_10_5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.East",
+      "start": [
+        441.8251037597656,
+        4.919997215270996,
+        217.6077880859375
+      ],
+      "position": [
+        449.8251037597656,
+        4.9199981689453125,
+        217.6077880859375
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        -25
+      ],
+      "name": "North_0_15",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.North",
+      "start": [
+        35.12977600097656,
+        14.919997215270996,
+        -175.726318359375
+      ],
+      "position": [
+        35.12977600097656,
+        14.919998168945312,
+        -183.726318359375
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        25
+      ],
+      "name": "South_0_15",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.South",
+      "start": [
+        35.12977600097656,
+        14.919997215270996,
+        210.6077880859375
+      ],
+      "position": [
+        35.12977600097656,
+        14.919998168945312,
+        218.6077880859375
+      ]
+    },
+    {
+      "direction": [
+        -25,
+        0,
+        0
+      ],
+      "name": "West_0_15",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.West",
+      "start": [
+        42.12977600097656,
+        14.919997215270996,
+        -182.726318359375
+      ],
+      "position": [
+        34.12977600097656,
+        14.919998168945312,
+        -182.726318359375
+      ]
+    },
+    {
+      "direction": [
+        25,
+        0,
+        0
+      ],
+      "name": "East_0_15",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.East",
+      "start": [
+        441.8251037597656,
+        14.919997215270996,
+        -182.726318359375
+      ],
+      "position": [
+        449.8251037597656,
+        14.919998168945312,
+        -182.726318359375
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        -25
+      ],
+      "name": "North_1_15",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.North",
+      "start": [
+        76.49930572509766,
+        14.919997215270996,
+        -175.726318359375
+      ],
+      "position": [
+        76.49929809570312,
+        14.919998168945312,
+        -183.726318359375
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        25
+      ],
+      "name": "South_1_15",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.South",
+      "start": [
+        76.49930572509766,
+        14.919997215270996,
+        210.6077880859375
+      ],
+      "position": [
+        76.49929809570312,
+        14.919998168945312,
+        218.6077880859375
+      ]
+    },
+    {
+      "direction": [
+        -25,
+        0,
+        0
+      ],
+      "name": "West_1_15",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.West",
+      "start": [
+        42.12977600097656,
+        14.919997215270996,
+        -142.69290161132812
+      ],
+      "position": [
+        34.12977600097656,
+        14.919998168945312,
+        -142.69290161132812
+      ]
+    },
+    {
+      "direction": [
+        25,
+        0,
+        0
+      ],
+      "name": "East_1_15",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.East",
+      "start": [
+        441.8251037597656,
+        14.919997215270996,
+        -142.69290161132812
+      ],
+      "position": [
+        449.8251037597656,
+        14.919998168945312,
+        -142.69290161132812
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        -25
+      ],
+      "name": "North_2_15",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.North",
+      "start": [
+        117.86884307861328,
+        14.919997215270996,
+        -175.726318359375
+      ],
+      "position": [
+        117.86884307861328,
+        14.919998168945312,
+        -183.726318359375
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        25
+      ],
+      "name": "South_2_15",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.South",
+      "start": [
+        117.86884307861328,
+        14.919997215270996,
+        210.6077880859375
+      ],
+      "position": [
+        117.86884307861328,
+        14.919998168945312,
+        218.6077880859375
+      ]
+    },
+    {
+      "direction": [
+        -25,
+        0,
+        0
+      ],
+      "name": "West_2_15",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.West",
+      "start": [
+        42.12977600097656,
+        14.919997215270996,
+        -102.65950012207031
+      ],
+      "position": [
+        34.12977600097656,
+        14.919998168945312,
+        -102.65950012207031
+      ]
+    },
+    {
+      "direction": [
+        25,
+        0,
+        0
+      ],
+      "name": "East_2_15",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.East",
+      "start": [
+        441.8251037597656,
+        14.919997215270996,
+        -102.65950012207031
+      ],
+      "position": [
+        449.8251037597656,
+        14.919998168945312,
+        -102.65950012207031
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        -25
+      ],
+      "name": "North_3_15",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.North",
+      "start": [
+        159.23837280273438,
+        14.919997215270996,
+        -175.726318359375
+      ],
+      "position": [
+        159.23837280273438,
+        14.919998168945312,
+        -183.726318359375
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        25
+      ],
+      "name": "South_3_15",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.South",
+      "start": [
+        159.23837280273438,
+        14.919997215270996,
+        210.6077880859375
+      ],
+      "position": [
+        159.23837280273438,
+        14.919998168945312,
+        218.6077880859375
+      ]
+    },
+    {
+      "direction": [
+        -25,
+        0,
+        0
+      ],
+      "name": "West_3_15",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.West",
+      "start": [
+        42.12977600097656,
+        14.919997215270996,
+        -62.6260871887207
+      ],
+      "position": [
+        34.12977600097656,
+        14.919998168945312,
+        -62.62608337402344
+      ]
+    },
+    {
+      "direction": [
+        25,
+        0,
+        0
+      ],
+      "name": "East_3_15",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.East",
+      "start": [
+        441.8251037597656,
+        14.919997215270996,
+        -62.6260871887207
+      ],
+      "position": [
+        449.8251037597656,
+        14.919998168945312,
+        -62.62608337402344
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        -25
+      ],
+      "name": "North_4_15",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.North",
+      "start": [
+        200.60791015625,
+        14.919997215270996,
+        -175.726318359375
+      ],
+      "position": [
+        200.60791015625,
+        14.919998168945312,
+        -183.726318359375
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        25
+      ],
+      "name": "South_4_15",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.South",
+      "start": [
+        200.60791015625,
+        14.919997215270996,
+        210.6077880859375
+      ],
+      "position": [
+        200.60791015625,
+        14.919998168945312,
+        218.6077880859375
+      ]
+    },
+    {
+      "direction": [
+        -25,
+        0,
+        0
+      ],
+      "name": "West_4_15",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.West",
+      "start": [
+        42.12977600097656,
+        14.919997215270996,
+        -22.592676162719727
+      ],
+      "position": [
+        34.12977600097656,
+        14.919998168945312,
+        -22.592674255371094
+      ]
+    },
+    {
+      "direction": [
+        25,
+        0,
+        0
+      ],
+      "name": "East_4_15",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.East",
+      "start": [
+        441.8251037597656,
+        14.919997215270996,
+        -22.592676162719727
+      ],
+      "position": [
+        449.8251037597656,
+        14.919998168945312,
+        -22.592674255371094
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        -25
+      ],
+      "name": "North_5_15",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.North",
+      "start": [
+        241.97744750976562,
+        14.919997215270996,
+        -175.726318359375
+      ],
+      "position": [
+        241.97744750976562,
+        14.919998168945312,
+        -183.726318359375
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        25
+      ],
+      "name": "South_5_15",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.South",
+      "start": [
+        241.97744750976562,
+        14.919997215270996,
+        210.6077880859375
+      ],
+      "position": [
+        241.97744750976562,
+        14.919998168945312,
+        218.6077880859375
+      ]
+    },
+    {
+      "direction": [
+        -25,
+        0,
+        0
+      ],
+      "name": "West_5_15",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.West",
+      "start": [
+        42.12977600097656,
+        14.919997215270996,
+        17.44073486328125
+      ],
+      "position": [
+        34.12977600097656,
+        14.919998168945312,
+        17.44073486328125
+      ]
+    },
+    {
+      "direction": [
+        25,
+        0,
+        0
+      ],
+      "name": "East_5_15",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.East",
+      "start": [
+        441.8251037597656,
+        14.919997215270996,
+        17.44073486328125
+      ],
+      "position": [
+        449.8251037597656,
+        14.919998168945312,
+        17.44073486328125
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        -25
+      ],
+      "name": "North_6_15",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.North",
+      "start": [
+        283.34698486328125,
+        14.919997215270996,
+        -175.726318359375
+      ],
+      "position": [
+        283.34698486328125,
+        14.919998168945312,
+        -183.726318359375
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        25
+      ],
+      "name": "South_6_15",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.South",
+      "start": [
+        283.34698486328125,
+        14.919997215270996,
+        210.6077880859375
+      ],
+      "position": [
+        283.34698486328125,
+        14.919998168945312,
+        218.6077880859375
+      ]
+    },
+    {
+      "direction": [
+        -25,
+        0,
+        0
+      ],
+      "name": "West_6_15",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.West",
+      "start": [
+        42.12977600097656,
+        14.919997215270996,
+        57.474143981933594
+      ],
+      "position": [
+        34.12977600097656,
+        14.919998168945312,
+        57.474143981933594
+      ]
+    },
+    {
+      "direction": [
+        25,
+        0,
+        0
+      ],
+      "name": "East_6_15",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.East",
+      "start": [
+        441.8251037597656,
+        14.919997215270996,
+        57.474143981933594
+      ],
+      "position": [
+        449.8251037597656,
+        14.919998168945312,
+        57.474143981933594
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        -25
+      ],
+      "name": "North_7_15",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.North",
+      "start": [
+        324.71649169921875,
+        14.919997215270996,
+        -175.726318359375
+      ],
+      "position": [
+        324.71649169921875,
+        14.919998168945312,
+        -183.726318359375
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        25
+      ],
+      "name": "South_7_15",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.South",
+      "start": [
+        324.71649169921875,
+        14.919997215270996,
+        210.6077880859375
+      ],
+      "position": [
+        324.71649169921875,
+        14.919998168945312,
+        218.6077880859375
+      ]
+    },
+    {
+      "direction": [
+        -25,
+        0,
+        0
+      ],
+      "name": "West_7_15",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.West",
+      "start": [
+        42.12977600097656,
+        14.919997215270996,
+        97.50755310058594
+      ],
+      "position": [
+        34.12977600097656,
+        14.919998168945312,
+        97.50755310058594
+      ]
+    },
+    {
+      "direction": [
+        25,
+        0,
+        0
+      ],
+      "name": "East_7_15",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.East",
+      "start": [
+        441.8251037597656,
+        14.919997215270996,
+        97.50755310058594
+      ],
+      "position": [
+        449.8251037597656,
+        14.919998168945312,
+        97.50755310058594
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        -25
+      ],
+      "name": "North_8_15",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.North",
+      "start": [
+        366.0860290527344,
+        14.919997215270996,
+        -175.726318359375
+      ],
+      "position": [
+        366.0860290527344,
+        14.919998168945312,
+        -183.726318359375
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        25
+      ],
+      "name": "South_8_15",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.South",
+      "start": [
+        366.0860290527344,
+        14.919997215270996,
+        210.6077880859375
+      ],
+      "position": [
+        366.0860290527344,
+        14.919998168945312,
+        218.6077880859375
+      ]
+    },
+    {
+      "direction": [
+        -25,
+        0,
+        0
+      ],
+      "name": "West_8_15",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.West",
+      "start": [
+        42.12977600097656,
+        14.919997215270996,
+        137.5409698486328
+      ],
+      "position": [
+        34.12977600097656,
+        14.919998168945312,
+        137.5409698486328
+      ]
+    },
+    {
+      "direction": [
+        25,
+        0,
+        0
+      ],
+      "name": "East_8_15",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.East",
+      "start": [
+        441.8251037597656,
+        14.919997215270996,
+        137.5409698486328
+      ],
+      "position": [
+        449.8251037597656,
+        14.919998168945312,
+        137.5409698486328
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        -25
+      ],
+      "name": "North_9_15",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.North",
+      "start": [
+        407.45556640625,
+        14.919997215270996,
+        -175.726318359375
+      ],
+      "position": [
+        407.45556640625,
+        14.919998168945312,
+        -183.726318359375
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        25
+      ],
+      "name": "South_9_15",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.South",
+      "start": [
+        407.45556640625,
+        14.919997215270996,
+        210.6077880859375
+      ],
+      "position": [
+        407.45556640625,
+        14.919998168945312,
+        218.6077880859375
+      ]
+    },
+    {
+      "direction": [
+        -25,
+        0,
+        0
+      ],
+      "name": "West_9_15",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.West",
+      "start": [
+        42.12977600097656,
+        14.919997215270996,
+        177.57437133789062
+      ],
+      "position": [
+        34.12977600097656,
+        14.919998168945312,
+        177.57437133789062
+      ]
+    },
+    {
+      "direction": [
+        25,
+        0,
+        0
+      ],
+      "name": "East_9_15",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.East",
+      "start": [
+        441.8251037597656,
+        14.919997215270996,
+        177.57437133789062
+      ],
+      "position": [
+        449.8251037597656,
+        14.919998168945312,
+        177.57437133789062
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        -25
+      ],
+      "name": "North_10_15",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.North",
+      "start": [
+        448.8251037597656,
+        14.919997215270996,
+        -175.726318359375
+      ],
+      "position": [
+        448.8251037597656,
+        14.919998168945312,
+        -183.726318359375
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        25
+      ],
+      "name": "South_10_15",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.South",
+      "start": [
+        448.8251037597656,
+        14.919997215270996,
+        210.6077880859375
+      ],
+      "position": [
+        448.8251037597656,
+        14.919998168945312,
+        218.6077880859375
+      ]
+    },
+    {
+      "direction": [
+        -25,
+        0,
+        0
+      ],
+      "name": "West_10_15",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.West",
+      "start": [
+        42.12977600097656,
+        14.919997215270996,
+        217.6077880859375
+      ],
+      "position": [
+        34.12977600097656,
+        14.919998168945312,
+        217.6077880859375
+      ]
+    },
+    {
+      "direction": [
+        25,
+        0,
+        0
+      ],
+      "name": "East_10_15",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.East",
+      "start": [
+        441.8251037597656,
+        14.919997215270996,
+        217.6077880859375
+      ],
+      "position": [
+        449.8251037597656,
+        14.919998168945312,
+        217.6077880859375
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        -25
+      ],
+      "name": "North_0_50",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.North",
+      "start": [
+        35.12977600097656,
+        49.91999816894531,
+        -175.726318359375
+      ],
+      "position": [
+        35.12977600097656,
+        49.91999816894531,
+        -183.726318359375
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        25
+      ],
+      "name": "South_0_50",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.South",
+      "start": [
+        35.12977600097656,
+        49.91999816894531,
+        210.6077880859375
+      ],
+      "position": [
+        35.12977600097656,
+        49.91999816894531,
+        218.6077880859375
+      ]
+    },
+    {
+      "direction": [
+        -25,
+        0,
+        0
+      ],
+      "name": "West_0_50",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.West",
+      "start": [
+        42.12977600097656,
+        49.91999816894531,
+        -182.726318359375
+      ],
+      "position": [
+        34.12977600097656,
+        49.91999816894531,
+        -182.726318359375
+      ]
+    },
+    {
+      "direction": [
+        25,
+        0,
+        0
+      ],
+      "name": "East_0_50",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.East",
+      "start": [
+        441.8251037597656,
+        49.91999816894531,
+        -182.726318359375
+      ],
+      "position": [
+        449.8251037597656,
+        49.91999816894531,
+        -182.726318359375
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        -25
+      ],
+      "name": "North_1_50",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.North",
+      "start": [
+        76.49930572509766,
+        49.91999816894531,
+        -175.726318359375
+      ],
+      "position": [
+        76.49929809570312,
+        49.91999816894531,
+        -183.726318359375
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        25
+      ],
+      "name": "South_1_50",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.South",
+      "start": [
+        76.49930572509766,
+        49.91999816894531,
+        210.6077880859375
+      ],
+      "position": [
+        76.49929809570312,
+        49.91999816894531,
+        218.6077880859375
+      ]
+    },
+    {
+      "direction": [
+        -25,
+        0,
+        0
+      ],
+      "name": "West_1_50",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.West",
+      "start": [
+        42.12977600097656,
+        49.91999816894531,
+        -142.69290161132812
+      ],
+      "position": [
+        34.12977600097656,
+        49.91999816894531,
+        -142.69290161132812
+      ]
+    },
+    {
+      "direction": [
+        25,
+        0,
+        0
+      ],
+      "name": "East_1_50",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.East",
+      "start": [
+        441.8251037597656,
+        49.91999816894531,
+        -142.69290161132812
+      ],
+      "position": [
+        449.8251037597656,
+        49.91999816894531,
+        -142.69290161132812
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        -25
+      ],
+      "name": "North_2_50",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.North",
+      "start": [
+        117.86884307861328,
+        49.91999816894531,
+        -175.726318359375
+      ],
+      "position": [
+        117.86884307861328,
+        49.91999816894531,
+        -183.726318359375
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        25
+      ],
+      "name": "South_2_50",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.South",
+      "start": [
+        117.86884307861328,
+        49.91999816894531,
+        210.6077880859375
+      ],
+      "position": [
+        117.86884307861328,
+        49.91999816894531,
+        218.6077880859375
+      ]
+    },
+    {
+      "direction": [
+        -25,
+        0,
+        0
+      ],
+      "name": "West_2_50",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.West",
+      "start": [
+        42.12977600097656,
+        49.91999816894531,
+        -102.65950012207031
+      ],
+      "position": [
+        34.12977600097656,
+        49.91999816894531,
+        -102.65950012207031
+      ]
+    },
+    {
+      "direction": [
+        25,
+        0,
+        0
+      ],
+      "name": "East_2_50",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.East",
+      "start": [
+        441.8251037597656,
+        49.91999816894531,
+        -102.65950012207031
+      ],
+      "position": [
+        449.8251037597656,
+        49.91999816894531,
+        -102.65950012207031
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        -25
+      ],
+      "name": "North_3_50",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.North",
+      "start": [
+        159.23837280273438,
+        49.91999816894531,
+        -175.726318359375
+      ],
+      "position": [
+        159.23837280273438,
+        49.91999816894531,
+        -183.726318359375
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        25
+      ],
+      "name": "South_3_50",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.South",
+      "start": [
+        159.23837280273438,
+        49.91999816894531,
+        210.6077880859375
+      ],
+      "position": [
+        159.23837280273438,
+        49.91999816894531,
+        218.6077880859375
+      ]
+    },
+    {
+      "direction": [
+        -25,
+        0,
+        0
+      ],
+      "name": "West_3_50",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.West",
+      "start": [
+        42.12977600097656,
+        49.91999816894531,
+        -62.6260871887207
+      ],
+      "position": [
+        34.12977600097656,
+        49.91999816894531,
+        -62.62608337402344
+      ]
+    },
+    {
+      "direction": [
+        25,
+        0,
+        0
+      ],
+      "name": "East_3_50",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.East",
+      "start": [
+        441.8251037597656,
+        49.91999816894531,
+        -62.6260871887207
+      ],
+      "position": [
+        449.8251037597656,
+        49.91999816894531,
+        -62.62608337402344
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        -25
+      ],
+      "name": "North_4_50",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.North",
+      "start": [
+        200.60791015625,
+        49.91999816894531,
+        -175.726318359375
+      ],
+      "position": [
+        200.60791015625,
+        49.91999816894531,
+        -183.726318359375
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        25
+      ],
+      "name": "South_4_50",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.South",
+      "start": [
+        200.60791015625,
+        49.91999816894531,
+        210.6077880859375
+      ],
+      "position": [
+        200.60791015625,
+        49.91999816894531,
+        218.6077880859375
+      ]
+    },
+    {
+      "direction": [
+        -25,
+        0,
+        0
+      ],
+      "name": "West_4_50",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.West",
+      "start": [
+        42.12977600097656,
+        49.91999816894531,
+        -22.592676162719727
+      ],
+      "position": [
+        34.12977600097656,
+        49.91999816894531,
+        -22.592674255371094
+      ]
+    },
+    {
+      "direction": [
+        25,
+        0,
+        0
+      ],
+      "name": "East_4_50",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.East",
+      "start": [
+        441.8251037597656,
+        49.91999816894531,
+        -22.592676162719727
+      ],
+      "position": [
+        449.8251037597656,
+        49.91999816894531,
+        -22.592674255371094
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        -25
+      ],
+      "name": "North_5_50",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.North",
+      "start": [
+        241.97744750976562,
+        49.91999816894531,
+        -175.726318359375
+      ],
+      "position": [
+        241.97744750976562,
+        49.91999816894531,
+        -183.726318359375
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        25
+      ],
+      "name": "South_5_50",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.South",
+      "start": [
+        241.97744750976562,
+        49.91999816894531,
+        210.6077880859375
+      ],
+      "position": [
+        241.97744750976562,
+        49.91999816894531,
+        218.6077880859375
+      ]
+    },
+    {
+      "direction": [
+        -25,
+        0,
+        0
+      ],
+      "name": "West_5_50",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.West",
+      "start": [
+        42.12977600097656,
+        49.91999816894531,
+        17.44073486328125
+      ],
+      "position": [
+        34.12977600097656,
+        49.91999816894531,
+        17.44073486328125
+      ]
+    },
+    {
+      "direction": [
+        25,
+        0,
+        0
+      ],
+      "name": "East_5_50",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.East",
+      "start": [
+        441.8251037597656,
+        49.91999816894531,
+        17.44073486328125
+      ],
+      "position": [
+        449.8251037597656,
+        49.91999816894531,
+        17.44073486328125
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        -25
+      ],
+      "name": "North_6_50",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.North",
+      "start": [
+        283.34698486328125,
+        49.91999816894531,
+        -175.726318359375
+      ],
+      "position": [
+        283.34698486328125,
+        49.91999816894531,
+        -183.726318359375
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        25
+      ],
+      "name": "South_6_50",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.South",
+      "start": [
+        283.34698486328125,
+        49.91999816894531,
+        210.6077880859375
+      ],
+      "position": [
+        283.34698486328125,
+        49.91999816894531,
+        218.6077880859375
+      ]
+    },
+    {
+      "direction": [
+        -25,
+        0,
+        0
+      ],
+      "name": "West_6_50",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.West",
+      "start": [
+        42.12977600097656,
+        49.91999816894531,
+        57.474143981933594
+      ],
+      "position": [
+        34.12977600097656,
+        49.91999816894531,
+        57.474143981933594
+      ]
+    },
+    {
+      "direction": [
+        25,
+        0,
+        0
+      ],
+      "name": "East_6_50",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.East",
+      "start": [
+        441.8251037597656,
+        49.91999816894531,
+        57.474143981933594
+      ],
+      "position": [
+        449.8251037597656,
+        49.91999816894531,
+        57.474143981933594
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        -25
+      ],
+      "name": "North_7_50",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.North",
+      "start": [
+        324.71649169921875,
+        49.91999816894531,
+        -175.726318359375
+      ],
+      "position": [
+        324.71649169921875,
+        49.91999816894531,
+        -183.726318359375
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        25
+      ],
+      "name": "South_7_50",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.South",
+      "start": [
+        324.71649169921875,
+        49.91999816894531,
+        210.6077880859375
+      ],
+      "position": [
+        324.71649169921875,
+        49.91999816894531,
+        218.6077880859375
+      ]
+    },
+    {
+      "direction": [
+        -25,
+        0,
+        0
+      ],
+      "name": "West_7_50",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.West",
+      "start": [
+        42.12977600097656,
+        49.91999816894531,
+        97.50755310058594
+      ],
+      "position": [
+        34.12977600097656,
+        49.91999816894531,
+        97.50755310058594
+      ]
+    },
+    {
+      "direction": [
+        25,
+        0,
+        0
+      ],
+      "name": "East_7_50",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.East",
+      "start": [
+        441.8251037597656,
+        49.91999816894531,
+        97.50755310058594
+      ],
+      "position": [
+        449.8251037597656,
+        49.91999816894531,
+        97.50755310058594
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        -25
+      ],
+      "name": "North_8_50",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.North",
+      "start": [
+        366.0860290527344,
+        49.91999816894531,
+        -175.726318359375
+      ],
+      "position": [
+        366.0860290527344,
+        49.91999816894531,
+        -183.726318359375
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        25
+      ],
+      "name": "South_8_50",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.South",
+      "start": [
+        366.0860290527344,
+        49.91999816894531,
+        210.6077880859375
+      ],
+      "position": [
+        366.0860290527344,
+        49.91999816894531,
+        218.6077880859375
+      ]
+    },
+    {
+      "direction": [
+        -25,
+        0,
+        0
+      ],
+      "name": "West_8_50",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.West",
+      "start": [
+        42.12977600097656,
+        49.91999816894531,
+        137.5409698486328
+      ],
+      "position": [
+        34.12977600097656,
+        49.91999816894531,
+        137.5409698486328
+      ]
+    },
+    {
+      "direction": [
+        25,
+        0,
+        0
+      ],
+      "name": "East_8_50",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.East",
+      "start": [
+        441.8251037597656,
+        49.91999816894531,
+        137.5409698486328
+      ],
+      "position": [
+        449.8251037597656,
+        49.91999816894531,
+        137.5409698486328
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        -25
+      ],
+      "name": "North_9_50",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.North",
+      "start": [
+        407.45556640625,
+        49.91999816894531,
+        -175.726318359375
+      ],
+      "position": [
+        407.45556640625,
+        49.91999816894531,
+        -183.726318359375
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        25
+      ],
+      "name": "South_9_50",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.South",
+      "start": [
+        407.45556640625,
+        49.91999816894531,
+        210.6077880859375
+      ],
+      "position": [
+        407.45556640625,
+        49.91999816894531,
+        218.6077880859375
+      ]
+    },
+    {
+      "direction": [
+        -25,
+        0,
+        0
+      ],
+      "name": "West_9_50",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.West",
+      "start": [
+        42.12977600097656,
+        49.91999816894531,
+        177.57437133789062
+      ],
+      "position": [
+        34.12977600097656,
+        49.91999816894531,
+        177.57437133789062
+      ]
+    },
+    {
+      "direction": [
+        25,
+        0,
+        0
+      ],
+      "name": "East_9_50",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.East",
+      "start": [
+        441.8251037597656,
+        49.91999816894531,
+        177.57437133789062
+      ],
+      "position": [
+        449.8251037597656,
+        49.91999816894531,
+        177.57437133789062
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        -25
+      ],
+      "name": "North_10_50",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.North",
+      "start": [
+        448.8251037597656,
+        49.91999816894531,
+        -175.726318359375
+      ],
+      "position": [
+        448.8251037597656,
+        49.91999816894531,
+        -183.726318359375
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        25
+      ],
+      "name": "South_10_50",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.South",
+      "start": [
+        448.8251037597656,
+        49.91999816894531,
+        210.6077880859375
+      ],
+      "position": [
+        448.8251037597656,
+        49.91999816894531,
+        218.6077880859375
+      ]
+    },
+    {
+      "direction": [
+        -25,
+        0,
+        0
+      ],
+      "name": "West_10_50",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.West",
+      "start": [
+        42.12977600097656,
+        49.91999816894531,
+        217.6077880859375
+      ],
+      "position": [
+        34.12977600097656,
+        49.91999816894531,
+        217.6077880859375
+      ]
+    },
+    {
+      "direction": [
+        25,
+        0,
+        0
+      ],
+      "name": "East_10_50",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.East",
+      "start": [
+        441.8251037597656,
+        49.91999816894531,
+        217.6077880859375
+      ],
+      "position": [
+        449.8251037597656,
+        49.91999816894531,
+        217.6077880859375
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        -25
+      ],
+      "name": "North_0_90",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.North",
+      "start": [
+        35.12977600097656,
+        89.91999816894531,
+        -175.726318359375
+      ],
+      "position": [
+        35.12977600097656,
+        89.91999816894531,
+        -183.726318359375
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        25
+      ],
+      "name": "South_0_90",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.South",
+      "start": [
+        35.12977600097656,
+        89.91999816894531,
+        210.6077880859375
+      ],
+      "position": [
+        35.12977600097656,
+        89.91999816894531,
+        218.6077880859375
+      ]
+    },
+    {
+      "direction": [
+        -25,
+        0,
+        0
+      ],
+      "name": "West_0_90",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.West",
+      "start": [
+        42.12977600097656,
+        89.91999816894531,
+        -182.726318359375
+      ],
+      "position": [
+        34.12977600097656,
+        89.91999816894531,
+        -182.726318359375
+      ]
+    },
+    {
+      "direction": [
+        25,
+        0,
+        0
+      ],
+      "name": "East_0_90",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.East",
+      "start": [
+        441.8251037597656,
+        89.91999816894531,
+        -182.726318359375
+      ],
+      "position": [
+        449.8251037597656,
+        89.91999816894531,
+        -182.726318359375
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        -25
+      ],
+      "name": "North_1_90",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.North",
+      "start": [
+        76.49930572509766,
+        89.91999816894531,
+        -175.726318359375
+      ],
+      "position": [
+        76.49929809570312,
+        89.91999816894531,
+        -183.726318359375
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        25
+      ],
+      "name": "South_1_90",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.South",
+      "start": [
+        76.49930572509766,
+        89.91999816894531,
+        210.6077880859375
+      ],
+      "position": [
+        76.49929809570312,
+        89.91999816894531,
+        218.6077880859375
+      ]
+    },
+    {
+      "direction": [
+        -25,
+        0,
+        0
+      ],
+      "name": "West_1_90",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.West",
+      "start": [
+        42.12977600097656,
+        89.91999816894531,
+        -142.69290161132812
+      ],
+      "position": [
+        34.12977600097656,
+        89.91999816894531,
+        -142.69290161132812
+      ]
+    },
+    {
+      "direction": [
+        25,
+        0,
+        0
+      ],
+      "name": "East_1_90",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.East",
+      "start": [
+        441.8251037597656,
+        89.91999816894531,
+        -142.69290161132812
+      ],
+      "position": [
+        449.8251037597656,
+        89.91999816894531,
+        -142.69290161132812
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        -25
+      ],
+      "name": "North_2_90",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.North",
+      "start": [
+        117.86884307861328,
+        89.91999816894531,
+        -175.726318359375
+      ],
+      "position": [
+        117.86884307861328,
+        89.91999816894531,
+        -183.726318359375
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        25
+      ],
+      "name": "South_2_90",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.South",
+      "start": [
+        117.86884307861328,
+        89.91999816894531,
+        210.6077880859375
+      ],
+      "position": [
+        117.86884307861328,
+        89.91999816894531,
+        218.6077880859375
+      ]
+    },
+    {
+      "direction": [
+        -25,
+        0,
+        0
+      ],
+      "name": "West_2_90",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.West",
+      "start": [
+        42.12977600097656,
+        89.91999816894531,
+        -102.65950012207031
+      ],
+      "position": [
+        34.12977600097656,
+        89.91999816894531,
+        -102.65950012207031
+      ]
+    },
+    {
+      "direction": [
+        25,
+        0,
+        0
+      ],
+      "name": "East_2_90",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.East",
+      "start": [
+        441.8251037597656,
+        89.91999816894531,
+        -102.65950012207031
+      ],
+      "position": [
+        449.8251037597656,
+        89.91999816894531,
+        -102.65950012207031
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        -25
+      ],
+      "name": "North_3_90",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.North",
+      "start": [
+        159.23837280273438,
+        89.91999816894531,
+        -175.726318359375
+      ],
+      "position": [
+        159.23837280273438,
+        89.91999816894531,
+        -183.726318359375
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        25
+      ],
+      "name": "South_3_90",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.South",
+      "start": [
+        159.23837280273438,
+        89.91999816894531,
+        210.6077880859375
+      ],
+      "position": [
+        159.23837280273438,
+        89.91999816894531,
+        218.6077880859375
+      ]
+    },
+    {
+      "direction": [
+        -25,
+        0,
+        0
+      ],
+      "name": "West_3_90",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.West",
+      "start": [
+        42.12977600097656,
+        89.91999816894531,
+        -62.6260871887207
+      ],
+      "position": [
+        34.12977600097656,
+        89.91999816894531,
+        -62.62608337402344
+      ]
+    },
+    {
+      "direction": [
+        25,
+        0,
+        0
+      ],
+      "name": "East_3_90",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.East",
+      "start": [
+        441.8251037597656,
+        89.91999816894531,
+        -62.6260871887207
+      ],
+      "position": [
+        449.8251037597656,
+        89.91999816894531,
+        -62.62608337402344
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        -25
+      ],
+      "name": "North_4_90",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.North",
+      "start": [
+        200.60791015625,
+        89.91999816894531,
+        -175.726318359375
+      ],
+      "position": [
+        200.60791015625,
+        89.91999816894531,
+        -183.726318359375
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        25
+      ],
+      "name": "South_4_90",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.South",
+      "start": [
+        200.60791015625,
+        89.91999816894531,
+        210.6077880859375
+      ],
+      "position": [
+        200.60791015625,
+        89.91999816894531,
+        218.6077880859375
+      ]
+    },
+    {
+      "direction": [
+        -25,
+        0,
+        0
+      ],
+      "name": "West_4_90",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.West",
+      "start": [
+        42.12977600097656,
+        89.91999816894531,
+        -22.592676162719727
+      ],
+      "position": [
+        34.12977600097656,
+        89.91999816894531,
+        -22.592674255371094
+      ]
+    },
+    {
+      "direction": [
+        25,
+        0,
+        0
+      ],
+      "name": "East_4_90",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.East",
+      "start": [
+        441.8251037597656,
+        89.91999816894531,
+        -22.592676162719727
+      ],
+      "position": [
+        449.8251037597656,
+        89.91999816894531,
+        -22.592674255371094
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        -25
+      ],
+      "name": "North_5_90",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.North",
+      "start": [
+        241.97744750976562,
+        89.91999816894531,
+        -175.726318359375
+      ],
+      "position": [
+        241.97744750976562,
+        89.91999816894531,
+        -183.726318359375
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        25
+      ],
+      "name": "South_5_90",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.South",
+      "start": [
+        241.97744750976562,
+        89.91999816894531,
+        210.6077880859375
+      ],
+      "position": [
+        241.97744750976562,
+        89.91999816894531,
+        218.6077880859375
+      ]
+    },
+    {
+      "direction": [
+        -25,
+        0,
+        0
+      ],
+      "name": "West_5_90",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.West",
+      "start": [
+        42.12977600097656,
+        89.91999816894531,
+        17.44073486328125
+      ],
+      "position": [
+        34.12977600097656,
+        89.91999816894531,
+        17.44073486328125
+      ]
+    },
+    {
+      "direction": [
+        25,
+        0,
+        0
+      ],
+      "name": "East_5_90",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.East",
+      "start": [
+        441.8251037597656,
+        89.91999816894531,
+        17.44073486328125
+      ],
+      "position": [
+        449.8251037597656,
+        89.91999816894531,
+        17.44073486328125
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        -25
+      ],
+      "name": "North_6_90",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.North",
+      "start": [
+        283.34698486328125,
+        89.91999816894531,
+        -175.726318359375
+      ],
+      "position": [
+        283.34698486328125,
+        89.91999816894531,
+        -183.726318359375
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        25
+      ],
+      "name": "South_6_90",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.South",
+      "start": [
+        283.34698486328125,
+        89.91999816894531,
+        210.6077880859375
+      ],
+      "position": [
+        283.34698486328125,
+        89.91999816894531,
+        218.6077880859375
+      ]
+    },
+    {
+      "direction": [
+        -25,
+        0,
+        0
+      ],
+      "name": "West_6_90",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.West",
+      "start": [
+        42.12977600097656,
+        89.91999816894531,
+        57.474143981933594
+      ],
+      "position": [
+        34.12977600097656,
+        89.91999816894531,
+        57.474143981933594
+      ]
+    },
+    {
+      "direction": [
+        25,
+        0,
+        0
+      ],
+      "name": "East_6_90",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.East",
+      "start": [
+        441.8251037597656,
+        89.91999816894531,
+        57.474143981933594
+      ],
+      "position": [
+        449.8251037597656,
+        89.91999816894531,
+        57.474143981933594
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        -25
+      ],
+      "name": "North_7_90",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.North",
+      "start": [
+        324.71649169921875,
+        89.91999816894531,
+        -175.726318359375
+      ],
+      "position": [
+        324.71649169921875,
+        89.91999816894531,
+        -183.726318359375
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        25
+      ],
+      "name": "South_7_90",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.South",
+      "start": [
+        324.71649169921875,
+        89.91999816894531,
+        210.6077880859375
+      ],
+      "position": [
+        324.71649169921875,
+        89.91999816894531,
+        218.6077880859375
+      ]
+    },
+    {
+      "direction": [
+        -25,
+        0,
+        0
+      ],
+      "name": "West_7_90",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.West",
+      "start": [
+        42.12977600097656,
+        89.91999816894531,
+        97.50755310058594
+      ],
+      "position": [
+        34.12977600097656,
+        89.91999816894531,
+        97.50755310058594
+      ]
+    },
+    {
+      "direction": [
+        25,
+        0,
+        0
+      ],
+      "name": "East_7_90",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.East",
+      "start": [
+        441.8251037597656,
+        89.91999816894531,
+        97.50755310058594
+      ],
+      "position": [
+        449.8251037597656,
+        89.91999816894531,
+        97.50755310058594
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        -25
+      ],
+      "name": "North_8_90",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.North",
+      "start": [
+        366.0860290527344,
+        89.91999816894531,
+        -175.726318359375
+      ],
+      "position": [
+        366.0860290527344,
+        89.91999816894531,
+        -183.726318359375
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        25
+      ],
+      "name": "South_8_90",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.South",
+      "start": [
+        366.0860290527344,
+        89.91999816894531,
+        210.6077880859375
+      ],
+      "position": [
+        366.0860290527344,
+        89.91999816894531,
+        218.6077880859375
+      ]
+    },
+    {
+      "direction": [
+        -25,
+        0,
+        0
+      ],
+      "name": "West_8_90",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.West",
+      "start": [
+        42.12977600097656,
+        89.91999816894531,
+        137.5409698486328
+      ],
+      "position": [
+        34.12977600097656,
+        89.91999816894531,
+        137.5409698486328
+      ]
+    },
+    {
+      "direction": [
+        25,
+        0,
+        0
+      ],
+      "name": "East_8_90",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.East",
+      "start": [
+        441.8251037597656,
+        89.91999816894531,
+        137.5409698486328
+      ],
+      "position": [
+        449.8251037597656,
+        89.91999816894531,
+        137.5409698486328
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        -25
+      ],
+      "name": "North_9_90",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.North",
+      "start": [
+        407.45556640625,
+        89.91999816894531,
+        -175.726318359375
+      ],
+      "position": [
+        407.45556640625,
+        89.91999816894531,
+        -183.726318359375
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        25
+      ],
+      "name": "South_9_90",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.South",
+      "start": [
+        407.45556640625,
+        89.91999816894531,
+        210.6077880859375
+      ],
+      "position": [
+        407.45556640625,
+        89.91999816894531,
+        218.6077880859375
+      ]
+    },
+    {
+      "direction": [
+        -25,
+        0,
+        0
+      ],
+      "name": "West_9_90",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.West",
+      "start": [
+        42.12977600097656,
+        89.91999816894531,
+        177.57437133789062
+      ],
+      "position": [
+        34.12977600097656,
+        89.91999816894531,
+        177.57437133789062
+      ]
+    },
+    {
+      "direction": [
+        25,
+        0,
+        0
+      ],
+      "name": "East_9_90",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.East",
+      "start": [
+        441.8251037597656,
+        89.91999816894531,
+        177.57437133789062
+      ],
+      "position": [
+        449.8251037597656,
+        89.91999816894531,
+        177.57437133789062
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        -25
+      ],
+      "name": "North_10_90",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.North",
+      "start": [
+        448.8251037597656,
+        89.91999816894531,
+        -175.726318359375
+      ],
+      "position": [
+        448.8251037597656,
+        89.91999816894531,
+        -183.726318359375
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        25
+      ],
+      "name": "South_10_90",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.South",
+      "start": [
+        448.8251037597656,
+        89.91999816894531,
+        210.6077880859375
+      ],
+      "position": [
+        448.8251037597656,
+        89.91999816894531,
+        218.6077880859375
+      ]
+    },
+    {
+      "direction": [
+        -25,
+        0,
+        0
+      ],
+      "name": "West_10_90",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.West",
+      "start": [
+        42.12977600097656,
+        89.91999816894531,
+        217.6077880859375
+      ],
+      "position": [
+        34.12977600097656,
+        89.91999816894531,
+        217.6077880859375
+      ]
+    },
+    {
+      "direction": [
+        25,
+        0,
+        0
+      ],
+      "name": "East_10_90",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.East",
+      "start": [
+        441.8251037597656,
+        89.91999816894531,
+        217.6077880859375
+      ],
+      "position": [
+        449.8251037597656,
+        89.91999816894531,
+        217.6077880859375
+      ]
+    }
+  ],
+  "captured_at": "2026-10-03T18:18:58Z",
+  "corner_samples": [
+    {
+      "direction": [
+        -25,
+        0,
+        -25
+      ],
+      "name": "NW_0.5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.North",
+      "start": [
+        42.12977600097656,
+        0.4199973940849304,
+        -175.726318359375
+      ],
+      "position": [
+        34.12977600097656,
+        0.4199981689453125,
+        -183.726318359375
+      ]
+    },
+    {
+      "direction": [
+        25,
+        0,
+        -25
+      ],
+      "name": "NE_0.5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.North",
+      "start": [
+        441.8251037597656,
+        0.4199973940849304,
+        -175.726318359375
+      ],
+      "position": [
+        449.8251037597656,
+        0.4199981689453125,
+        -183.726318359375
+      ]
+    },
+    {
+      "direction": [
+        -25,
+        0,
+        25
+      ],
+      "name": "SW_0.5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.South",
+      "start": [
+        42.12977600097656,
+        0.4199973940849304,
+        210.6077880859375
+      ],
+      "position": [
+        34.12977600097656,
+        0.4199981689453125,
+        218.6077880859375
+      ]
+    },
+    {
+      "direction": [
+        25,
+        0,
+        25
+      ],
+      "name": "SE_0.5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.South",
+      "start": [
+        441.8251037597656,
+        0.4199973940849304,
+        210.6077880859375
+      ],
+      "position": [
+        449.8251037597656,
+        0.4199981689453125,
+        218.6077880859375
+      ]
+    },
+    {
+      "direction": [
+        -25,
+        0,
+        -25
+      ],
+      "name": "NW_5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.North",
+      "start": [
+        42.12977600097656,
+        4.919997215270996,
+        -175.726318359375
+      ],
+      "position": [
+        34.12977600097656,
+        4.9199981689453125,
+        -183.726318359375
+      ]
+    },
+    {
+      "direction": [
+        25,
+        0,
+        -25
+      ],
+      "name": "NE_5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.North",
+      "start": [
+        441.8251037597656,
+        4.919997215270996,
+        -175.726318359375
+      ],
+      "position": [
+        449.8251037597656,
+        4.9199981689453125,
+        -183.726318359375
+      ]
+    },
+    {
+      "direction": [
+        -25,
+        0,
+        25
+      ],
+      "name": "SW_5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.South",
+      "start": [
+        42.12977600097656,
+        4.919997215270996,
+        210.6077880859375
+      ],
+      "position": [
+        34.12977600097656,
+        4.9199981689453125,
+        218.6077880859375
+      ]
+    },
+    {
+      "direction": [
+        25,
+        0,
+        25
+      ],
+      "name": "SE_5",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.South",
+      "start": [
+        441.8251037597656,
+        4.919997215270996,
+        210.6077880859375
+      ],
+      "position": [
+        449.8251037597656,
+        4.9199981689453125,
+        218.6077880859375
+      ]
+    },
+    {
+      "direction": [
+        -25,
+        0,
+        -25
+      ],
+      "name": "NW_15",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.North",
+      "start": [
+        42.12977600097656,
+        14.919997215270996,
+        -175.726318359375
+      ],
+      "position": [
+        34.12977600097656,
+        14.919998168945312,
+        -183.726318359375
+      ]
+    },
+    {
+      "direction": [
+        25,
+        0,
+        -25
+      ],
+      "name": "NE_15",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.North",
+      "start": [
+        441.8251037597656,
+        14.919997215270996,
+        -175.726318359375
+      ],
+      "position": [
+        449.8251037597656,
+        14.919998168945312,
+        -183.726318359375
+      ]
+    },
+    {
+      "direction": [
+        -25,
+        0,
+        25
+      ],
+      "name": "SW_15",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.South",
+      "start": [
+        42.12977600097656,
+        14.919997215270996,
+        210.6077880859375
+      ],
+      "position": [
+        34.12977600097656,
+        14.919998168945312,
+        218.6077880859375
+      ]
+    },
+    {
+      "direction": [
+        25,
+        0,
+        25
+      ],
+      "name": "SE_15",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.South",
+      "start": [
+        441.8251037597656,
+        14.919997215270996,
+        210.6077880859375
+      ],
+      "position": [
+        449.8251037597656,
+        14.919998168945312,
+        218.6077880859375
+      ]
+    },
+    {
+      "direction": [
+        -25,
+        0,
+        -25
+      ],
+      "name": "NW_50",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.North",
+      "start": [
+        42.12977600097656,
+        49.91999816894531,
+        -175.726318359375
+      ],
+      "position": [
+        34.12977600097656,
+        49.91999816894531,
+        -183.726318359375
+      ]
+    },
+    {
+      "direction": [
+        25,
+        0,
+        -25
+      ],
+      "name": "NE_50",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.North",
+      "start": [
+        441.8251037597656,
+        49.91999816894531,
+        -175.726318359375
+      ],
+      "position": [
+        449.8251037597656,
+        49.91999816894531,
+        -183.726318359375
+      ]
+    },
+    {
+      "direction": [
+        -25,
+        0,
+        25
+      ],
+      "name": "SW_50",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.South",
+      "start": [
+        42.12977600097656,
+        49.91999816894531,
+        210.6077880859375
+      ],
+      "position": [
+        34.12977600097656,
+        49.91999816894531,
+        218.6077880859375
+      ]
+    },
+    {
+      "direction": [
+        25,
+        0,
+        25
+      ],
+      "name": "SE_50",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.South",
+      "start": [
+        441.8251037597656,
+        49.91999816894531,
+        210.6077880859375
+      ],
+      "position": [
+        449.8251037597656,
+        49.91999816894531,
+        218.6077880859375
+      ]
+    },
+    {
+      "direction": [
+        -25,
+        0,
+        -25
+      ],
+      "name": "NW_90",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.North",
+      "start": [
+        42.12977600097656,
+        89.91999816894531,
+        -175.726318359375
+      ],
+      "position": [
+        34.12977600097656,
+        89.91999816894531,
+        -183.726318359375
+      ]
+    },
+    {
+      "direction": [
+        25,
+        0,
+        -25
+      ],
+      "name": "NE_90",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.North",
+      "start": [
+        441.8251037597656,
+        89.91999816894531,
+        -175.726318359375
+      ],
+      "position": [
+        449.8251037597656,
+        89.91999816894531,
+        -183.726318359375
+      ]
+    },
+    {
+      "direction": [
+        -25,
+        0,
+        25
+      ],
+      "name": "SW_90",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.South",
+      "start": [
+        42.12977600097656,
+        89.91999816894531,
+        210.6077880859375
+      ],
+      "position": [
+        34.12977600097656,
+        89.91999816894531,
+        218.6077880859375
+      ]
+    },
+    {
+      "direction": [
+        25,
+        0,
+        25
+      ],
+      "name": "SE_90",
+      "hit": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.South",
+      "start": [
+        441.8251037597656,
+        89.91999816894531,
+        210.6077880859375
+      ],
+      "position": [
+        449.8251037597656,
+        89.91999816894531,
+        218.6077880859375
+      ]
+    }
+  ],
+  "walls": [
+    {
+      "top": 91.91999816894531,
+      "path": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.North",
+      "bottom": -4.0800018310546875,
+      "position": [
+        241.97744750976562,
+        43.91999816894531,
+        -184.726318359375
+      ],
+      "collide": true,
+      "touch": false,
+      "query": false,
+      "size": [
+        443.6953125,
+        96,
+        2
+      ]
+    },
+    {
+      "top": 91.91999816894531,
+      "path": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.South",
+      "bottom": -4.0800018310546875,
+      "position": [
+        241.97744750976562,
+        43.91999816894531,
+        219.6077880859375
+      ],
+      "collide": true,
+      "touch": false,
+      "query": false,
+      "size": [
+        443.6953125,
+        96,
+        2
+      ]
+    },
+    {
+      "top": 91.91999816894531,
+      "path": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.West",
+      "bottom": -4.0800018310546875,
+      "position": [
+        33.12977600097656,
+        43.91999816894531,
+        17.44073486328125
+      ],
+      "collide": true,
+      "touch": false,
+      "query": false,
+      "size": [
+        2,
+        96,
+        410.3341064453125
+      ]
+    },
+    {
+      "top": 91.91999816894531,
+      "path": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.ContinuousEnclosure.East",
+      "bottom": -4.0800018310546875,
+      "position": [
+        450.8251037597656,
+        43.91999816894531,
+        17.44073486328125
+      ],
+      "collide": true,
+      "touch": false,
+      "query": false,
+      "size": [
+        2,
+        96,
+        410.3341064453125
+      ]
+    }
+  ],
+  "limits": "Finite geometry sample is supplemented by actual ordinary Client walking/jumping; no teleport exploit guarantee",
+  "ground": {
+    "floor_top": -0.12000259757041931,
+    "position": [
+      241.97744750976562,
+      -0.2800025939941406,
+      17.44073486328125
+    ],
+    "collide": true,
+    "field_y": -0.08000259101390839,
+    "size": [
+      420.6953125,
+      0.3199999928474426,
+      407.3341064453125
+    ]
+  },
+  "missed_samples": [],
+  "shells_roofs": [
+    {
+      "path": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.NorthHouseJasperBackdrop.Building01",
+      "roof_bottom": 31.89499741792679,
+      "shell_top": 31.919997215270996,
+      "shell_bottom": -0.0800027847290039,
+      "roof_collide": true,
+      "shell_collide": true
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.NorthHouseJasperBackdrop.Building02",
+      "roof_bottom": 34.89499741792679,
+      "shell_top": 34.91999816894531,
+      "shell_bottom": -0.0800018310546875,
+      "roof_collide": true,
+      "shell_collide": true
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.NorthHouseJasperBackdrop.Building03",
+      "roof_bottom": 37.89499741792679,
+      "shell_top": 37.91999816894531,
+      "shell_bottom": -0.0800018310546875,
+      "roof_collide": true,
+      "shell_collide": true
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.NorthHouseJasperBackdrop.Building04",
+      "roof_bottom": 25.89499741792679,
+      "shell_top": 25.919997215270996,
+      "shell_bottom": -0.0800027847290039,
+      "roof_collide": true,
+      "shell_collide": true
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.NorthHouseJasperBackdrop.Building05",
+      "roof_bottom": 28.89499741792679,
+      "shell_top": 28.919997215270996,
+      "shell_bottom": -0.0800027847290039,
+      "roof_collide": true,
+      "shell_collide": true
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.NorthHouseJasperBackdrop.Building06",
+      "roof_bottom": 31.89499741792679,
+      "shell_top": 31.919997215270996,
+      "shell_bottom": -0.0800027847290039,
+      "roof_collide": true,
+      "shell_collide": true
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.NorthHouseJasperBackdrop.Building07",
+      "roof_bottom": 34.89499741792679,
+      "shell_top": 34.91999816894531,
+      "shell_bottom": -0.0800018310546875,
+      "roof_collide": true,
+      "shell_collide": true
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.NorthHouseJasperBackdrop.Building08",
+      "roof_bottom": 37.89499741792679,
+      "shell_top": 37.91999816894531,
+      "shell_bottom": -0.0800018310546875,
+      "roof_collide": true,
+      "shell_collide": true
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.NorthHouseJasperBackdrop.Building09",
+      "roof_bottom": 25.89499741792679,
+      "shell_top": 25.919997215270996,
+      "shell_bottom": -0.0800027847290039,
+      "roof_collide": true,
+      "shell_collide": true
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.NorthHouseJasperBackdrop.Building10",
+      "roof_bottom": 28.89499741792679,
+      "shell_top": 28.919997215270996,
+      "shell_bottom": -0.0800027847290039,
+      "roof_collide": true,
+      "shell_collide": true
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.NorthHouseJasperBackdrop.Building11",
+      "roof_bottom": 31.89499741792679,
+      "shell_top": 31.919997215270996,
+      "shell_bottom": -0.0800027847290039,
+      "roof_collide": true,
+      "shell_collide": true
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.NorthHouseJasperBackdrop.Building12",
+      "roof_bottom": 34.89499741792679,
+      "shell_top": 34.91999816894531,
+      "shell_bottom": -0.0800018310546875,
+      "roof_collide": true,
+      "shell_collide": true
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.NorthHouseJasperBackdrop.Building13",
+      "roof_bottom": 37.89499741792679,
+      "shell_top": 37.91999816894531,
+      "shell_bottom": -0.0800018310546875,
+      "roof_collide": true,
+      "shell_collide": true
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.NorthHouseJasperBackdrop.Building14",
+      "roof_bottom": 25.89499741792679,
+      "shell_top": 25.919997215270996,
+      "shell_bottom": -0.0800027847290039,
+      "roof_collide": true,
+      "shell_collide": true
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.NorthHouseJasperBackdrop.Building15",
+      "roof_bottom": 28.89499741792679,
+      "shell_top": 28.919997215270996,
+      "shell_bottom": -0.0800027847290039,
+      "roof_collide": true,
+      "shell_collide": true
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.SouthArrivalPatioBackdrop.Building01",
+      "roof_bottom": 37.89499741792679,
+      "shell_top": 37.91999816894531,
+      "shell_bottom": -0.0800018310546875,
+      "roof_collide": true,
+      "shell_collide": true
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.SouthArrivalPatioBackdrop.Building02",
+      "roof_bottom": 25.89499741792679,
+      "shell_top": 25.919997215270996,
+      "shell_bottom": -0.0800027847290039,
+      "roof_collide": true,
+      "shell_collide": true
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.SouthArrivalPatioBackdrop.Building03",
+      "roof_bottom": 28.89499741792679,
+      "shell_top": 28.919997215270996,
+      "shell_bottom": -0.0800027847290039,
+      "roof_collide": true,
+      "shell_collide": true
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.SouthArrivalPatioBackdrop.Building04",
+      "roof_bottom": 31.89499741792679,
+      "shell_top": 31.919997215270996,
+      "shell_bottom": -0.0800027847290039,
+      "roof_collide": true,
+      "shell_collide": true
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.SouthArrivalPatioBackdrop.Building05",
+      "roof_bottom": 34.89499741792679,
+      "shell_top": 34.91999816894531,
+      "shell_bottom": -0.0800018310546875,
+      "roof_collide": true,
+      "shell_collide": true
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.SouthArrivalPatioBackdrop.Building06",
+      "roof_bottom": 37.89499741792679,
+      "shell_top": 37.91999816894531,
+      "shell_bottom": -0.0800018310546875,
+      "roof_collide": true,
+      "shell_collide": true
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.SouthArrivalPatioBackdrop.Building07",
+      "roof_bottom": 25.89499741792679,
+      "shell_top": 25.919997215270996,
+      "shell_bottom": -0.0800027847290039,
+      "roof_collide": true,
+      "shell_collide": true
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.SouthArrivalPatioBackdrop.Building08",
+      "roof_bottom": 28.89499741792679,
+      "shell_top": 28.919997215270996,
+      "shell_bottom": -0.0800027847290039,
+      "roof_collide": true,
+      "shell_collide": true
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.SouthArrivalPatioBackdrop.Building09",
+      "roof_bottom": 31.89499741792679,
+      "shell_top": 31.919997215270996,
+      "shell_bottom": -0.0800027847290039,
+      "roof_collide": true,
+      "shell_collide": true
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.SouthArrivalPatioBackdrop.Building10",
+      "roof_bottom": 34.89499741792679,
+      "shell_top": 34.91999816894531,
+      "shell_bottom": -0.0800018310546875,
+      "roof_collide": true,
+      "shell_collide": true
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.SouthArrivalPatioBackdrop.Building11",
+      "roof_bottom": 37.89499741792679,
+      "shell_top": 37.91999816894531,
+      "shell_bottom": -0.0800018310546875,
+      "roof_collide": true,
+      "shell_collide": true
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.SouthArrivalPatioBackdrop.Building12",
+      "roof_bottom": 25.89499741792679,
+      "shell_top": 25.919997215270996,
+      "shell_bottom": -0.0800027847290039,
+      "roof_collide": true,
+      "shell_collide": true
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.SouthArrivalPatioBackdrop.Building13",
+      "roof_bottom": 28.89499741792679,
+      "shell_top": 28.919997215270996,
+      "shell_bottom": -0.0800027847290039,
+      "roof_collide": true,
+      "shell_collide": true
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.SouthArrivalPatioBackdrop.Building14",
+      "roof_bottom": 31.89499741792679,
+      "shell_top": 31.919997215270996,
+      "shell_bottom": -0.0800027847290039,
+      "roof_collide": true,
+      "shell_collide": true
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.SouthArrivalPatioBackdrop.Building15",
+      "roof_bottom": 34.89499741792679,
+      "shell_top": 34.91999816894531,
+      "shell_bottom": -0.0800018310546875,
+      "roof_collide": true,
+      "shell_collide": true
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.WestUDistrictBackdrop.Building01",
+      "roof_bottom": 34.89499741792679,
+      "shell_top": 34.91999816894531,
+      "shell_bottom": -0.0800018310546875,
+      "roof_collide": true,
+      "shell_collide": true
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.WestUDistrictBackdrop.Building02",
+      "roof_bottom": 37.89499741792679,
+      "shell_top": 37.91999816894531,
+      "shell_bottom": -0.0800018310546875,
+      "roof_collide": true,
+      "shell_collide": true
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.WestUDistrictBackdrop.Building03",
+      "roof_bottom": 25.89499741792679,
+      "shell_top": 25.919997215270996,
+      "shell_bottom": -0.0800027847290039,
+      "roof_collide": true,
+      "shell_collide": true
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.WestUDistrictBackdrop.Building04",
+      "roof_bottom": 28.89499741792679,
+      "shell_top": 28.919997215270996,
+      "shell_bottom": -0.0800027847290039,
+      "roof_collide": true,
+      "shell_collide": true
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.WestUDistrictBackdrop.Building05",
+      "roof_bottom": 31.89499741792679,
+      "shell_top": 31.919997215270996,
+      "shell_bottom": -0.0800027847290039,
+      "roof_collide": true,
+      "shell_collide": true
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.WestUDistrictBackdrop.Building06",
+      "roof_bottom": 34.89499741792679,
+      "shell_top": 34.91999816894531,
+      "shell_bottom": -0.0800018310546875,
+      "roof_collide": true,
+      "shell_collide": true
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.WestUDistrictBackdrop.Building07",
+      "roof_bottom": 37.89499741792679,
+      "shell_top": 37.91999816894531,
+      "shell_bottom": -0.0800018310546875,
+      "roof_collide": true,
+      "shell_collide": true
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.WestUDistrictBackdrop.Building08",
+      "roof_bottom": 25.89499741792679,
+      "shell_top": 25.919997215270996,
+      "shell_bottom": -0.0800027847290039,
+      "roof_collide": true,
+      "shell_collide": true
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.WestUDistrictBackdrop.Building09",
+      "roof_bottom": 28.89499741792679,
+      "shell_top": 28.919997215270996,
+      "shell_bottom": -0.0800027847290039,
+      "roof_collide": true,
+      "shell_collide": true
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.WestUDistrictBackdrop.Building10",
+      "roof_bottom": 31.89499741792679,
+      "shell_top": 31.919997215270996,
+      "shell_bottom": -0.0800027847290039,
+      "roof_collide": true,
+      "shell_collide": true
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.WestUDistrictBackdrop.Building11",
+      "roof_bottom": 34.89499741792679,
+      "shell_top": 34.91999816894531,
+      "shell_bottom": -0.0800018310546875,
+      "roof_collide": true,
+      "shell_collide": true
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.WestUDistrictBackdrop.Building12",
+      "roof_bottom": 37.89499741792679,
+      "shell_top": 37.91999816894531,
+      "shell_bottom": -0.0800018310546875,
+      "roof_collide": true,
+      "shell_collide": true
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.WestUDistrictBackdrop.Building13",
+      "roof_bottom": 25.89499741792679,
+      "shell_top": 25.919997215270996,
+      "shell_bottom": -0.0800027847290039,
+      "roof_collide": true,
+      "shell_collide": true
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.WestUDistrictBackdrop.Building14",
+      "roof_bottom": 28.89499741792679,
+      "shell_top": 28.919997215270996,
+      "shell_bottom": -0.0800027847290039,
+      "roof_collide": true,
+      "shell_collide": true
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.EastQuadBackdrop.Building01",
+      "roof_bottom": 25.89499741792679,
+      "shell_top": 25.919997215270996,
+      "shell_bottom": -0.0800027847290039,
+      "roof_collide": true,
+      "shell_collide": true
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.EastQuadBackdrop.Building02",
+      "roof_bottom": 28.89499741792679,
+      "shell_top": 28.919997215270996,
+      "shell_bottom": -0.0800027847290039,
+      "roof_collide": true,
+      "shell_collide": true
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.EastQuadBackdrop.Building03",
+      "roof_bottom": 31.89499741792679,
+      "shell_top": 31.919997215270996,
+      "shell_bottom": -0.0800027847290039,
+      "roof_collide": true,
+      "shell_collide": true
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.EastQuadBackdrop.Building04",
+      "roof_bottom": 34.89499741792679,
+      "shell_top": 34.91999816894531,
+      "shell_bottom": -0.0800018310546875,
+      "roof_collide": true,
+      "shell_collide": true
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.EastQuadBackdrop.Building05",
+      "roof_bottom": 37.89499741792679,
+      "shell_top": 37.91999816894531,
+      "shell_bottom": -0.0800018310546875,
+      "roof_collide": true,
+      "shell_collide": true
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.EastQuadBackdrop.Building06",
+      "roof_bottom": 25.89499741792679,
+      "shell_top": 25.919997215270996,
+      "shell_bottom": -0.0800027847290039,
+      "roof_collide": true,
+      "shell_collide": true
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.EastQuadBackdrop.Building07",
+      "roof_bottom": 28.89499741792679,
+      "shell_top": 28.919997215270996,
+      "shell_bottom": -0.0800027847290039,
+      "roof_collide": true,
+      "shell_collide": true
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.EastQuadBackdrop.Building08",
+      "roof_bottom": 31.89499741792679,
+      "shell_top": 31.919997215270996,
+      "shell_bottom": -0.0800027847290039,
+      "roof_collide": true,
+      "shell_collide": true
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.EastQuadBackdrop.Building09",
+      "roof_bottom": 34.89499741792679,
+      "shell_top": 34.91999816894531,
+      "shell_bottom": -0.0800018310546875,
+      "roof_collide": true,
+      "shell_collide": true
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.EastQuadBackdrop.Building10",
+      "roof_bottom": 37.89499741792679,
+      "shell_top": 37.91999816894531,
+      "shell_bottom": -0.0800018310546875,
+      "roof_collide": true,
+      "shell_collide": true
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.EastQuadBackdrop.Building11",
+      "roof_bottom": 25.89499741792679,
+      "shell_top": 25.919997215270996,
+      "shell_bottom": -0.0800027847290039,
+      "roof_collide": true,
+      "shell_collide": true
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.EastQuadBackdrop.Building12",
+      "roof_bottom": 28.89499741792679,
+      "shell_top": 28.919997215270996,
+      "shell_bottom": -0.0800027847290039,
+      "roof_collide": true,
+      "shell_collide": true
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.EastQuadBackdrop.Building13",
+      "roof_bottom": 31.89499741792679,
+      "shell_top": 31.919997215270996,
+      "shell_bottom": -0.0800027847290039,
+      "roof_collide": true,
+      "shell_collide": true
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.MVP.Environment.SeattleBoundary.EastQuadBackdrop.Building14",
+      "roof_bottom": 34.89499741792679,
+      "shell_top": 34.91999816894531,
+      "shell_bottom": -0.0800018310546875,
+      "roof_collide": true,
+      "shell_collide": true
+    }
+  ]
+}

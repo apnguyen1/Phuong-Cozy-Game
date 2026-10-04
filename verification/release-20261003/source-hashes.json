@@ -1,0 +1,290 @@
+[
+  {
+    "source_path": "roblox/mvp/shared/Anchors.luau",
+    "target": "ServerScriptService.PhuongMVP.shared.Anchors",
+    "class": "ModuleScript",
+    "sha256": "0d8d42052db32e17d23ed3ebb6317fd52a985da0695946dd4c5e70cdd328626c"
+  },
+  {
+    "source_path": "roblox/mvp/shared/Anchors.luau",
+    "target": "ReplicatedStorage.PhuongMVP.shared.Anchors",
+    "class": "ModuleScript",
+    "sha256": "0d8d42052db32e17d23ed3ebb6317fd52a985da0695946dd4c5e70cdd328626c"
+  },
+  {
+    "source_path": "roblox/mvp/shared/AudioConfig.luau",
+    "target": "ServerScriptService.PhuongMVP.shared.AudioConfig",
+    "class": "ModuleScript",
+    "sha256": "a3400072bd3622d13c7c2aa3af467ec65daa21e8f2faa2dfcc98394e8c34f1e3"
+  },
+  {
+    "source_path": "roblox/mvp/shared/AudioConfig.luau",
+    "target": "ReplicatedStorage.PhuongMVP.shared.AudioConfig",
+    "class": "ModuleScript",
+    "sha256": "a3400072bd3622d13c7c2aa3af467ec65daa21e8f2faa2dfcc98394e8c34f1e3"
+  },
+  {
+    "source_path": "roblox/mvp/shared/Config.luau",
+    "target": "ServerScriptService.PhuongMVP.shared.Config",
+    "class": "ModuleScript",
+    "sha256": "3dd7a7557ed9d7c0a3391fad03d8e67ac175392c0412b4a395c8decddaea6034"
+  },
+  {
+    "source_path": "roblox/mvp/shared/Config.luau",
+    "target": "ReplicatedStorage.PhuongMVP.shared.Config",
+    "class": "ModuleScript",
+    "sha256": "3dd7a7557ed9d7c0a3391fad03d8e67ac175392c0412b4a395c8decddaea6034"
+  },
+  {
+    "source_path": "roblox/mvp/shared/FigureCatalog.luau",
+    "target": "ServerScriptService.PhuongMVP.shared.FigureCatalog",
+    "class": "ModuleScript",
+    "sha256": "7948e04d566cd7be13867f4c97837aa133e4be88e398103c23726615e06408ea"
+  },
+  {
+    "source_path": "roblox/mvp/shared/FigureCatalog.luau",
+    "target": "ReplicatedStorage.PhuongMVP.shared.FigureCatalog",
+    "class": "ModuleScript",
+    "sha256": "7948e04d566cd7be13867f4c97837aa133e4be88e398103c23726615e06408ea"
+  },
+  {
+    "source_path": "roblox/mvp/shared/FigurePresentation.luau",
+    "target": "ServerScriptService.PhuongMVP.shared.FigurePresentation",
+    "class": "ModuleScript",
+    "sha256": "d621e8ae1669d6c59fb02af4618e1111f81f108b52c90c2812c0afd039248c07"
+  },
+  {
+    "source_path": "roblox/mvp/shared/FigurePresentation.luau",
+    "target": "ReplicatedStorage.PhuongMVP.shared.FigurePresentation",
+    "class": "ModuleScript",
+    "sha256": "d621e8ae1669d6c59fb02af4618e1111f81f108b52c90c2812c0afd039248c07"
+  },
+  {
+    "source_path": "roblox/mvp/shared/FoodPresentation.luau",
+    "target": "ServerScriptService.PhuongMVP.shared.FoodPresentation",
+    "class": "ModuleScript",
+    "sha256": "6f29cc8ab25d953741e8303c1396971213e787fe1c05176d13d3a17530e97d6c"
+  },
+  {
+    "source_path": "roblox/mvp/shared/FoodPresentation.luau",
+    "target": "ReplicatedStorage.PhuongMVP.shared.FoodPresentation",
+    "class": "ModuleScript",
+    "sha256": "6f29cc8ab25d953741e8303c1396971213e787fe1c05176d13d3a17530e97d6c"
+  },
+  {
+    "source_path": "roblox/mvp/shared/Guidance.luau",
+    "target": "ServerScriptService.PhuongMVP.shared.Guidance",
+    "class": "ModuleScript",
+    "sha256": "24f83647534be0edb22ed8b431d85eb9415866379e54da9f9793d1a44cad9889"
+  },
+  {
+    "source_path": "roblox/mvp/shared/Guidance.luau",
+    "target": "ReplicatedStorage.PhuongMVP.shared.Guidance",
+    "class": "ModuleScript",
+    "sha256": "24f83647534be0edb22ed8b431d85eb9415866379e54da9f9793d1a44cad9889"
+  },
+  {
+    "source_path": "roblox/draft-door.server.luau",
+    "target": "ServerScriptService.CozyDraftDoor",
+    "class": "Script",
+    "sha256": "2bbd1b96203bd8ff89292db0e5306d3234fa151a69bc6fe7f1979d59efc1011d"
+  },
+  {
+    "source_path": "roblox/mvp/server/BedroomFeedback.luau",
+    "target": "ServerScriptService.PhuongMVP.server.BedroomFeedback",
+    "class": "ModuleScript",
+    "sha256": "d477582c867ea54ed998043c5fc4ade70b236b5a9c55f90997b11218c6751e24"
+  },
+  {
+    "source_path": "roblox/mvp/server/CakeService.luau",
+    "target": "ServerScriptService.PhuongMVP.server.CakeService",
+    "class": "ModuleScript",
+    "sha256": "1436443d07458176d22be5953798b9d52af5fe16d128144a8f9e34c8a8ba1af2"
+  },
+  {
+    "source_path": "roblox/mvp/server/CozyAudio.luau",
+    "target": "ServerScriptService.PhuongMVP.server.CozyAudio",
+    "class": "ModuleScript",
+    "sha256": "32fa58bd8e5d5b2d1946005c8f3c66c40559f23c19997e0ac014d62418ca2b29"
+  },
+  {
+    "source_path": "roblox/mvp/server/FinalePresentation.luau",
+    "target": "ServerScriptService.PhuongMVP.server.FinalePresentation",
+    "class": "ModuleScript",
+    "sha256": "4922f668e6e28301645fffddddbdb0a1b3b31e8c707a856117e745ea45e87b67"
+  },
+  {
+    "source_path": "roblox/mvp/server/FoodFeedback.luau",
+    "target": "ServerScriptService.PhuongMVP.server.FoodFeedback",
+    "class": "ModuleScript",
+    "sha256": "a6d6adba5a84200647c3a658cf9f7e59622de3a2dffed4000ad4655ca54af988"
+  },
+  {
+    "source_path": "roblox/mvp/server/HostService.luau",
+    "target": "ServerScriptService.PhuongMVP.server.HostService",
+    "class": "ModuleScript",
+    "sha256": "bce66eb1ef992409709bb64a1265e3652d2aa6bbe67fc1040ded7978633fdf54"
+  },
+  {
+    "source_path": "roblox/mvp/server/LabubuFeedback.luau",
+    "target": "ServerScriptService.PhuongMVP.server.LabubuFeedback",
+    "class": "ModuleScript",
+    "sha256": "d6cb92725b22ab23ad9d15e44262f354a290cdb71b2763d7a6ea9c4cb218606c"
+  },
+  {
+    "source_path": "roblox/mvp/server/Main.server.luau",
+    "target": "ServerScriptService.PhuongMVP.server.Main",
+    "class": "Script",
+    "sha256": "ff6d6144751475769f2ff63e9cf8016d38d0e35328b4f9b2883cf0b35eb35c88"
+  },
+  {
+    "source_path": "roblox/mvp/server/SessionService.luau",
+    "target": "ServerScriptService.PhuongMVP.server.SessionService",
+    "class": "ModuleScript",
+    "sha256": "07df6319acd5e2cf3d534760fdf57fe082ff36ecd08835cc79b03459c99689a2"
+  },
+  {
+    "source_path": "roblox/mvp/server/WorldFeedback.luau",
+    "target": "ServerScriptService.PhuongMVP.server.WorldFeedback",
+    "class": "ModuleScript",
+    "sha256": "9b01b3df435e58f35d756c54f48667bbd004b51900185d4fabaf5d9bd2e45c8b"
+  },
+  {
+    "source_path": "roblox/mvp/server/activities/Q01.luau",
+    "target": "ServerScriptService.PhuongMVP.server.activities.Q01",
+    "class": "ModuleScript",
+    "sha256": "fa0ce519e39b64a407777f97f02e69b4f09409c4c33f72c73e5a376b5eaf7412"
+  },
+  {
+    "source_path": "roblox/mvp/server/activities/Q02.luau",
+    "target": "ServerScriptService.PhuongMVP.server.activities.Q02",
+    "class": "ModuleScript",
+    "sha256": "9f13d36b222fd10631d43e5001a152c7c9e1b7d197aa002b02157c641da28921"
+  },
+  {
+    "source_path": "roblox/mvp/server/activities/Q03.luau",
+    "target": "ServerScriptService.PhuongMVP.server.activities.Q03",
+    "class": "ModuleScript",
+    "sha256": "a31581615928386a0fcab6799f16996419619200719a48cc41c00692ec3a78f2"
+  },
+  {
+    "source_path": "roblox/mvp/server/activities/Q04.luau",
+    "target": "ServerScriptService.PhuongMVP.server.activities.Q04",
+    "class": "ModuleScript",
+    "sha256": "06aec98cd22d5f5506369856ea7f16694f7ae1c73f11eede49df50afc754813b"
+  },
+  {
+    "source_path": "roblox/mvp/server/activities/Q05.luau",
+    "target": "ServerScriptService.PhuongMVP.server.activities.Q05",
+    "class": "ModuleScript",
+    "sha256": "a6c493f2cc58d26a45918458b7ef94b6700e830b845df8f1e3865a4a8a363ec5"
+  },
+  {
+    "source_path": "roblox/mvp/server/activities/Q06.luau",
+    "target": "ServerScriptService.PhuongMVP.server.activities.Q06",
+    "class": "ModuleScript",
+    "sha256": "0c637e90cebade32752f2b16f91b6c4fac0d4e66d0020449a50e17486776db85"
+  },
+  {
+    "source_path": "roblox/mvp/client/activities/Q01.luau",
+    "target": "ReplicatedStorage.PhuongMVP.client.activities.Q01",
+    "class": "ModuleScript",
+    "sha256": "296be5460cb07db60e29aad61fd23aac09c8e5992d7fd9c7b8edf6c93bfb569b"
+  },
+  {
+    "source_path": "roblox/mvp/client/activities/Q02.luau",
+    "target": "ReplicatedStorage.PhuongMVP.client.activities.Q02",
+    "class": "ModuleScript",
+    "sha256": "40f5666c6cba1bfd249c421bbbe367e7e1944d1607914de90875cc961f546f80"
+  },
+  {
+    "source_path": "roblox/mvp/client/activities/Q03.luau",
+    "target": "ReplicatedStorage.PhuongMVP.client.activities.Q03",
+    "class": "ModuleScript",
+    "sha256": "eafaa784a3090765b3db7c82bee86c9278fb78a778bda82868cb77e7673376e0"
+  },
+  {
+    "source_path": "roblox/mvp/client/activities/Q04.luau",
+    "target": "ReplicatedStorage.PhuongMVP.client.activities.Q04",
+    "class": "ModuleScript",
+    "sha256": "5d4a8b294ffda0bf59868125e06738a3d52fa413b83b7944a2b2429b63ccc4d3"
+  },
+  {
+    "source_path": "roblox/mvp/client/activities/Q06.luau",
+    "target": "ReplicatedStorage.PhuongMVP.client.activities.Q06",
+    "class": "ModuleScript",
+    "sha256": "9233d6eaace4edc97cffffa0b2d967447c0af4c934a6fdb7bdc9a6105bc1b043"
+  },
+  {
+    "source_path": "roblox/mvp/client/CozySoundEffectsClient.client.luau",
+    "target": "StarterPlayer.StarterPlayerScripts.CozySoundEffectsClient",
+    "class": "LocalScript",
+    "sha256": "bf97e15559484aa42a54b7bb41576f9f95d6d33ea11c65b7cadf9039238363ba"
+  },
+  {
+    "source_path": "roblox/mvp/client/extensions/FinalePresentation.luau",
+    "target": "ReplicatedStorage.PhuongMVP.client.extensions.FinalePresentation",
+    "class": "ModuleScript",
+    "sha256": "ddbfe282a5ecb8af46837564510b54c4d67da58aa324227c60cbc62311b129c5"
+  },
+  {
+    "source_path": "roblox/mvp/client/extensions/HostControls.luau",
+    "target": "ReplicatedStorage.PhuongMVP.client.extensions.HostControls",
+    "class": "ModuleScript",
+    "sha256": "405639793c87aac7b48cdfbd605d5b0bbca73edeaa9b194c8b15458e491b4853"
+  },
+  {
+    "source_path": "roblox/mvp/client/extensions/MusicController.luau",
+    "target": "ReplicatedStorage.PhuongMVP.client.extensions.MusicController",
+    "class": "ModuleScript",
+    "sha256": "883cf3c9775ca047300836fa605cb1d2e3ada64ee4212216541f92595bd9aff5"
+  },
+  {
+    "source_path": "roblox/mvp/client/extensions/Q01Bedroom.luau",
+    "target": "ReplicatedStorage.PhuongMVP.client.extensions.Q01Bedroom",
+    "class": "ModuleScript",
+    "sha256": "8519f344588000de02aff04345d1d3fc4a84370f6a3c717961809a46d64ce0ca"
+  },
+  {
+    "source_path": "roblox/mvp/client/extensions/Q05Labubu.luau",
+    "target": "ReplicatedStorage.PhuongMVP.client.extensions.Q05Labubu",
+    "class": "ModuleScript",
+    "sha256": "e26321c6243b7d96a98883abc5c35279c36e688ba2aa9f59cfd4a4d5c3874e39"
+  },
+  {
+    "source_path": "roblox/mvp/client/extensions/Q06Food.luau",
+    "target": "ReplicatedStorage.PhuongMVP.client.extensions.Q06Food",
+    "class": "ModuleScript",
+    "sha256": "0dc9b40b5269e33bd493ef81ea95a9551844283b17ab250968dd55e05da7fa8d"
+  },
+  {
+    "source_path": "roblox/mvp/client/extensions/WorldActivities.luau",
+    "target": "ReplicatedStorage.PhuongMVP.client.extensions.WorldActivities",
+    "class": "ModuleScript",
+    "sha256": "508bb55750f55aae2a513f18a786fd5e7291bb9d0f0f7dab090a94562d2ce8f7"
+  },
+  {
+    "source_path": "roblox/mvp/client/Extensions.luau",
+    "target": "ReplicatedStorage.PhuongMVP.client.Extensions",
+    "class": "ModuleScript",
+    "sha256": "0b508af6b6be4666e104cbd0649b93a4b4e68bc67b041c9cb8fbbeabc9f83179"
+  },
+  {
+    "source_path": "roblox/mvp/client/Main.client.luau",
+    "target": "StarterPlayer.StarterPlayerScripts.PhuongMVPClient",
+    "class": "LocalScript",
+    "sha256": "0a5235fc709b29a172925e4fd49ceb579cc188e4e7e5fd25a7beca4eca7c3dab"
+  },
+  {
+    "source_path": "roblox/mvp/client/Navigator.luau",
+    "target": "ReplicatedStorage.PhuongMVP.client.Navigator",
+    "class": "ModuleScript",
+    "sha256": "9c874f35fbda36dacddc69ff14215a3a41a07dfb2189c4b31e40afe487598bd2"
+  },
+  {
+    "source_path": "roblox/mvp/client/UI.luau",
+    "target": "ReplicatedStorage.PhuongMVP.client.UI",
+    "class": "ModuleScript",
+    "sha256": "b70c9db909f5e654debe3f02cebdc94b11e2a2520ad196c985180474cc5df9c1"
+  }
+]

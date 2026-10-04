@@ -1,0 +1,12 @@
+{
+  "path": "roblox/phuong-cozy-game.rbxl",
+  "bytes": null,
+  "sha256": null,
+  "saved_at_utc": "2026-10-03T18:27:16.6523887Z",
+  "source_sha256": {
+    "roblox/mvp/builders/SeattleBoundary.luau": "ef3c6c424f005ae7e63082952fb5fa6995c370418691bfebf4681bfda29b2cbd",
+    "roblox/mvp/environment-detail04.luau": "6219409b278bfdb92528d8bca64b08d5e77e5b0afb97d685ff8e4e556ee300e0"
+  },
+  "save_method": "Ctrl+S in the verified local Studio Edit window",
+  "review_status": "User requested save and end; further entrance/device/group review pending"
+}

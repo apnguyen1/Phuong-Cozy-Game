@@ -1,0 +1,188 @@
+﻿[
+    {
+        "relative":  "shared\\Anchors.luau",
+        "target":  "ReplicatedStorage/PhuongMVP/shared/Anchors",
+        "kind":  "ModuleScript",
+        "sha256":  "0d8d42052db32e17d23ed3ebb6317fd52a985da0695946dd4c5e70cdd328626c"
+    },
+    {
+        "relative":  "shared\\Config.luau",
+        "target":  "ReplicatedStorage/PhuongMVP/shared/Config",
+        "kind":  "ModuleScript",
+        "sha256":  "3dd7a7557ed9d7c0a3391fad03d8e67ac175392c0412b4a395c8decddaea6034"
+    },
+    {
+        "relative":  "shared\\Anchors.luau",
+        "target":  "ServerScriptService/PhuongMVP/shared/Anchors",
+        "kind":  "ModuleScript",
+        "sha256":  "0d8d42052db32e17d23ed3ebb6317fd52a985da0695946dd4c5e70cdd328626c"
+    },
+    {
+        "relative":  "shared\\Config.luau",
+        "target":  "ServerScriptService/PhuongMVP/shared/Config",
+        "kind":  "ModuleScript",
+        "sha256":  "3dd7a7557ed9d7c0a3391fad03d8e67ac175392c0412b4a395c8decddaea6034"
+    },
+    {
+        "relative":  "shared\\MeasuredInstallOptions.luau",
+        "target":  "ServerScriptService/PhuongMVP/shared/MeasuredInstallOptions",
+        "kind":  "ModuleScript",
+        "sha256":  "00871ad4417cdfbac7d55cbce7b73b0d1d674c52924339c5f27412bb75b661ac"
+    },
+    {
+        "relative":  "server\\SessionService.luau",
+        "target":  "ServerScriptService/PhuongMVP/server/SessionService",
+        "kind":  "ModuleScript",
+        "sha256":  "1725e383387cb9fe68964e1838900a587e9fda19371b41ef24953612702a35bf"
+    },
+    {
+        "relative":  "server\\CakeService.luau",
+        "target":  "ServerScriptService/PhuongMVP/server/CakeService",
+        "kind":  "ModuleScript",
+        "sha256":  "5d7d5d7ba39c11f67b67a466de1853e34e551206a99eb741a51d5b4822428b39"
+    },
+    {
+        "relative":  "server\\QueueService.luau",
+        "target":  "ServerScriptService/PhuongMVP/server/QueueService",
+        "kind":  "ModuleScript",
+        "sha256":  "9c1f7322949395896229ff7edc9ab0e719f9b5aa642b1ef42a2968724d9b920b"
+    },
+    {
+        "relative":  "server\\TeleportAdapter.luau",
+        "target":  "ServerScriptService/PhuongMVP/server/TeleportAdapter",
+        "kind":  "ModuleScript",
+        "sha256":  "22082e97b07dd791d41107730700589ac1c8ec5306c5c0b6c92e20f20b09a00d"
+    },
+    {
+        "relative":  "server\\LocalPartyTransferAdapter.luau",
+        "target":  "ServerScriptService/PhuongMVP/server/LocalPartyTransferAdapter",
+        "kind":  "ModuleScript",
+        "sha256":  "9c28106faace5c26aff5faa8ff19ede60939f37bf62d2f6cd7cbb13970b1988d"
+    },
+    {
+        "relative":  "server\\activities\\Q01.luau",
+        "target":  "ServerScriptService/PhuongMVP/server/activities/Q01",
+        "kind":  "ModuleScript",
+        "sha256":  "3773f06b01026da2851bff02c2d9142c406cfd44a51d339e4bee3a028d78f36a"
+    },
+    {
+        "relative":  "server\\activities\\Q02.luau",
+        "target":  "ServerScriptService/PhuongMVP/server/activities/Q02",
+        "kind":  "ModuleScript",
+        "sha256":  "98bb044b530bbf4e2d4a6b7e1cb8f45f95bff61158ad90f5da655c7f5dae0d27"
+    },
+    {
+        "relative":  "server\\activities\\Q03.luau",
+        "target":  "ServerScriptService/PhuongMVP/server/activities/Q03",
+        "kind":  "ModuleScript",
+        "sha256":  "d72b4e25ea406e6e5ba99fdf7f195bd4962da85ee213babc8f8e5557eab8c4d3"
+    },
+    {
+        "relative":  "server\\activities\\Q04.luau",
+        "target":  "ServerScriptService/PhuongMVP/server/activities/Q04",
+        "kind":  "ModuleScript",
+        "sha256":  "1bec8e214d3e25924d77a7f9b8cc5c3729032102b86e1bc43e25a33c756fe6a4"
+    },
+    {
+        "relative":  "server\\activities\\Q05.luau",
+        "target":  "ServerScriptService/PhuongMVP/server/activities/Q05",
+        "kind":  "ModuleScript",
+        "sha256":  "3c9fc62692dfa1a7f16cd88d203beb1367cbc8ebb6b72596b41feeb0d3db6b74"
+    },
+    {
+        "relative":  "server\\activities\\Q06.luau",
+        "target":  "ServerScriptService/PhuongMVP/server/activities/Q06",
+        "kind":  "ModuleScript",
+        "sha256":  "96b89a12d677459ff8bf4abe767ba440707ea4aca212ca43fa4445bac2776b8e"
+    },
+    {
+        "relative":  "server\\Main.server.luau",
+        "target":  "ServerScriptService/PhuongMVP/server/Main",
+        "kind":  "Script",
+        "sha256":  "b153b2d300eab85d35f2ef5a675635175ffe242341f416d036ee6e33e2ea3f9d"
+    },
+    {
+        "relative":  "client\\Main.client.luau",
+        "target":  "StarterPlayer/StarterPlayerScripts/PhuongMVPClient",
+        "kind":  "LocalScript",
+        "sha256":  "dd2a27a3bfc04847bfc94a59a1443b4d5ffd3f6d224fffc687feac1e35abca8e"
+    },
+    {
+        "relative":  "install.luau",
+        "target":  "ServerStorage/PhuongMVPTools/install",
+        "kind":  "ModuleScript",
+        "sha256":  "3b64ec04eb7f47f3e6031dd6eb13eba2f1582787db1a55eac6e642349c82c339"
+    },
+    {
+        "relative":  "build-world.luau",
+        "target":  "ServerStorage/PhuongMVPTools/build-world",
+        "kind":  "Script",
+        "sha256":  "3d3c86bef7fbe4d6519e7ac7a8471d9e8ce91b657ccac253a69a392967cec250"
+    },
+    {
+        "relative":  "builders\\Q01Station.luau",
+        "target":  "ServerStorage/PhuongMVPTools/builders/Q01Station",
+        "kind":  "ModuleScript",
+        "sha256":  "d172a10a3d526b85433de5fa17bcbb05d9e927cf63bb305caf61f8f14e96aae6"
+    },
+    {
+        "relative":  "builders\\Q02Station.luau",
+        "target":  "ServerStorage/PhuongMVPTools/builders/Q02Station",
+        "kind":  "ModuleScript",
+        "sha256":  "a6242204d72ba38288f0a369466e4ee0f3b8cde37214a7c0872f58705e4b0807"
+    },
+    {
+        "relative":  "builders\\Q03Station.luau",
+        "target":  "ServerStorage/PhuongMVPTools/builders/Q03Station",
+        "kind":  "ModuleScript",
+        "sha256":  "731fbe638669bcf4316c40090931a74f43b499fcacad2d8d8dfbeae56e4d58c9"
+    },
+    {
+        "relative":  "builders\\Q04Station.luau",
+        "target":  "ServerStorage/PhuongMVPTools/builders/Q04Station",
+        "kind":  "ModuleScript",
+        "sha256":  "00655ca8b550d50aecd95589e78dff7aed2b5143172877ed876e01ef6a73f2d5"
+    },
+    {
+        "relative":  "builders\\Q05Station.luau",
+        "target":  "ServerStorage/PhuongMVPTools/builders/Q05Station",
+        "kind":  "ModuleScript",
+        "sha256":  "d5f2d591dd2cab2feb0c812d39d727d4516097c4360c0313fc48f888059c6c50"
+    },
+    {
+        "relative":  "builders\\Q06Station.luau",
+        "target":  "ServerStorage/PhuongMVPTools/builders/Q06Station",
+        "kind":  "ModuleScript",
+        "sha256":  "79ee132c0e70020683a6ec1f1c8287854a81311c0d8fba3c4d933937f5656fc3"
+    },
+    {
+        "relative":  "builders\\CakeFinale.luau",
+        "target":  "ServerStorage/PhuongMVPTools/builders/CakeFinale",
+        "kind":  "ModuleScript",
+        "sha256":  "946e2f2cb5f61a4f81c79c619d3eb40a144739c60a182b4bdaf7701cc01e1a7c"
+    },
+    {
+        "relative":  "builders\\LobbyQueue.luau",
+        "target":  "ServerStorage/PhuongMVPTools/builders/LobbyQueue",
+        "kind":  "ModuleScript",
+        "sha256":  "975ada6afa10e774d5022705ed83325b1d51f4f468e478cecf5d76416884db18"
+    },
+    {
+        "relative":  "builders\\SeattleBoundary.luau",
+        "target":  "ServerStorage/PhuongMVPTools/builders/SeattleBoundary",
+        "kind":  "ModuleScript",
+        "sha256":  "76b6827e49000b1c6486eaf519501157ff9bc0c81811a0a12aa188a0d73b4ea3"
+    },
+    {
+        "relative":  "builders\\NightLighting.luau",
+        "target":  "ServerStorage/PhuongMVPTools/builders/NightLighting",
+        "kind":  "ModuleScript",
+        "sha256":  "6fef0bb78720d6f71f9f47baa8e71738ea5f474685a0216c7b1dbee21e84c286"
+    },
+    {
+        "relative":  "builders\\GrassDecoration.luau",
+        "target":  "ServerStorage/PhuongMVPTools/builders/GrassDecoration",
+        "kind":  "ModuleScript",
+        "sha256":  "ace88714c084e1661b120ac448575831f24ccc633ab9c8cba9c5c38cb32182f9"
+    }
+]

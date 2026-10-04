@@ -1,0 +1,506 @@
+[
+  {
+    "path": "roblox/draft-door.server.luau",
+    "sha256": "2bbd1b96203bd8ff89292db0e5306d3234fa151a69bc6fe7f1979d59efc1011d",
+    "returncode": 0,
+    "diagnostics": "",
+    "failure_output": ""
+  },
+  {
+    "path": "roblox/mvp/afternoon-quad.luau",
+    "sha256": "b6e637414c9c246d92fb6a09b3465197a549eac5f873f62325a1c80fb888eb46",
+    "returncode": 0,
+    "diagnostics": "",
+    "failure_output": ""
+  },
+  {
+    "path": "roblox/mvp/build-world.luau",
+    "sha256": "3d3c86bef7fbe4d6519e7ac7a8471d9e8ce91b657ccac253a69a392967cec250",
+    "returncode": 0,
+    "diagnostics": "",
+    "failure_output": ""
+  },
+  {
+    "path": "roblox/mvp/builders/CakeFinale.luau",
+    "sha256": "946e2f2cb5f61a4f81c79c619d3eb40a144739c60a182b4bdaf7701cc01e1a7c",
+    "returncode": 0,
+    "diagnostics": "",
+    "failure_output": ""
+  },
+  {
+    "path": "roblox/mvp/builders/GrassDecoration.luau",
+    "sha256": "ace88714c084e1661b120ac448575831f24ccc633ab9c8cba9c5c38cb32182f9",
+    "returncode": 0,
+    "diagnostics": "",
+    "failure_output": ""
+  },
+  {
+    "path": "roblox/mvp/builders/LobbyQueue.luau",
+    "sha256": "ef31311b3371a3e76520c96f09a43552bdc51606c8bce7aff22031175d1f056e",
+    "returncode": 0,
+    "diagnostics": "",
+    "failure_output": ""
+  },
+  {
+    "path": "roblox/mvp/builders/NightLighting.luau",
+    "sha256": "fe1ad5261241753c0bdb1808b282d731aad95bb45dc3edad995229a1b904964b",
+    "returncode": 0,
+    "diagnostics": "",
+    "failure_output": ""
+  },
+  {
+    "path": "roblox/mvp/builders/Q01Station.luau",
+    "sha256": "109a36c9f115077ad61d3bec64419c277b5f610cfd3bca0ab788ae83f0ae1968",
+    "returncode": 0,
+    "diagnostics": "",
+    "failure_output": ""
+  },
+  {
+    "path": "roblox/mvp/builders/Q02Station.luau",
+    "sha256": "a6242204d72ba38288f0a369466e4ee0f3b8cde37214a7c0872f58705e4b0807",
+    "returncode": 0,
+    "diagnostics": "",
+    "failure_output": ""
+  },
+  {
+    "path": "roblox/mvp/builders/Q03Station.luau",
+    "sha256": "731fbe638669bcf4316c40090931a74f43b499fcacad2d8d8dfbeae56e4d58c9",
+    "returncode": 0,
+    "diagnostics": "",
+    "failure_output": ""
+  },
+  {
+    "path": "roblox/mvp/builders/Q04Station.luau",
+    "sha256": "00655ca8b550d50aecd95589e78dff7aed2b5143172877ed876e01ef6a73f2d5",
+    "returncode": 0,
+    "diagnostics": "",
+    "failure_output": ""
+  },
+  {
+    "path": "roblox/mvp/builders/Q05Station.luau",
+    "sha256": "d5f2d591dd2cab2feb0c812d39d727d4516097c4360c0313fc48f888059c6c50",
+    "returncode": 0,
+    "diagnostics": "",
+    "failure_output": ""
+  },
+  {
+    "path": "roblox/mvp/builders/Q06Station.luau",
+    "sha256": "79ee132c0e70020683a6ec1f1c8287854a81311c0d8fba3c4d933937f5656fc3",
+    "returncode": 0,
+    "diagnostics": "",
+    "failure_output": ""
+  },
+  {
+    "path": "roblox/mvp/builders/SeattleBoundary.luau",
+    "sha256": "ef3c6c424f005ae7e63082952fb5fa6995c370418691bfebf4681bfda29b2cbd",
+    "returncode": 0,
+    "diagnostics": "",
+    "failure_output": ""
+  },
+  {
+    "path": "roblox/mvp/client/activities/Q01.luau",
+    "sha256": "296be5460cb07db60e29aad61fd23aac09c8e5992d7fd9c7b8edf6c93bfb569b",
+    "returncode": 0,
+    "diagnostics": "",
+    "failure_output": ""
+  },
+  {
+    "path": "roblox/mvp/client/activities/Q02.luau",
+    "sha256": "40f5666c6cba1bfd249c421bbbe367e7e1944d1607914de90875cc961f546f80",
+    "returncode": 0,
+    "diagnostics": "",
+    "failure_output": ""
+  },
+  {
+    "path": "roblox/mvp/client/activities/Q03.luau",
+    "sha256": "eafaa784a3090765b3db7c82bee86c9278fb78a778bda82868cb77e7673376e0",
+    "returncode": 0,
+    "diagnostics": "",
+    "failure_output": ""
+  },
+  {
+    "path": "roblox/mvp/client/activities/Q04.luau",
+    "sha256": "5d4a8b294ffda0bf59868125e06738a3d52fa413b83b7944a2b2429b63ccc4d3",
+    "returncode": 0,
+    "diagnostics": "",
+    "failure_output": ""
+  },
+  {
+    "path": "roblox/mvp/client/activities/Q06.luau",
+    "sha256": "9233d6eaace4edc97cffffa0b2d967447c0af4c934a6fdb7bdc9a6105bc1b043",
+    "returncode": 0,
+    "diagnostics": "",
+    "failure_output": ""
+  },
+  {
+    "path": "roblox/mvp/client/CozySoundEffectsClient.client.luau",
+    "sha256": "bf97e15559484aa42a54b7bb41576f9f95d6d33ea11c65b7cadf9039238363ba",
+    "returncode": 0,
+    "diagnostics": "",
+    "failure_output": ""
+  },
+  {
+    "path": "roblox/mvp/client/extensions/FinalePresentation.luau",
+    "sha256": "ddbfe282a5ecb8af46837564510b54c4d67da58aa324227c60cbc62311b129c5",
+    "returncode": 0,
+    "diagnostics": "",
+    "failure_output": ""
+  },
+  {
+    "path": "roblox/mvp/client/extensions/HostControls.luau",
+    "sha256": "405639793c87aac7b48cdfbd605d5b0bbca73edeaa9b194c8b15458e491b4853",
+    "returncode": 0,
+    "diagnostics": "",
+    "failure_output": ""
+  },
+  {
+    "path": "roblox/mvp/client/extensions/MusicController.luau",
+    "sha256": "883cf3c9775ca047300836fa605cb1d2e3ada64ee4212216541f92595bd9aff5",
+    "returncode": 0,
+    "diagnostics": "",
+    "failure_output": ""
+  },
+  {
+    "path": "roblox/mvp/client/extensions/Q01Bedroom.luau",
+    "sha256": "8519f344588000de02aff04345d1d3fc4a84370f6a3c717961809a46d64ce0ca",
+    "returncode": 0,
+    "diagnostics": "",
+    "failure_output": ""
+  },
+  {
+    "path": "roblox/mvp/client/extensions/Q05Labubu.luau",
+    "sha256": "e26321c6243b7d96a98883abc5c35279c36e688ba2aa9f59cfd4a4d5c3874e39",
+    "returncode": 0,
+    "diagnostics": "",
+    "failure_output": ""
+  },
+  {
+    "path": "roblox/mvp/client/extensions/Q06Food.luau",
+    "sha256": "0dc9b40b5269e33bd493ef81ea95a9551844283b17ab250968dd55e05da7fa8d",
+    "returncode": 0,
+    "diagnostics": "",
+    "failure_output": ""
+  },
+  {
+    "path": "roblox/mvp/client/extensions/WorldActivities.luau",
+    "sha256": "508bb55750f55aae2a513f18a786fd5e7291bb9d0f0f7dab090a94562d2ce8f7",
+    "returncode": 0,
+    "diagnostics": "",
+    "failure_output": ""
+  },
+  {
+    "path": "roblox/mvp/client/Extensions.luau",
+    "sha256": "0b508af6b6be4666e104cbd0649b93a4b4e68bc67b041c9cb8fbbeabc9f83179",
+    "returncode": 0,
+    "diagnostics": "",
+    "failure_output": ""
+  },
+  {
+    "path": "roblox/mvp/client/Main.client.luau",
+    "sha256": "0a5235fc709b29a172925e4fd49ceb579cc188e4e7e5fd25a7beca4eca7c3dab",
+    "returncode": 0,
+    "diagnostics": "",
+    "failure_output": ""
+  },
+  {
+    "path": "roblox/mvp/client/Navigator.luau",
+    "sha256": "9c874f35fbda36dacddc69ff14215a3a41a07dfb2189c4b31e40afe487598bd2",
+    "returncode": 0,
+    "diagnostics": "",
+    "failure_output": ""
+  },
+  {
+    "path": "roblox/mvp/client/UI.luau",
+    "sha256": "b70c9db909f5e654debe3f02cebdc94b11e2a2520ad196c985180474cc5df9c1",
+    "returncode": 0,
+    "diagnostics": "",
+    "failure_output": ""
+  },
+  {
+    "path": "roblox/mvp/environment-detail04.luau",
+    "sha256": "6219409b278bfdb92528d8bca64b08d5e77e5b0afb97d685ff8e4e556ee300e0",
+    "returncode": 0,
+    "diagnostics": "",
+    "failure_output": ""
+  },
+  {
+    "path": "roblox/mvp/ground-city-boundary.luau",
+    "sha256": "588f7687470a1cb66ce7f43bae116cc943ef70e84e8790f89b05ce3d3993a292",
+    "returncode": 0,
+    "diagnostics": "",
+    "failure_output": ""
+  },
+  {
+    "path": "roblox/mvp/install.luau",
+    "sha256": "3b64ec04eb7f47f3e6031dd6eb13eba2f1582787db1a55eac6e642349c82c339",
+    "returncode": 0,
+    "diagnostics": "",
+    "failure_output": ""
+  },
+  {
+    "path": "roblox/mvp/server/activities/Q01.luau",
+    "sha256": "fa0ce519e39b64a407777f97f02e69b4f09409c4c33f72c73e5a376b5eaf7412",
+    "returncode": 0,
+    "diagnostics": "",
+    "failure_output": ""
+  },
+  {
+    "path": "roblox/mvp/server/activities/Q02.luau",
+    "sha256": "9f13d36b222fd10631d43e5001a152c7c9e1b7d197aa002b02157c641da28921",
+    "returncode": 0,
+    "diagnostics": "",
+    "failure_output": ""
+  },
+  {
+    "path": "roblox/mvp/server/activities/Q03.luau",
+    "sha256": "a31581615928386a0fcab6799f16996419619200719a48cc41c00692ec3a78f2",
+    "returncode": 0,
+    "diagnostics": "",
+    "failure_output": ""
+  },
+  {
+    "path": "roblox/mvp/server/activities/Q04.luau",
+    "sha256": "06aec98cd22d5f5506369856ea7f16694f7ae1c73f11eede49df50afc754813b",
+    "returncode": 0,
+    "diagnostics": "",
+    "failure_output": ""
+  },
+  {
+    "path": "roblox/mvp/server/activities/Q05.luau",
+    "sha256": "a6c493f2cc58d26a45918458b7ef94b6700e830b845df8f1e3865a4a8a363ec5",
+    "returncode": 0,
+    "diagnostics": "",
+    "failure_output": ""
+  },
+  {
+    "path": "roblox/mvp/server/activities/Q06.luau",
+    "sha256": "1153b3d0e785d77ba3a30a027843f333e0df54ae12a3f42df695b839eed85b6b",
+    "returncode": 0,
+    "diagnostics": "",
+    "failure_output": ""
+  },
+  {
+    "path": "roblox/mvp/server/BedroomFeedback.luau",
+    "sha256": "d477582c867ea54ed998043c5fc4ade70b236b5a9c55f90997b11218c6751e24",
+    "returncode": 0,
+    "diagnostics": "",
+    "failure_output": ""
+  },
+  {
+    "path": "roblox/mvp/server/CakeService.luau",
+    "sha256": "1436443d07458176d22be5953798b9d52af5fe16d128144a8f9e34c8a8ba1af2",
+    "returncode": 0,
+    "diagnostics": "",
+    "failure_output": ""
+  },
+  {
+    "path": "roblox/mvp/server/CozyAudio.luau",
+    "sha256": "32fa58bd8e5d5b2d1946005c8f3c66c40559f23c19997e0ac014d62418ca2b29",
+    "returncode": 0,
+    "diagnostics": "",
+    "failure_output": ""
+  },
+  {
+    "path": "roblox/mvp/server/FinalePresentation.luau",
+    "sha256": "4922f668e6e28301645fffddddbdb0a1b3b31e8c707a856117e745ea45e87b67",
+    "returncode": 0,
+    "diagnostics": "",
+    "failure_output": ""
+  },
+  {
+    "path": "roblox/mvp/server/FoodFeedback.luau",
+    "sha256": "a6d6adba5a84200647c3a658cf9f7e59622de3a2dffed4000ad4655ca54af988",
+    "returncode": 0,
+    "diagnostics": "",
+    "failure_output": ""
+  },
+  {
+    "path": "roblox/mvp/server/HostService.luau",
+    "sha256": "bce66eb1ef992409709bb64a1265e3652d2aa6bbe67fc1040ded7978633fdf54",
+    "returncode": 0,
+    "diagnostics": "",
+    "failure_output": ""
+  },
+  {
+    "path": "roblox/mvp/server/LabubuFeedback.luau",
+    "sha256": "d6cb92725b22ab23ad9d15e44262f354a290cdb71b2763d7a6ea9c4cb218606c",
+    "returncode": 0,
+    "diagnostics": "",
+    "failure_output": ""
+  },
+  {
+    "path": "roblox/mvp/server/LocalPartyTransferAdapter.luau",
+    "sha256": "9c28106faace5c26aff5faa8ff19ede60939f37bf62d2f6cd7cbb13970b1988d",
+    "returncode": 0,
+    "diagnostics": "",
+    "failure_output": ""
+  },
+  {
+    "path": "roblox/mvp/server/Main.server.luau",
+    "sha256": "ff6d6144751475769f2ff63e9cf8016d38d0e35328b4f9b2883cf0b35eb35c88",
+    "returncode": 0,
+    "diagnostics": "",
+    "failure_output": ""
+  },
+  {
+    "path": "roblox/mvp/server/QueueService.luau",
+    "sha256": "c2e16ca012317fe5ae039379d552c9395ae1b01b4642a7f3854188acc261ca1c",
+    "returncode": 0,
+    "diagnostics": "",
+    "failure_output": ""
+  },
+  {
+    "path": "roblox/mvp/server/SessionService.luau",
+    "sha256": "07df6319acd5e2cf3d534760fdf57fe082ff36ecd08835cc79b03459c99689a2",
+    "returncode": 0,
+    "diagnostics": "",
+    "failure_output": ""
+  },
+  {
+    "path": "roblox/mvp/server/TeleportAdapter.luau",
+    "sha256": "22082e97b07dd791d41107730700589ac1c8ec5306c5c0b6c92e20f20b09a00d",
+    "returncode": 0,
+    "diagnostics": "",
+    "failure_output": ""
+  },
+  {
+    "path": "roblox/mvp/server/WorldFeedback.luau",
+    "sha256": "9b01b3df435e58f35d756c54f48667bbd004b51900185d4fabaf5d9bd2e45c8b",
+    "returncode": 0,
+    "diagnostics": "",
+    "failure_output": ""
+  },
+  {
+    "path": "roblox/mvp/shared/Anchors.luau",
+    "sha256": "0d8d42052db32e17d23ed3ebb6317fd52a985da0695946dd4c5e70cdd328626c",
+    "returncode": 0,
+    "diagnostics": "",
+    "failure_output": ""
+  },
+  {
+    "path": "roblox/mvp/shared/AudioConfig.luau",
+    "sha256": "a3400072bd3622d13c7c2aa3af467ec65daa21e8f2faa2dfcc98394e8c34f1e3",
+    "returncode": 0,
+    "diagnostics": "",
+    "failure_output": ""
+  },
+  {
+    "path": "roblox/mvp/shared/Config.luau",
+    "sha256": "3dd7a7557ed9d7c0a3391fad03d8e67ac175392c0412b4a395c8decddaea6034",
+    "returncode": 0,
+    "diagnostics": "",
+    "failure_output": ""
+  },
+  {
+    "path": "roblox/mvp/shared/FigureCatalog.luau",
+    "sha256": "7948e04d566cd7be13867f4c97837aa133e4be88e398103c23726615e06408ea",
+    "returncode": 0,
+    "diagnostics": "",
+    "failure_output": ""
+  },
+  {
+    "path": "roblox/mvp/shared/FigurePresentation.luau",
+    "sha256": "d621e8ae1669d6c59fb02af4618e1111f81f108b52c90c2812c0afd039248c07",
+    "returncode": 0,
+    "diagnostics": "",
+    "failure_output": ""
+  },
+  {
+    "path": "roblox/mvp/shared/FoodPresentation.luau",
+    "sha256": "6f29cc8ab25d953741e8303c1396971213e787fe1c05176d13d3a17530e97d6c",
+    "returncode": 0,
+    "diagnostics": "",
+    "failure_output": ""
+  },
+  {
+    "path": "roblox/mvp/shared/Guidance.luau",
+    "sha256": "24f83647534be0edb22ed8b431d85eb9415866379e54da9f9793d1a44cad9889",
+    "returncode": 0,
+    "diagnostics": "",
+    "failure_output": ""
+  },
+  {
+    "path": "roblox/mvp/shared/MeasuredInstallOptions.luau",
+    "sha256": "00871ad4417cdfbac7d55cbce7b73b0d1d674c52924339c5f27412bb75b661ac",
+    "returncode": 0,
+    "diagnostics": "",
+    "failure_output": ""
+  },
+  {
+    "path": "roblox/mvp/tests/cake_service.spec.luau",
+    "sha256": "49610dd6d7d51b3af234a71da2329484fa8550f3eb3d40eef446adea518da8d2",
+    "returncode": 0,
+    "diagnostics": "",
+    "failure_output": ""
+  },
+  {
+    "path": "roblox/mvp/tests/Q01_activity.spec.luau",
+    "sha256": "b2bf05a078a9451b5674143617ebdd131eb071ad98d9ef9d8cb71f65ec2004bd",
+    "returncode": 0,
+    "diagnostics": "",
+    "failure_output": ""
+  },
+  {
+    "path": "roblox/mvp/tests/Q02_activity.spec.luau",
+    "sha256": "8ea6139a1b59ef2ed15298a842c30e029c038032b53819901dbfd90b1288e619",
+    "returncode": 0,
+    "diagnostics": "",
+    "failure_output": ""
+  },
+  {
+    "path": "roblox/mvp/tests/Q03.spec.luau",
+    "sha256": "a1a7d1194d3aee5a94db0dd554ec9cfb9dbcbe8e3e7930a8862642281a3e7e51",
+    "returncode": 0,
+    "diagnostics": "",
+    "failure_output": ""
+  },
+  {
+    "path": "roblox/mvp/tests/Q04.spec.luau",
+    "sha256": "96ae5ed7838c09fcf6d313d98048a5b3ab800167d62897ca0de816c2ee9e56ff",
+    "returncode": 0,
+    "diagnostics": "",
+    "failure_output": ""
+  },
+  {
+    "path": "roblox/mvp/tests/q05.spec.luau",
+    "sha256": "131f3682f6808ac5f51a178ccc7b6c25214dad26d9862e47ca810c6c8c3243c1",
+    "returncode": 0,
+    "diagnostics": "",
+    "failure_output": ""
+  },
+  {
+    "path": "roblox/mvp/tests/Q06.spec.luau",
+    "sha256": "bd7730c76fb513ea75ddae7e33e7cd7f3dde1b070c121e1033f02daa1ead2d83",
+    "returncode": 0,
+    "diagnostics": "",
+    "failure_output": ""
+  },
+  {
+    "path": "roblox/mvp/tests/queue_service.spec.luau",
+    "sha256": "9869ae0fb1233999688eb971d596f83ce86de3de961cddfbd550ac42ca5a0ffd",
+    "returncode": 0,
+    "diagnostics": "",
+    "failure_output": ""
+  },
+  {
+    "path": "roblox/mvp/tests/session_service.spec.luau",
+    "sha256": "fb4b5302ff6552abce8541e68fae98501bc6e523adf4274e151c7088604cf0b5",
+    "returncode": 0,
+    "diagnostics": "",
+    "failure_output": ""
+  },
+  {
+    "path": "roblox/mvp/tests/teleport_adapter.spec.luau",
+    "sha256": "891a85f630768dff57a33cd883672b3475c980daa94b969f985d9c171bbcf74b",
+    "returncode": 0,
+    "diagnostics": "",
+    "failure_output": ""
+  },
+  {
+    "path": "roblox/mvp/update-lobby-circle.luau",
+    "sha256": "a78e19ed063bf1a8c1e33a41fdc1d221802a25abf120039919780ff3728693fa",
+    "returncode": 0,
+    "diagnostics": "",
+    "failure_output": ""
+  }
+]

@@ -1,0 +1,30 @@
+-- View descriptor consumed by the common activity renderer.
+return {
+	activityId = "Q01",
+	title = "Everything Tucked In",
+	state = "Open",
+	instructions = "Help with an available bed step",
+	progress = { done = 0, total = 7 },
+	availableActions = {},
+	acceptedStepIds = {},
+	contributors = {},
+	busyReason = nil,
+	errorText = nil,
+	canReplay = false,
+	steps = {
+		{ id = "blanket_left", label = "Smooth the left blanket", verb = "Smooth", socket = "Socket_blanket_left" },
+		{ id = "blanket_right", label = "Smooth the right blanket", verb = "Smooth", socket = "Socket_blanket_right" },
+		{ id = "blanket_foot", label = "Fold the foot blanket", verb = "Fold", socket = "Socket_blanket_foot" },
+		{ id = "pillow_left", label = "Place the left pillow", verb = "Place", socket = "Socket_pillow_left" },
+		{ id = "pillow_right", label = "Place the right pillow", verb = "Place", socket = "Socket_pillow_right" },
+		{ id = "plush_dog", label = "Tuck in the round-bellied dog", verb = "Tuck", socket = "Socket_plush_dog" },
+		{ id = "plush_dinosaur", label = "Tuck in the dinosaur plush", verb = "Tuck", socket = "Socket_plush_dinosaur" },
+	},
+	finish = {
+		permission = "PhuongOnly",
+		label = "Choose how to finish the bed",
+		choices = { { id = "soft_snug", label = "Soft and snug" }, { id = "neat_layered", label = "Neatly layered" } },
+	},
+	controls = { touch = { select = "Tap highlighted step", confirm = "Tap Place or Tuck", cancel = "Tap Cancel" }, desktop = { select = "Click highlighted step", confirm = "Click Place or Tuck", cancel = "Press Escape or click Cancel" } },
+	messages = { alreadyDone = "That spot is already handled—choose another bed task", inUse = "Someone else is handling that spot; choose another bed task", needsPhuong = "Ready for Phuong to finish" },
+}

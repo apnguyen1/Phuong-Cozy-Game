@@ -1,0 +1,134 @@
+[
+  {
+    "file": "install-01.luau",
+    "verify_file": "verify-source-01.luau",
+    "targets": [
+      "ServerScriptService.PhuongMVP.shared.Anchors",
+      "ReplicatedStorage.PhuongMVP.shared.Anchors",
+      "ServerScriptService.PhuongMVP.shared.AudioConfig",
+      "ReplicatedStorage.PhuongMVP.shared.AudioConfig",
+      "ServerScriptService.PhuongMVP.shared.Config",
+      "ReplicatedStorage.PhuongMVP.shared.Config",
+      "ServerScriptService.PhuongMVP.shared.FigureCatalog",
+      "ReplicatedStorage.PhuongMVP.shared.FigureCatalog",
+      "ServerScriptService.PhuongMVP.shared.FigurePresentation",
+      "ReplicatedStorage.PhuongMVP.shared.FigurePresentation",
+      "ServerScriptService.PhuongMVP.shared.FoodPresentation",
+      "ReplicatedStorage.PhuongMVP.shared.FoodPresentation"
+    ]
+  },
+  {
+    "file": "install-02.luau",
+    "verify_file": "verify-source-02.luau",
+    "targets": [
+      "ServerScriptService.PhuongMVP.shared.Guidance",
+      "ReplicatedStorage.PhuongMVP.shared.Guidance",
+      "ServerScriptService.CozyDraftDoor",
+      "ServerScriptService.PhuongMVP.server.BedroomFeedback"
+    ]
+  },
+  {
+    "file": "install-03.luau",
+    "verify_file": "verify-source-03.luau",
+    "targets": [
+      "ServerScriptService.PhuongMVP.server.CakeService",
+      "ServerScriptService.PhuongMVP.server.CozyAudio",
+      "ServerScriptService.PhuongMVP.server.FinalePresentation",
+      "ServerScriptService.PhuongMVP.server.FoodFeedback"
+    ]
+  },
+  {
+    "file": "install-04.luau",
+    "verify_file": "verify-source-04.luau",
+    "targets": [
+      "ServerScriptService.PhuongMVP.server.HostService",
+      "ServerScriptService.PhuongMVP.server.LabubuFeedback"
+    ]
+  },
+  {
+    "file": "install-05.luau",
+    "verify_file": "verify-source-05.luau",
+    "targets": [
+      "ServerScriptService.PhuongMVP.server.Main",
+      "ServerScriptService.PhuongMVP.server.SessionService"
+    ]
+  },
+  {
+    "file": "install-06.luau",
+    "verify_file": "verify-source-06.luau",
+    "targets": [
+      "ServerScriptService.PhuongMVP.server.WorldFeedback"
+    ]
+  },
+  {
+    "file": "install-07.luau",
+    "verify_file": "verify-source-07.luau",
+    "targets": [
+      "ServerScriptService.PhuongMVP.server.activities.Q01",
+      "ServerScriptService.PhuongMVP.server.activities.Q02"
+    ]
+  },
+  {
+    "file": "install-08.luau",
+    "verify_file": "verify-source-08.luau",
+    "targets": [
+      "ServerScriptService.PhuongMVP.server.activities.Q03",
+      "ServerScriptService.PhuongMVP.server.activities.Q04"
+    ]
+  },
+  {
+    "file": "install-09.luau",
+    "verify_file": "verify-source-09.luau",
+    "targets": [
+      "ServerScriptService.PhuongMVP.server.activities.Q05",
+      "ServerScriptService.PhuongMVP.server.activities.Q06",
+      "ReplicatedStorage.PhuongMVP.client.activities.Q01",
+      "ReplicatedStorage.PhuongMVP.client.activities.Q02",
+      "ReplicatedStorage.PhuongMVP.client.activities.Q03",
+      "ReplicatedStorage.PhuongMVP.client.activities.Q04",
+      "ReplicatedStorage.PhuongMVP.client.activities.Q06"
+    ]
+  },
+  {
+    "file": "install-10.luau",
+    "verify_file": "verify-source-10.luau",
+    "targets": [
+      "StarterPlayer.StarterPlayerScripts.CozySoundEffectsClient",
+      "ReplicatedStorage.PhuongMVP.client.extensions.FinalePresentation",
+      "ReplicatedStorage.PhuongMVP.client.extensions.HostControls"
+    ]
+  },
+  {
+    "file": "install-11.luau",
+    "verify_file": "verify-source-11.luau",
+    "targets": [
+      "ReplicatedStorage.PhuongMVP.client.extensions.MusicController",
+      "ReplicatedStorage.PhuongMVP.client.extensions.Q01Bedroom",
+      "ReplicatedStorage.PhuongMVP.client.extensions.Q05Labubu"
+    ]
+  },
+  {
+    "file": "install-12.luau",
+    "verify_file": "verify-source-12.luau",
+    "targets": [
+      "ReplicatedStorage.PhuongMVP.client.extensions.Q06Food",
+      "ReplicatedStorage.PhuongMVP.client.extensions.WorldActivities",
+      "ReplicatedStorage.PhuongMVP.client.Extensions"
+    ]
+  },
+  {
+    "file": "install-13.luau",
+    "verify_file": "verify-source-13.luau",
+    "targets": [
+      "StarterPlayer.StarterPlayerScripts.PhuongMVPClient"
+    ]
+  },
+  {
+    "file": "install-14.luau",
+    "verify_file": "verify-source-14.luau",
+    "targets": [
+      "ReplicatedStorage.PhuongMVP.client.Navigator",
+      "ReplicatedStorage.PhuongMVP.client.UI"
+    ]
+  }
+]

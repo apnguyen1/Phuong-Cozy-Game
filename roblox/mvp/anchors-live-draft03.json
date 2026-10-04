@@ -1,0 +1,51 @@
+{
+  "studio": {
+    "id": "f8a201c4-eba5-421b-a862-87d2afafc17e",
+    "name": "phuong-cozy-game.rbxl",
+    "mode": "Edit",
+    "placeId": null,
+    "placeIdEvidence": "not exposed by read-only Studio state"
+  },
+  "lineage": {
+    "root": "Workspace.CozyWorld_Draft01",
+    "draftVersion": "03",
+    "homeFloor": {"path":"Workspace.CozyWorld_Draft01.Home.Floor","position":[-9,0.02000046,-148],"size":[64,0.42,48]},
+    "sourceOffsetFromNominal": [19,-0.09999954,-40]
+  },
+  "verifiedAnchors": {
+    "GameplayWorldArrival": {"path":"Workspace.CozyWorld_Draft01.Arrival.ArrivalSpawn","position":[25,0.20999908,118],"size":[30,0.1,12]},
+    "BedroomDoorInteraction": {"path":"Workspace.CozyWorld_Draft01.Home.DoorInteraction","position":[-1,5.2999992,-122.49999],"size":[1,1,1]},
+    "FinalePatio": {"path":"Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.BirthdayCourtyard.CourtyardBase","position":[139,0.02000046,24],"size":[80,0.2,120]},
+    "FinaleTable": {"path":"Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.BirthdayCourtyard.GatheringTable","position":[133,3.6000006,26],"size":[28,0.5,12]},
+    "UDistrictSidewalk": {"path":"Workspace.CozyWorld_Draft01.SurroundingContext.ShopSidewalk","position":[-120,0.034,-32],"size":[10,0.25,312]},
+    "UDistrictCrossingSample": {"path":"Workspace.CozyWorld_Draft01.SurroundingContext.Crossing","position":[-113,0.115,-140],"size":[3,0.03,7]}
+  },
+  "semanticAnchors": {
+    "GameplayBedroomArrival": {"status":"DERIVE_FROM_BEDROOM_DOOR_AT_INSTALL","source":"BedroomDoorInteraction"},
+    "Q01Bed": {"status":"UNRESOLVED_NAME_OR_INSTANCE"},
+    "JasperBedroomStart": {"status":"UNRESOLVED_NAME_OR_INSTANCE"},
+    "JasperFetchYard": {"status":"UNRESOLVED_NAME_OR_INSTANCE"},
+    "Q03FairCraft": {"status":"UNRESOLVED_PLACEMENT_AFTER_CROSSING_SIGHTLINE_CHECK"},
+    "Q03BedroomDisplay": {"status":"UNRESOLVED_NAME_OR_INSTANCE"},
+    "Q04QuadReading": {"status":"VERIFIED_EXISTING_BENCH_SEAT_CANDIDATES","candidates":["Workspace.CozyWorld_Draft01.QuadPlanting.ReadingBench1.Seat","Workspace.CozyWorld_Draft01.QuadPlanting.ReadingBench2.Seat","Workspace.CozyWorld_Draft01.QuadPlanting.ReadingBench3.Seat","Workspace.CozyWorld_Draft01.QuadPlanting.ReadingBench4.Seat"],"positions":[[-47.2651,2.3465,2.8778],[53.2651,2.3465,-10.8777],[-48.2651,2.3465,-94.1223],[58.2651,2.3465,86.1223]]},
+    "Q05UDistrictVending": {"status":"UNRESOLVED_PLACEMENT_OUTSIDE_SIDEWALK"},
+    "Q06FOBCounter": {"status":"UNRESOLVED_COUNTER_INSTANCE"},
+    "Q06AladdinsCounter": {"status":"UNRESOLVED_COUNTER_INSTANCE"},
+    "Q06Serving": {"status":"REJECTED_PRIOR_PATIO_COORDINATE","requiredZone":"UDistrict near FOB Poke Bar and Aladdins; exact counter/serving surface requires live owner binding"},
+    "FinalePatio": {"status":"VERIFIED_SOURCE_ANCHOR","ref":"FinalePatio"},
+    "BirthdayLobbyQueue": {"status":"UNRESOLVED_SHARED_QUEUE_ANCHOR"}
+  },
+  "bedroomArrivalSlots": {
+    "status":"PROPOSED_LOCAL_SLOTS_NOT_INSTALLED",
+    "frame":"bedroom door center, x across door, z inward",
+    "offsets":[[-7,0,5],[0,0,5],[7,0,5],[-7,0,11],[0,0,11],[7,0,11],[-7,0,17],[0,0,17],[-4,0,23],[4,0,23]],
+    "requiredLiveChecks":["floor ray","avatar overlap","door swing","bed/Jasper/desk exclusion","camera ceiling ray","two-way exit"],
+    "readOnlyCheck":"Slot01 overlaps Home.Bedroom.FilledBookcase; Slots02-10 reported only Home.Floor in expanded overlap bounds",
+    "status":"NOT_SAFE_FOR_TEN_UNTIL_SLOT01_REPLACED"
+  },
+  "limits": [
+    "Read-only inspection only; no scene mutation or save performed.",
+    "Source coordinates and names are not proof of published/live-server behavior.",
+    "No PlaceId or teleport configuration was available; none was invented."
+  ]
+}

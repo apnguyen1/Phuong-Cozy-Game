@@ -1,0 +1,18 @@
+{
+  "status": "uploaded_private_pending_access_validation",
+  "title": "Phuong's Cozy World",
+  "place_id": 93482985223827,
+  "universe_id": 10769248367,
+  "studio_signed_in_user_id": 1078077474,
+  "native_result": "Successfully published; Private",
+  "source_candidate": "roblox/Phuong-Cozy-World-Release20261003.rbxl",
+  "candidate_bytes": 1684522,
+  "candidate_sha256": "F2883CF44CB19319171C47CBF8C7F015416623671062BAF55293F429C906C90C",
+  "selected_devices": ["Computer", "Phone", "Tablet"],
+  "team_create_selected": false,
+  "data_sharing_selected": false,
+  "live_join_verified": false,
+  "cloud_max_players": null,
+  "cloud_version": null,
+  "cloud_owner_verified": false
+}

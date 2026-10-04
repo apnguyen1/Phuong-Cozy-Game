@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"phuongId\":true,\"probes\":[],\"gameId\":0,\"testIdInConfig\":false,\"placeId\":0,\"andrewId\":true,\"scripts\":[{\"enabled\":false,\"path\":\"StarterPlayer.StarterPlayerScripts.CozyDraftCamera\"},{\"enabled\":true,\"path\":\"StarterPlayer.StarterPlayerScripts.BirthdayLobbyClient\"},{\"enabled\":true,\"path\":\"StarterPlayer.StarterPlayerScripts.PhuongMVPClient\"},{\"enabled\":true,\"path\":\"StarterPlayer.StarterPlayerScripts.CozySoundEffectsClient\"},{\"enabled\":true,\"path\":\"ServerScriptService.CozyDraftDoor\"},{\"enabled\":true,\"path\":\"ServerScriptService.BirthdayLobbyServer\"},{\"enabled\":true,\"path\":\"ServerScriptService.PhuongMVP.server.Main\"}]}"
+    }
+  ],
+  "isError": false
+}

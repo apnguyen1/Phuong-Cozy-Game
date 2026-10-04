@@ -1,0 +1,754 @@
+{
+  "preservation_scope": "CFrame Size Color Material CanCollide CanTouch CanQuery for original 5683 BaseParts; exact runtime Source for24 scripts; additional texture/attributes/anchor audit separate",
+  "approved_replaced_parts": 250,
+  "baseline_parts": 5683,
+  "allowed_material_changes": [
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree1.LeafCrown",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree1.LeafCrown_002",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree1.LeafCrown_003",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree1.LeafCrown_004",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree1.LeafCrown_005",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree1.TopCrown",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree1.UnderstoryShrub",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree1.UnderstoryShrub_002",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree1.UnderstoryShrub_003",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree2.LeafCrown",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree2.LeafCrown_002",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree2.LeafCrown_003",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree2.LeafCrown_004",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree2.LeafCrown_005",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree2.TopCrown",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree2.UnderstoryShrub",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree2.UnderstoryShrub_002",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree2.UnderstoryShrub_003",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree3.LeafCrown",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree3.LeafCrown_002",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree3.LeafCrown_003",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree3.LeafCrown_004",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree3.LeafCrown_005",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree3.TopCrown",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree3.UnderstoryShrub",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree3.UnderstoryShrub_002",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree3.UnderstoryShrub_003",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree4.LeafCrown",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree4.LeafCrown_002",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree4.LeafCrown_003",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree4.LeafCrown_004",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree4.LeafCrown_005",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree4.TopCrown",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree4.UnderstoryShrub",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree4.UnderstoryShrub_002",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree4.UnderstoryShrub_003",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree5.LeafCrown",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree5.LeafCrown_002",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree5.LeafCrown_003",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree5.LeafCrown_004",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree5.LeafCrown_005",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree5.TopCrown",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree5.UnderstoryShrub",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree5.UnderstoryShrub_002",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree5.UnderstoryShrub_003",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree6.LeafCrown",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree6.LeafCrown_002",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree6.LeafCrown_003",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree6.LeafCrown_004",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree6.LeafCrown_005",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree6.TopCrown",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree6.UnderstoryShrub",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree6.UnderstoryShrub_002",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree6.UnderstoryShrub_003",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree7.LeafCrown",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree7.LeafCrown_002",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree7.LeafCrown_003",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree7.LeafCrown_004",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree7.LeafCrown_005",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree7.TopCrown",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree7.UnderstoryShrub",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree7.UnderstoryShrub_002",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree7.UnderstoryShrub_003",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree8.LeafCrown",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree8.LeafCrown_002",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree8.LeafCrown_003",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree8.LeafCrown_004",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree8.LeafCrown_005",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree8.TopCrown",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree8.UnderstoryShrub",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree8.UnderstoryShrub_002",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree8.UnderstoryShrub_003",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree9.LeafCrown",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree9.LeafCrown_002",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree9.LeafCrown_003",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree9.LeafCrown_004",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree9.LeafCrown_005",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree9.TopCrown",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree9.UnderstoryShrub",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree9.UnderstoryShrub_002",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree9.UnderstoryShrub_003",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree10.LeafCrown",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree10.LeafCrown_002",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree10.LeafCrown_003",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree10.LeafCrown_004",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree10.LeafCrown_005",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree10.TopCrown",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree10.UnderstoryShrub",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree10.UnderstoryShrub_002",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree10.UnderstoryShrub_003",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree11.LeafCrown",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree11.LeafCrown_002",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree11.LeafCrown_003",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree11.LeafCrown_004",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree11.LeafCrown_005",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree11.TopCrown",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree11.UnderstoryShrub",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree11.UnderstoryShrub_002",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree11.UnderstoryShrub_003",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree12.LeafCrown",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree12.LeafCrown_002",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree12.LeafCrown_003",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree12.LeafCrown_004",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree12.LeafCrown_005",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree12.TopCrown",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree12.UnderstoryShrub",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree12.UnderstoryShrub_002",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree12.UnderstoryShrub_003",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree13.LeafCrown",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree13.LeafCrown_002",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree13.LeafCrown_003",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree13.LeafCrown_004",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree13.LeafCrown_005",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree13.TopCrown",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree13.UnderstoryShrub",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree13.UnderstoryShrub_002",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree13.UnderstoryShrub_003",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree14.LeafCrown",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree14.LeafCrown_002",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree14.LeafCrown_003",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree14.LeafCrown_004",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree14.LeafCrown_005",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree14.TopCrown",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree14.UnderstoryShrub",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree14.UnderstoryShrub_002",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree14.UnderstoryShrub_003",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree15.LeafCrown",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree15.LeafCrown_002",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree15.LeafCrown_003",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree15.LeafCrown_004",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree15.LeafCrown_005",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree15.TopCrown",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree15.UnderstoryShrub",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree15.UnderstoryShrub_002",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree15.UnderstoryShrub_003",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree16.LeafCrown",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree16.LeafCrown_002",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree16.LeafCrown_003",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree16.LeafCrown_004",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree16.LeafCrown_005",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree16.TopCrown",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree16.UnderstoryShrub",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree16.UnderstoryShrub_002",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.PerimeterGardens.LayeredTree16.UnderstoryShrub_003",
+      "to": "Grass",
+      "from": "SmoothPlastic"
+    }
+  ],
+  "captured_at": "2026-10-03T18:15:37Z",
+  "unexpected_changes": [],
+  "baseline_provenance": "ServerStorage.EnvironmentDetailBaseline04 Snapshot1..22; pre-change values captured by builder, compared independently",
+  "runtime_sources_preserved": 24,
+  "runtime_baseline_sources": 24,
+  "anchors": [
+    {
+      "path": "Workspace.CozyWorld_Draft01.Home.Floor",
+      "class": "Part",
+      "position": [
+        204,
+        0.019998550415039062,
+        -75.3922119140625
+      ]
+    },
+    {
+      "path": "Workspace.CozyWorld_Draft01.Landscape.QuadGround",
+      "class": "Part",
+      "position": [
+        232,
+        -0.2800025939941406,
+        40.60784912109375
+      ]
+    }
+  ],
+  "runtime_source_changes": [],
+  "parts_preserved": 5433
+}

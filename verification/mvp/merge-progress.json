@@ -1,0 +1,330 @@
+{
+  "installerSupport": {
+    "overlayPath": "verification/mvp/import/update-installer.luau",
+    "overlaySha256": "6248EB8B9F419A7B8C31D56FD6F34BEBE075A2873C34CC0F2958796BAC3E43AB",
+    "installSourceSha256": "6E45D928C5AA886AB7FF945090EF4C40F2A27F23A206C19E9D0C62116AC1ED50",
+    "status": "SAVED_PRIMARY_SUPPORT_ONLY"
+  },
+  "q01Attempt": {
+    "status": "ROLLED_BACK_SOURCE_DEFECT",
+    "invalidSelectorGuard": "passed before Q01",
+    "error": "ServerStorage.PhuongMVPTools.install:53: MVP install rolled back owned outputs: ServerStorage.PhuongMVPTools.install:39: SafeReplace name outside caller ownership",
+    "sceneFoldersInstalled": 0
+  },
+  "features": [
+    {
+      "name": "Main arrival lookup fix",
+      "status": "SAVED_PRIMARY",
+      "primarySave": "2026-09-27 15:31:13",
+      "checkpoint": "roblox/checkpoints/phuong-cozy-game-before-main-fix-20260927-1531.rbxl"
+    },
+    {
+      "name": "Installer support overlay",
+      "status": "SAVED_PRIMARY_SUPPORT_ONLY",
+      "primarySave": "2026-09-27 15:42:00",
+      "checkpoint": "roblox/checkpoints/phuong-cozy-game-post-main-20260927-1542.rbxl"
+    },
+    {
+      "name": "Q01Station builder overlay",
+      "status": "SAVED_SOURCE_OVERLAY_Q01_ATTEMPT_BLOCKED",
+      "overlayPath": "verification/mvp/import/update-Q01Station.luau",
+      "overlaySha256": "DFB6AD6F2FFE55679B914736CCAD1AED27FF054C859E720DDEFEEA28861535E6",
+      "sceneFoldersInstalled": 0,
+      "error": "ServerStorage.PhuongMVPTools.builders.Q01Station:21: Q01Station.Build requires parent and Q01Bed CFrame",
+      "postCheckpoint": null
+    },
+    {
+      "name": "Q02Station",
+      "status": "SAVED_CHECKPOINT",
+      "sceneFoldersInstalled": 1,
+      "checkpoint": "roblox/checkpoints/phuong-cozy-game-post-Q02-20260927-1556.rbxl",
+      "result": "Q02_OK 1"
+    },
+    {
+      "name": "Q03Station",
+      "status": "SAVED_PRIMARY_AND_CHECKPOINT",
+      "sceneFoldersInstalled": 1,
+      "primarySave": "2026-09-27 16:00:16",
+      "primaryBytes": 1719218,
+      "checkpoint": "roblox/phuong-cozy-gamephuong-cozy-game-post-Q03-20260927-1605.rbxl",
+      "result": "Q03_OK 1",
+      "overlayPath": "verification/mvp/import/update-Q03Station.luau",
+      "sourceBuilderSha256": "731FBE638669BCF4316C40090931A74F43B499FCACAD2D8D8DFBEAE56E4D58C9",
+      "nativeTitleRestored": "C:/Users/andre/Repos/Phuong-Cozy-Game/roblox/phuong-cozy-game.rbxl - Roblox Studio"
+    },
+    {
+      "name": "Q05Station",
+      "status": "SAVED_PRIMARY_AND_CHECKPOINT",
+      "sceneFoldersInstalled": 1,
+      "primarySave": "2026-09-27 16:04:09",
+      "primaryBytes": 1720571,
+      "checkpoint": "roblox/checkpoints/phuong-cozy-game-post-Q05-20260927-1604.rbxl",
+      "result": "Q05 folder installed"
+    },
+    {
+      "name": "Q06Station",
+      "status": "SAVED_PRIMARY_AND_CHECKPOINT",
+      "sceneFoldersInstalled": 1,
+      "primarySave": "2026-09-27 16:08:38",
+      "primaryBytes": 1720804,
+      "checkpoint": "roblox/checkpoints/phuong-cozy-game-post-Q06-20260927-1608.rbxl",
+      "checkpointBytes": 1720804,
+      "result": "Q06 folder installed; required anchors Q06FOBCounter,Q06AladdinsCounter,Q06Serving; PatioPlacement forbidden"
+    },
+    {
+      "name": "Q01Station",
+      "status": "SAVED_PRIMARY_AND_CHECKPOINT",
+      "sceneFoldersInstalled": 1,
+      "primarySave": "2026-09-27 16:12:22",
+      "primaryBytes": 1721553,
+      "checkpoint": "roblox/checkpoints/phuong-cozy-game-post-Q01-20260927-1611.rbxl",
+      "checkpointBytes": 1721553,
+      "result": "Q01 folder installed; canonical owner and anchorCFrame factory"
+    },
+    {
+      "name": "LobbyQueue",
+      "status": "SAVED_PRIMARY_AND_CHECKPOINT",
+      "sceneFoldersInstalled": 1,
+      "primarySave": "2026-09-27 16:13:26",
+      "primaryBytes": 1722077,
+      "checkpoint": "roblox/checkpoints/phuong-cozy-game-post-LobbyQueue-20260927-1614.rbxl",
+      "checkpointBytes": 1722077,
+      "result": "LobbyQueue folder installed; queue manifest and measured clearance reported"
+    },
+    {
+      "name": "GrassDecoration",
+      "status": "SAVED_PRIMARY_AND_CHECKPOINT",
+      "sceneFoldersInstalled": 1,
+      "primarySave": "2026-09-27 16:17:09",
+      "primaryBytes": 1724980,
+      "checkpoint": "roblox/checkpoints/phuong-cozy-game-post-GrassDecoration-20260927-1617.rbxl",
+      "checkpointBytes": 1724980,
+      "result": "19-part grass decoration; preserved Quad ground and paths"
+    },
+    {
+      "name": "NightLighting",
+      "status": "SAVED_PRIMARY_NO_CHECKPOINT",
+      "sceneFoldersInstalled": 1,
+      "primarySave": "2026-09-27 16:16:16",
+      "primaryBytes": 1722077,
+      "result": "Lighting install succeeded with Restore manifest; checkpoint pending"
+    },
+    {
+      "name": "Q04Station",
+      "status": "BLOCKED_ROLLBACK",
+      "result": "Q04BedroomKindle unresolved; no partial outputs"
+    },
+    {
+      "name": "SeattleBoundary",
+      "status": "BLOCKED_ROLLBACK",
+      "result": "part budget 254 exceeds proposed 250"
+    },
+    {
+      "name": "CakeFinale",
+      "status": "BLOCKED_ROLLBACK",
+      "result": "GatheringTable insert invalid member on Part"
+    },
+    {
+      "name": "Q04MarkerRepair",
+      "status": "SAVED_PRIMARY_AND_CHECKPOINT",
+      "marker": "MVP.Anchors.Q04BedroomKindle",
+      "fixture": "Home.Bedroom.StudyDesk.Desktop",
+      "markerCFrame": "-23,0.42,-137",
+      "placementStatus": "MEASURED",
+      "primarySave": "2026-09-27 16:21:31",
+      "primaryBytes": 1727649,
+      "checkpoint": "roblox/checkpoints/phuong-cozy-game-post-Q04-20260927-1624.rbxl",
+      "checkpointBytes": 1727649,
+      "result": "Q04 installed 3 parts"
+    },
+    {
+      "name": "SeattleBoundary",
+      "status": "SAVED_CHECKPOINT",
+      "partCount": 250,
+      "checkpoint": "roblox/checkpoints/phuong-cozy-game-post-SeattleBoundary-20260927-1625.rbxl",
+      "checkpointBytes": 1731022,
+      "result": "Reviewed overlay succeeds at exact 250 cap"
+    },
+    {
+      "name": "CakeFinale",
+      "status": "BLOCKED_ROLLBACK",
+      "result": "CakeFinale:31: attempt to index nil with 'Y'"
+    },
+    {
+      "status": "SAVED_CHECKPOINT",
+      "checkpoint": "roblox/checkpoints/phuong-cozy-game-post-Q01Activity-20260927-1628.rbxl",
+      "name": "Q01Activity",
+      "overlaySHA256": "C3D89B8A1662CDE072E895472BD6D4E86823180F8924495231880881152B17A3"
+    },
+    {
+      "status": "SAVED_CHECKPOINT",
+      "checkpoint": "roblox/checkpoints/phuong-cozy-game-post-Q04Activity-20260927-1629.rbxl",
+      "name": "Q04Activity",
+      "overlaySHA256": "8A71173AF66B9025CCAFCC76BED223EE410ED714C1F4F142A17C3BD229A095D7"
+    },
+    {
+      "status": "SAVED_CHECKPOINT",
+      "checkpoint": "roblox/checkpoints/phuong-cozy-game-post-Q06Activity-20260927-1630.rbxl",
+      "name": "Q06Activity",
+      "overlaySHA256": "0502116EA3A29A2835F48D76410DC774D801B2081F9067FCA0FF5C2B22A4F8E5"
+    },
+    {
+      "status": "SAVED_CHECKPOINT",
+      "checkpoint": "roblox/checkpoints/phuong-cozy-game-post-client-20260927-1631.rbxl",
+      "name": "Client",
+      "overlaySHA256": "E209FFDE56DA2438DEBB6EC82B9CF2124B369FC3A7B2531CE433F4597D573169"
+    },
+    {
+      "status": "SAVED_PRIMARY_AND_CHECKPOINT",
+      "name": "CakeFinale",
+      "primaryBytes": 1732754,
+      "result": "8 original seats preserved; 2 new end seats added",
+      "checkpointBytes": 1732754,
+      "checkpoint": "roblox/checkpoints/phuong-cozy-game-post-CakeFinale-20260927-1633.rbxl"
+    },
+    {
+      "name": "Q04 placement repair: ReadingBench1 and bedroom desk",
+      "status": "SAVED_PRIMARY_AND_CHECKPOINT",
+      "primaryPath": "roblox/phuong-cozy-game.rbxl",
+      "primaryBytes": 1733069,
+      "primaryLastWrite": "2026-09-27T16:49:13.7959981-07:00",
+      "checkpoint": "roblox/checkpoints/phuong-cozy-game-post-Q04-bedroom-desk-fix-20260927-1650.rbxl",
+      "checkpointBytes": 1733069,
+      "benchSeat": "Workspace.CozyWorld_Draft01.QuadPlanting.ReadingBench1.Seat",
+      "benchBookCFrame": "-44.2650681,2.56999993,1.8777504",
+      "deskFixture": "Workspace.CozyWorld_Draft01.Home.Bedroom.StudyDesk.Desktop",
+      "deskTopY": 4.91000076,
+      "bedroomMarkerCFrame": "-23,4.90999985,-130.25",
+      "bedroomPromptCFrame": "-23,5.15999985,-130.25",
+      "evidence": "verification/mvp/q04-bedroom-desk-placement-20260927.json"
+    },
+    {
+      "name": "Runtime activation",
+      "status": "SAVED_PRIMARY_AND_CHECKPOINT",
+      "primaryPath": "roblox/phuong-cozy-game.rbxl",
+      "primaryBytes": 1733069,
+      "primaryLastWrite": "2026-09-27T16:52:41.2016932-07:00",
+      "checkpoint": "roblox/checkpoints/phuong-cozy-game-post-runtime-enabled-20260927-1700.rbxl",
+      "checkpointBytes": 1733069,
+      "studioId": "d9b02048-0951-4fce-a705-7cc8ea47abd2",
+      "mode": "Edit",
+      "mainDisabled": false,
+      "clientDisabled": false,
+      "buildWorldDisabled": true,
+      "legacyServerDisabled": true,
+      "legacyClientDisabled": true
+    },
+    {
+      "name": "Main final source overlay",
+      "status": "SAVED_PRIMARY_AND_CHECKPOINT",
+      "overlaySHA256": "467105639F5631888F8A93BED826243E511651AD0C52204059BBFFEBE47843F5",
+      "sourceSHA256": "B153B2D300EAB85D35F2EF5A675635175FFE242341F416D036EE6E33E2EA3F9D",
+      "checkpoint": "roblox/checkpoints/phuong-cozy-game-post-Main-B153-20260927-1715.rbxl",
+      "checkpointBytes": 1735809
+    },
+    {
+      "name": "Client final source overlay",
+      "status": "SAVED_PRIMARY_AND_CHECKPOINT",
+      "overlaySHA256": "B9F3EDFD33AE49AB1430E3E19D537918BFDF52CB0A8B75ADF399E2B658059F08",
+      "sourceSHA256": "DD2A27A3BFC04847BFC94A59A1443B4D5FFD3F6D224FFFC687FEAC1E35ABCA8E",
+      "checkpoint": "roblox/checkpoints/phuong-cozy-game-post-Client-DD2A-20260927-1720.rbxl",
+      "checkpointBytes": 1737565
+    },
+    {
+      "name": "Q03 final activity overlay",
+      "status": "SAVED_PRIMARY_AND_CHECKPOINT",
+      "overlaySHA256": "D66030D328283BAE46E0881EEAC7EA3B15ED03F9E25B0F2CF30427FDC6E2A1A3",
+      "sourceSHA256": "D72B4E25EA406E6E5BA99FDF7F195BD4962DA85EE213BABC8F8E5557EAB8C4D3",
+      "checkpoint": "roblox/checkpoints/phuong-cozy-game-post-Q03-D72B-20260927-1725.rbxl",
+      "checkpointBytes": 1738070
+    },
+    {
+      "name": "Q01Activity",
+      "checkpointBytes": 1738514,
+      "overlaySHA256": "A025319F11192DA8BA001475BE672BD594E7BC06EE78F6B5EC786C61F4C82868",
+      "checkpoint": "roblox/checkpoints/phuong-cozy-game-post-Q01Activity-3773-20260927-1735.rbxl",
+      "sourceSHA256": "3773F06B01026DA2851BFF02C2D9142C406CFD44A51D339E4BEE3A028D78F36A",
+      "status": "SAVED_PRIMARY_AND_CHECKPOINT"
+    },
+    {
+      "name": "Q02Activity",
+      "checkpointBytes": 1738666,
+      "overlaySHA256": "027C1ED6A71355C9E1DB4C8DB711096F2BAFA64720EFD7372317950803A8774F",
+      "checkpoint": "roblox/checkpoints/phuong-cozy-game-post-Q02Activity-98BB-20260927-1740.rbxl",
+      "sourceSHA256": "98BB044B530BBF4E2D4A6B7E1CB8F45F95BFF61158AD90F5DA655C7F5DAE0D27",
+      "status": "SAVED_PRIMARY_AND_CHECKPOINT"
+    },
+    {
+      "name": "Q04Activity",
+      "checkpointBytes": 1739003,
+      "overlaySHA256": "57DD5BE914B9A76CFEDFA4094ED45367A817B0F8A271E7082025406F3C352248",
+      "checkpoint": "roblox/checkpoints/phuong-cozy-game-post-Q04Activity-1BEC-20260927-1745.rbxl",
+      "sourceSHA256": "1BEC8E214D3E25924D77A7F9B8CC5C3729032102B86E1BC43E25A33C756FE6A4",
+      "status": "SAVED_PRIMARY_AND_CHECKPOINT"
+    },
+    {
+      "name": "Q05Activity",
+      "checkpointBytes": 1739726,
+      "overlaySHA256": "66D533CD1091C59430EDE646CF398C04A916372ED4CAB8983A7C30624A0C8D9B",
+      "checkpoint": "roblox/checkpoints/phuong-cozy-game-post-Q05Activity-3C9F-20260927-1750.rbxl",
+      "sourceSHA256": "3C9FC62692DFA1A7F16CD88D203BEB1367CBC8EBB6B72596B41FEEB0D3DB6B74",
+      "status": "SAVED_PRIMARY_AND_CHECKPOINT"
+    },
+    {
+      "name": "Q06Activity",
+      "checkpointBytes": 1739536,
+      "overlaySHA256": "252B99FF8CB4B547E4B32166DFCEF8CE7F341A5448E190EF309EAD34CF8220FF",
+      "checkpoint": "roblox/checkpoints/phuong-cozy-game-post-Q06Activity-96B8-20260927-1755.rbxl",
+      "sourceSHA256": "96B89A12D677459FF8BF4ABE767BA440707EA4ACA212CA43FA4445BAC2776B8E",
+      "status": "SAVED_PRIMARY_AND_CHECKPOINT"
+    }
+  ],
+  "postMainCheckpoint": "roblox/checkpoints/phuong-cozy-game-post-main-20260927-1542.rbxl",
+  "finalVerification": {
+    "sourceEqualityBundle": "D85456C6C543FEBE63001C797F500126D4475334B27E3E839CBE8291483AE58E",
+    "status": "MERGED_SAVED_ONE_PLAYER_SMOKE_PASSED",
+    "engineSmoke": "PASSED_ONE_PLAYER_PROGRESSION",
+    "studioId": "41aeca53-fc7d-4a04-9233-99b2b9734ec4",
+    "primaryPath": "roblox/phuong-cozy-game.rbxl",
+    "primaryBytes": 1739536,
+    "primaryLastWrite": "2026-09-27T17:47:14.3626675-07:00",
+    "runtimeEntrypoints": "Main and PhuongMVPClient enabled; build-world and legacy handlers disabled",
+    "published": false,
+    "engineSmokeEvidence": "verification/mvp/saved-place-progression-smoke-20260927.md",
+    "bundleSha256": "D85456C6C543FEBE63001C797F500126D4475334B27E3E839CBE8291483AE58E",
+    "currentFile": "C:\\Users\\andre\\Repos\\Phuong-Cozy-Game\\roblox\\phuong-cozy-game.rbxl",
+    "sourceEquality": {
+      "expected": 31,
+      "exact": 31,
+      "normalizedOnly": 0,
+      "mismatches": 0
+    },
+    "independentReview": "verification/mvp/saved-place-progression-review-20260927.md",
+    "finalAcceptance": "PENDING_GROUP_DEVICE_AND_HUMAN_REVIEW",
+    "placeFileSHA256": null,
+    "placeHashNote": "Direct filesystem byte hashing was denied while the primary was open; no place checksum is claimed. Native reopen and actual Script.Source equality were verified."
+  },
+  "initialSnapshot": {
+    "feature": "Main bedroom arrival lookup fix",
+    "status": "SAVED_PRIMARY",
+    "sourcePath": "verification/mvp/import/update-main.luau",
+    "overlaySourceSha256": "63DA4E4298892E998F2081B9CFB3C49C851E2B6B4B5D8B2793876F808500918F",
+    "mainSourceSha256": "3AA85C703E31C302F5F611C0376B7D42C25508FBE27E0BD73D358DE528CCC9AA",
+    "ownedTarget": "ServerScriptService.PhuongMVP.server.Main only; runtime entrypoint remains disabled",
+    "primaryPath": "roblox/phuong-cozy-game.rbxl",
+    "primaryBytes": 1717088,
+    "checkpointPath": "roblox/checkpoints/phuong-cozy-game-before-main-fix-20260927-1531.rbxl",
+    "checkpointBytes": 1717069,
+    "verification": "Edit mode; native title matches primary; update-main returned true; native Ctrl+S completed",
+    "installersRun": false,
+    "published": false,
+    "engineSmokeEvidence": "verification/mvp/engine-smoke-result-20260927.md"
+  },
+  "feature": "All delivered runtime features from 13 chats",
+  "status": "MERGED_AND_SAVED",
+  "primaryPath": "roblox/phuong-cozy-game.rbxl",
+  "primaryBytes": 1739536,
+  "published": false,
+  "engineSmokeEvidence": "verification/mvp/saved-place-progression-smoke-20260927.md",
+  "historyFormatNote": "initialSnapshot and features preserve earlier recorded attempts and saves; finalVerification and root primary fields describe the current saved draft."
+}

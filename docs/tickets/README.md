@@ -1,5 +1,7 @@
 # Phuong’s Cozy World — dedicated tickets
 
+**October 3 release work:** Andrew authorized sequential implementation of [PCW-18 through PCW-25](../coordination/release-20261003/README.md), followed by integrated verification, bug fixes and publication with mobile support when verified. The correct names are Phuong and Andrew. The new packet supersedes historical no-code/publish exclusions for this authorized scope and preserves prior evidence limits. One builder works at a time; tests run in the final integration stage.
+
 **September 27 update:** The user gave positive Draft 02 visual feedback and authorized saving and merging it; that checkpoint is now on `main`. [MAP-03](MAP-03.md) covers the requested third revision, focused on environment detail and visual polish. Earlier device, reconnect and gameplay acceptance gaps remain recorded; the merge does not convert them into passed tests.
 
 **September 26 implementation update:** The active user goal authorizes Draft 02 environment and lobby construction. [MAP-02](MAP-02.md) binds the whole decorated neighborhood; [PCW-17](PCW-17.md) gates the birthday room and timed entry. [PCW-04](PCW-04.md), [PCW-05](PCW-05.md) and [PCW-06](PCW-06.md) now include explicit current-scope amendments and preserve their original planning text as history. Their historical no-code boundaries no longer govern this authorized work. Draft 02 remains under independent review; scope approval does not mean final user acceptance. Other unimplemented quest tickets remain planned.

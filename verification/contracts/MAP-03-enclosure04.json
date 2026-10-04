@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "id": "MAP-03",
+  "title": "MAP-03 — October 3 enclosed Seattle neighborhood and surface details",
+  "intent": "Enclose the teleport destination with solid detailed Seattle-style buildings, textured ground detail and textured green trees while preserving the playable world.",
+  "kind": "model",
+  "stage": "production",
+  "target": "roblox",
+  "status": "approved",
+  "approved_by": "User, October 3, 2026: requested enclosed teleport play field, detailed Seattle buildings/doors, improved ground texture/detail and non-cherry tree texture. Scope authorization only; acceptance pending.",
+  "max_iterations": 3,
+  "sources": [
+    "docs/tickets/MAP-03.md"
+  ],
+  "inputs": [
+    "AGENTS.md",
+    "verification/palette.json",
+    "roblox/mvp/builders/SeattleBoundary.luau",
+    "roblox/mvp/environment-detail04.luau",
+    "verification/mvp/import/update-SeattleBoundary.luau",
+    "verification/check_enclosure04.py",
+    "roblox/evidence/enclosure04"
+  ],
+  "artifacts": [
+    {
+      "id": "place",
+      "path": "roblox/phuong-cozy-game.rbxl",
+      "check": "exists"
+    },
+    {
+      "id": "seattle-palette",
+      "path": "roblox/evidence/enclosure04/seattle-colors.json",
+      "check": "studio_palette",
+      "allowed_tokens": [
+        "forest",
+        "sage",
+        "cream",
+        "wood",
+        "blossom",
+        "brick",
+        "golden",
+        "ink"
+      ],
+      "required_tokens": [],
+      "texture_sources": {}
+    },
+    {
+      "id": "detail-palette",
+      "path": "roblox/evidence/enclosure04/detail-colors.json",
+      "check": "studio_palette",
+      "allowed_tokens": [
+        "forest",
+        "sage",
+        "cream",
+        "wood",
+        "blossom",
+        "brick",
+        "golden",
+        "ink"
+      ],
+      "required_tokens": [],
+      "texture_sources": {}
+    },
+    {
+      "id": "preservation",
+      "path": "roblox/evidence/enclosure04/preservation.json",
+      "check": "exists"
+    },
+    {
+      "id": "collision",
+      "path": "roblox/evidence/enclosure04/collision.json",
+      "check": "exists"
+    },
+    {
+      "id": "movement",
+      "path": "roblox/evidence/enclosure04/movement.json",
+      "check": "exists"
+    },
+    {
+      "id": "save-audit",
+      "path": "roblox/evidence/enclosure04/save-audit.json",
+      "check": "exists"
+    }
+  ],
+  "commands": [
+    {
+      "id": "enclosure04-captured-checks",
+      "argv": [
+        "{python}",
+        "verification/check_enclosure04.py"
+      ],
+      "cwd": ".",
+      "timeout_seconds": 30
+    }
+  ],
+  "criteria": [
+    {
+      "id": "enclosure-full-perimeter",
+      "reviewer": "independent",
+      "prompt": "All four edges and corners block ordinary walking/jumping at the teleport destination; shallow closed shells and roofs appear as buildings. Distinguish physics evidence from source assertions."
+    },
+    {
+      "id": "enclosure-surface-detail",
+      "reviewer": "independent",
+      "prompt": "Player-height and wide Studio views show Seattle masonry/window/door/awning/rain-pipe detail, paving/sidewalk texture/detail and textured green trees without clipping, floating detail or hidden entrances."
+    },
+    {
+      "id": "enclosure-preservation",
+      "reviewer": "independent",
+      "prompt": "Original cherry models/textures, playable entrances, anchors and runtime source match the current pre-change snapshot. Only the boundary replacement and green-crown/shrub native materials differ as authorized."
+    },
+    {
+      "id": "enclosure-human-feedback",
+      "reviewer": "human",
+      "prompt": "The user accepts this exact building/ground/tree visual revision; real phone/tablet/group performance remains pending until tested."
+    }
+  ]
+}

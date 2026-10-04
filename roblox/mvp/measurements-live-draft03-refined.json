@@ -1,0 +1,17 @@
+{
+  "studioId":"f8a201c4-eba5-421b-a862-87d2afafc17e",
+  "cityBoundsExcludingRemoteLobbyAndMVP":{"min":[-168.8702393,-1.36,-246.3341675],"max":[226.8250885,39,136],"size":[395.6953125,40.36,382.3341675],"filter":"CozyWorld_Draft01 BaseParts with -500 < X < 500 and -260 < Z < 200; excludes MVP; remote lobby is outside this city envelope"},
+  "slot01Replacement":{"candidate":[-6,0.5,-152],"blockers":[],"separationFromExistingSlots":">= 4 studs in candidate grid check","check":"GetPartBoundsInBox(candidate, Vector3.new(3,4,3)), excludes MVP and ignores Home.Floor; candidate has no Home furniture blockers","status":"MEASURED_CANDIDATE_REQUIRES_LIVE_INSTALL_RECHECK"},
+  "quadFrontSeats":[
+    {"path":"Workspace.CozyWorld_Draft01.QuadPlanting.ReadingBench1.Seat","position":[-47.2650681,2.3464870,2.8777504],"lookVector":[-0.1424149,0.9898074,0]},
+    {"path":"Workspace.CozyWorld_Draft01.QuadPlanting.ReadingBench2.Seat","position":[53.2650681,2.3464870,-10.8777447],"lookVector":[0.1424150,-0.9898074,0]},
+    {"path":"Workspace.CozyWorld_Draft01.QuadPlanting.ReadingBench3.Seat","position":[-48.2650757,2.3464870,-94.1222610],"lookVector":[-0.1424149,0.9898074,0]},
+    {"path":"Workspace.CozyWorld_Draft01.QuadPlanting.ReadingBench4.Seat","position":[58.2650642,2.3464870,86.1222763],"lookVector":[0.1424150,-0.9898074,0]}
+  ],
+  "udistrictServingCandidates":[
+    {"shop":"FOB","position":[-119.5,0.42,-132],"basis":"FOB bounds x[-156.0,-121.83], counter z[-154.0,-130.0], door z[-123,-115]; outside east facade, south of door and clear of crossing sample z=-140","status":"MEASURED_GEOMETRY_PROPOSAL"},
+    {"shop":"Aladdins","position":[-119.5,0.42,50],"basis":"Aladdins bounds x[-156.0,-121.83], counter z[39,76], door z[69,77]; outside east facade and south of door","status":"MEASURED_GEOMETRY_PROPOSAL"}
+  ],
+  "routeInputs":{"brickWalkNetwork":"Workspace.CozyWorld_Draft01.Paths.BrickWalkNetwork","continuousBorder":"Workspace.CozyWorld_Draft01.Paths.ContinuousPathBorder","routeDefinitions":"Workspace.CozyWorld_Draft01.Paths.RouteDefinitions","keepoutEntries":"RouteDefinitions children require installer extraction; no child geometry was changed"},
+  "limitations":["Q06 serving positions are measured-geometry proposals pending Q06 owner confirmation and final overlap/camera check","slot01 replacement is a read-only candidate and is not installed","Seattle bounds are conservative city bounds, not a facade approval"]
+}

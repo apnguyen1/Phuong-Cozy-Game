@@ -1,0 +1,6 @@
+
+Algorithm       Hash                                                                   Path
+---------       ----                                                                   ----
+SHA256          B0EB85FF19D03E17E771237F9D7636691634DF21AE9507ADD8D12D74343480C8       C:\Users\andre\Repos\Phuong-Cozy…
+SHA256          946BEE36B9FB2EA0759D53BD94DF66443035B9DDD13E7724DC73929D68D9249B       C:\Users\andre\Repos\Phuong-Cozy…
+
