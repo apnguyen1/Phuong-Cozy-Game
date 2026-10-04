@@ -1,0 +1,130 @@
+- button "menu":
+- navigation "breadcrumb":
+  - list:
+    - link "Creations":
+      - /url: /dashboard/creations
+    - listitem: /
+    - link "Phuong's Cozy World":
+      - /url: /dashboard/creations/experiences/10769248367/overview
+    - listitem: /
+    - listitem: Content settings
+- button "Search"
+- button "Notifications"
+- button "IamBannedrew":
+  - img "IamBannedrew"
+- heading "Content settings" [level=1]
+- link "edit":
+  - /url: /dashboard/creations/experiences/10769248367/places/93482985223827/icon
+  - button "edit":
+- link "edit":
+  - /url: /dashboard/creations/experiences/10769248367/places/93482985223827/thumbnails
+  - button "edit":
+- generic: No video uploaded
+- generic: Upload a video to help users discover your game
+- link "Continue":
+  - /url: /dashboard/creations/experiences/10769248367/places/93482985223827/videos
+  - generic: Continue
+- generic: Icon, thumbnail, and gameplay video are inherited from start place
+- text: Name
+- generic: "*"
+- textbox "Name": Phuong's Cozy World
+- generic: Name *
+- paragraph: Up to 50 characters
+- generic: Description
+- textbox "Description": Celebrate Phuong with friends. Make her room cozy, play with Jasper, build a tiny keepsake, read under the cherry blossoms and share a meal. Help fulfill her Labubu wish, then gather for birthday cake.
+- generic: Description
+- paragraph: Up to 1000 characters
+- generic: Genre
+- combobox "Genre"
+- textbox
+- generic: Genre
+- paragraph:
+  - text: Learn more about
+  - link "genre and subgenre definitions":
+    - /url: https://create.roblox.com/docs/production/publishing/experience-genres#genre-and-subgenre-descriptions
+  - text: .
+- generic: Audience
+- generic: Choose who can play after you publish this experience.
+- radiogroup "Audience":
+  - radio "Private":
+    - generic: Private
+  - radio "Limited" [checked]:
+    - generic: Limited
+  - radio "Public":
+    - generic: Public
+- generic "Playtesters":
+  - checkbox "Playtesters Playtesters" [checked] [disabled]
+- generic: Playtesters
+- generic "Friends":
+  - checkbox "Friends Friends"
+- generic: Friends
+- status:
+  - generic: Your experience is limited to 16+ users and trusted friends
+  - button "Reach more players":
+    - generic: Reach more players
+- generic: APIs
+- generic "isStudioAccessToApisAllowedCheckbox":
+  - checkbox "isStudioAccessToApisAllowedCheckbox Enable Studio access to API services"
+- generic: Enable Studio access to API services
+- generic "isMeshTextureApiAccessAllowedCheckbox":
+  - checkbox "isMeshTextureApiAccessAllowedCheckbox Enable Mesh / Image APIs"
+- generic: Enable Mesh / Image APIs
+- paragraph:
+  - text: This experience can access
+  - link "EditableMesh":
+    - /url: https://create.roblox.com/docs/reference/engine/classes/EditableMesh
+  - text: and
+  - link "EditableImage":
+    - /url: https://create.roblox.com/docs/reference/engine/classes/EditableImage
+  - text: APIs. Using these APIs must comply with the
+  - link "Terms of Use":
+    - /url: https://help.roblox.com/hc/articles/115004647846-Roblox-Terms-of-Use#creators-restrictions-on-use
+  - text: .
+- text: Owner
+- img "thumbnail"
+- link "IamBannedrew @IamBannedrew":
+  - /url: https://www.roblox.com/users/1078077474/profile
+  - generic: IamBannedrew
+  - generic: "@IamBannedrew"
+- button "Initiate ownership transfer":
+  - generic: Initiate ownership transfer
+- separator
+- button "Cancel":
+  - generic: Cancel
+- button "Save Changes" [disabled]:
+  - generic: Save Changes
+- generic: ©2026 Roblox Corporation. All rights reserved.
+- link "Terms":
+  - /url: https://www.roblox.com/info/terms
+- text: ·
+- link "Privacy":
+  - /url: https://www.roblox.com/info/privacy
+- text: ·
+- link "Accessibility":
+  - /url: https://www.roblox.com/info/accessibility
+- text: ·
+- link "Support":
+  - /url: https://www.roblox.com/info/help
+- text: ·
+- button "Your Privacy Choices":
+  - generic: Your Privacy Choices
+- link "X":
+  - /url: https://x.com/Roblox
+  - button "X":
+- link "Facebook":
+  - /url: https://www.facebook.com/Roblox/
+  - button "Facebook":
+- link "LinkedIn":
+  - /url: https://www.linkedin.com/company/roblox
+  - button "LinkedIn":
+- link "Instagram":
+  - /url: https://www.instagram.com/roblox/
+  - button "Instagram":
+- link "YouTube":
+  - /url: https://www.youtube.com/Roblox
+  - button "YouTube":
+- link "English":
+  - /url: https://roblox.com/my/account
+  - button "English":
+    - generic: English
+- alert: /dashboard/creations/experiences/10769248367/configure

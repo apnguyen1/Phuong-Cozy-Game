@@ -1,0 +1,450 @@
+{
+  "schema_version": 1,
+  "id": "PCW-25",
+  "kind": "game",
+  "stage": "production",
+  "target": "roblox",
+  "title": "October 3 complete birthday game release",
+  "intent": "Verify all sequential activity, finale, recovery, guidance and audio deliveries together in the existing Roblox world.",
+  "status": "approved",
+  "approved_by": "Andrew's October 3 request to implement detailed tickets sequentially, verify with agents, then publish while he is away. Scope authorization only; no human revision acceptance is asserted.",
+  "max_iterations": 3,
+  "sources": [
+    "docs/tickets/README.md",
+    "docs/design/map-proposal-v0.2.md",
+    "docs/design/visual-direction-v0.1.md",
+    "docs/coordination/release-20261003/README.md",
+    "docs/tickets/PCW-18.md",
+    "docs/tickets/PCW-19.md",
+    "docs/tickets/PCW-20.md",
+    "docs/tickets/PCW-21.md",
+    "docs/tickets/PCW-22.md",
+    "docs/tickets/PCW-23.md",
+    "docs/tickets/PCW-24.md",
+    "docs/tickets/PCW-25.md",
+    "docs/tickets/PCW-26.md"
+  ],
+  "inputs": [
+    "roblox/mvp",
+    "docs/coordination/release-20261003/handoffs",
+    "verification/release-20261003/compile_sources.py",
+    "verification/release-20261003/generate_contract_runner.py",
+    "verification/release-20261003/run_contract_checks.py",
+    "verification/release-20261003/prepare_install.py",
+    "verification/release-20261003/make_install_chunks.py",
+    "verification/release-20261003/capture_runtime_palette.luau",
+    "verification/release-20261003/inspect_client_ui.luau",
+    "verification/release-20261003/inspect_audio.luau",
+    "verification/release-20261003/performance_probe.luau",
+    "verification/release-20261003/activity_contracts.spec.luau",
+    "verification/release-20261003/cake_contracts.spec.luau",
+    "verification/release-20261003/host_contracts.spec.luau",
+    "verification/release-20261003/social_activity_contracts.spec.luau",
+    "roblox/draft-door.server.luau",
+    "verification/release-20261003/prepare_studio_contracts.py",
+    "verification/release-20261003/prepare_review_contract.py",
+    "verification/release-20261003/source-hashes.json",
+    "verification/release-20261003/install-manifest.json",
+    "verification/mvp/tools/luau-0.740/luau-compile.exe",
+    "verification/release-20261003/independent-review/validate_evidence.py",
+    "verification/release-20261003/independent-review/compile_review.py",
+    "verification/release-20261003/independent-review/contract-source-hashes.json"
+  ],
+  "artifacts": [
+    {
+      "id": "release-place",
+      "path": "roblox/Phuong-Cozy-World-Release20261003.rbxl",
+      "check": "exists"
+    },
+    {
+      "id": "runtime-palette",
+      "path": "verification/release-20261003/independent-review/runtime-palette.json",
+      "check": "studio_palette",
+      "allowed_tokens": [
+        "blossom",
+        "brick",
+        "cream",
+        "forest",
+        "golden",
+        "ink",
+        "sage",
+        "wood"
+      ],
+      "required_tokens": [],
+      "texture_sources": {}
+    },
+    {
+      "id": "installed-source-binding",
+      "path": "verification/release-20261003/independent-review/installed-source-binding.json",
+      "check": "exists"
+    },
+    {
+      "id": "walkthrough",
+      "path": "roblox/evidence/release-20261003/walkthrough-results.md",
+      "check": "exists"
+    },
+    {
+      "id": "console",
+      "path": "verification/release-20261003/independent-review/console-single-client.txt",
+      "check": "exists"
+    },
+    {
+      "id": "studio-contract-results",
+      "path": "verification/release-20261003/independent-review/studio-contract-results.json",
+      "check": "exists"
+    },
+    {
+      "id": "camera-skip",
+      "path": "verification/release-20261003/independent-review/camera-skip.json",
+      "check": "exists"
+    },
+    {
+      "id": "reset",
+      "path": "verification/release-20261003/independent-review/reset.json",
+      "check": "exists"
+    },
+    {
+      "id": "multiplayer",
+      "path": "verification/release-20261003/independent-review/multiplayer.json",
+      "check": "exists"
+    },
+    {
+      "id": "audio-telemetry",
+      "path": "verification/release-20261003/independent-review/audio-telemetry.json",
+      "check": "exists"
+    },
+    {
+      "id": "phone-food-ui",
+      "path": "verification/release-20261003/independent-review/phone-food-ui.json",
+      "check": "exists"
+    },
+    {
+      "id": "tablet-food-ui",
+      "path": "verification/release-20261003/independent-review/tablet-food-ui.json",
+      "check": "exists"
+    },
+    {
+      "id": "cleanup",
+      "path": "verification/release-20261003/independent-review/cleanup.json",
+      "check": "exists"
+    }
+  ],
+  "commands": [
+    {
+      "id": "source-compile",
+      "argv": [
+        "{python}",
+        "verification/release-20261003/independent-review/compile_review.py"
+      ],
+      "cwd": ".",
+      "timeout_seconds": 180
+    },
+    {
+      "id": "studio-contract-evidence-binding",
+      "argv": [
+        "{python}",
+        "verification/release-20261003/independent-review/validate_evidence.py"
+      ],
+      "cwd": ".",
+      "timeout_seconds": 120
+    }
+  ],
+  "criteria": [
+    {
+      "id": "PCW-18-AC01",
+      "reviewer": "independent",
+      "prompt": "New player can identify goal and find a first activity without verbal coaching."
+    },
+    {
+      "id": "PCW-18-AC02",
+      "reviewer": "independent",
+      "prompt": "Every task has readable purpose, next action, progress, success and exit. Locked actions explain who/what is needed."
+    },
+    {
+      "id": "PCW-18-AC03",
+      "reviewer": "independent",
+      "prompt": "Tracking updates to the actual current anchor; zero markers remain in lobby."
+    },
+    {
+      "id": "PCW-18-AC04",
+      "reviewer": "independent",
+      "prompt": "Phone-sized title/buttons do not overlap or conceal movement controls; keyboard-only actions have touch equivalents."
+    },
+    {
+      "id": "PCW-18-AC05",
+      "reviewer": "independent",
+      "prompt": "Existing remotes/payload contract survives; error and pending state cannot permanently freeze the UI."
+    },
+    {
+      "id": "PCW-18-AC06",
+      "reviewer": "independent",
+      "prompt": "No quest/currency/permission rule is silently changed."
+    },
+    {
+      "id": "PCW-18-scope",
+      "reviewer": "independent",
+      "prompt": "Deliverable: The current giant action list shows internal states and often gives no next step. Build a readable, compact interface that teaches each task and exposes one sensible next action while keeping alternatives available.\n- Show a small world HUD: birthday goal, fund, six petals, current next objective and Track button. Journal names all six activities, current progress and destinations, with completed checkmarks.\n- Put navigation in a pure data module: activity ID, friendly title, anchor names and default hints. Prefer incomplete nearby/open activity, then Labubu when funded, then patio at six petals. Allow explicit tracking without forcing order.\n- Create local-only destination marker/Highlight/Billboard at existing anchors, readable from the path; include distance and an offscreen direction hint if needed. Remove/reassign on completion, exit, reset and lobby entry. Do not warp players or move anchors.\n- Responsive phone landscape/tablet/desktop layout, safe inset, large taps (48+), no fixed 260-pixel title subtraction on narrow widths, scroll only where necessary, visible Close and Back. Leave movement, jump and camera drag usable.\n- Activity renderer supports a new optional view.guide={headline,detail,stepLabel,nextAnchor,preview,groups} descriptor plus normal availableActions. Support choice cards, a clearly labeled main action, confirmation before spending/finishing, disabled reasons, and a world-preview space or compact preview cards for later tickets.\n- Show friendly status/error toast. Do not show raw enum states, table addresses or action IDs. Throttle duplicate taps until a response; recover from timeout/rejection. Snapshot broadcasts must not unexpectedly reopen a closed panel.\n- Preserve Q04 reading text and choices, CloseActivity reservation release, replay route, request IDs, authenticated server ownership, current lobby hiding and optional per-player camera.\n- Expose a small documented client extension surface for later activity previews/finale/host UI; keep all new dependencies resolvable after installation. Prefer client modules beneath ReplicatedStorage.PhuongMVP.client; document exact paths.\nLimits/open decisions: The ownership and delivery rules above remain binding. Preserve exact palette, real friends, six shared petals, session-only progress and user-authored personal note. Builders do not approve their own delivery. Physical device and human group evidence cannot be replaced by desktop emulation or agent opinion. Andrew delegated autonomous implementation, agent review and publication; this is scope authorization, not an invented human review of the final revision. Report actual platform blockers.\nValidation: After all sequential builders deliver, follow docs/coordination/release-20261003/WALKTHROUGH.md and PCW-25. Bind final source to Studio, run meaningful contract checks, exercise the real controls and changed world feedback, retain screenshots/console and device evidence, and obtain independent verifier findings. Map every acceptance bullet above to observed evidence or an explicit unresolved limit. Fix defects and retest; do not infer playability or fun from source checks alone. No testing executes during the implementation queue."
+    },
+    {
+      "id": "PCW-19-AC01",
+      "reviewer": "independent",
+      "prompt": "Touch/desktop flow explains item and destination before commitment; no raw reserve/place jargon."
+    },
+    {
+      "id": "PCW-19-AC02",
+      "reviewer": "independent",
+      "prompt": "Two helpers can work different slots; occupied-slot contention gives a clear recoverable response."
+    },
+    {
+      "id": "PCW-19-AC03",
+      "reviewer": "independent",
+      "prompt": "Bed changes visibly for all clients; replay restores only owned details and doesn't duplicate rewards."
+    },
+    {
+      "id": "PCW-19-AC04",
+      "reviewer": "independent",
+      "prompt": "Shelf organization is discoverable and visibly persistent within the running server, without affecting six-petal completion."
+    },
+    {
+      "id": "PCW-19-AC05",
+      "reviewer": "independent",
+      "prompt": "Camera and bedroom circulation remain clear; decorations use exact palette."
+    },
+    {
+      "id": "PCW-19-AC06",
+      "reviewer": "independent",
+      "prompt": "Closing/reset/disconnect releases held resources, and resuming shows authoritative progress."
+    },
+    {
+      "id": "PCW-19-scope",
+      "reviewer": "independent",
+      "prompt": "Deliverable: Turn abstract reserve/place into approachable room organization.\n- Preserve seven required bed actions and Phuong's final style choice. Players first pick a clear blanket/pillow/plush card, see the target highlighted, then tap Place/Tuck. One tap may reserve and the second commits; friendly cancel/retry must work.\n- Show descriptive step names, held item and remaining tasks. Hide completed steps from the main action area or group under Done. Other users' reserved items show In use without locking the whole bed.\n- Render real shared visible progress: blanket edges smoothing, pillows and dog/dinosaur plush placement using existing room geometry or small owned overlays. Save baseline transforms per runtime round and reset only owned task geometry on explicit replay.\n- Live structure: the detailed original bed is Home.Bedroom.SageBed (SageDuvet, DuvetSideDrape, CreamSleepingPillow, FoldedCreamQuilt, BedPlushies); the optional shelf is Home.Bedroom.FilledBookcase. A separate simple MVP.Stations.Q01Station already exists. Do not add a third bed or treat a crude duplicate as the intended finished bedroom. Prefer acting on the detailed bed with safely restored per-round transforms and small owned target cues. Current paths/positions are recorded in roblox/evidence/release-20261003/scene-manifest.json.\n- Add optional shelf/room tidying at the existing bedroom display/shelf: choose a book/collectible, choose a labeled shelf slot, confirm; show the moved object to everyone. This is part of room interaction and does NOT add a seventh petal, a required extra grind or extra money. Preserve any miniature/Labubu display slots owned by other activities.\n- Use server-owned per-slot occupancy/reservation, release on close/timeout/disconnect, no client-authoritative transforms or rewards. Shared display can be changed by Phuong/Andrew; guests can fill empty slots. Avoid destroying or relocating original furnishings.\n- Final choice remains Phuong's (configured fallback when absent); bed completion grants one reward through SessionService. Never invent names/likenesses for personal objects.\n- If shelf needs a new request kind, include canonical identity, proximity, allowlist and idempotence in Main, and document descriptor shape.\nLimits/open decisions: The ownership and delivery rules above remain binding. Preserve exact palette, real friends, six shared petals, session-only progress and user-authored personal note. Builders do not approve their own delivery. Physical device and human group evidence cannot be replaced by desktop emulation or agent opinion. Andrew delegated autonomous implementation, agent review and publication; this is scope authorization, not an invented human review of the final revision. Report actual platform blockers.\nValidation: After all sequential builders deliver, follow docs/coordination/release-20261003/WALKTHROUGH.md and PCW-25. Bind final source to Studio, run meaningful contract checks, exercise the real controls and changed world feedback, retain screenshots/console and device evidence, and obtain independent verifier findings. Map every acceptance bullet above to observed evidence or an explicit unresolved limit. Fix defects and retest; do not infer playability or fun from source checks alone. No testing executes during the implementation queue."
+    },
+    {
+      "id": "PCW-20-AC01",
+      "reviewer": "independent",
+      "prompt": "First-time user can finish by following instructions across all three counters."
+    },
+    {
+      "id": "PCW-20-AC02",
+      "reviewer": "independent",
+      "prompt": "Each accepted ingredient appears in the shared dish and UI summary."
+    },
+    {
+      "id": "PCW-20-AC03",
+      "reviewer": "independent",
+      "prompt": "Variant choices are honored, no precision gestures/timing/typing required."
+    },
+    {
+      "id": "PCW-20-AC04",
+      "reviewer": "independent",
+      "prompt": "Two helpers can contribute safely; busy state is legible and temporary."
+    },
+    {
+      "id": "PCW-20-AC05",
+      "reviewer": "independent",
+      "prompt": "Reopen/rejoin restores the dish; replay has a clean new dish and cannot repay an old round."
+    },
+    {
+      "id": "PCW-20-AC06",
+      "reviewer": "independent",
+      "prompt": "Source wiring reaches the live renderer and world effect, not only unused helper modules."
+    },
+    {
+      "id": "PCW-20-scope",
+      "reviewer": "independent",
+      "prompt": "Deliverable: Replace the opaque slot:item list with a guided food-building flow.\n- Start with a simple recipe explanation: make a bowl at FOB, add sauce at Aladdins, then set the table at serving. Show location and next destination at each transition.\n- Present base, protein, toppings, sauce and table settings as labeled ingredient cards. Select -> show preview/selection -> Add/Place. Do not auto-submit an accidental ingredient tap.\n- Preserve the current allowed choices and forgiving rules; accept genuine variants without silently substituting a different food. Use friendly names (rice, tofu/chicken/mushroom, greens/cucumber/carrot, sauce/sesame, plate/cup/napkin).\n- Add shared visible bowl/plate ingredients and table settings at the current station anchors using palette-compliant simple geometry. Update from authoritative accepted choices; remain nonblocking and bounded.\n- Only show actions available at the current venue; distant steps offer Track next counter rather than an unexplained TooFar error. Continue partial work across counters/close/rejoin.\n- Preserve six required steps, once-only first reward20 and explicit replay10 via SessionService. Slot contention, cancellation, duplicate actions and completed rounds must stay safe.\n- Completed dish has a clear Done message and points to another incomplete activity/Labubu; no compulsory replay.\nLimits/open decisions: The ownership and delivery rules above remain binding. Preserve exact palette, real friends, six shared petals, session-only progress and user-authored personal note. Builders do not approve their own delivery. Physical device and human group evidence cannot be replaced by desktop emulation or agent opinion. Andrew delegated autonomous implementation, agent review and publication; this is scope authorization, not an invented human review of the final revision. Report actual platform blockers.\nValidation: After all sequential builders deliver, follow docs/coordination/release-20261003/WALKTHROUGH.md and PCW-25. Bind final source to Studio, run meaningful contract checks, exercise the real controls and changed world feedback, retain screenshots/console and device evidence, and obtain independent verifier findings. Map every acceptance bullet above to observed evidence or an explicit unresolved limit. Fix defects and retest; do not infer playability or fun from source checks alone. No testing executes during the implementation queue."
+    },
+    {
+      "id": "PCW-21-AC01",
+      "reviewer": "independent",
+      "prompt": "Phuong can understand select/confirm/roll without instructions from Andrew."
+    },
+    {
+      "id": "PCW-21-AC02",
+      "reviewer": "independent",
+      "prompt": "Friends can see why they are earning and who controls purchases."
+    },
+    {
+      "id": "PCW-21-AC03",
+      "reviewer": "independent",
+      "prompt": "Five first earning activities fund the maximum five rolls; no grinding is required for first wish."
+    },
+    {
+      "id": "PCW-21-AC04",
+      "reviewer": "independent",
+      "prompt": "Early win and fifth-roll win both fulfill the goal exactly once, including the secret."
+    },
+    {
+      "id": "PCW-21-AC05",
+      "reviewer": "independent",
+      "prompt": "Close/reset/rejoin during reveal retains awarded figure and funds, with no second debit."
+    },
+    {
+      "id": "PCW-21-AC06",
+      "reviewer": "independent",
+      "prompt": "Visual result is visible in-world and can be skipped without changing server state."
+    },
+    {
+      "id": "PCW-21-scope",
+      "reviewer": "independent",
+      "prompt": "Deliverable: Make the central birthday goal understandable and satisfying without changing the economy.\n- Use seven labeled figure cards with simplified visual previews from current approved geometry. Keep existing IDs/probabilities, do not fabricate reference-accurate assets or new colors. Clearly identify secret figure.\n- The live Q05 cabinet currently contains seven rectangular FigureSlot markers, not complete figure models. Supply bounded, recognizable simplified toy previews/reveals using native geometry and the approved palette instead of treating those rectangles as finished Labubus. Keep a coherent paired-ear, face/body silhouette and clear distinct labels. The old art/Q05 README is explicitly a proposal, not a claim of approved faithful reference colors; identify simplified art honestly in the handoff and require final visual review.\n- Explain: friends earn together, Phuong picks her wish, 20 per roll, selected wish guaranteed by fifth roll. Show selected wish, shared balance, attempts remaining to guarantee, collection copies, latest result.\n- Selecting a card previews it; explicit Confirm wish commits. Choice locks until fulfilled. A separate prominent Get a Labubu - 20 button confirms shared spending. Guests see watcher/help states, not a wall of unusable buttons.\n- Authoritative purchase precedes reveal. Reveal has a short capsule/figure presentation, Skip and a persistent result card; never gate award on animation completion. Make the shared machine/display update so nearby friends see the result.\n- Keep six regular16.5%/secret1%, fifth-roll guarantee including secret, duplicate action deduplication, session collection, exactly-one Q05 petal and no Q05 currency.\n- After fulfillment, show the main story is complete for this task and next remaining goal/patio. Further collection is clearly optional and cannot relock cake.\n- Integrate collection display with the bedroom shelf without overwriting organization/miniature-owned slots. Use a separate owned display region.\n- Ensure invalid actions show a friendly reason (Phuong's choice, insufficient funds, locked wish, pending roll); avoid raw figure IDs in the player UI.\nLimits/open decisions: The ownership and delivery rules above remain binding. Preserve exact palette, real friends, six shared petals, session-only progress and user-authored personal note. Builders do not approve their own delivery. Physical device and human group evidence cannot be replaced by desktop emulation or agent opinion. Andrew delegated autonomous implementation, agent review and publication; this is scope authorization, not an invented human review of the final revision. Report actual platform blockers.\nValidation: After all sequential builders deliver, follow docs/coordination/release-20261003/WALKTHROUGH.md and PCW-25. Bind final source to Studio, run meaningful contract checks, exercise the real controls and changed world feedback, retain screenshots/console and device evidence, and obtain independent verifier findings. Map every acceptance bullet above to observed evidence or an explicit unresolved limit. Fix defects and retest; do not infer playability or fun from source checks alone. No testing executes during the implementation queue."
+    },
+    {
+      "id": "PCW-22-AC01",
+      "reviewer": "independent",
+      "prompt": "Jasper's interaction visibly changes the world; no accepted fetch is only a menu counter."
+    },
+    {
+      "id": "PCW-22-AC02",
+      "reviewer": "independent",
+      "prompt": "Craft parts visibly assemble and both representations stay synchronized."
+    },
+    {
+      "id": "PCW-22-AC03",
+      "reviewer": "independent",
+      "prompt": "Reading choices remain clear on phone and saved state survives closing."
+    },
+    {
+      "id": "PCW-22-AC04",
+      "reviewer": "independent",
+      "prompt": "Every activity can recover from cancel, reset, disconnect and interrupted presentation."
+    },
+    {
+      "id": "PCW-22-AC05",
+      "reviewer": "independent",
+      "prompt": "Effects are bounded, palette-correct and don't block routes or control cameras."
+    },
+    {
+      "id": "PCW-22-AC06",
+      "reviewer": "independent",
+      "prompt": "Integration context actually supplies every hook the activities use."
+    },
+    {
+      "id": "PCW-22-scope",
+      "reviewer": "independent",
+      "prompt": "Deliverable: Complete the shared activity feel after guidance/food/Labubu improvements.\n- Connect existing Jasper moveJasperToYard/presentFetchTarget/petJasper hooks to real world actions. Start with bedroom greeting, guide to yard, show rabbit/toy pickup and forgiving throw, bounded fetch movement, return and treat feedback.\n- Preserve existing Jasper model. Do not import uninspected new model assets as part of this ticket. Use server-owned anchored/kinematic movement if navigation is unreliable, with bounded recovery and no collisions with guests.\n- Live read-only preflight found no named dog actor outside the weighted bed plush; Q02Station contains only marker/basket parts. Do not move the weighted plush as Jasper. If no real dog actor is available, create one bounded, palette-native simplified Pomeranian (fluffy body, pointed ears, muzzle, eyes, legs and curled tail) under owned RuntimePresentation.Jasper. Mark simplified geometry honestly; keep it distinct from the two weighted bed plushies. No more than 40 anchored/noncolliding parts for this actor.\n- For craft, labeled part cards, highlighted matching sockets, easy rotation/confirm and visible miniature assembly. Booth and bedroom display represent one shared object; show correct progress in both places, never two independent reward tracks.\n- For reading, keep readable passage, highlight/reaction/bookmark choices and optional note; show saved bookmark as a visible small shared accent/acknowledgment. Never author the personal birthday note or guest wishes.\n- All accepted actions have modest visual feedback and clear completion. Avoid spawning unbounded particles, parts or event connections; no global camera changes.\n- Next objective guidance must move Jasper from indoor greeting to outdoor fetch and craft to Phuong finishing when ready.\n- Preserve all current round/reward/idempotence semantics and cooperative contributions.\nLimits/open decisions: The ownership and delivery rules above remain binding. Preserve exact palette, real friends, six shared petals, session-only progress and user-authored personal note. Builders do not approve their own delivery. Physical device and human group evidence cannot be replaced by desktop emulation or agent opinion. Andrew delegated autonomous implementation, agent review and publication; this is scope authorization, not an invented human review of the final revision. Report actual platform blockers.\nValidation: After all sequential builders deliver, follow docs/coordination/release-20261003/WALKTHROUGH.md and PCW-25. Bind final source to Studio, run meaningful contract checks, exercise the real controls and changed world feedback, retain screenshots/console and device evidence, and obtain independent verifier findings. Map every acceptance bullet above to observed evidence or an explicit unresolved limit. Fix defects and retest; do not infer playability or fun from source checks alone. No testing executes during the implementation queue."
+    },
+    {
+      "id": "PCW-23-AC01",
+      "reviewer": "independent",
+      "prompt": "Six petals visibly invite everyone; before unlock, sitting cannot start the finale."
+    },
+    {
+      "id": "PCW-23-AC02",
+      "reviewer": "independent",
+      "prompt": "Only designated Phuong-seat occupancy starts normal celebration, once."
+    },
+    {
+      "id": "PCW-23-AC03",
+      "reviewer": "independent",
+      "prompt": "Non-hosts cannot force/cancel/reset the celebration; Andrew recovery is explicit."
+    },
+    {
+      "id": "PCW-23-AC04",
+      "reviewer": "independent",
+      "prompt": "Late arrival, unseat/reseat, disconnect and reset do not restart or strand phases."
+    },
+    {
+      "id": "PCW-23-AC05",
+      "reviewer": "independent",
+      "prompt": "Camera Skip restores ordinary third-person control on every exit path."
+    },
+    {
+      "id": "PCW-23-AC06",
+      "reviewer": "independent",
+      "prompt": "Everyone can visibly eat cake and keep exploring; audio failure cannot block the story."
+    },
+    {
+      "id": "PCW-23-AC07",
+      "reviewer": "independent",
+      "prompt": "Ten-seat physical clearance and actual timeline/audio behavior are checked in final integration, not self-certified."
+    },
+    {
+      "id": "PCW-23-scope",
+      "reviewer": "independent",
+      "prompt": "Deliverable: Create the requested group birthday payoff.\n- At six petals, announce the patio invitation to all present world participants and track the table. Use existing table and ten seats; mark Phuong's designated seat and provide guest seat cues.\n- Existing eight side seats are under SurroundingContext.NeighborhoodDetails02.BirthdayCourtyard; the two end seats are separately under MVP.Stations.CakeFinale.EndSeatWest.Seat and EndSeatEast.Seat. Include both roots when identifying the ten patio seats; do not collect lobby/porch seats or create duplicate end seats. GatheringTable center is approximately (346,3.6,98.608), end seats at x328 and364, y2.12, z98.608. Current snapshot is in roblox/evidence/release-20261003/scene-manifest.json.\n- Guests sit first; unlock automatically arms the gathering unless a host explicitly delays it. Once armed, Phuong sitting in her designated seat starts exactly one celebration, without an extra unexplained Start button. The host can deliberately arm/delay/recover; no random guest can start. Do not require all ten potential guests online. If Phuong was already seated before unlock, give her a clear stand/sit cue or evaluate the authenticated current occupant once on arming; never silently strand the trigger.\n- Server owns timeline/generation/start time and seat identity. Late joiners receive current phase; standing/reset/duplicate events cannot restart it. Session state survives character reset.\n- Suggested phases: LOCKED, READY/GATHERING, CELEBRATING, CAKE_READY, EATING/COMPLETE. Keep compatible legacy action mapping only where useful; no invite can reset completed state by accident.\n- Offer a short 10-15-second local camera pan around the table with Happy Birthday, Phuong text and clear Skip/Return. Each player independently opts out; restore CameraType, subject and usable controls on skip, death, lobby entry, respawn or destruction.\n- Celebrate with restrained palette-correct hearts/confetti, candle/cake presentation, shared cake cutting and visible individual slices with a simple eating/hand-to-mouth or utensil motion. Animations may be procedural and should support default rigs without requiring uploaded animations.\n- Use the user's chosen Happy Birthday asset 87992648461099 for the birthday song if it loads/has permission. Preserve existing audio configuration; do not upload rejected MP3s or select unapproved music. Duck/resume background sound, provide mute/skip-safe behavior, never block progress if audio fails.\n- Coordinate with PCW-26, which owns actual music playback after this ticket. Expose/document stable cake phase, generation, server start/end times and a local camera-skip signal for its MusicController; do not leave two independent birthday Sound players active. The final integrated behavior must include the song/duck/resume above, even if this ticket supplies only the timeline hook and PCW-26 supplies the sounds.\n- Phuong controls normal cut/start; Andrew gets explicit recovery through PCW24. Each participant can take/eat cake once with repeatable harmless cosmetic bites, then free play/photos remain available.\n- Dedupe all authoritative finale actions; friendly errors and no table-address errorText.\nLimits/open decisions: The ownership and delivery rules above remain binding. Preserve exact palette, real friends, six shared petals, session-only progress and user-authored personal note. Builders do not approve their own delivery. Physical device and human group evidence cannot be replaced by desktop emulation or agent opinion. Andrew delegated autonomous implementation, agent review and publication; this is scope authorization, not an invented human review of the final revision. Report actual platform blockers.\nValidation: After all sequential builders deliver, follow docs/coordination/release-20261003/WALKTHROUGH.md and PCW-25. Bind final source to Studio, run meaningful contract checks, exercise the real controls and changed world feedback, retain screenshots/console and device evidence, and obtain independent verifier findings. Map every acceptance bullet above to observed evidence or an explicit unresolved limit. Fix defects and retest; do not infer playability or fun from source checks alone. No testing executes during the implementation queue."
+    },
+    {
+      "id": "PCW-24-AC01",
+      "reviewer": "independent",
+      "prompt": "Both real configured IDs can open/use controls; guests/spoofed payloads cannot."
+    },
+    {
+      "id": "PCW-24-AC02",
+      "reviewer": "independent",
+      "prompt": "A stuck bed/food/craft session can be released/restarted without losing unrelated progress."
+    },
+    {
+      "id": "PCW-24-AC03",
+      "reviewer": "independent",
+      "prompt": "Completing/recovering a quest grants only missing initial reward/petal, once."
+    },
+    {
+      "id": "PCW-24-AC04",
+      "reviewer": "independent",
+      "prompt": "Desired Labubu recovery updates collection and exactly one Q05 petal, no extra reward."
+    },
+    {
+      "id": "PCW-24-AC05",
+      "reviewer": "independent",
+      "prompt": "Finale recovery does not strand cameras/seats and normal Phuong trigger remains primary."
+    },
+    {
+      "id": "PCW-24-AC06",
+      "reviewer": "independent",
+      "prompt": "Duplicate/malformed/spam requests are rejected or return original result; bounded audit is readable."
+    },
+    {
+      "id": "PCW-24-AC07",
+      "reviewer": "independent",
+      "prompt": "No test-user override or permission based on display name ships."
+    },
+    {
+      "id": "PCW-24-scope",
+      "reviewer": "independent",
+      "prompt": "Deliverable: Provide a practical emergency panel, authenticated by server IDs only.\n- Hosts: Phuong user3971290001 username Phamlet707; Andrew user1078077474 username IamBannedrew (live username lookup confirmed Oct3). Display names are not authorization. Ordinary guests never gain host power.\n- Both get a discreet Host controls button on touch/desktop. Keep normal Phuong-first choices; an explicit Override mode lets either host recover when needed, including Andrew while Phuong is present. Show clear banner/audit entry while override is active.\n- Bounded recovery actions: release stuck reservations; reset an incomplete activity round without erasing earned petals/funds; mark a chosen quest complete once with its normal missing reward only; top up shared fund by a fixed20; fulfill Phuong's currently selected wish once (or choose a valid target through normal data); invite/start/advance the cake recovery; return host to bedroom/patio.\n- Do not add arbitrary code execution, text-to-command, client-supplied actor, global player kicks/bans, unlimited currency textbox, external account admin or destructive full-session reset.\n- Before changing progress/funds, show current state, exact effect and Confirm/Cancel. Deduplicate requests with action IDs, rate-limit, validate allowed activity IDs and server session ID. Replays/duplicates cannot grant repeat money or petals.\n- Server records a small bounded session audit (actor, action, affected activity, prior/new state, timestamp); display recent recovery results only to hosts. Server normal snapshots contain no sensitive unnecessary data.\n- Recovery must update activity-local completion/collection/round state coherently with SessionService and world presentation. A petal flip alone leaving dead UI is not sufficient.\n- All controls work on phone; clear success/failure toasts and cancel routes.\nLimits/open decisions: The ownership and delivery rules above remain binding. Preserve exact palette, real friends, six shared petals, session-only progress and user-authored personal note. Builders do not approve their own delivery. Physical device and human group evidence cannot be replaced by desktop emulation or agent opinion. Andrew delegated autonomous implementation, agent review and publication; this is scope authorization, not an invented human review of the final revision. Report actual platform blockers.\nValidation: After all sequential builders deliver, follow docs/coordination/release-20261003/WALKTHROUGH.md and PCW-25. Bind final source to Studio, run meaningful contract checks, exercise the real controls and changed world feedback, retain screenshots/console and device evidence, and obtain independent verifier findings. Map every acceptance bullet above to observed evidence or an explicit unresolved limit. Fix defects and retest; do not infer playability or fun from source checks alone. No testing executes during the implementation queue."
+    },
+    {
+      "id": "PCW-26-AC01",
+      "reviewer": "independent",
+      "prompt": "Lobby and gameplay use distinct specified tracks with no overlapping loud playback or reset loops."
+    },
+    {
+      "id": "PCW-26-AC02",
+      "reviewer": "independent",
+      "prompt": "Cake music is synchronized once and respects mute/volume and Skip; it resumes correctly afterward."
+    },
+    {
+      "id": "PCW-26-AC03",
+      "reviewer": "independent",
+      "prompt": "UI is understandable and usable on phone/tablet/desktop; no music control blocks movement."
+    },
+    {
+      "id": "PCW-26-AC04",
+      "reviewer": "independent",
+      "prompt": "Existing effects continue and no new audio path blocks server startup or quest progress."
+    },
+    {
+      "id": "PCW-26-AC05",
+      "reviewer": "independent",
+      "prompt": "Approved assets actually load in final tested context, or the exact external permission/moderation blocker is reported."
+    },
+    {
+      "id": "PCW-26-AC06",
+      "reviewer": "independent",
+      "prompt": "No rejected music upload, invented consent/rights claim, or silent switch to unrelated music."
+    },
+    {
+      "id": "PCW-26-AC07",
+      "reviewer": "independent",
+      "prompt": "Handoff records file/module paths, configured IDs and untested audition/permission limits."
+    },
+    {
+      "id": "PCW-26-scope",
+      "reviewer": "independent",
+      "prompt": "Deliverable: 1. One local listener/controller per client; music follows BirthdayLocation. Lobby plays birthday song87992648461099 at modest volume; world plays the selected gameplay instrumental, looping quietly.\n2. Smooth short crossfade on entry/return; never overlap full-volume tracks or repeatedly restart on unrelated attribute/snapshot updates. Clean up all sounds/connections on shutdown.\n3. Cake timeline ducks/stops gameplay and starts the birthday song in sync with server start time. Use the actual PCW23 phase/generation data. Late join seeks appropriately when loaded; return to gameplay after celebration. Prevent duplicate birthday playback between PCW23 and this controller.\n4. Provide obvious music mute/unmute and volume controls on touch/desktop; session-local preference survives character respawn and is respected during cake. Sound effects can have separate toggle or follow a clearly named sound option.\n5. Graceful bounded loading: inspect IsLoaded and handle preload failure without infinite waits or gameplay delays. Missing/unauthorized audio gives a quiet fallback and host-readable status, never repeated console spam. Do not substitute guessed asset IDs.\n6. Preserve soft click/chime/Jasper sound effects and the existing accepted-action audio hook. Source modules must not WaitForChild forever if a sound container is absent; fallback setup may create exact known-ID templates.\n7. Root final testing auditions lobby, gameplay, crossfade and finale and confirms sound load permission in the published experience where possible. The builder does not run tests/Studio or claim permission based only on metadata.\n8. No request to import the Pomeranian model is included in this audio ticket; that separate chat mention is context only.\nLimits/open decisions: The ownership and delivery rules above remain binding. Preserve exact palette, real friends, six shared petals, session-only progress and user-authored personal note. Builders do not approve their own delivery. Physical device and human group evidence cannot be replaced by desktop emulation or agent opinion. Andrew delegated autonomous implementation, agent review and publication; this is scope authorization, not an invented human review of the final revision. Report actual platform blockers.\nValidation: After all sequential builders deliver, follow docs/coordination/release-20261003/WALKTHROUGH.md and PCW-25. Bind final source to Studio, run meaningful contract checks, exercise the real controls and changed world feedback, retain screenshots/console and device evidence, and obtain independent verifier findings. Map every acceptance bullet above to observed evidence or an explicit unresolved limit. Fix defects and retest; do not infer playability or fun from source checks alone. No testing executes during the implementation queue."
+    }
+  ],
+  "execution_notes": "Original CLI luau.exe was blocked by Windows Application Control 4551. Four unchanged production contract suites were instead independently executed in the Studio Edit command interpreter. The evidence-binding command checks the retained actual result and every source/spec hash; it does not execute or substitute a placeholder test. Source compiler still executes normally. All inherited acceptance criteria and the three-iteration budget are unchanged."
+}

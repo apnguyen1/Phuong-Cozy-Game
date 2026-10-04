@@ -2,6 +2,22 @@
 
 **Status:** Implementation authorized September 27, 2026. The user approved merging Draft 02 and selected **More environment detail and visual polish** for revision 3. This is a new visual submission; Draft 02's review history and unresolved device checks remain preserved.
 
+## October 3 lighting amendment
+
+The user explicitly requested moderate afternoon lighting and additional Quad lamp posts. This authorizes six extra native lamp posts with restrained warm lights under QuadPlanting.AfternoonLamps, plus global afternoon lighting; the historical no-extra-lights restriction below does not govern this addition. Routes remain clear, native parts use approved palette colors, and new lamp geometry is noncolliding.
+
+## October 3 city-boundary amendment
+
+The user requested the surrounding city building bottoms extend down to the field. Facade shells and skyline tower bodies may extend downward while preserving roof heights, footprints, window positions, palette, and noninteractive collision settings. This supersedes the historical unchanged-geometry restriction only for these boundary parts.
+
+## October 3 enclosed neighborhood and surface-detail amendment
+
+The user requested a completely enclosed teleport destination with more detailed Seattle-style buildings, improved ground texture/detail, and textured non-cherry trees. This authorizes replacing the visual-only SeattleBoundary panels with roofed, solid shallow perimeter buildings at the measured existing ring, including closed decorative doors, framed windows, storefront glazing, awnings, cornices and rain downpipes. Four overlapping tall colliders close the full perimeter and corners; a native grass floor closes the gap outside the original lawn. Keep the open sky, actual bedroom/shop entrances, activity footprints, camera freedom and user-authored note.
+
+The replaceable SeattleBoundary owns at most 2,300 anchored native parts, including its explicit collision shell/floor/boundaries. The separate EnvironmentDetail04 folder owns at most 1,100 noncolliding, nonqueryable native decorative parts: paving courses, sidewalk joints/curb/drains, tree beds/bark relief/leaf clusters/litter and outer-verge tufts. The 16 existing green perimeter trees may change crown/shrub materials from SmoothPlastic to native Grass while retaining position, size, palette and collision. Cherry models and their approved textures remain unchanged. These scoped changes supersede the historical 250-part visual-only boundary and unchanged-material rules; they do not alter the original VisualPolish03 750-part budget.
+
+Check all four edges and corners with collision geometry and actual walking/jumping; inspect at player height; compare runtime sources, entrances, anchors and original geometry to the pre-change snapshot. Save locally and record independent review. Native-material visual quality and mixed-device/group performance remain separate from exact Color3 checking; final user acceptance is pending. Publishing is not requested.
+
 ## Purpose
 
 Make the approved neighborhood feel more finished through restrained native garden and facade detail while preserving its layout and interactions.

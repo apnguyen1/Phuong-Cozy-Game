@@ -43,8 +43,7 @@ local function factory(anchorCFrame)
 	folder:SetAttribute("MVPBuilder", BUILDER)
 	folder:SetAttribute("Owner", "Task08")
 	folder:SetAttribute("SourceBuilder", BUILDER)
-	part(folder, "QueueFloor", Vector3.new(12, 0.2, 12), anchorCFrame, "forest", "12x12 opt-in square", "16 studs")
-	part(folder, "QueueSign", Vector3.new(8, 4, 0.2), anchorCFrame * CFrame.new(0, 3, -6), "cream", "8x4 readable sign", "12 studs")
+	-- The existing BirthdayLobby.Portal.TeleportPad owns the visible boarding circle.
 	return folder
 end
 
@@ -57,6 +56,6 @@ return function(context)
 	end)
 	return {
 		folder = installedFolder,
-		manifest = { Ticket = TICKET, Builder = BUILDER, Owner = "Task08", AnchorName = "BirthdayLobbyQueue", Footprint = "12x12 square plus sign", ApproachClearance = "16 studs / 12 studs", QueueRule = "one opt-in queue, max 10, shared deadline" },
+		manifest = { Ticket = TICKET, Builder = BUILDER, Owner = "Task08", AnchorName = "BirthdayLobbyQueue", Footprint = "existing 12-stud boarding circle", ApproachClearance = "16 studs / 12 studs", QueueRule = "one opt-in queue, max 10, shared deadline" },
 	}
 end

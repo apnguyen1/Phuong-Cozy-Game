@@ -1,0 +1,15 @@
+{
+  "reviewer": "release_verifier",
+  "capturedAt": "2026-10-03T23:33:26.307Z",
+  "method": "Studio Edit command-context Luau; unchanged production text; synthetic script tree; no DataModel instances",
+  "file": "studio-contract-run.luau",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"ok\":true,\"messages\":[\"EXPECTED_OR_REVIEW_WARNING\\tPCW-21 Labubu display needs attention\\troblox/mvp/tests/release_activity_contracts.spec.luau:178: Intentional presentation failure\",\"EXPECTED_OR_REVIEW_WARNING\\tPCW-21 Labubu display needs attention\\troblox/mvp/tests/release_activity_contracts.spec.luau:178: Intentional presentation failure\",\"EXPECTED_OR_REVIEW_WARNING\\tPCW-21 Labubu display needs attention\\troblox/mvp/tests/release_activity_contracts.spec.luau:178: Intentional presentation failure\",\"PASS\\troblox/mvp/tests/release_activity_contracts.spec.luau\",\"PASS\\troblox/mvp/tests/release_cake_contracts.spec.luau\",\"PASS\\troblox/mvp/tests/release_host_contracts.spec.luau\",\"PASS\\troblox/mvp/tests/release_social_activity_contracts.spec.luau\",\"RELEASE_CONTRACT_SUMMARY\\t4\\t0\"]}"
+      }
+    ],
+    "isError": false
+  }
+}

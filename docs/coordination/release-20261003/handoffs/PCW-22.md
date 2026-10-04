@@ -1,0 +1,69 @@
+# PCW-22 delivery
+
+Status: **IMPLEMENTED_PENDING_INTEGRATION**. Builder: world_activities. October 3, 2026.
+
+## Files and installation
+
+| Source | Install as |
+|---|---|
+| `roblox/mvp/server/WorldFeedback.luau` | ModuleScript `ServerScriptService.PhuongMVP.server.WorldFeedback` |
+| `roblox/mvp/server/activities/Q02.luau` | Existing server activities Q02 ModuleScript |
+| `roblox/mvp/server/activities/Q03.luau` | Existing server activities Q03 ModuleScript |
+| `roblox/mvp/server/activities/Q04.luau` | Existing server activities Q04 ModuleScript |
+| `roblox/mvp/client/extensions/WorldActivities.luau` | ModuleScript `ReplicatedStorage.PhuongMVP.client.extensions.WorldActivities` |
+| `roblox/mvp/server/Main.server.luau` | Existing Main Script, retaining PCW-19/20/21 integrations |
+
+Install the new modules before enabling Main/client. WorldFeedback uses built-in Roblox services only. WorldActivities registers Q02, Q03 and Q04 through PCW-18 `Init(getContext, registry)`; the first argument is a function, and `context.pending` is a boolean. No shared module, external asset, new remote kind, builder execution or Main.client/UI edit is required. The existing lightweight `client/activities/Q02..Q04` tables are not the live renderer and do not replace this extension.
+
+Main supplies every hook used by these activities: resetJasper, moveJasperToYard, showRabbitPickup, returnRabbit, presentFetchTarget, fetchJasper, giveJasperTreat, petJasper, renderCraft and renderReading. It also derives `jasperVenue(actor)` from the real player's World location and existing 24-stud anchor proximity. The existing one-second service now broadcasts Q03 expiry revisions and Q02 recipients' changed venue. It retains PCW-19 canonical validation, per-recipient views, cleanup, Q01 expiry, PCW-20 food venue/expiry, PCW-21 LabubuFeedback and the live CozyAudio hook. No account, reward configuration, audio source or permission identity was changed.
+
+## Jasper
+
+- No real dog was available in the supplied preflight. RuntimePresentation.Jasper creates a 25-part simplified Pomeranian with fluffy body/ruff, pointed ears, muzzle/nose/eyes, four short legs and curled tail. It is labeled `SimplifiedGeometry` and pending independent art review. The weighted dog and dinosaur on the bed are never selected or moved by this module. If a real explicitly named/marked Jasper actor exists at integration, the module preserves its model/geometry and captures its original pivot and collision properties for restoration.
+- Existing greeting, rabbit search/return, three fetch steps, Greenie and optional pet remain. Greeting moves the dog through the existing DoorInteraction/porch toward the yard; the route marker changes to JasperFetchYard. Wrong-location views offer guidance and disabled actions; Main retains authoritative action proximity checks. Baskets have number labels. The chosen rabbit visibly rises from its basket, then moves to Jasper. A gentle throw visibly arcs the toy, moves Jasper to one of three bounded yard targets, and returns the toy in his muzzle. Treat/pet give a small body response and caption.
+- One server Heartbeat connection updates motion at no more than 20 Hz. Seven required presentations can queue without forcing players to wait; optional pets coalesce while motion is underway. Lead lasts at most five seconds, each fetch 2.8 seconds, other responses one second. The queue is capped at eight. Errors clear the cosmetic queue and attempt to settle at the authoritative bedroom/yard state. Accepted progress is committed independently of presentation and does not depend on an animation acknowledgement.
+- Explicit replay resets the actor and queue to bedroom greeting. Close/reset/lobby/disconnect do not erase accepted shared progress; another participant can continue. The shared round still earns 20 first completion, 10 on explicit replay, one Q02 petal, and no money for petting. Duplicate request identities cannot replay a fetch; malformed or old-round requests reject. GetView progress now represents the seven required steps, with `fetchCount` retained separately.
+
+## Shared craft
+
+- Ordered friendly cards identify all six existing pieces and matching sockets. One selected piece per helper reserves its socket for the existing 15-second interval. Choosing another releases the previous selection. Helpers can work in different sockets together. A held piece appears translucent at both locations; saved pieces are opaque. Golden matching pads, explicit labels/checkmarks, a local socket outline, the miniature preview, touch Turn left/right controls and explicit Place make the sequence visible.
+- Quarter turns preserve all four valid orientations. There is still no orientation puzzle or precision placement. Cancel, expiry, Close, lobby, reset and disconnect release only held work; old-round Close cannot release a new selection. Main's expiry revision ensures another helper's open view stops saying the slot is busy. Client socket observers/adornments are scoped to the mount and clear on Close/reset/lobby; a bounded delayed refresh handles remote/world replication ordering.
+- Booth and bedroom render the exact same committed/reserved state from one Q03 round. The six committed parts still earn the shared completion/petal immediately, exactly once. Phuong's finishing choice, or Andrew's fallback when Phuong is absent, subsequently changes the miniature lamp to golden or cream at both locations and grants no additional reward. Guide text explicitly points to the bedroom finishing touch. Optional replay remains available after six parts as in the prior module, even before finishing presentation.
+- Booth overlay occupies 7.2 by 3.8 studs above the existing 8 by 4 CraftTable. Bedroom overlay uses the existing FilledBookcase.DisplayPlinth at scale .38, making a 2.736 by 1.444 stud footprint within its 2.9 by 1.85 base. Its old MiniatureFacade, MiniatureDoor and MiniatureWindow parts are temporarily hidden, not destroyed; the plinth, desk miniature, other lower-shelf books, top-shelf Q01 work and fourth-shelf Labubu ledge remain intact. Old Q03Station piece/socket/HomeDisplay placeholders are hidden; CraftTable remains. Destroy restores original visibility/collision values.
+
+## Reading
+
+- All three existing passage texts remain unchanged; the normal entry continues to use the existing small-worlds passage. The full passage stays in the generic scrollable 17-pixel reading card. Clear groups show highlight, reaction, bookmark and Save; the primary action keeps its normal visible position. Selected cards have saved checkmarks and a compact recipient-only summary.
+- Every choice is saved to that actor's draft immediately. Reopening, reset, lobby and rejoining the same server retain their choices and private reading note. Explicit Save still requires highlight + reaction + bookmark and grants the shared round reward once. After shared completion other friends can save their choices with acknowledgement only. Explicit replay retains existing personal drafts, as before; it does not silently create another round. Draft revisions and action identities reject stale/changed duplicate submissions. Session contribution step IDs include actor and passage so different readers' same-kind choices count as distinct contributions.
+- The optional private reading note starts empty, has a collapsed editor and an explicit Save note action. The existing 500-byte server limit remains, with a friendly shorten-note hint. Unsaved editing is local and clears on Close. Saved note text appears only in that recipient's view/result; no user text or actor identity is passed to world presentation. This does not author or alter the personal birthday note or guest wishes.
+- Two small synchronized preset accents appear at the Quad and bedroom Kindle. Ribbon, pressed flower and star tab have different native shapes. Partial highlight/reaction choices give a saved acknowledgement without requiring a bookmark or raising an ordinary-choice warning. A new helper's initial choices preserve the most recent shared bookmark until another bookmark is chosen. These accents show latest shared preset feedback; each reader's own state remains in their private summary.
+
+## Remote/schema details
+
+No new remote. Use current descriptors in the canonical `ActivityAction` envelope with sessionId, activityId, current roundId, unique actionId, descriptor stepId and descriptor payload. Main derives actorUserId from the Player. Q02/Q03/Q04 now explicitly validate current rounds/session and require replay to be requested. Duplicate IDs are bound to actor/round/operation values and cannot be repurposed across accepted receipt paths.
+
+Q02 retains its existing payloads: greet `{}`, rabbitFound `{basketIndex=1..3}`, rabbitReturned `{}`, fetch1..3 `{targetIndex=1..3}`, greenie `{}`, pet `{}`. New view fields are atStation, fetchCount and guide; acceptedStepIds remains its receipt map.
+
+Q03 retains reserve/rotate/place/cancel/finalize payloads and step ID formats. The public `craft` field contains ordered pieces with label/socket/complete/orientation/busy, the recipient's own held part/socket/orientation/expiry, finalPresentation and needsFinishing. Other players' private action descriptors are not copied. `ExpireReservations(roundId?)` can operate on the current round and increments expiryRevision on change.
+
+Q04 choices retain passageId plus highlights/reaction/bookmark, now with the current revision in each descriptor. Save uses `{passageId,revision,complete=true}`. `view.noteAction` uses stepId `note` and `{passageId,revision}`; the extension adds only the entered note string. `view.draft` is the recipient's saved draft; readingSummary supplies friendly preset labels. Neither world labels nor another player's snapshot receive the private note.
+
+## Bounds and ownership
+
+All new instances are under `MVP.RuntimePresentation.Jasper` or `MVP.RuntimePresentation.WorldFeedback` (Craft and Reading). The actor has 25 BaseParts; the complete Jasper subtree has 38 authored BaseParts including six rabbit parts and cues. Each craft representation has at most 33 BaseParts; both together at most 66. Each reading accent has at most nine, for 18 together. Models are replaced within their owned folders on state changes, never appended per action. Generated sibling names are unique for independent full-path palette capture.
+
+New geometry is anchored, noncolliding, nontouching and nonqueryable with exact palette values and PCW-22/PaletteToken attributes. Native Sphere SpecialMeshes have no external asset IDs. No particles, dynamic lights, uninspected assets, physics forces, guest NPCs or gameplay camera changes are introduced. The client creates only a local miniature ViewportFrame camera and one matching-socket outline.
+
+## Deferred checks and limitations
+
+No tests, compilation, Studio access, playthrough, save or publication occurred. This is implementation delivery and source review only, not PASS or visual/fun acceptance.
+
+- Install/compile all six sources, then exercise actual current descriptor envelopes through the live UI. Root has authored `verification/release-20261003/social_activity_contracts.spec.luau`; it remains unexecuted. Historical Q02/Q03/Q04 specs contain obsolete fixture session/presence/step assumptions and must be aligned before final execution, without weakening production guards.
+- Verify first/replay 20/10, one petal, actor contributions, exact duplicate/changed actor/changed payload IDs, cross-activity accepted IDs, stale rounds, concurrent six-piece placement, repeated finalization, shared reading completion and optional post-completion saves. Deliberately throw a feedback hook and confirm accepted rewards/drafts remain committed.
+- Two real clients: take turns with Jasper; rapid valid throws must each visibly fetch once; close/reset/leave/rejoin mid-motion; retry after an empty basket; replay during queued presentation; no puppy/plush confusion. Inspect the five-second door/porch route and all yard targets against live geometry. It is a bounded kinematic route, not collision-aware navigation; fallback uses anchors if porch/door data is missing. Final clearance and visual review may require route/pose adjustment.
+- Craft: all orientations, concurrent different/same sockets, change held piece, expiry while idle, cancel, stale Close, reset/disconnect and replay. Observe both representations and local outline after every mutation. Inspect live tabletop/plinth height, flattened socket-label readability, lower shelf fit, room/walking/camera clearance, and Q01/Q05 separation. Missing lower plinth leaves authoritative UI/booth active and warns; this is not acceptance of a missing bedroom representation.
+- Reading: complete readable passage on phone/tablet/desktop, saved checkmarks after Close, two actors' private drafts, no typing required, optional note save/clear/over-limit handling, stale revision, Unicode entry, no notes in another actor's view/world labels, three distinct bookmark accents and partial acknowledgements. Main action and 52-pixel custom buttons need actual phone/keyboard/scroll checks. No measured device readability or performance is claimed.
+- Missing/streamed world art leaves text guidance usable. Miniature viewport takes a bounded delayed replication refresh; inspect low-bandwidth/streaming behavior. Repeated actions/replays must leave stable part/connection counts. Model construction failures warn and leave gameplay state authoritative; any such warning remains a final integration defect, not a passed world-feedback criterion.
+- Root must independently capture palette/unique instance paths, review the simplified dog/miniature/bookmark identity, test 8–10-player performance and get real human visual/fun evidence. Physical device/reconnect evidence remains separate from desktop emulation.
+
+No personal birthday note was written or altered.

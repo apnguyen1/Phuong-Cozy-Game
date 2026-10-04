@@ -1,0 +1,317 @@
+{
+  "jump_power": 50,
+  "walk_speed": 16,
+  "captured_at": "2026-10-03T18:23:32Z",
+  "datamodel": "Client",
+  "player": "IamBannedrew",
+  "limits": "One Studio desktop client only; not8-10 players, physical phone/tablet, high-velocity/exploit or network stress coverage",
+  "use_jump_power": false,
+  "method": "Actual ordinary Humanoid movement and default jumps simulated for2 seconds each after positioning a real Client avatar12 studs inside each side/corner. no geometry or runtime source modified.",
+  "tests": [
+    {
+      "max_y": 3.6766700744628906,
+      "samples": 61,
+      "travel": 9.330366134643555,
+      "name": "North",
+      "humanoid_state": "Running",
+      "start": [
+        241.97744750976562,
+        3.676645278930664,
+        -173.726318359375
+      ],
+      "mode": "ordinary_walk",
+      "escaped": false,
+      "finish": [
+        242.01075744628906,
+        3.653496503829956,
+        -183.05662536621094
+      ]
+    },
+    {
+      "max_y": 13.018998146057129,
+      "samples": 60,
+      "travel": 9.258891105651855,
+      "name": "North",
+      "humanoid_state": "Freefall",
+      "start": [
+        241.97744750976562,
+        3.676645278930664,
+        -173.726318359375
+      ],
+      "mode": "ordinary_jump_and_walk",
+      "escaped": false,
+      "finish": [
+        242.535888671875,
+        11.250185012817383,
+        -182.96835327148438
+      ]
+    },
+    {
+      "max_y": 3.7006585597991943,
+      "samples": 61,
+      "travel": 9.207703590393066,
+      "name": "South",
+      "humanoid_state": "Running",
+      "start": [
+        241.97744750976562,
+        3.700629472732544,
+        208.6077880859375
+      ],
+      "mode": "ordinary_walk",
+      "escaped": false,
+      "finish": [
+        241.9821319580078,
+        3.6726088523864746,
+        217.81549072265625
+      ]
+    },
+    {
+      "max_y": 13.263428688049316,
+      "samples": 61,
+      "travel": 8.940085411071777,
+      "name": "South",
+      "humanoid_state": "Freefall",
+      "start": [
+        241.97744750976562,
+        3.7006146907806396,
+        208.6077880859375
+      ],
+      "mode": "ordinary_jump_and_walk",
+      "escaped": false,
+      "finish": [
+        241.3553009033203,
+        11.059773445129395,
+        217.5261993408203
+      ]
+    },
+    {
+      "max_y": 3.6801834106445312,
+      "samples": 60,
+      "travel": 9.296896934509277,
+      "name": "West",
+      "humanoid_state": "Running",
+      "start": [
+        44.12977600097656,
+        3.6766510009765625,
+        17.44073486328125
+      ],
+      "mode": "ordinary_walk",
+      "escaped": false,
+      "finish": [
+        34.83292007446289,
+        3.6514556407928467,
+        17.41320037841797
+      ]
+    },
+    {
+      "max_y": 10.98388957977295,
+      "samples": 60,
+      "travel": 6.026054382324219,
+      "name": "West",
+      "humanoid_state": "Freefall",
+      "start": [
+        44.12977600097656,
+        3.676645278930664,
+        17.44073486328125
+      ],
+      "mode": "ordinary_jump_and_walk",
+      "escaped": false,
+      "finish": [
+        38.103721618652344,
+        9.943194389343262,
+        17.44073486328125
+      ]
+    },
+    {
+      "max_y": 3.680508613586426,
+      "samples": 60,
+      "travel": 9.326083183288574,
+      "name": "East",
+      "humanoid_state": "Running",
+      "start": [
+        439.8251037597656,
+        3.6766490936279297,
+        17.44073486328125
+      ],
+      "mode": "ordinary_walk",
+      "escaped": false,
+      "finish": [
+        449.15118408203125,
+        3.6579203605651855,
+        17.447250366210938
+      ]
+    },
+    {
+      "max_y": 10.987359046936035,
+      "samples": 61,
+      "travel": 6.2296142578125,
+      "name": "East",
+      "humanoid_state": "Freefall",
+      "start": [
+        439.8251037597656,
+        3.676645278930664,
+        17.44073486328125
+      ],
+      "mode": "ordinary_jump_and_walk",
+      "escaped": false,
+      "finish": [
+        446.0547180175781,
+        10.408574104309082,
+        17.44073486328125
+      ]
+    },
+    {
+      "max_y": 3.677900791168213,
+      "samples": 61,
+      "travel": 12.65010929107666,
+      "name": "NW",
+      "humanoid_state": "Running",
+      "start": [
+        44.12977600097656,
+        3.676654815673828,
+        -173.726318359375
+      ],
+      "mode": "ordinary_walk",
+      "escaped": false,
+      "finish": [
+        35.17703628540039,
+        3.6703200340270996,
+        -182.6635284423828
+      ]
+    },
+    {
+      "max_y": 10.98388957977295,
+      "samples": 60,
+      "travel": 6.225776195526123,
+      "name": "NW",
+      "humanoid_state": "Freefall",
+      "start": [
+        44.12977600097656,
+        3.6766364574432373,
+        -173.726318359375
+      ],
+      "mode": "ordinary_jump_and_walk",
+      "escaped": false,
+      "finish": [
+        39.727603912353516,
+        9.783035278320312,
+        -178.12872314453125
+      ]
+    },
+    {
+      "max_y": 3.6766700744628906,
+      "samples": 60,
+      "travel": 12.656268119812012,
+      "name": "NE",
+      "humanoid_state": "Running",
+      "start": [
+        439.8251037597656,
+        3.676652193069458,
+        -173.726318359375
+      ],
+      "mode": "ordinary_walk",
+      "escaped": false,
+      "finish": [
+        448.7749938964844,
+        3.6712493896484375,
+        -182.6750946044922
+      ]
+    },
+    {
+      "max_y": 10.983892440795898,
+      "samples": 60,
+      "travel": 6.206756591796875,
+      "name": "NE",
+      "humanoid_state": "Freefall",
+      "start": [
+        439.8251037597656,
+        3.676656484603882,
+        -173.726318359375
+      ],
+      "mode": "ordinary_jump_and_walk",
+      "escaped": false,
+      "finish": [
+        444.2134704589844,
+        9.808770179748535,
+        -178.11563110351562
+      ]
+    },
+    {
+      "max_y": 3.6766700744628906,
+      "samples": 61,
+      "travel": 12.644286155700684,
+      "name": "SW",
+      "humanoid_state": "Running",
+      "start": [
+        44.12977600097656,
+        3.6766412258148193,
+        208.6077880859375
+      ],
+      "mode": "ordinary_walk",
+      "escaped": false,
+      "finish": [
+        35.200416564941406,
+        3.676270008087158,
+        217.5601348876953
+      ]
+    },
+    {
+      "max_y": 10.983871459960938,
+      "samples": 61,
+      "travel": 5.870512008666992,
+      "name": "SW",
+      "humanoid_state": "Freefall",
+      "start": [
+        44.12977600097656,
+        3.676645278930664,
+        208.6077880859375
+      ],
+      "mode": "ordinary_jump_and_walk",
+      "escaped": false,
+      "finish": [
+        39.978755950927734,
+        10.741086959838867,
+        212.75892639160156
+      ]
+    },
+    {
+      "max_y": 3.6845455169677734,
+      "samples": 61,
+      "travel": 12.644919395446777,
+      "name": "SE",
+      "humanoid_state": "Running",
+      "start": [
+        439.8251037597656,
+        3.6766433715820312,
+        208.6077880859375
+      ],
+      "mode": "ordinary_walk",
+      "escaped": false,
+      "finish": [
+        448.7709655761719,
+        3.6761679649353027,
+        217.54454040527344
+      ]
+    },
+    {
+      "max_y": 13.985941886901855,
+      "samples": 60,
+      "travel": 12.142998695373535,
+      "name": "SE",
+      "humanoid_state": "Freefall",
+      "start": [
+        439.8251037597656,
+        3.6766364574432373,
+        208.6077880859375
+      ],
+      "mode": "ordinary_jump_and_walk",
+      "escaped": false,
+      "finish": [
+        448.3414306640625,
+        8.808194160461426,
+        217.26368713378906
+      ]
+    }
+  ],
+  "jump_height": 7.199999809265137
+}

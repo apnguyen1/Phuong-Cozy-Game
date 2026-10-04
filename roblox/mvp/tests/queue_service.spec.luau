@@ -30,4 +30,15 @@ local generation = empty:Snapshot().generation
 empty:Leave(1)
 expect(empty:Snapshot().state == "Empty" and empty:Snapshot().generation == generation + 1, "empty queue resets generation")
 
+expect(queue:BeginTransfer(), "frozen roster starts transfer")
+expect(not queue:ResetAfterTransfer(), "cannot reset during transfer")
+expect(queue:CompleteTransfer(), "transfer completes")
+expect(queue:ResetAfterTransfer(), "completed transfer resets")
+now = 20
+expect(queue:Join(20, now), "next group can board")
+expect(queue:Snapshot().deadlineAt == 80, "next group has fresh countdown")
+expect(#localRoster.members == 9, "reset preserves dispatched roster")
+queue:Tick(80)
+queue:FailTransfer()
+expect(queue:ResetAfterTransfer(), "failure can recover")
 return true

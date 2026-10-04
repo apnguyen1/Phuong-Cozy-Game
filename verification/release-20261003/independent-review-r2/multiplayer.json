@@ -1,0 +1,173 @@
+{
+  "method": "Actual native Studio server and client DataModels via ExecuteMultiplayerTestAsync(2,{}) and server AddPlayers. Native portal E on all clients. Position-only fixtures at portal and bed; scroll-position fixture before targeted UI actions. No account IDs, permission flags or reward state changed.",
+  "firstHold": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"1\":{\"interactable\":true,\"text\":\"Show me where to go\",\"path\":\"Players.Player1.PlayerGui.PhuongMVPHud.ActivityPanel.ActivityContent.TrackNextStep\",\"active\":true},\"3\":{\"interactable\":true,\"text\":\"▾ Place your held item\",\"path\":\"Players.Player1.PlayerGui.PhuongMVPHud.ActivityPanel.ActivityContent.ChoiceGroup1.GroupHeading\",\"active\":true},\"2\":{\"interactable\":true,\"text\":\"Tuck left blanket edge\",\"path\":\"Players.Player1.PlayerGui.PhuongMVPHud.ActivityPanel.ActivityContent.MainAction\",\"active\":true},\"5\":{\"interactable\":true,\"text\":\"Put item back\",\"path\":\"Players.Player1.PlayerGui.PhuongMVPHud.ActivityPanel.ActivityContent.ChoiceGroup1.Choice2.ChoiceButton\",\"active\":true},\"4\":{\"interactable\":true,\"text\":\"Tuck left blanket edge\",\"path\":\"Players.Player1.PlayerGui.PhuongMVPHud.ActivityPanel.ActivityContent.ChoiceGroup1.Choice1.ChoiceButton\",\"active\":true},\"7\":{\"interactable\":true,\"text\":\"▸ Optional · tidy the bedroom shelf\",\"path\":\"Players.Player1.PlayerGui.PhuongMVPHud.ActivityPanel.ActivityContent.ChoiceGroup3.GroupHeading\",\"active\":true},\"6\":{\"interactable\":true,\"text\":\"▸ Choose a bed task\",\"path\":\"Players.Player1.PlayerGui.PhuongMVPHud.ActivityPanel.ActivityContent.ChoiceGroup2.GroupHeading\",\"active\":true},\"9\":{\"interactable\":true,\"text\":\"Back\",\"path\":\"Players.Player1.PlayerGui.PhuongMVPHud.ActivityPanel.Back\",\"active\":true},\"8\":{\"interactable\":true,\"text\":\"Refresh available choices\",\"path\":\"Players.Player1.PlayerGui.PhuongMVPHud.ActivityPanel.ActivityContent.RefreshActivity\",\"active\":true},\"10\":{\"interactable\":true,\"text\":\"Close\",\"path\":\"Players.Player1.PlayerGui.PhuongMVPHud.ActivityPanel.Close\",\"active\":true}}"
+      }
+    ],
+    "isError": false
+  },
+  "sharedProgress": {
+    "content": [
+      {
+        "type": "text",
+        "text": "1 of 7 bed tasks done · 6 remaining"
+      }
+    ],
+    "isError": false
+  },
+  "lateJoin": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"items\":[{\"path\":\"Players.Player3.PlayerGui.CozyAudioControls.AudioOptions\",\"textFits\":true,\"active\":true,\"interactable\":true,\"clipped\":false,\"position\":[8,8],\"textBounds\":[58,28],\"text\":\"Audio\\nMusic on\",\"class\":\"TextButton\",\"size\":[84,48]},{\"path\":\"Players.Player3.PlayerGui.PhuongMVPHud.ActivityPanel.ActivityContent\",\"canvas\":[438,1292],\"position\":[114,48],\"scroll\":[0,0],\"class\":\"ScrollingFrame\",\"clipped\":false,\"size\":[438,194]},{\"path\":\"Players.Player3.PlayerGui.PhuongMVPHud.ActivityPanel.ActivityContent.ChoiceGroup1.Choice1.ChoiceButton\",\"textFits\":true,\"active\":true,\"interactable\":true,\"clipped\":true,\"position\":[140,244],\"textBounds\":[198,16],\"text\":\"Pick up right blanket edge\",\"class\":\"TextButton\",\"size\":[379,52]},{\"textBounds\":[159,14],\"path\":\"Players.Player3.PlayerGui.PhuongMVPHud.ActivityPanel.ActivityContent.ChoiceGroup1.Choice1.ChoiceDetail\",\"textFits\":true,\"position\":[140,303],\"text\":\"Right side of the sage bed\",\"class\":\"TextLabel\",\"clipped\":true,\"size\":[379,14]},{\"path\":\"Players.Player3.PlayerGui.PhuongMVPHud.ActivityPanel.ActivityContent.ChoiceGroup1.Choice2.ChoiceButton\",\"textFits\":true,\"active\":true,\"interactable\":true,\"clipped\":true,\"position\":[140,348],\"textBounds\":[145,16],\"text\":\"Pick up cream quilt\",\"class\":\"TextButton\",\"size\":[379,52]},{\"textBounds\":[127,14],\"path\":\"Players.Player3.PlayerGui.PhuongMVPHud.ActivityPanel.ActivityContent.ChoiceGroup1.Choice2.ChoiceDetail\",\"textFits\":true,\"position\":[140,407],\"text\":\"Foot of the sage bed\",\"class\":\"TextLabel\",\"clipped\":true,\"size\":[379,14]},{\"path\":\"Players.Player3.PlayerGui.PhuongMVPHud.ActivityPanel.ActivityContent.ChoiceGroup1.Choice3.ChoiceButton\",\"textFits\":true,\"active\":true,\"interactable\":true,\"clipped\":true,\"position\":[140,452],\"textBounds\":[182,16],\"text\":\"Pick up left cream pillow\",\"class\":\"TextButton\",\"size\":[379,52]},{\"textBounds\":[93,14],\"path\":\"Players.Player3.PlayerGui.PhuongMVPHud.ActivityPanel.ActivityContent.ChoiceGroup1.Choice3.ChoiceDetail\",\"textFits\":true,\"position\":[140,511],\"text\":\"Left pillow spot\",\"class\":\"TextLabel\",\"clipped\":true,\"size\":[379,14]},{\"path\":\"Players.Player3.PlayerGui.PhuongMVPHud.ActivityPanel.ActivityContent.ChoiceGroup1.Choice4.ChoiceButton\",\"textFits\":true,\"active\":true,\"interactable\":true,\"clipped\":true,\"position\":[140,556],\"textBounds\":[194,16],\"text\":\"Pick up right cream pillow\",\"class\":\"TextButton\",\"size\":[379,52]},{\"textBounds\":[102,14],\"path\":\"Players.Player3.PlayerGui.PhuongMVPHud.ActivityPanel.ActivityContent.ChoiceGroup1.Choice4.ChoiceDetail\",\"textFits\":true,\"position\":[140,615],\"text\":\"Right pillow spot\",\"class\":\"TextLabel\",\"clipped\":true,\"size\":[379,14]},{\"path\":\"Players.Player3.PlayerGui.PhuongMVPHud.ActivityPanel.ActivityContent.ChoiceGroup1.Choice5.ChoiceButton\",\"textFits\":true,\"active\":true,\"interactable\":true,\"clipped\":true,\"position\":[140,660],\"textBounds\":[237,16],\"text\":\"Pick up round-bellied dog plush\",\"class\":\"TextButton\",\"size\":[379,52]},{\"textBounds\":[178,14],\"path\":\"Players.Player3.PlayerGui.PhuongMVPHud.ActivityPanel.ActivityContent.ChoiceGroup1.Choice5.ChoiceDetail\",\"textFits\":true,\"position\":[140,719],\"text\":\"Dog's spot beside the pillows\",\"class\":\"TextLabel\",\"clipped\":true,\"size\":[379,14]},{\"path\":\"Players.Player3.PlayerGui.PhuongMVPHud.ActivityPanel.ActivityContent.ChoiceGroup1.Choice6.ChoiceButton\",\"textFits\":true,\"active\":true,\"interactable\":true,\"clipped\":true,\"position\":[140,764],\"textBounds\":[169,16],\"text\":\"Pick up dinosaur plush\",\"class\":\"TextButton\",\"size\":[379,52]},{\"textBounds\":[207,14],\"path\":\"Players.Player3.PlayerGui.PhuongMVPHud.ActivityPanel.ActivityContent.ChoiceGroup1.Choice6.ChoiceDetail\",\"textFits\":true,\"position\":[140,823],\"text\":\"Dinosaur's spot beside the pillows\",\"class\":\"TextLabel\",\"clipped\":true,\"size\":[379,14]},{\"path\":\"Players.Player3.PlayerGui.PhuongMVPHud.ActivityPanel.ActivityContent.ChoiceGroup1.GroupHeading\",\"textFits\":true,\"active\":true,\"interactable\":true,\"clipped\":false,\"position\":[128,173],\"textBounds\":[147,16],\"text\":\"▾ Choose a bed task\",\"class\":\"TextButton\",\"size\":[403,52]},{\"path\":\"Players.Player3.PlayerGui.PhuongMVPHud.ActivityPanel.ActivityContent.ChoiceGroup2.GroupHeading\",\"textFits\":true,\"active\":true,\"interactable\":true,\"clipped\":true,\"position\":[128,883],\"textBounds\":[256,16],\"text\":\"▸ Optional · tidy the bedroom shelf\",\"class\":\"TextButton\",\"size\":[403,52]},{\"textBounds\":[280,18],\"path\":\"Players.Player3.PlayerGui.PhuongMVPHud.ActivityPanel.ActivityContent.Headline\",\"textFits\":true,\"position\":[116,50],\"text\":\"A cozy bed, one small task at a time\",\"class\":\"TextLabel\",\"clipped\":false,\"size\":[427,18]},{\"textBounds\":[398,26],\"path\":\"Players.Player3.PlayerGui.PhuongMVPHud.ActivityPanel.ActivityContent.HelpAndExit\",\"textFits\":true,\"position\":[116,1312],\"text\":\"Close releases any unfinished spot you are holding. Shared progress stays saved for this session.\",\"class\":\"TextLabel\",\"clipped\":true,\"size\":[427,26]},{\"textBounds\":[402,32],\"path\":\"Players.Player3.PlayerGui.PhuongMVPHud.ActivityPanel.ActivityContent.Instructions\",\"textFits\":true,\"position\":[116,78],\"text\":\"Choose a blanket, pillow or plush card. Pick it up, see its highlighted spot, then Place or Tuck.\",\"class\":\"TextLabel\",\"clipped\":false,\"size\":[427,32]},{\"textBounds\":[209,14],\"path\":\"Players.Player3.PlayerGui.PhuongMVPHud.ActivityPanel.ActivityContent.Progress\",\"textFits\":true,\"position\":[116,120],\"text\":\"1 of 7 bed tasks done · 6 remaining\",\"class\":\"TextLabel\",\"clipped\":false,\"size\":[427,14]},{\"path\":\"Players.Player3.PlayerGui.PhuongMVPHud.ActivityPanel.ActivityContent.RefreshActivity\",\"textFits\":true,\"active\":true,\"interactable\":true,\"clipped\":true,\"position\":[116,1250],\"textBounds\":[184,16],\"text\":\"Refresh available choices\",\"class\":\"TextButton\",\"size\":[427,52]},{\"path\":\"Players.Player3.PlayerGui.PhuongMVPHud.ActivityPanel.ActivityContent.TrackNextStep\",\"textFits\":true,\"active\":true,\"interactable\":true,\"clipped\":true,\"position\":[116,957],\"textBounds\":[162,16],\"text\":\"Show me where to go\",\"class\":\"TextButton\",\"size\":[427,52]},{\"path\":\"Players.Player3.PlayerGui.PhuongMVPHud.ActivityPanel.ActivityContent.WorldPreview.CompletedBedTasks.ToggleDone\",\"textFits\":true,\"active\":true,\"interactable\":true,\"clipped\":true,\"position\":[128,1031],\"textBounds\":[132,16],\"text\":\"Done · 1 bed tasks\",\"class\":\"TextButton\",\"size\":[403,52]},{\"textBounds\":[398,26],\"path\":\"Players.Player3.PlayerGui.PhuongMVPHud.ActivityPanel.ActivityContent.WorldPreview.SharedShelf.ShelfHelp\",\"textFits\":true,\"position\":[128,1202],\"text\":\"Open the optional shelf cards below to choose an item. Shelf tidying adds no petals or money.\",\"class\":\"TextLabel\",\"clipped\":true,\"size\":[403,26]},{\"textBounds\":[134,14],\"path\":\"Players.Player3.PlayerGui.PhuongMVPHud.ActivityPanel.ActivityContent.WorldPreview.SharedShelf.ShelfSlot1\",\"textFits\":true,\"position\":[128,1139],\"text\":\"Top shelf · left · Empty\",\"class\":\"TextLabel\",\"clipped\":true,\"size\":[403,14]},{\"textBounds\":[157,14],\"path\":\"Players.Player3.PlayerGui.PhuongMVPHud.ActivityPanel.ActivityContent.WorldPreview.SharedShelf.ShelfSlot2\",\"textFits\":true,\"position\":[128,1160],\"text\":\"Top shelf · middle · Empty\",\"class\":\"TextLabel\",\"clipped\":true,\"size\":[403,14]},{\"textBounds\":[143,14],\"path\":\"Players.Player3.PlayerGui.PhuongMVPHud.ActivityPanel.ActivityContent.WorldPreview.SharedShelf.ShelfSlot3\",\"textFits\":true,\"position\":[128,1181],\"text\":\"Top shelf · right · Empty\",\"class\":\"TextLabel\",\"clipped\":true,\"size\":[403,14]},{\"textBounds\":[176,17],\"path\":\"Players.Player3.PlayerGui.PhuongMVPHud.ActivityPanel.ActivityContent.WorldPreview.SharedShelf.ShelfTitle\",\"textFits\":true,\"position\":[128,1115],\"text\":\"Optional bedroom shelf\",\"class\":\"TextLabel\",\"clipped\":true,\"size\":[403,17]},{\"path\":\"Players.Player3.PlayerGui.PhuongMVPHud.ActivityPanel.Back\",\"textFits\":true,\"active\":true,\"interactable\":true,\"clipped\":false,\"position\":[114,248],\"textBounds\":[37,16],\"text\":\"Back\",\"class\":\"TextButton\",\"size\":[213,48]},{\"path\":\"Players.Player3.PlayerGui.PhuongMVPHud.ActivityPanel.Close\",\"textFits\":true,\"active\":true,\"interactable\":true,\"clipped\":false,\"position\":[339,248],\"textBounds\":[39,16],\"text\":\"Close\",\"class\":\"TextButton\",\"size\":[213,48]},{\"textBounds\":[194,20],\"path\":\"Players.Player3.PlayerGui.PhuongMVPHud.ActivityPanel.Title\",\"textFits\":true,\"position\":[116,12],\"text\":\"Everything Tucked In\",\"class\":\"TextLabel\",\"clipped\":false,\"size\":[434,32]},{\"textBounds\":[16,15],\"path\":\"Players.Player3.PlayerGui.PhuongMVPHud.BirthdayDestinationMarker.Frame.Destination\",\"textFits\":false,\"position\":[-8,-8],\"text\":\"◆ Make her room cozy\\n8 studs\",\"class\":\"TextLabel\",\"clipped\":false,\"size\":[16,16]}],\"cameraType\":\"Custom\",\"screens\":[{\"name\":\"Freecam\",\"enabled\":true},{\"name\":\"PhuongMVPHud\",\"enabled\":true},{\"name\":\"BirthdayMoment\",\"enabled\":true},{\"name\":\"CozyAudioControls\",\"enabled\":true},{\"name\":\"TouchGui\",\"enabled\":false},{\"name\":\"ProximityPrompts\",\"enabled\":true}],\"location\":\"World\",\"viewport\":[666,374],\"userId\":-3,\"subject\":\"Workspace.Player3.Humanoid\"}"
+      }
+    ],
+    "isError": false
+  },
+  "disconnectRelease": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"players\":2,\"time\":1791072387.656892,\"progress\":\"1 of 7 bed tasks done · 6 remaining\",\"text\":\"Pick up right blanket edge\",\"enabled\":true,\"detail\":\"Right side of the sage bed\"}"
+      }
+    ],
+    "isError": false
+  },
+  "server8": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"players\":[{\"id\":-2,\"name\":\"Player2\",\"attrs\":{\"BirthdayLocation\":\"World\",\"MVPSessionId\":\"MVP-1791071890\",\"BirthdayJoinedWorld\":true,\"BirthdaySpawnSlot\":1}},{\"id\":-3,\"name\":\"Player3\",\"attrs\":{\"BirthdayLocation\":\"World\",\"MVPSessionId\":\"MVP-1791071890\",\"BirthdayJoinedWorld\":true,\"BirthdaySpawnSlot\":2}},{\"id\":-4,\"name\":\"Player4\",\"attrs\":{\"BirthdayLocation\":\"Lobby\",\"MVPSessionId\":\"MVP-1791071890\",\"BirthdayJoinedWorld\":false,\"BirthdaySpawnSlot\":0}},{\"id\":-5,\"name\":\"Player5\",\"attrs\":{\"BirthdayLocation\":\"Lobby\",\"MVPSessionId\":\"MVP-1791071890\",\"BirthdayJoinedWorld\":false,\"BirthdaySpawnSlot\":3}},{\"id\":-6,\"name\":\"Player6\",\"attrs\":{\"BirthdayLocation\":\"Lobby\",\"MVPSessionId\":\"MVP-1791071890\",\"BirthdayJoinedWorld\":false,\"BirthdaySpawnSlot\":4}},{\"id\":-7,\"name\":\"Player7\",\"attrs\":{\"BirthdayLocation\":\"Lobby\",\"MVPSessionId\":\"MVP-1791071890\",\"BirthdayJoinedWorld\":false,\"BirthdaySpawnSlot\":5}},{\"id\":-8,\"name\":\"Player8\",\"attrs\":{\"BirthdayLocation\":\"Lobby\",\"MVPSessionId\":\"MVP-1791071890\",\"BirthdayJoinedWorld\":false,\"BirthdaySpawnSlot\":6}},{\"id\":-9,\"name\":\"Player9\",\"attrs\":{\"BirthdayLocation\":\"Lobby\",\"MVPSessionId\":\"MVP-1791071890\",\"BirthdayJoinedWorld\":false,\"BirthdaySpawnSlot\":7}}],\"memoryMB\":1607.79296875,\"count\":8,\"time\":1791072421.40064}"
+      }
+    ],
+    "isError": false
+  },
+  "world8": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"players\":[{\"name\":\"Player2\",\"slot\":1,\"id\":-2,\"session\":\"MVP-1791071890\",\"location\":\"World\"},{\"name\":\"Player3\",\"slot\":2,\"id\":-3,\"session\":\"MVP-1791071890\",\"location\":\"World\"},{\"name\":\"Player4\",\"slot\":0,\"id\":-4,\"session\":\"MVP-1791071890\",\"location\":\"World\"},{\"name\":\"Player5\",\"slot\":3,\"id\":-5,\"session\":\"MVP-1791071890\",\"location\":\"World\"},{\"name\":\"Player6\",\"slot\":4,\"id\":-6,\"session\":\"MVP-1791071890\",\"location\":\"World\"},{\"name\":\"Player7\",\"slot\":5,\"id\":-7,\"session\":\"MVP-1791071890\",\"location\":\"World\"},{\"name\":\"Player8\",\"slot\":6,\"id\":-8,\"session\":\"MVP-1791071890\",\"location\":\"World\"},{\"name\":\"Player9\",\"slot\":7,\"id\":-9,\"session\":\"MVP-1791071890\",\"location\":\"World\"}],\"count\":8,\"time\":1791072596.046145}"
+      }
+    ],
+    "isError": false
+  },
+  "clients8": [
+    {
+      "id": "8da82d9d-36c5-4a14-9464-2cfd47760ed7",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"memoryMB\":1696.45703125,\"camera\":\"Enum.CameraType.Custom\",\"name\":\"Player2\",\"session\":\"MVP-1791071890\",\"location\":\"World\",\"subject\":\"Workspace.Player2.Humanoid\",\"userId\":-2,\"labels\":[\"Shared fund · 0\",\"Host controls\",\"1 of 7 bed tasks done · 6 remaining\"]}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "id": "b8361321-7b42-4293-b445-555a59174efb",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"memoryMB\":1718.328125,\"camera\":\"Enum.CameraType.Custom\",\"name\":\"Player3\",\"session\":\"MVP-1791071890\",\"location\":\"World\",\"subject\":\"Workspace.Player3.Humanoid\",\"userId\":-3,\"labels\":[\"Shared fund · 0\",\"Host controls\",\"1 of 7 bed tasks done · 6 remaining\"]}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "id": "31765cdf-4687-4f4b-b1fb-15dbac2b8736",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"memoryMB\":1691.98046875,\"camera\":\"Enum.CameraType.Custom\",\"name\":\"Player8\",\"session\":\"MVP-1791071890\",\"location\":\"World\",\"subject\":\"Workspace.Player8.Humanoid\",\"userId\":-8,\"labels\":[\"Shared fund · 0\",\"Host controls\"]}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "id": "4612c8dc-d37b-42a9-a0f0-28b231afb524",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"memoryMB\":1749.09375,\"camera\":\"Enum.CameraType.Custom\",\"name\":\"Player4\",\"session\":\"MVP-1791071890\",\"location\":\"World\",\"subject\":\"Workspace.Player4.Humanoid\",\"userId\":-4,\"labels\":[\"Shared fund · 0\",\"Host controls\"]}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "id": "59b17f9b-4a03-447c-94af-7a417d40c0be",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"memoryMB\":1695.83203125,\"camera\":\"Enum.CameraType.Custom\",\"name\":\"Player6\",\"session\":\"MVP-1791071890\",\"location\":\"World\",\"subject\":\"Workspace.Player6.Humanoid\",\"userId\":-6,\"labels\":[\"Shared fund · 0\",\"Host controls\"]}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "id": "970fe980-e1b4-4bf7-8867-932355c64f53",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"memoryMB\":1724.41796875,\"camera\":\"Enum.CameraType.Custom\",\"name\":\"Player7\",\"session\":\"MVP-1791071890\",\"location\":\"World\",\"subject\":\"Workspace.Player7.Humanoid\",\"userId\":-7,\"labels\":[\"Shared fund · 0\",\"Host controls\"]}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "id": "d1c05bc2-50e2-41cf-8580-7f9687f7a8e6",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"memoryMB\":1730.765625,\"camera\":\"Enum.CameraType.Custom\",\"name\":\"Player5\",\"session\":\"MVP-1791071890\",\"location\":\"World\",\"subject\":\"Workspace.Player5.Humanoid\",\"userId\":-5,\"labels\":[\"Shared fund · 0\",\"Host controls\"]}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "id": "eb4b175f-ba2f-483f-870b-6898e6cac7e8",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"memoryMB\":1725.171875,\"camera\":\"Enum.CameraType.Custom\",\"name\":\"Player9\",\"session\":\"MVP-1791071890\",\"location\":\"World\",\"subject\":\"Workspace.Player9.Humanoid\",\"userId\":-9,\"labels\":[\"Shared fund · 0\",\"Host controls\"]}"
+          }
+        ],
+        "isError": false
+      }
+    }
+  ],
+  "performance": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"runtimeParts\":294,\"seconds\":12.037647699995432,\"p99FrameMs\":68.21270287036896,\"memoryMb\":1697.41796875,\"frames\":181,\"p95FrameMs\":67.63820350170136,\"averageFps\":15.00180476708688,\"worldParts\":8114,\"viewport\":[666,374],\"context\":\"desktop Studio client\",\"medianFrameMs\":66.62710011005402}"
+      }
+    ],
+    "isError": false
+  },
+  "console": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Phuong MVP server integration active MVP-1791071890 missing anchors: \nINDEPENDENT_LATE_JOIN true nil\nINDEPENDENT_SCALE_EIGHT true nil"
+      }
+    ],
+    "isError": false
+  }
+}

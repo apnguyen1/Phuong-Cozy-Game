@@ -24,6 +24,7 @@ function SessionService.new(options)
         acceptedSteps = {},
         reservations = {},
         presence = {},
+        initialRewards = {},
     }, SessionService)
     for _, activityId in ipairs(Config.ActivityIds) do self.petals[activityId] = false end
     return self
@@ -93,6 +94,7 @@ function SessionService:CompleteRound(request)
     local reward = 0
     if Config.EarningActivityIds[round.activityId] then reward = round.isReplay and Config.ReplayReward or Config.FirstRoundReward end
     self.fundBalance += reward
+    if Config.EarningActivityIds[round.activityId] and not round.isReplay then self.initialRewards[round.activityId] = true end
     local receipt = { sessionId = self.sessionId, receiptId = "completion:" .. round.roundId, activityId = round.activityId, roundId = round.roundId, petalGranted = firstPetal, fundRewardGranted = reward, contributors = copyMap(round.contributors) }
     round.completionReceipt = receipt
     self.receipts[request.actionId] = receipt
@@ -152,6 +154,61 @@ end
 function SessionService:GetSnapshot()
     local petals = copyMap(self.petals)
     return { sessionId = self.sessionId, phase = self.phase, fundBalance = self.fundBalance, petals = petals, allPetalsComplete = self:AllPetalsComplete(), phuongUserId = self.phuongUserId, hostUserId = self.hostUserId }
+end
+
+-- Internal host recovery helpers. HostService owns confirmation, limits and
+-- request deduplication; these helpers independently require a real host.
+function SessionService:AssertRecovery(request)
+    assert(request and request.sessionId == self.sessionId and self:IsPresent(request.actorUserId), "invalid recovery session")
+    assert(request.actorUserId == Config.PhuongUserId or request.actorUserId == Config.HostUserId, "recovery host required")
+    assert(type(request.actionId) == "string" and request.actionId ~= "", "recovery identity required")
+    assert(self.petals[request.activityId] ~= nil, "unknown recovery activity")
+end
+
+function SessionService:MissingInitialReward(activityId)
+    if not Config.EarningActivityIds[activityId] or self.initialRewards[activityId] then return 0 end
+    for _, round in pairs(self.rounds) do
+        if round.activityId == activityId and not round.isReplay and round.completionReceipt
+            and (round.completionReceipt.fundRewardGranted or 0) >= Config.FirstRoundReward then return 0 end
+    end
+    return Config.FirstRoundReward
+end
+
+function SessionService:RecoverCancel(request)
+    self:AssertRecovery(request)
+    local round = self.rounds[request.roundId]
+    assert(round and round.activityId == request.activityId and round.state == "IN_PROGRESS", "only incomplete rounds can restart")
+    return self:CancelRound(request.roundId)
+end
+
+function SessionService:RecoverStep(request, stepId)
+    self:AssertRecovery(request)
+    local round = self.rounds[request.roundId]
+    assert(round and round.activityId == request.activityId, "recovery round mismatch")
+    if round.steps[stepId] then return round.steps[stepId] end
+    assert(round.state == "IN_PROGRESS", "recovery round is not active")
+    local accepted = { sessionId = self.sessionId, activityId = request.activityId, roundId = request.roundId,
+        stepId = stepId, actionId = "host-step:" .. request.actionId .. ":" .. stepId, actorUserId = request.actorUserId, recovery = true }
+    round.steps[stepId] = accepted; round.contributors[request.actorUserId] = true
+    self.acceptedSteps[accepted.actionId] = accepted
+    return accepted
+end
+
+function SessionService:RecoverCompleteRound(request)
+    self:AssertRecovery(request)
+    local round = self.rounds[request.roundId]
+    assert(round and round.activityId == request.activityId and (round.state == "IN_PROGRESS" or round.state == "COMPLETED"), "recovery round mismatch")
+    local key = "host-complete:" .. request.activityId
+    if self.receipts[key] then return self.receipts[key] end
+    local reward, petal = self:MissingInitialReward(request.activityId), not self.petals[request.activityId]
+    self.petals[request.activityId] = true; self.fundBalance += reward
+    if Config.EarningActivityIds[request.activityId] then self.initialRewards[request.activityId] = true end
+    round.state = "COMPLETED"
+    local receipt = { sessionId = self.sessionId, receiptId = key, activityId = request.activityId, roundId = request.roundId,
+        recovery = true, petalGranted = petal, fundRewardGranted = reward, actorUserId = request.actorUserId }
+    round.completionReceipt = round.completionReceipt or receipt
+    self.receipts[key] = receipt; self.reservations[request.roundId] = nil
+    return receipt
 end
 
 return SessionService

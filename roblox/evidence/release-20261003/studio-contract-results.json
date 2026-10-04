@@ -1,0 +1,12 @@
+{
+  "context": "Studio Edit command interpreter, unchanged production module text with synthetic script tree; no real clients or world behavior simulated",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"ok\":true,\"messages\":[\"EXPECTED_OR_REVIEW_WARNING\\tPCW-21 Labubu display needs attention\\troblox/mvp/tests/release_activity_contracts.spec.luau:178: Intentional presentation failure\",\"EXPECTED_OR_REVIEW_WARNING\\tPCW-21 Labubu display needs attention\\troblox/mvp/tests/release_activity_contracts.spec.luau:178: Intentional presentation failure\",\"EXPECTED_OR_REVIEW_WARNING\\tPCW-21 Labubu display needs attention\\troblox/mvp/tests/release_activity_contracts.spec.luau:178: Intentional presentation failure\",\"PASS\\troblox/mvp/tests/release_activity_contracts.spec.luau\",\"PASS\\troblox/mvp/tests/release_cake_contracts.spec.luau\",\"PASS\\troblox/mvp/tests/release_host_contracts.spec.luau\",\"PASS\\troblox/mvp/tests/release_social_activity_contracts.spec.luau\",\"RELEASE_CONTRACT_SUMMARY\\t4\\t0\"]}"
+      }
+    ],
+    "isError": false
+  }
+}

@@ -1,187 +1,123 @@
--- Task 10 Seattle perimeter builder.
--- Run in Studio Edit mode by the designated integrator after Task 01 resolves live anchors.
--- Owns only CozyWorld_Draft01.MVP.MvpSeattleBoundary; no lighting, scripts, interiors, or gameplay.
-
+-- Edit-only Seattle enclosure. Decorative buildings are solid, shallow shells.
 return function(context)
-	assert(context and context.Root and context.MVP and context.Anchors, "SeattleBoundary context is incomplete")
-	assert(type(context.SafeReplace) == "function", "SeattleBoundary requires context.SafeReplace")
-	local RunService = game:GetService("RunService")
-	assert(not RunService:IsRunning(), "SeattleBoundary must be authored in Edit mode")
-
-	local root = context.Root
-	local mvp = context.MVP
-	local anchors = context.Anchors
-local required = { "GameplayBedroomArrival", "Q05UDistrictVending", "Q04QuadReading", "FinalePatio" }
-for _, name in required do
-	local marker = anchors[name] or (anchors.FindFirstChild and anchors:FindFirstChild(name, true))
-	assert(marker and marker:IsA("BasePart"), "Missing live anchor: " .. name)
-	assert(marker:GetAttribute("PlacementStatus") ~= "UNRESOLVED_LIVE_ANCHOR", "Unresolved live anchor: " .. name)
-end
-
-local palette = context.Palette or {
-	forest = Color3.fromHex("365744"), sage = Color3.fromHex("A8B995"),
-	cream = Color3.fromHex("F5F0E4"), wood = Color3.fromHex("95674B"),
-	blossom = Color3.fromHex("E8B7C6"), brick = Color3.fromHex("B66C68"),
-	golden = Color3.fromHex("E8C779"), ink = Color3.fromHex("26382E"),
-}
-
-	local stage = Instance.new("Folder")
-stage.Name = "SeattleBoundary"
-stage:SetAttribute("VerificationTicket", "PCW-03/MAP-02/MAP-03")
-stage:SetAttribute("BuilderSource", "roblox/mvp/builders/SeattleBoundary.luau")
-stage:SetAttribute("Status", "Static perimeter; Studio/device/group verification pending")
-stage:SetAttribute("CollisionPolicy", "Visual-only; integrator owns any invisible world boundary")
-stage:SetAttribute("SkylinePolicy", "Open upper sky band; no roof")
-	stage:SetAttribute("Owner", "Task10")
-	stage:SetAttribute("SourceBuilder", "SeattleBoundary")
-	stage:SetAttribute("AnchorName", "WorldBoundsFromTask01")
-	stage:SetAttribute("Footprint", "Derived outer facade ring; no playable interior")
-	stage:SetAttribute("ApproachClearance", "Validated by Task13 against live routes")
-
-local count = 0
-local function part(name, size, cf, token, parent, material)
-	assert(palette[token], "Unknown palette token: " .. tostring(token))
-	local object = Instance.new("Part")
-	object.Name = name
-	object.Size = size
-	object.CFrame = cf
-	object.Color = palette[token]
-	object.Material = material or Enum.Material.SmoothPlastic
-	object.Anchored = true
-	object.CanCollide = false
-	object.CanTouch = false
-	object.CanQuery = false
-	object.CastShadow = false
-	object.TopSurface = Enum.SurfaceType.Smooth
-	object.BottomSurface = Enum.SurfaceType.Smooth
-	object:SetAttribute("PaletteToken", token)
-	object:SetAttribute("BoundaryOwner", "Task10")
-	object:SetAttribute("VerificationTicket", "PCW-03/MAP-02/MAP-03")
-	object:SetAttribute("MVPBuilder", "SeattleBoundary")
-	object.Parent = parent
-	count += 1
-	return object
-end
-
-local function model(name, parent)
-	local object = Instance.new("Model")
-	object.Name = name
-	object.Parent = parent
-	return object
-end
-
--- Prefer Task 01's frozen bounds. Otherwise derive them from original scene parts,
--- explicitly excluding all generated MVP geometry so reruns cannot expand the ring.
-local supplied = context.Options and context.Options.WorldBounds
-local minX, maxX, minZ, maxZ, centerY
-if supplied then
-	minX, maxX, minZ, maxZ, centerY = supplied.minX, supplied.maxX, supplied.minZ, supplied.maxZ, supplied.centerY
-else
-	local minVector = Vector3.new(math.huge, math.huge, math.huge)
-	local maxVector = Vector3.new(-math.huge, -math.huge, -math.huge)
-	local found = false
-	for _, object in root:GetDescendants() do
-		if object:IsA("BasePart") and not object:IsDescendantOf(mvp) then
-			local p = object.Position
-			local half = object.Size / 2
-			minVector = Vector3.new(math.min(minVector.X, p.X - half.X), math.min(minVector.Y, p.Y - half.Y), math.min(minVector.Z, p.Z - half.Z))
-			maxVector = Vector3.new(math.max(maxVector.X, p.X + half.X), math.max(maxVector.Y, p.Y + half.Y), math.max(maxVector.Z, p.Z + half.Z))
-			found = true
-		end
-	end
-	assert(found, "No original world BaseParts found for stable Seattle boundary bounds")
-	minX, maxX, minZ, maxZ, centerY = minVector.X, maxVector.X, minVector.Z, maxVector.Z, (minVector.Y + maxVector.Y) / 2
-end
-assert(minX and maxX and minZ and maxZ and centerY, "WorldBounds must provide minX/maxX/minZ/maxZ/centerY")
-local pad = 12
-local y = centerY + 8
-local wallHeight = 18
-stage:SetAttribute("WorldBounds", string.format("%.2f,%.2f,%.2f,%.2f", minX, maxX, minZ, maxZ))
-stage:SetAttribute("FacadeSetback", pad)
-
-local function facadeRow(name, x, z, length, yaw, parent, variant)
-	local row = model(name, parent)
-	local segment = 28
-	local pieces = math.max(1, math.ceil(length / segment))
-	for i = 1, pieces do
-		local along = (i - (pieces + 1) / 2) * (length / pieces)
-		local base = CFrame.new(x, y + 8 + ((i + variant) % 3) * 1.5, z) * CFrame.Angles(0, yaw, 0) * CFrame.new(along, 0, 0)
-		local width = length / pieces - 1
-		part("Shell" .. i, Vector3.new(width, 16 + ((i + variant) % 3) * 3, 2.4), base, i % 2 == 0 and "cream" or "brick", row, Enum.Material.SmoothPlastic)
-		part("Roofline" .. i, Vector3.new(width + .7, .65, 3.1), base * CFrame.new(0, 9.1 + ((i + variant) % 3) * 1.5, 0), "wood", row, Enum.Material.Wood)
-		for window = -1, 1, 2 do
-			part("Window" .. i .. "_" .. window, Vector3.new(2.6, 3.2, .18), base * CFrame.new(window * width * .22, 1.2, -1.28), "golden", row, Enum.Material.Neon)
-		end
-	end
-	return row
-end
-
-local west = model("WestUDistrictBackdrop", stage)
-facadeRow("WestFacade", minX - pad, (minZ + maxZ) / 2, maxZ - minZ, math.pi / 2, west, 1)
-local north = model("NorthHouseJasperBackdrop", stage)
-facadeRow("NorthFacade", (minX + maxX) / 2, minZ - pad, maxX - minX, 0, north, 2)
-local east = model("EastQuadBackdrop", stage)
-facadeRow("EastFacade", maxX + pad, (minZ + maxZ) / 2, maxZ - minZ, math.pi / 2, east, 3)
-local south = model("SouthArrivalPatioBackdrop", stage)
-facadeRow("SouthFacade", (minX + maxX) / 2, maxZ + pad, maxX - minX, 0, south, 4)
-
--- Low natural terminators mark the existing play boundary without implying doors or interiors.
-local terminators = model("NaturalStreetTerminators", stage)
-local stops = {
-	{ "WestStop", Vector3.new(minX + 7, y + 3, minZ + 42), 0 },
-	{ "EastStop", Vector3.new(maxX - 7, y + 3, maxZ - 42), math.pi / 2 },
-	{ "SouthStop", Vector3.new(minX + 42, y + 3, maxZ - 7), 0 },
-	{ "NorthStop", Vector3.new(maxX - 42, y + 3, minZ + 7), math.pi / 2 },
-}
-for _, stop in stops do
-	local name, position, yaw = stop[1], stop[2], stop[3]
-	local stopModel = model(name, terminators)
-	part("Wall", Vector3.new(14, 6, 2.2), CFrame.new(position) * CFrame.Angles(0, yaw, 0), "brick", stopModel)
-	part("Cap", Vector3.new(15, .55, 2.8), CFrame.new(position + Vector3.new(0, 3.25, 0)) * CFrame.Angles(0, yaw, 0), "cream", stopModel)
-end
-
--- Two compressed skyline cues; narrow, noninteractive, and lower contrast than landmarks.
-local skyline = model("CompressedSeattleSkyline", stage)
-for i, spec in { { "TowerWest", minX - 30, minZ - 30, 52, 8 }, { "TowerEast", maxX + 30, maxZ + 30, 44, 7 } } do
-	local name, x, z, height, width = spec[1], spec[2], spec[3], spec[4], spec[5]
-	local tower = model(name, skyline)
-	part("Body", Vector3.new(width, height, width), CFrame.new(x, y + height / 2 - 2, z), "forest", tower)
-	part("Crown", Vector3.new(width + 2, 1.2, width + 2), CFrame.new(x, y + height - 1.4, z), "brick", tower)
-	for window = 1, 3 do
-		part("Window" .. window, Vector3.new(1.2, 3, .15), CFrame.new(x - width / 2 - .08, y + height * (window / 4), z - 1), "golden", tower, Enum.Material.Neon)
-	end
-end
-
-assert(count <= 250, "Seattle boundary exceeds proposed 250 BasePart budget: " .. count)
-local tokenCounts = {}
-for _, object in stage:GetDescendants() do
-	assert(not object:IsA("LuaSourceContainer"), "Scripts are forbidden in Seattle boundary")
-	if object:IsA("BasePart") then
-		local token = object:GetAttribute("PaletteToken")
-		assert(palette[token] and object.Color == palette[token], "Palette mismatch: " .. object:GetFullName())
-		assert(object.Anchored and not object.CanCollide and not object.CanTouch and not object.CanQuery, "Boundary must be noninteractive: " .. object:GetFullName())
-		tokenCounts[token] = (tokenCounts[token] or 0) + 1
-	end
-end
-stage:SetAttribute("PartCount", count)
-for token, total in tokenCounts do stage:SetAttribute("PaletteCount_" .. token, total) end
-local installed = context.SafeReplace("SeattleBoundary", function()
-		return stage
-	end)
-	if installed then stage = installed end
-	game:GetService("ChangeHistoryService"):SetWaypoint("MVP Seattle boundary staged")
-	return {
-		folder = stage,
-		manifest = {
-			Owner = "Task10",
-			SourceBuilder = "SeattleBoundary",
-			AnchorName = "WorldBoundsFromTask01",
-			Footprint = "Derived outer facade ring; no playable interior",
-			ApproachClearance = "Validated by Task13 against live routes",
-			PartCount = count,
-			WorldBounds = string.format("%.2f,%.2f,%.2f,%.2f", minX, maxX, minZ, maxZ),
-			Segments = { "WestUDistrictBackdrop", "NorthHouseJasperBackdrop", "EastQuadBackdrop", "SouthArrivalPatioBackdrop", "NaturalStreetTerminators", "CompressedSeattleSkyline" },
-			Status = "Live camera and route checks pending",
-		},
-	}
+    assert(context and context.Root and context.MVP and context.SafeReplace,"Measured builder context required")
+    assert(not game:GetService("RunService"):IsRunning(),"Build in Edit mode")
+    local root=context.Root
+    local palette=context.Palette or {
+        forest=Color3.fromHex("365744"),sage=Color3.fromHex("A8B995"),cream=Color3.fromHex("F5F0E4"),wood=Color3.fromHex("95674B"),
+        blossom=Color3.fromHex("E8B7C6"),brick=Color3.fromHex("B66C68"),golden=Color3.fromHex("E8C779"),ink=Color3.fromHex("26382E"),
+    }
+    local V,CF=Vector3.new,CFrame.new
+    local existing=root.MVP.Environment:FindFirstChild("SeattleBoundary")
+    local minX,maxX,minZ,maxZ
+    -- Frozen world-space measurements make reruns independent of world translations.
+    if existing and existing:GetAttribute("EnclosureMinX") then
+        minX,maxX=existing:GetAttribute("EnclosureMinX"),existing:GetAttribute("EnclosureMaxX")
+        minZ,maxZ=existing:GetAttribute("EnclosureMinZ"),existing:GetAttribute("EnclosureMaxZ")
+    elseif existing and existing:FindFirstChild("WestUDistrictBackdrop") then
+        minX=existing.WestUDistrictBackdrop:FindFirstChild("Shell1",true).Position.X
+        maxX=existing.EastQuadBackdrop:FindFirstChild("Shell1",true).Position.X
+        minZ=existing.NorthHouseJasperBackdrop:FindFirstChild("Shell1",true).Position.Z
+        maxZ=existing.SouthArrivalPatioBackdrop:FindFirstChild("Shell1",true).Position.Z
+    else
+        local b=assert(context.Options and context.Options.WorldBounds,"Measured world bounds required")
+        minX,maxX,minZ,maxZ=b.minX-12,b.maxX+12,b.minZ-12,b.maxZ+12
+    end
+    assert(minX<maxX and minZ<maxZ,"Invalid enclosure bounds")
+    local field=root.Landscape.QuadGround
+    local y=field.Position.Y+field.Size.Y/2
+    local stage=Instance.new("Folder");stage.Name="SeattleBoundary"
+    stage:SetAttribute("BuilderSource","roblox/mvp/builders/SeattleBoundary.luau")
+    stage:SetAttribute("VerificationTicket","MAP-03")
+    stage:SetAttribute("EnclosureMinX",minX);stage:SetAttribute("EnclosureMaxX",maxX)
+    stage:SetAttribute("EnclosureMinZ",minZ);stage:SetAttribute("EnclosureMaxZ",maxZ)
+    stage:SetAttribute("GroundedFieldY",y)
+    stage:SetAttribute("CollisionPolicy","Solid closed shells; four overlapping 96-stud boundary colliders")
+    stage:SetAttribute("SkylinePolicy","Open sky; roofed shallow perimeter buildings")
+    stage:SetAttribute("TexturePolicy","Native Roblox materials; approved Color3 palette")
+    local count=0
+    local function group(name,parent)
+        local m=Instance.new("Model");m.Name=name;m.Parent=parent;return m
+    end
+    local function part(name,size,cf,token,parent,material,collide,query)
+        local p=Instance.new("Part");p.Name=name;p.Size=size;p.CFrame=cf;p.Color=assert(palette[token])
+        p:SetAttribute("PaletteToken",token);p:SetAttribute("MVPBuilder","SeattleBoundary")
+        p.Material=material or Enum.Material.SmoothPlastic;p.Anchored=true
+        p.CanCollide=collide==true;p.CanTouch=false;p.CanQuery=query==true
+        p.CastShadow=collide==true;p.TopSurface=Enum.SurfaceType.Smooth;p.BottomSurface=Enum.SurfaceType.Smooth
+        p.Parent=parent;count+=1;return p
+    end
+    local function window(name,base,x,h,z,parent)
+        part(name.."Frame",V(4.1,4.9,.20),base*CF(x,h,z),"cream",parent,Enum.Material.Concrete)
+        part(name.."Pane",V(3.5,4.25,.12),base*CF(x,h,z-.15),"ink",parent,Enum.Material.Glass)
+        part(name.."Mullion",V(.13,4.25,.13),base*CF(x,h,z-.24),"cream",parent,Enum.Material.Metal)
+        part(name.."Sill",V(4.5,.25,.65),base*CF(x,h-2.55,z-.15),"cream",parent,Enum.Material.Concrete)
+    end
+    local function building(name,base,width,index,parent)
+        local m=group(name,parent)
+        local variant=index%5;local height=26+variant*3;local depth=10
+        local masonry=variant==1 or variant==4
+        m:SetAttribute("DetailType","ClosedSeattleBuilding");m:SetAttribute("FacadeHeight",height)
+        part("ClosedShell",V(width+.04,height,depth),base*CF(0,height/2,depth/2),masonry and "brick" or "cream",m,
+            masonry and Enum.Material.Brick or Enum.Material.Concrete,true,true)
+        part("Roof",V(width+.55,.65,depth+.7),base*CF(0,height+.30,depth/2),"ink",m,Enum.Material.Slate,true,true)
+        part("Cornice",V(width+.55,.55,1.1),base*CF(0,height-.30,-.30),"cream",m,Enum.Material.Concrete)
+        part("WaterTable",V(width,.65,.28),base*CF(0,.75,-.18),"wood",m,Enum.Material.Concrete)
+        part("StoryBand",V(width,.30,.32),base*CF(0,10.4,-.20),"cream",m,Enum.Material.Concrete)
+        local bay=variant==2 and -.55 or -.16
+        for row=1,2 do for column=1,2 do
+            window("Upper"..row.."_"..column,base,(column==1 and -1 or 1)*width*.27,14+(row-1)*8,bay,m)
+        end end
+        -- Decorative doors are closed; playable storefront entrances are preserved.
+        part("DoorFrame",V(4.5,8.9,.22),base*CF(0,4.65,-.16),"wood",m,Enum.Material.Wood)
+        part("ClosedDoor",V(3.8,8.2,.17),base*CF(0,4.35,-.32),variant%2==0 and "forest" or "wood",m,Enum.Material.Wood)
+        part("DoorGlass",V(2.65,3.8,.10),base*CF(0,5.8,-.46),"ink",m,Enum.Material.Glass)
+        part("DoorRail",V(3.5,.16,.12),base*CF(0,3.9,-.49),"wood",m,Enum.Material.Wood)
+        part("DoorHandle",V(.12,1.0,.18),base*CF(1.3,3.7,-.54),"golden",m,Enum.Material.Metal)
+        for column=1,2 do
+            local x=(column==1 and -1 or 1)*width*.29
+            part("ShopFrame"..column,V(width*.32,6.7,.16),base*CF(x,4.5,-.14),"wood",m,Enum.Material.Wood)
+            part("ShopGlass"..column,V(width*.32-.45,6.12,.12),base*CF(x,4.5,-.26),"ink",m,Enum.Material.Glass)
+        end
+        local awningToken=variant%2==0 and "forest" or "wood"
+        part("Awning",V(width*.80,.26,2.6),base*CF(0,9.1,-1.35)*CFrame.Angles(math.rad(9),0,0),awningToken,m,Enum.Material.Fabric)
+        part("AwningValance",V(width*.80,.60,.15),base*CF(0,8.65,-2.62),awningToken,m,Enum.Material.Fabric)
+        part("RainDownpipe",V(.22,height-.7,.24),base*CF(width/2-.6,height/2,-.30),"ink",m,Enum.Material.Metal)
+        if variant==3 then
+            part("RoofVent",V(3,1.6,3),base*CF(width*.15,height+1.2,6),"sage",m,Enum.Material.Metal)
+        end
+    end
+    local depth=10
+    local function row(name,base,length,variant)
+        local m=group(name,stage);local pieces=math.ceil(length/30);local width=length/pieces
+        for i=1,pieces do building(string.format("Building%02d",i),base*CF((i-(pieces+1)/2)*width,0,0),width,i+variant,m) end
+    end
+    row("NorthHouseJasperBackdrop",CF((minX+maxX)/2,y,minZ)*CFrame.Angles(0,math.pi,0),maxX-minX+depth*2,1)
+    row("SouthArrivalPatioBackdrop",CF((minX+maxX)/2,y,maxZ),maxX-minX+depth*2,3)
+    row("WestUDistrictBackdrop",CF(minX,y,(minZ+maxZ)/2)*CFrame.Angles(0,-math.pi/2,0),maxZ-minZ,2)
+    row("EastQuadBackdrop",CF(maxX,y,(minZ+maxZ)/2)*CFrame.Angles(0,math.pi/2,0),maxZ-minZ,4)
+    local floor=part("PerimeterGround",V(maxX-minX+1,.32,maxZ-minZ+1),CF((minX+maxX)/2,y-.20,(minZ+maxZ)/2),"sage",stage,Enum.Material.Grass,true,true)
+    floor:SetAttribute("DetailType","GroundClosure")
+    local barrier=group("ContinuousEnclosure",stage)
+    local wallY=y-4+96/2
+    local walls={
+        {"North",V(maxX-minX+24,96,2),CF((minX+maxX)/2,wallY,minZ+1)},
+        {"South",V(maxX-minX+24,96,2),CF((minX+maxX)/2,wallY,maxZ-1)},
+        {"West",V(2,96,maxZ-minZ+4),CF(minX+1,wallY,(minZ+maxZ)/2)},
+        {"East",V(2,96,maxZ-minZ+4),CF(maxX-1,wallY,(minZ+maxZ)/2)},
+    }
+    for _,spec in walls do
+        local p=part(spec[1],spec[2],spec[3],"ink",barrier,Enum.Material.SmoothPlastic,true,false)
+        p.Transparency=1;p.CastShadow=false;p:SetAttribute("DetailType","WorldBoundary")
+    end
+    assert(count<=2300,"Seattle enclosure exceeds 2300 parts: "..count)
+    for _,p in stage:GetDescendants()do if p:IsA("BasePart")then
+        assert(p.Color==palette[p:GetAttribute("PaletteToken")] and p.Anchored,"Invalid palette/static part")
+    end end
+    stage:SetAttribute("PartCount",count)
+    stage:SetAttribute("BuildingCount",math.ceil((maxX-minX+20)/30)*2+math.ceil((maxZ-minZ)/30)*2)
+    stage:SetAttribute("Status","Built; independent review and human playtest pending")
+    local installed=context.SafeReplace("SeattleBoundary",function()return stage end)
+    game:GetService("ChangeHistoryService"):SetWaypoint("Seattle enclosed and detailed buildings 04")
+    return {folder=installed or stage,manifest={PartCount=count,Bounds={minX,maxX,minZ,maxZ},GroundY=y}}
 end

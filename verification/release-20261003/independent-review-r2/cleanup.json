@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"probes\":[],\"placeId\":0,\"phuongId\":true,\"testIdInConfig\":false,\"contractScratchCleared\":true,\"gameId\":0,\"orientation\":\"Enum.ScreenOrientation.LandscapeSensor\",\"andrewId\":true,\"scripts\":[{\"enabled\":false,\"path\":\"StarterPlayer.StarterPlayerScripts.CozyDraftCamera\"},{\"enabled\":true,\"path\":\"StarterPlayer.StarterPlayerScripts.BirthdayLobbyClient\"},{\"enabled\":true,\"path\":\"StarterPlayer.StarterPlayerScripts.PhuongMVPClient\"},{\"enabled\":true,\"path\":\"StarterPlayer.StarterPlayerScripts.CozySoundEffectsClient\"},{\"enabled\":true,\"path\":\"ServerScriptService.CozyDraftDoor\"},{\"enabled\":true,\"path\":\"ServerScriptService.BirthdayLobbyServer\"},{\"enabled\":true,\"path\":\"ServerScriptService.PhuongMVP.server.Main\"}],\"maxPlayers\":30}"
+    }
+  ],
+  "isError": false
+}

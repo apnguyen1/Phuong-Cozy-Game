@@ -1,0 +1,39 @@
+{
+  "before": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"camera\":\"Enum.CameraType.Custom\",\"goal\":\"Next · Birthday table\",\"viewport\":\"1408, 642\",\"markerEnabled\":false,\"marker\":\"◆ Birthday table\\n2 studs\",\"orientation\":\"Enum.ScreenOrientation.LandscapeSensor\"}"
+      }
+    ],
+    "isError": false
+  },
+  "after": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"panel\":false,\"camera\":\"Enum.CameraType.Custom\",\"goal\":\"Birthday complete · photos, friends and free exploring\",\"hasEaten\":true,\"phase\":\"EATING\",\"orientation\":\"Enum.ScreenOrientation.LandscapeSensor\",\"markerEnabled\":false,\"marker\":\"◆ Birthday table\\n12 studs\"}"
+      }
+    ],
+    "isError": false
+  },
+  "phone": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"enabled\":true,\"touch\":true,\"textFits\":true,\"hasEaten\":true,\"marker\":\"◆ Birthday table\\n18 studs\",\"camera\":\"Enum.CameraType.Custom\",\"goal\":\"Birthday complete · photos, friends and free exploring\",\"subject\":\"Workspace.IamBannedrew.Humanoid\",\"viewport\":\"666, 374\",\"orientation\":\"Enum.ScreenOrientation.LandscapeSensor\",\"hudSize\":\"432, 117\",\"phase\":\"EATING\"}"
+      }
+    ],
+    "isError": false
+  },
+  "phoneNormal": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"phase\":\"EATING\",\"override\":false,\"goal\":\"Birthday complete · photos, friends and free exploring\",\"eaten\":true,\"orientation\":\"Enum.ScreenOrientation.LandscapeSensor\",\"marker\":\"◆ Birthday table\\n18 studs\",\"hudSize\":\"432, 86\",\"markerEnabled\":true}"
+      }
+    ],
+    "isError": false
+  },
+  "method": "Bounded authentic Andrew host recovery prepared finale; actual native prompt and actual UI Take/Enjoy actions exercised eating. Position/camera fixtures used for viewpoints only. Source unchanged. New client ScreenOrientation inherited LandscapeSensor. Desktop then phone667x375 and tablet1024x768 viewport layouts."
+}

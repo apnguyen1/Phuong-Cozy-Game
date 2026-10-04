@@ -172,4 +172,10 @@ function QueueService:FailTransfer()
 	return true, "Failed"
 end
 
+function QueueService:ResetAfterTransfer()
+ if self.state ~= "Completed" and self.state ~= "Failed" then return false, "NotFinished" end
+ self:_reset()
+ return true, "Reset"
+end
+
 return QueueService

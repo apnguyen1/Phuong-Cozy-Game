@@ -1,0 +1,29 @@
+{
+  "start": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"ok\":true,\"cake\":{\"biteCount\":0,\"armed\":false,\"duration\":12,\"unlockedAt\":1791071078.952221,\"startedAt\":1791071121.332484,\"sliceTaken\":false,\"delayed\":false,\"atPatio\":true,\"scene\":{\"phuongSeatPath\":\"Workspace.CozyWorld_Draft01.MVP.Stations.CakeFinale.EndSeatWest.Seat\",\"seatCount\":10,\"phuongSeatPosition\":{\"y\":2.1199989318847658,\"x\":328,\"z\":98.6077880859375},\"center\":{\"y\":3.5999984741210939,\"x\":346,\"z\":98.6077880859375},\"tablePath\":\"Workspace.CozyWorld_Draft01.SurroundingContext.NeighborhoodDetails02.BirthdayCourtyard.GatheringTable\"},\"hasEaten\":false,\"phase\":\"CELEBRATING\",\"guide\":{\"detail\":\"Happy Birthday, Phuong! Enjoy the moment together. The optional camera view has its own Skip / Return.\",\"nextAnchor\":\"FinalePatio\"},\"invitation\":true,\"generation\":1,\"endsAt\":1791071133.332484,\"availableActions\":[],\"revision\":3,\"finaleState\":\"CELEBRATING\"}}"
+      }
+    ],
+    "isError": false
+  },
+  "active": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"camera\":\"Scriptable\",\"time\":1791071126.049616,\"marker\":false,\"bannerSize\":\"432, 84\",\"hud\":false}"
+      }
+    ],
+    "isError": false
+  },
+  "skip": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"camera\":\"Custom\",\"time\":1791071130.402762,\"skippedGeneration\":1,\"hud\":true,\"banner\":false,\"subject\":\"Workspace.IamBannedrew.Humanoid\"}"
+      }
+    ],
+    "isError": false
+  }
+}
